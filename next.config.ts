@@ -1,11 +1,11 @@
 // import type { NextConfig } from "next";
 
 const nextConfig = {
-  // output: 'export',
+  output: 'export',
   trailingSlash: true,
-  // experimental: {
-  //   missingSuspenseWithCSRBailout: false,
-  // },
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
+  },
 };
 
 export default nextConfig;
