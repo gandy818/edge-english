@@ -6,19 +6,19 @@ import { useEffect, useState } from 'react';
 export default function EventPage() {
   const [currentType, setCurrentType] = useState('all');
 
-  const getEventList = async () => {
-    try {
-      const res = await axios.get('/api/eventlist/');
+  // const getEventList = async () => {
+  //   try {
+  //     const res = await axios.get('/api/eventlist/');
 
-      console.log(res);
-    } catch (err) {
-      console.error(err);
-    }
-  };
+  //     console.log(res);
+  //   } catch (err) {
+  //     console.error(err);
+  //   }
+  // };
 
-  useEffect(() => {
-    getEventList();
-  }, []);
+  // useEffect(() => {
+  //   getEventList();
+  // }, []);
 
   return (
     <div className="mx-auto max-w-[1200px]">
