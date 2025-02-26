@@ -30,6 +30,7 @@ export default function EventPage() {
       <div className="mt-10 flex gap-2">
         <button
           className={`rounded-full border-[#E8E8E8] px-6 py-3 font-bold ${currentType === 'all' ? 'bg-[#FFD401]' : 'border'}`}
+          onClick={() => setCurrentType('all')}
         >
           ALL
         </button>
