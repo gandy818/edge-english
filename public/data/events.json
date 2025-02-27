@@ -1,16 +1,18 @@
 [
   {
     "index": 0,
-    "type": "all",
+    "type": "이벤트",
+    "status": "진행중",
     "date": "2025-02-25",
     "title": "공지사항 제목이 들어갑니다",
     "writer": "엣지영어"
   },
   {
     "index": 1,
-    "type": "event",
+    "type": "이벤트",
+    "status": "마감",
     "date": "2025-02-26",
-    "title": "이벤트 소식이 있습니다",
+    "title": "이벤트 소식이 있습니다1",
     "writer": "엣지영어"
   }
 ]
