@@ -1,5 +1,6 @@
 'use client';
 
+import Pagination from '@/components/Pagination';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
@@ -97,6 +98,11 @@ export default function EventPage() {
             </tr>
           </tbody>
         </table>
+      </div>
+
+      {/* 페이지네이션 */}
+      <div className="flex-center mt-24">
+        <Pagination />
       </div>
     </div>
   );
