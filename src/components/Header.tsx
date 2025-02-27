@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className="flex-center h-[70px]">
       <div className="flex w-full max-w-[1200px] gap-64">
-        <img src="/images/logo.svg" />
+        <img src="/images/logo.svg" alt="logo" />
 
         {/* gnb */}
         <div className="flex gap-11">

@@ -13,7 +13,7 @@ export default function EventDetailPage() {
 
   const getEventDetail = async () => {
     try {
-      const res = await axios.get<PostType[]>('/data/evne.json');
+      const res = await axios.get<PostType[]>('/data/events.json');
 
       const { data } = res;
 

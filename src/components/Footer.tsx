@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="w-full max-w-[1200px]">
         {/* 로고 */}
         <Link href="/" className="inline-block">
-          <img src="/images/logo.svg" />
+          <img src="/images/logo.svg" alt="logo" />
         </Link>
 
         <div className="mt-4 flex items-center text-sm">
@@ -45,13 +45,13 @@ export default function Footer() {
         {/* sns */}
         <div className="mt-8 flex gap-3">
           <Link href="/">
-            <img src="/icons/kakao.svg" />
+            <img src="/icons/kakao.svg" alt="kakao" />
           </Link>
           <Link href="/">
-            <img src="/icons/instagram.svg" />
+            <img src="/icons/instagram.svg" alt="instagram" />
           </Link>
           <Link href="/">
-            <img src="/icons/youtube.svg" />
+            <img src="/icons/youtube.svg" alt="youtube" />
           </Link>
         </div>
       </div>
