@@ -3,9 +3,12 @@
 import Pagination from '@/components/Pagination';
 import { PostType } from '@/types/PostType';
 import axios from 'axios';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
 export default function EventPage() {
+  const router = useRouter();
   const [currentPage, setCurrentPage] = useState(1);
   const [currentType, setCurrentType] = useState('all');
   const [eventList, setEventList] = useState<PostType[]>([]);
@@ -99,6 +102,7 @@ export default function EventPage() {
                 <tr
                   className="cursor-pointer !border-b border-[#E8E8E8]"
                   key={event.index}
+                  onClick={() => router.push(`/events/${event.index}`)}
                 >
                   <td>
                     <p
