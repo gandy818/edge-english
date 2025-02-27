@@ -6,25 +6,25 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-export default function EventDetailPage() {
+export default function NoticeDetailPage() {
   const param = useParams();
   const currentIndex = param.index;
-  const [event, setEvent] = useState<PostType>();
+  const [notice, setNotice] = useState<PostType>();
 
-  const getEventDetail = async () => {
+  const getNoticeDetail = async () => {
     try {
-      const res = await axios.get<PostType[]>('/data/evne.json');
+      const res = await axios.get<PostType[]>('/data/notice.json');
 
       const { data } = res;
 
-      setEvent(data.filter((item) => item.index === Number(currentIndex))[0]);
+      setNotice(data.filter((item) => item.index === Number(currentIndex))[0]);
     } catch (err) {
       console.error(err);
     }
   };
 
   useEffect(() => {
-    getEventDetail();
+    getNoticeDetail();
   }, []);
 
   return (
@@ -32,18 +32,18 @@ export default function EventDetailPage() {
       {/* 타이틀 */}
       <div className="mt-[120px] flex flex-col gap-6 border-t-4 border-[#000] py-16">
         <p className="font-montserrat text-2xl font-semibold text-[#000]">
-          {event?.type}
+          {notice?.type}
         </p>
         <h1 className="font-montserrat text-5xl font-semibold text-[#000]">
-          {event?.title}
+          {notice?.title}
         </h1>
         <p className="font-semibold text-[#606060]">
-          등록일 <span className="font-montserrat text-[#606060]">{event?.date}</span>
+          등록일 <span className="font-montserrat text-[#606060]">{notice?.date}</span>
         </p>
       </div>
 
       {/* 본문 */}
-      <pre className="border-t border-[#A4A4A4] py-16">{event?.content}</pre>
+      <pre className="border-t border-[#A4A4A4] py-16">{notice?.content}</pre>
 
       {/* 이전글, 다음글 */}
       <div className="flex cursor-pointer gap-10 border-b border-t border-[#E8E8E8] px-2 py-6">
@@ -86,7 +86,7 @@ export default function EventDetailPage() {
 
       {/* 목록으로 */}
       <Link
-        href={'/events'}
+        href={'/notice'}
         className="flex-center mx-auto mt-16 h-14 w-50 cursor-pointer gap-2 rounded-lg bg-[#606060] font-bold text-white"
       >
         <svg

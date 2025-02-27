@@ -20,7 +20,10 @@ export default function Header() {
             이벤트
           </Link>
 
-          <Link href="/" className="font-medium text-[#bbb]">
+          <Link
+            href="/notice"
+            className={`${pathName.startsWith('/notice') ? 'font-bold text-[#333]' : 'font-medium text-[#bbb]'}`}
+          >
             공지사항
           </Link>
 

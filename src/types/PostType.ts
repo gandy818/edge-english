@@ -5,4 +5,5 @@ export interface PostType {
   date: string;
   title: string;
   writer: string;
+  content: string;
 }
