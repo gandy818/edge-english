@@ -51,7 +51,7 @@ export default function EventPage() {
   return (
     <div className="mx-auto max-w-[1200px]">
       <div className="mt-[120px] border-b border-[#A4A4A4]">
-        <h1 className="text-[68px] font-bold">이벤트!!</h1>
+        <h1 className="text-[68px] font-bold">이벤트</h1>
       </div>
 
       {/* 분류 */}
