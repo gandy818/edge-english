@@ -35,7 +35,7 @@ export default function FaqPage() {
 
       {/* 아코디언 */}
       <div className="mt-10 overflow-x-auto">
-        <div className="collapse collapse-arrow rounded-none">
+        <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
@@ -54,7 +54,7 @@ export default function FaqPage() {
           </div>
         </div>
 
-        <div className="collapse collapse-arrow rounded-none">
+        <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" id="faq-2" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
@@ -74,7 +74,7 @@ export default function FaqPage() {
           </div>
         </div>
 
-        <div className="collapse collapse-arrow rounded-none">
+        <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
@@ -95,7 +95,7 @@ export default function FaqPage() {
           </div>
         </div>
 
-        <div className="collapse collapse-arrow rounded-none">
+        <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
@@ -116,7 +116,7 @@ export default function FaqPage() {
           </div>
         </div>
 
-        <div className="collapse collapse-arrow rounded-none">
+        <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
@@ -138,7 +138,7 @@ export default function FaqPage() {
           </div>
         </div>
 
-        <div className="collapse collapse-arrow rounded-none">
+        <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
@@ -157,7 +157,7 @@ export default function FaqPage() {
           </div>
         </div>
 
-        <div className="collapse collapse-arrow rounded-none">
+        <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
@@ -176,7 +176,7 @@ export default function FaqPage() {
           </div>
         </div>
 
-        <div className="collapse collapse-arrow rounded-none">
+        <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
@@ -195,7 +195,7 @@ export default function FaqPage() {
           </div>
         </div>
 
-        <div className="collapse collapse-arrow rounded-none">
+        <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
@@ -215,7 +215,7 @@ export default function FaqPage() {
           </div>
         </div>
 
-        <div className="collapse collapse-arrow rounded-none">
+        <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
@@ -235,7 +235,7 @@ export default function FaqPage() {
           </div>
         </div>
 
-        <div className="collapse collapse-arrow rounded-none">
+        <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">

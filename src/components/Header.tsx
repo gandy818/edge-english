@@ -35,7 +35,10 @@ export default function Header() {
             교재
           </Link>
 
-          <Link href="/faq" className="font-medium text-[#bbb]">
+          <Link
+            href="/faq"
+            className={`${pathName.startsWith('/faq') ? 'font-bold text-[#333]' : 'font-medium text-[#bbb]'}`}
+          >
             자주 묻는 질문
           </Link>
 
