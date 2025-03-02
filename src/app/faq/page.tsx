@@ -38,13 +38,13 @@ export default function FaqPage() {
         <div className="collapse collapse-arrow rounded-none">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">주 1회 수업도 가능한가요?</p>
           </div>
           <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
             <p className="text-[#4A4A4A]">
@@ -55,15 +55,15 @@ export default function FaqPage() {
         </div>
 
         <div className="collapse collapse-arrow rounded-none">
-          <input type="checkbox" className="peer" />
+          <input type="checkbox" className="peer" id="faq-2" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">공휴일에는 수업이 어떻게 진행되나요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 py-2 text-sm peer-checked:py-4">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
             <p className="text-[#4A4A4A]">
@@ -77,13 +77,13 @@ export default function FaqPage() {
         <div className="collapse collapse-arrow rounded-none">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">수강권 사용 기한이 있나요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 py-2 text-sm peer-checked:py-4">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
             <p className="text-[#4A4A4A]">
@@ -98,13 +98,13 @@ export default function FaqPage() {
         <div className="collapse collapse-arrow rounded-none">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">수강권 사용 기한이 있나요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 py-2 text-sm peer-checked:py-4">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
             <p className="text-[#4A4A4A]">
@@ -119,13 +119,13 @@ export default function FaqPage() {
         <div className="collapse collapse-arrow rounded-none">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">수업에 지각하면 어떻게 되나요?</p>
           </div>
           <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
             <p className="text-[#4A4A4A]">
@@ -141,13 +141,13 @@ export default function FaqPage() {
         <div className="collapse collapse-arrow rounded-none">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">원어민 선생님이 맞나요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 py-2 text-sm peer-checked:py-4">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
             <p className="text-[#4A4A4A]">
@@ -160,13 +160,13 @@ export default function FaqPage() {
         <div className="collapse collapse-arrow rounded-none">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">수업 녹음이나 녹화가 가능한가요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 py-2 text-sm peer-checked:py-4">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
             <p className="text-[#4A4A4A]">
@@ -179,13 +179,13 @@ export default function FaqPage() {
         <div className="collapse collapse-arrow rounded-none">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">체험 수업 받아볼 수 있나요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 py-2 text-sm peer-checked:py-4">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
             <p className="text-[#4A4A4A]">
@@ -198,13 +198,13 @@ export default function FaqPage() {
         <div className="collapse collapse-arrow rounded-none">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">개인 사정으로 수업 취소 할 수 있나요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 py-2 text-sm peer-checked:py-4">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
             <p className="text-[#4A4A4A]">
@@ -218,13 +218,13 @@ export default function FaqPage() {
         <div className="collapse collapse-arrow rounded-none">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">수업 시간을 선생님과 협의해서 바꿀 수 있나요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 py-2 text-sm peer-checked:py-4">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
             <p className="text-[#4A4A4A]">
@@ -238,13 +238,13 @@ export default function FaqPage() {
         <div className="collapse collapse-arrow rounded-none">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">수강권 사용 기한이 있나요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 py-2 text-sm peer-checked:py-4">
-            <div className="flex-center h-8 w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+            <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
             <p className="text-[#4A4A4A]">
