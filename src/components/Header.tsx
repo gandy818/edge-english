@@ -35,7 +35,7 @@ export default function Header() {
             교재
           </Link>
 
-          <Link href="/" className="font-medium text-[#bbb]">
+          <Link href="/faq" className="font-medium text-[#bbb]">
             자주 묻는 질문
           </Link>
 
