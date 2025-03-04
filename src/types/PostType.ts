@@ -6,4 +6,5 @@ export interface PostType {
   title: string;
   writer: string;
   content: string;
+  isPinned?: boolean;
 }

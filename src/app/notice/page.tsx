@@ -1,6 +1,7 @@
 'use client';
 
 import Pagination from '@/components/Pagination';
+import TextDivider from '@/components/TextDivider';
 import { PostType } from '@/types/PostType';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
@@ -11,9 +12,10 @@ export default function NoticePage() {
   const [currentPage, setCurrentPage] = useState(1);
   const [currentType, setCurrentType] = useState('all');
   const [noticeList, setNoticeList] = useState<PostType[]>([]);
-  const [filteredEventList, setFilteredEventList] = useState<PostType[]>([]);
-  const itemsPerPage = 5; // 한 페이지 당 게시물 개수
+  const [filteredNoticeList, setFilteredNoticeList] = useState<PostType[]>([]);
+  const itemsPerPage = 10; // 한 페이지 당 게시물 개수
 
+  // 공지사항 목록 불러오기
   const getNoticeList = async () => {
     try {
       const res = await axios.get('/data/notice.json');
@@ -30,45 +32,57 @@ export default function NoticePage() {
 
   // 선택한 필터에 맞게 필터링
   useEffect(() => {
-    let updatedList = noticeList;
+    let updatedList = [...noticeList];
+
+    // 공지글을 상단에 고정
+    updatedList.sort((a, b) => Number(b.isPinned) - Number(a.isPinned));
 
     if (currentType === 'notice') {
-      updatedList = noticeList.filter((notice) => notice?.status === '공지사항');
+      updatedList = noticeList.filter((notice) => notice.status === '공지사항');
     } else if (currentType === 'etc') {
-      updatedList = noticeList.filter((notice) => notice?.status === '기타');
+      updatedList = noticeList.filter((notice) => notice.status === '기타');
     }
 
-    setFilteredEventList(updatedList);
+    setFilteredNoticeList(updatedList);
     setCurrentPage(1); // 필터 변경 시 첫 페이지로 이동
   }, [currentType, noticeList]);
 
-  // 현재 페이지에 해당하는 게시글만 가져오기
-  const indexOfLastItem = currentPage * itemsPerPage; // 마지막 게시물 인덱스
-  const indexOfFirstitem = indexOfLastItem - itemsPerPage; // 첫 게시물 인덱스
-  const currentNoticeList = filteredEventList.slice(indexOfFirstitem, indexOfLastItem); // 현재 페이지의 게시물 데이터
+  // ✅ 공지글(`isPinned: true`)과 일반 게시글(`isPinned: false`) 분리
+  const pinnedNotices = filteredNoticeList.filter((notice) => notice.isPinned);
+  const nonPinnedNotices = filteredNoticeList.filter((notice) => !notice.isPinned);
+
+  // ✅ 공지글 개수를 고려한 페이지네이션 적용
+  const maxVisibleItems = itemsPerPage; // 한 페이지에 표시할 최대 개수
+  const availableSlots = maxVisibleItems - pinnedNotices.length; // 공지글 제외 후 일반 게시글 수
+  const indexOfLastItem = currentPage * availableSlots;
+  const indexOfFirstItem = indexOfLastItem - availableSlots;
+  const paginatedNotices = nonPinnedNotices.slice(indexOfFirstItem, indexOfLastItem);
+
+  // ✅ 최종 출력 리스트 (공지글 + 일반 글 페이지네이션 적용)
+  const currentNoticeList = [...pinnedNotices, ...paginatedNotices];
 
   return (
-    <div className="mx-auto max-w-[1200px]">
-      <div className="mt-[120px] border-b border-[#A4A4A4]">
-        <h1 className="text-[68px] font-bold">공지사항</h1>
+    <div className="mx-auto max-w-[1200px] max-md:px-4">
+      <div className="mt-[120px] border-b border-[#A4A4A4] max-md:mt-16">
+        <h1 className="text-[68px] font-bold max-md:text-[40px]">공지사항</h1>
       </div>
 
       {/* 분류 */}
       <div className="mt-10 flex gap-2">
         <button
-          className={`rounded-full border-[#E8E8E8] px-6 py-3 font-bold ${currentType === 'all' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'all' ? 'bg-[#FFD401]' : 'border'}`}
           onClick={() => setCurrentType('all')}
         >
           ALL
         </button>
         <button
-          className={`rounded-full border-[#E8E8E8] px-6 py-3 font-bold ${currentType === 'notice' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'notice' ? 'bg-[#FFD401]' : 'border'}`}
           onClick={() => setCurrentType('notice')}
         >
           공지사항
         </button>
         <button
-          className={`rounded-full border-[#E8E8E8] px-6 py-3 font-bold ${currentType === 'etc' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'etc' ? 'bg-[#FFD401]' : 'border'}`}
           onClick={() => setCurrentType('etc')}
         >
           기타
@@ -79,12 +93,12 @@ export default function NoticePage() {
       <div className="mt-6 flex gap-2">
         <p className="font-montserrat font-bold tracking-[-2px]">Total</p>
         <p className="font-montserrat font-bold text-[#7D5FFF]">
-          {filteredEventList.length}
+          {filteredNoticeList.length}
         </p>
       </div>
 
       {/* 테이블 */}
-      <div className="mt-10 overflow-x-auto">
+      <div className="mt-10 overflow-x-auto max-md:hidden">
         <table className="table text-center">
           {/* head */}
           <thead className="h-[70px] bg-[#F5F5F5] font-bold">
@@ -97,14 +111,23 @@ export default function NoticePage() {
             </tr>
           </thead>
           <tbody className="h-[70px] font-medium">
-            {currentNoticeList.map((notice) => {
+            {currentNoticeList.map((notice, index) => {
               return (
                 <tr
                   className="cursor-pointer !border-b border-[#E8E8E8]"
-                  key={notice.index}
+                  key={index}
                   onClick={() => router.push(`/notice/${notice.index}`)}
                 >
-                  <td>{notice.index + 1}</td>
+                  <td className="flex-center">
+                    {notice.isPinned ? (
+                      <p className="flex w-fit gap-1 rounded-full bg-[#7D5FFF] px-4 py-2 font-semibold text-white">
+                        <img src="/icons/pin.svg" />
+                        중요
+                      </p>
+                    ) : (
+                      notice.index
+                    )}
+                  </td>
                   <td>
                     <p
                       className={`mx-auto w-[74px] text-nowrap rounded-full px-4 py-2 font-medium`}
@@ -122,12 +145,46 @@ export default function NoticePage() {
         </table>
       </div>
 
+      {/* 모바일 리스트 */}
+      <div className="mt-6 overflow-x-auto md:hidden">
+        {currentNoticeList.map((notice, index) => {
+          return (
+            <div
+              className="flex cursor-pointer flex-col gap-4 border-t border-[#E8E8E8] py-4"
+              key={index}
+              onClick={() => router.push(`/notice/${notice.index}`)}
+            >
+              <div>
+                {notice.isPinned ? (
+                  <div className="flex items-center gap-2">
+                    <p className="flex w-fit gap-1 rounded-full bg-[#7D5FFF] px-4 py-2 text-sm font-semibold text-white max-md:px-3">
+                      <img src="/icons/pin.svg" />
+                      중요
+                    </p>
+                    <p className="font-medium">공지사항</p>
+                  </div>
+                ) : (
+                  <p className="font-medium">공지사항</p>
+                )}
+              </div>
+              <div className="max-w-56 truncate font-medium">{notice.title}</div>
+              <div className="flex items-center font-medium">
+                {notice.writer}
+                <TextDivider />
+                <span className="font-montserrat">{notice.date}</span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
       {/* 페이지네이션 */}
-      <div className="flex-center mt-24">
+      <div className="flex-center mt-24 max-md:mt-16">
         <Pagination
-          totalItems={filteredEventList.length}
+          totalItems={nonPinnedNotices.length} // ✅ 공지글 제외한 일반 게시글 개수만 전달
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
+          itemsPerPage={availableSlots} // ✅ 공지글 제외 후 한 페이지에 표시할 개수
         />
       </div>
     </div>

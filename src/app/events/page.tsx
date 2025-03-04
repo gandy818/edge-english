@@ -1,6 +1,7 @@
 'use client';
 
 import Pagination from '@/components/Pagination';
+import TextDivider from '@/components/TextDivider';
 import { PostType } from '@/types/PostType';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
@@ -12,7 +13,7 @@ export default function EventPage() {
   const [currentType, setCurrentType] = useState('all');
   const [eventList, setEventList] = useState<PostType[]>([]);
   const [filteredEventList, setFilteredEventList] = useState<PostType[]>([]);
-  const itemsPerPage = 5; // 한 페이지 당 게시물 개수
+  const itemsPerPage = 10; // 한 페이지 당 게시물 개수
 
   const getEventList = async () => {
     try {
@@ -48,27 +49,27 @@ export default function EventPage() {
   const currentEventList = filteredEventList.slice(indexOfFirstitem, indexOfLastItem); // 현재 페이지의 게시물 데이터
 
   return (
-    <div className="mx-auto max-w-[1200px]">
-      <div className="mt-[120px] border-b border-[#A4A4A4]">
-        <h1 className="text-[68px] font-bold">이벤트</h1>
+    <div className="mx-auto max-w-[1200px] max-md:px-4">
+      <div className="mt-[120px] border-b border-[#A4A4A4] max-md:mt-16">
+        <h1 className="pb-3 text-[68px] font-bold max-md:text-[40px]">이벤트</h1>
       </div>
 
       {/* 분류 */}
       <div className="mt-10 flex gap-2">
         <button
-          className={`rounded-full border-[#E8E8E8] px-6 py-3 font-bold ${currentType === 'all' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'all' ? 'bg-[#FFD401]' : 'border'}`}
           onClick={() => setCurrentType('all')}
         >
           ALL
         </button>
         <button
-          className={`rounded-full border-[#E8E8E8] px-6 py-3 font-bold ${currentType === 'inprogress' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none ${currentType === 'inprogress' ? 'bg-[#FFD401]' : 'border'}`}
           onClick={() => setCurrentType('inprogress')}
         >
           진행중
         </button>
         <button
-          className={`rounded-full border-[#E8E8E8] px-6 py-3 font-bold ${currentType === 'done' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none ${currentType === 'done' ? 'bg-[#FFD401]' : 'border'}`}
           onClick={() => setCurrentType('done')}
         >
           마감
@@ -84,7 +85,7 @@ export default function EventPage() {
       </div>
 
       {/* 테이블 */}
-      <div className="mt-10 overflow-x-auto">
+      <div className="mt-10 overflow-x-auto max-md:hidden">
         <table className="table text-center">
           {/* head */}
           <thead className="h-[70px] bg-[#F5F5F5] font-bold">
@@ -118,6 +119,33 @@ export default function EventPage() {
             })}
           </tbody>
         </table>
+      </div>
+
+      {/* 모바일 리스트 */}
+      <div className="mt-6 overflow-x-auto md:hidden">
+        {currentEventList.map((event) => {
+          return (
+            <div
+              className="flex cursor-pointer flex-col gap-4 border-t border-[#E8E8E8] py-4"
+              key={event.index}
+              onClick={() => router.push(`/events/${event.index}`)}
+            >
+              <div>
+                <p
+                  className={`w-fit rounded-full px-3 py-2 text-sm font-medium ${event.status === '진행중' ? 'border-[#E8E8E8] bg-[#FFD401]' : 'border-[#777] bg-[#E8E8E8]'}`}
+                >
+                  {event.status}
+                </p>
+              </div>
+              <div className="max-w-56 truncate font-medium">{event.title}</div>
+              <div className="flex items-center font-medium">
+                {event.writer}
+                <TextDivider />
+                <span className="font-montserrat">{event.date}</span>
+              </div>
+            </div>
+          );
+        })}
       </div>
 
       {/* 페이지네이션 */}
