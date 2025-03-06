@@ -25,7 +25,7 @@ export default function FloatingMenu() {
       {/* top 버튼 */}
       <button
         onClick={scrollToTop}
-        className="rounded-full border border-[#F3F3F3] p-[11px]"
+        className="rounded-full border border-[#F3F3F3] bg-[#FFFFFF] p-[11px]"
         style={{ boxShadow: '0px 0px 10px 0px rgba(0, 0, 0, 0.11)' }}
       >
         <img src="/icons/top-btn.svg" alt="move to top button" className="h-6 w-6" />
