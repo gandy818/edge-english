@@ -6,6 +6,7 @@ import { PostType } from '@/types/PostType';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import ScrollContainer from 'react-indiana-drag-scroll';
 
 export default function EventPage() {
   const router = useRouter();
@@ -31,7 +32,7 @@ export default function EventPage() {
 
   // 선택한 필터에 맞게 필터링
   useEffect(() => {
-    let updatedList = eventList;
+    let updatedList = eventList.reverse();
 
     if (currentType === 'inprogress') {
       updatedList = eventList.filter((event) => event?.status === '진행중');
@@ -55,26 +56,26 @@ export default function EventPage() {
       </div>
 
       {/* 분류 */}
-      <div className="mt-10 flex gap-2">
+      <ScrollContainer className="mt-10 flex gap-2">
         <button
-          className={`rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'all' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'all' ? 'bg-[#FFD401]' : 'border'}`}
           onClick={() => setCurrentType('all')}
         >
           ALL
         </button>
         <button
-          className={`rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none ${currentType === 'inprogress' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'inprogress' ? 'bg-[#FFD401]' : 'border'}`}
           onClick={() => setCurrentType('inprogress')}
         >
           진행중
         </button>
         <button
-          className={`rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none ${currentType === 'done' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'done' ? 'bg-[#FFD401]' : 'border'}`}
           onClick={() => setCurrentType('done')}
         >
           마감
         </button>
-      </div>
+      </ScrollContainer>
 
       {/* 총 게시글 개수 */}
       <div className="mt-6 flex gap-2">

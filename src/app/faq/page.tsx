@@ -1,49 +1,68 @@
 'use client';
 
 import { useState } from 'react';
+import ScrollContainer from 'react-indiana-drag-scroll';
 
 export default function FaqPage() {
   const [currentType, setCurrentType] = useState('all');
 
   return (
-    <div className="mx-auto max-w-[1200px]">
-      <div className="mt-[120px] border-b border-[#A4A4A4]">
-        <h1 className="text-[68px] font-bold">FAQ</h1>
+    <div className="mx-auto max-w-[1200px] max-md:px-4">
+      <div className="mt-[120px] border-b border-[#A4A4A4] max-md:mt-16">
+        <h1 className="text-[68px] font-bold max-md:text-[40px]">FAQ</h1>
       </div>
 
       {/* 분류 */}
-      <div className="mt-10 flex gap-2">
+      <ScrollContainer className="mt-10 flex gap-2">
         <button
-          className={`rounded-full border-[#E8E8E8] px-6 py-3 font-bold ${currentType === 'all' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'all' ? 'bg-[#FFD401]' : 'border'}`}
           onClick={() => setCurrentType('all')}
         >
           ALL
         </button>
         <button
-          className={`rounded-full border-[#E8E8E8] px-6 py-3 font-bold ${currentType === '수강신청' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === '수강신청' ? 'bg-[#FFD401]' : 'border'}`}
           onClick={() => setCurrentType('수강신청')}
         >
           수강 신청
         </button>
         <button
-          className={`rounded-full border-[#E8E8E8] px-6 py-3 font-bold ${currentType === '수업관련' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === '수업관련' ? 'bg-[#FFD401]' : 'border'}`}
           onClick={() => setCurrentType('수업관련')}
         >
           수업 관련
         </button>
-      </div>
+        <button
+          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === '수강권' ? 'bg-[#FFD401]' : 'border'}`}
+          onClick={() => setCurrentType('수강권')}
+        >
+          수강권
+        </button>
+        <button
+          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === '결제' ? 'bg-[#FFD401]' : 'border'}`}
+          onClick={() => setCurrentType('결제')}
+        >
+          결제
+        </button>
+        <button
+          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === '기타' ? 'bg-[#FFD401]' : 'border'}`}
+          onClick={() => setCurrentType('기타')}
+        >
+          기타
+        </button>
+      </ScrollContainer>
 
       {/* 아코디언 */}
       <div className="mt-10 overflow-x-auto">
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
-          <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
+          <div className="collapse-title flex h-17 items-center gap-6 py-2 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">주 1회 수업도 가능한가요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] text-sm peer-checked:py-4 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
@@ -56,13 +75,13 @@ export default function FaqPage() {
 
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" id="faq-2" />
-          <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
+          <div className="collapse-title flex h-17 items-center gap-6 py-2 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">공휴일에는 수업이 어떻게 진행되나요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] text-sm peer-checked:py-4 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
@@ -76,13 +95,13 @@ export default function FaqPage() {
 
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
-          <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
+          <div className="collapse-title flex h-17 items-center gap-6 py-2 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">수강권 사용 기한이 있나요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] text-sm peer-checked:py-4 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
@@ -97,34 +116,13 @@ export default function FaqPage() {
 
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
-          <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
-            <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
-              Q
-            </div>
-            <p className="font-medium">수강권 사용 기한이 있나요?</p>
-          </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
-            <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
-              A
-            </div>
-            <p className="text-[#4A4A4A]">
-              수강권은 등록한 수강 기간 내에 사용해야 하며, 기간 종료 후 남은 수강권은
-              자동 소멸됩니다. 단, 수강권을 모두 사용하지 못한 경우 재등록 시 이월이
-              가능합니다. 예: 1개월 등록 시 30일 내에, 3개월 등록 시 120일 내에 수강권을
-              소진해야 합니다. (주 2회, 3회, 5회 수업 모두 해당)
-            </p>
-          </div>
-        </div>
-
-        <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
-          <input type="checkbox" className="peer" />
-          <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
+          <div className="collapse-title flex h-17 items-center gap-6 py-2 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">수업에 지각하면 어떻게 되나요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] text-sm peer-checked:py-4 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
@@ -140,13 +138,13 @@ export default function FaqPage() {
 
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
-          <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
+          <div className="collapse-title flex h-17 items-center gap-6 py-2 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">원어민 선생님이 맞나요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] text-sm peer-checked:py-4 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
@@ -159,13 +157,13 @@ export default function FaqPage() {
 
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
-          <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
+          <div className="collapse-title flex h-17 items-center gap-6 py-2 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">수업 녹음이나 녹화가 가능한가요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] text-sm peer-checked:py-4 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
@@ -178,13 +176,13 @@ export default function FaqPage() {
 
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
-          <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
+          <div className="collapse-title flex h-17 items-center gap-6 py-2 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">체험 수업 받아볼 수 있나요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] text-sm peer-checked:py-4 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
@@ -197,13 +195,13 @@ export default function FaqPage() {
 
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
-          <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
+          <div className="collapse-title flex h-17 items-center gap-6 py-2 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">개인 사정으로 수업 취소 할 수 있나요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] text-sm peer-checked:py-4 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
@@ -217,13 +215,13 @@ export default function FaqPage() {
 
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
-          <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
+          <div className="collapse-title flex h-17 items-center gap-6 py-2 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
               Q
             </div>
             <p className="font-medium">수업 시간을 선생님과 협의해서 바꿀 수 있나요?</p>
           </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
+          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] text-sm peer-checked:py-4 md:px-10">
             <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
               A
             </div>
@@ -231,27 +229,6 @@ export default function FaqPage() {
               엣지영어의 모든 수업은 정해진 시간에 고정되어 진행됩니다. 등록한 시간에
               수업이 고정되며, 시간 변경 희망 시 카톡으로 연락주시면 새로운 시간으로
               고정해 드립니다.
-            </p>
-          </div>
-        </div>
-
-        <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
-          <input type="checkbox" className="peer" />
-          <div className="collapse-title flex h-17 items-center gap-6 px-10 py-2">
-            <div className="flex-center h-8 min-w-8 rounded-full bg-[#777777] font-montserrat text-lg font-bold text-[#FFD401]">
-              Q
-            </div>
-            <p className="font-medium">수강권 사용 기한이 있나요?</p>
-          </div>
-          <div className="collapse-content flex items-center gap-6 bg-[#FCFCFC] px-10 text-sm peer-checked:py-4">
-            <div className="flex-center h-8 min-w-8 rounded-full bg-[#7D5FFF] font-montserrat text-lg font-bold text-[#FFF]">
-              A
-            </div>
-            <p className="text-[#4A4A4A]">
-              수강권은 등록한 수강 기간 내에 사용해야 하며, 기간 종료 후 남은 수강권은
-              자동 소멸됩니다. 단, 수강권을 모두 사용하지 못한 경우 재등록 시 이월이
-              가능합니다. 예: 1개월 등록 시 30일 내에, 3개월 등록 시 120일 내에 수강권을
-              소진해야 합니다. (주 2회, 3회, 5회 수업 모두 해당)
             </p>
           </div>
         </div>

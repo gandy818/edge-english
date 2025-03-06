@@ -6,6 +6,7 @@ import { PostType } from '@/types/PostType';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import ScrollContainer from 'react-indiana-drag-scroll';
 
 export default function NoticePage() {
   const router = useRouter();
@@ -32,7 +33,7 @@ export default function NoticePage() {
 
   // 선택한 필터에 맞게 필터링
   useEffect(() => {
-    let updatedList = [...noticeList];
+    let updatedList = noticeList.reverse();
 
     // 공지글을 상단에 고정
     updatedList.sort((a, b) => Number(b.isPinned) - Number(a.isPinned));
@@ -68,7 +69,7 @@ export default function NoticePage() {
       </div>
 
       {/* 분류 */}
-      <div className="mt-10 flex gap-2">
+      <ScrollContainer className="mt-10 flex gap-2">
         <button
           className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'all' ? 'bg-[#FFD401]' : 'border'}`}
           onClick={() => setCurrentType('all')}
@@ -87,7 +88,7 @@ export default function NoticePage() {
         >
           기타
         </button>
-      </div>
+      </ScrollContainer>
 
       {/* 총 게시글 개수 */}
       <div className="mt-6 flex gap-2">

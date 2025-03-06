@@ -54,10 +54,10 @@ export default function Footer() {
 
         {/* sns */}
         <div className="mt-8 flex gap-3">
-          <Link href="https://pf.kakao.com/_blxgib">
+          <Link href="https://pf.kakao.com/_blxgib" target="_blank">
             <img src="/icons/kakao.svg" alt="kakao" />
           </Link>
-          <Link href="https://www.instagram.com/tangerine_english_">
+          <Link href="https://www.instagram.com/tangerine_english_" target="_blank">
             <img src="/icons/instagram.svg" alt="instagram" />
           </Link>
           <Link href="/">
