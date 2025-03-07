@@ -71,7 +71,7 @@ export default function Header() {
               />
             </label>
           </div>
-          <div className="drawer-side">
+          <div className="drawer-side z-30">
             <label
               htmlFor="hamburger-menu"
               aria-label="close sidebar"
