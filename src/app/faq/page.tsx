@@ -53,7 +53,9 @@ export default function FaqPage() {
       </ScrollContainer>
 
       {/* 아코디언 */}
-      <div className="mt-10 overflow-x-auto">
+      <div className="relative -z-[1] mt-10 overflow-x-auto">
+        {' '}
+        {/* drawer 위로 올라오지 않게 하기 위해 relatvie와 z-index 추가 */}
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 bg-[#FFFFFF] py-2 md:px-10">
@@ -72,7 +74,6 @@ export default function FaqPage() {
             </p>
           </div>
         </div>
-
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" id="faq-2" />
           <div className="collapse-title flex h-17 items-center gap-6 bg-[#FFFFFF] py-2 md:px-10">
@@ -92,7 +93,6 @@ export default function FaqPage() {
             </p>
           </div>
         </div>
-
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 bg-[#FFFFFF] py-2 md:px-10">
@@ -113,7 +113,6 @@ export default function FaqPage() {
             </p>
           </div>
         </div>
-
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 bg-[#FFFFFF] py-2 md:px-10">
@@ -135,7 +134,6 @@ export default function FaqPage() {
             </p>
           </div>
         </div>
-
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 bg-[#FFFFFF] py-2 md:px-10">
@@ -154,7 +152,6 @@ export default function FaqPage() {
             </p>
           </div>
         </div>
-
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 bg-[#FFFFFF] py-2 md:px-10">
@@ -173,7 +170,6 @@ export default function FaqPage() {
             </p>
           </div>
         </div>
-
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 bg-[#FFFFFF] py-2 md:px-10">
@@ -192,7 +188,6 @@ export default function FaqPage() {
             </p>
           </div>
         </div>
-
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 bg-[#FFFFFF] py-2 md:px-10">
@@ -212,7 +207,6 @@ export default function FaqPage() {
             </p>
           </div>
         </div>
-
         <div className="collapse collapse-arrow rounded-none border-b border-[#E8E8E8]">
           <input type="checkbox" className="peer" />
           <div className="collapse-title flex h-17 items-center gap-6 bg-[#FFFFFF] py-2 md:px-10">
