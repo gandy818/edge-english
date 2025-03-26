@@ -33,7 +33,7 @@ export default function Header() {
             공지사항
           </Link>
 
-          <Link href="/" className="text-nowrap font-medium text-[#bbb]">
+          <Link href="/tutor" className="text-nowrap font-medium text-[#bbb]">
             강사진
           </Link>
 
