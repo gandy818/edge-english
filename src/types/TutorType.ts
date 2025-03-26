@@ -1,7 +1,7 @@
-export interface TeatureType {
+export interface TutorType {
   name: string;
   desc: string;
-  tag: string[];
+  tags: string[];
   img: string;
   countryImg: string;
 }

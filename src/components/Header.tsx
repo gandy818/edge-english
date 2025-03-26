@@ -33,7 +33,10 @@ export default function Header() {
             공지사항
           </Link>
 
-          <Link href="/tutor" className="text-nowrap font-medium text-[#bbb]">
+          <Link
+            href="/tutor"
+            className={`text-nowrap ${pathName.startsWith('/tutor') ? 'font-bold text-[#333]' : 'font-medium text-[#bbb]'}`}
+          >
             강사진
           </Link>
 
