@@ -41,7 +41,7 @@ export default function TutorPage() {
             <Link
               href="https://pf.kakao.com/_blxgib"
               target="_blank"
-              className="mb-[60px] mt-10 flex flex-row justify-center rounded-lg bg-[#FFEB3B] px-[40px] py-[18px]"
+              className="mb-15 mt-10 flex flex-row justify-center rounded-lg bg-[#FFEB3B] px-[40px] py-[18px]"
             >
               <img
                 src="/icons/kakao-btn.svg"
@@ -123,7 +123,7 @@ export default function TutorPage() {
         </div>
 
         {/* 섹션 4 */}
-        <div className="mt-[120px] flex w-full flex-col bg-[#F3F6F8] pb-[120px] pt-[120px]">
+        <div className="mt-[120px] flex w-full flex-col bg-[#F3F6F8] py-[120px]">
           <p className="self-center text-5xl font-bold">
             어떤 튜터를 만나도 안심할 수 있어요.
           </p>
@@ -131,20 +131,20 @@ export default function TutorPage() {
             엣지영어의 모든 튜터는 아래 자격 요건을 모두 충족해요.
           </p>
           <div className="mt-[40px] grid w-full max-w-[1200px] grid-cols-2 items-center gap-4 self-center">
-            <div className="flex flex-grow items-center rounded-lg border-[1px] border-[#E8E8E8] bg-white px-[40px] py-[32px] text-center text-[24px]">
-              <img src="/icons/check.svg" className="mr-[16px]" />
+            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-center text-2xl font-medium">
+              <img src="/icons/check.svg" className="mr-4" />
               미국 - 캐나다 출신
             </div>
-            <div className="flex flex-grow items-center rounded-lg border-[1px] border-[#E8E8E8] bg-white px-[40px] py-[32px] text-center text-[24px]">
-              <img src="/icons/check.svg" className="mr-[16px]" />
+            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-center text-2xl font-medium">
+              <img src="/icons/check.svg" className="mr-4" />
               TESOL/TEFL 국제 영어교육 자격증 보유
             </div>
-            <div className="flex flex-grow items-center rounded-lg border-[1px] border-[#E8E8E8] bg-white px-[40px] py-[32px] text-center text-[24px]">
-              <img src="/icons/check.svg" className="mr-[16px]" />
+            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-center text-2xl font-medium">
+              <img src="/icons/check.svg" className="mr-4" />
               영어 교육 경력 1년 이상
             </div>
-            <div className="flex flex-grow items-center rounded-lg border-[1px] border-[#E8E8E8] bg-white px-[40px] py-[32px] text-center text-[24px]">
-              <img src="/icons/check.svg" className="mr-[16px]" />
+            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-center text-2xl font-medium">
+              <img src="/icons/check.svg" className="mr-4" />
               시범 강의 평가 통과
             </div>
           </div>
