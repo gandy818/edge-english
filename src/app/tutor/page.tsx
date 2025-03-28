@@ -124,7 +124,7 @@ export default function TutorPage() {
           <div
             className="flex min-h-[1000px] justify-end bg-cover bg-center"
             style={{
-              backgroundImage: 'url(/images/mobile-bg-tutor.png)', // 배경 이미지 URL
+              backgroundImage: 'url(/images/mobile-bg-tutor-2.png)', // 배경 이미지 URL
             }}
           >
             <div className="px-4 pt-[60px]">
