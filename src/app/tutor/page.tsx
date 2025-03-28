@@ -195,7 +195,10 @@ export default function TutorPage() {
           </p>
           <div className="mt-[40px] grid w-full max-w-[1200px] grid-cols-2 items-center gap-4 self-center">
             {introduceList.map((e) => (
-              <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-center text-2xl font-medium">
+              <div
+                key={e}
+                className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-center text-2xl font-medium"
+              >
                 <img src="/icons/check.svg" className="mr-4" />
                 {e}
               </div>
@@ -217,7 +220,10 @@ export default function TutorPage() {
           </p>
           <div className="mt-[40px] flex w-full flex-col justify-stretch gap-4 self-center px-6">
             {introduceList.map((e) => (
-              <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-4 py-6 text-lg font-medium">
+              <div
+                key={e}
+                className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-4 py-6 text-lg font-medium"
+              >
                 <img src="/icons/check.svg" className="mr-2 h-6 w-6" />
                 {e}
               </div>
