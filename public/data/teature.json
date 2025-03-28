@@ -2,28 +2,28 @@
   {
     "name": "Daisy",
     "desc": "TEFL보유한 경력 7년의 베테랑 튜터",
-    "tag": ["TEFL", "경력7년", "국제학교경력"],
+    "tags": ["TEFL", "경력7년", "국제학교경력"],
     "img": "/images/teature.png",
     "countryImg": "/icons/usa.svg"
   },
   {
     "name": "Grace",
     "desc": "간호학 전공하신 TESOL 보유한 튜터",
-    "tag": ["TESOL", "금융학전공", "국제학교경력"],
+    "tags": ["TESOL", "금융학전공", "국제학교경력"],
     "img": "/images/teature.png",
     "countryImg": "/icons/usa.svg"
   },
   {
     "name": "Jessica",
     "desc": "취미로 연기를 하고 심리학을 전공한 표현력 부자 튜터",
-    "tag": ["TEFL", "수영취미", "연기전공"],
+    "tags": ["TEFL", "수영취미", "연기전공"],
     "img": "/images/teature.png",
     "countryImg": "/icons/usa.svg"
   },
   {
     "name": "Angelina",
     "desc": "TEFL보유한 경력 7년의 베테랑 튜터",
-    "tag": ["TEFL", "경력7년", "MBA출신"],
+    "tags": ["TEFL", "경력7년", "MBA출신"],
     "img": "/images/teature.png",
     "countryImg": "/icons/usa.svg"
   }
