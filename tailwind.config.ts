@@ -33,6 +33,7 @@ const config: Config = {
         '398px': '398px',
         '418px': '418px',
         '444px': '444px',
+        '526px': '526px',
       },
       spacing: {
         '4.5': '1.125rem',

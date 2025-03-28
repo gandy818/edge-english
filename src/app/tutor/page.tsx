@@ -119,12 +119,45 @@ export default function TutorPage() {
           </div>
         </div>
 
-        {/* 섹션 2 모바일 */}
-        <div className="mt-[60px] md:hidden">
+        {/* 섹션 2 모바일 - 웹 사이 */}
+        <div className="mt-[60px] max-[526px]:hidden md:hidden">
           <div
             className="flex min-h-[1000px] justify-end bg-cover bg-center"
             style={{
-              backgroundImage: 'url(/images/mobile-bg-tutor-2.png)', // 배경 이미지 URL
+              backgroundImage: 'url(/images/tablet_bg_tutor.png)', // 배경 이미지 URL
+            }}
+          >
+            <div className="px-4 pt-[60px]">
+              <p className="text-[32px] font-bold leading-tight text-white">
+                실력과 인성
+              </p>
+              <p className="text-[32px] font-bold leading-relaxed text-white">
+                모두 확인된 튜터만
+              </p>
+              <br />
+              <p className="text-base font-normal text-white">
+                엣지영어는 철저한 5단계 검증 과정을 통해 강사를 채용해요.
+              </p>
+              <br />
+              <p className="text-base font-normal text-white">
+                서면 인터뷰와 서류 심사를 통해 기본 자격을 확인하고, 2:1 심층 면접에서
+                인성, 소통능력, 책임감을 꼼꼼히 살펴봅니다. 면접을 통과한 후보는 시범 강의
+                평가를 거쳐 정식 튜터가 됩니다.
+              </p>
+              <br />
+              <p className="text-base font-normal text-white">
+                학습자들이 믿고 배울 수 있도록, 엄격한 절차와 기준으로 강사를 선발합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 섹션 2 모바일 */}
+        <div className="526px:hidden mt-[60px]">
+          <div
+            className="flex min-h-[1000px] justify-end bg-cover bg-center"
+            style={{
+              backgroundImage: 'url(/images/mobile-bg-tutor.png)', // 배경 이미지 URL
             }}
           >
             <div className="px-4 pt-[60px]">
