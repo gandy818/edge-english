@@ -122,7 +122,7 @@ export default function TutorPage() {
         {/* 섹션 2 모바일 */}
         <div className="mt-[60px] md:hidden">
           <div
-            className="bg-co flex min-h-[1000px] justify-end bg-center"
+            className="flex min-h-[1000px] justify-end bg-cover bg-center"
             style={{
               backgroundImage: 'url(/images/mobile-bg-tutor.png)', // 배경 이미지 URL
             }}
