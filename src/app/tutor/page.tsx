@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 
 export default function TutorPage() {
   const [tutorList, setTutorList] = useState<TutorType[]>([]);
+  const [selectedTutor, setSelectedTutor] = useState<TutorType>();
 
   const introduceList = [
     '미국・캐나다 출신',
@@ -14,6 +15,14 @@ export default function TutorPage() {
     '영어 교육 경력 1년 이상',
     '시범 강의 평가 통과',
   ];
+
+  const clickTutor = (name: string) => {
+    const tutor: TutorType = tutorList.filter((e) => e.name === name)[0];
+
+    setSelectedTutor(tutor);
+
+    (document.getElementById('my_modal_2') as HTMLDialogElement).showModal();
+  };
 
   useEffect(() => {
     const getTutorList = async () => {
@@ -32,6 +41,51 @@ export default function TutorPage() {
   return (
     <div className="mx-auto">
       <div className="mt-[120px] flex flex-col justify-center max-md:mt-[60px]">
+        <dialog id="my_modal_2" className="modal">
+          <div className="modal-box max-w-full">
+            <div className="flex flex-row justify-between">
+              <div className="text-[28px] font-bold">
+                튜터&nbsp;
+                <span className="text-2xl text-[#7D5FFF]">
+                  {selectedTutor?.name ?? ''}
+                </span>
+              </div>
+              <form method="dialog" className="modal-backdrop">
+                <button>
+                  <img src="/icons/x-btn.svg" />
+                </button>
+              </form>
+            </div>
+            <div className="mt-6 h-[640px] bg-gray-400"></div>
+            <div className="mt-10 flex flex-row">
+              <div className="flex w-54 flex-col">
+                <img
+                  className="rounded-2xl"
+                  src={selectedTutor?.img ?? '/icons/x-btn.svg'}
+                  alt={selectedTutor?.name}
+                />
+                <div className="flex flex-row items-center justify-center pt-6">
+                  <img src={selectedTutor?.countryImg ?? '/icons/x-btn.svg'} />
+                  <p className="pl-2 font-montserrat text-2xl font-bold">
+                    {selectedTutor?.name}
+                  </p>
+                </div>
+              </div>
+              <div className="ml-10 flex flex-grow flex-col">
+                <p className="mb-4 text-2xl font-bold">엣지 운영진이 소개하는 튜터</p>
+                <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
+                  데이터만 집어 넣으면 됨
+                </p>
+                <p className="mb-4 text-2xl font-bold">자기소개</p>
+                <p className="mb-4 text-2xl font-bold">취미</p>
+                <p className="mb-4 text-2xl font-bold">경력</p>
+              </div>
+            </div>
+          </div>
+          <form method="dialog" className="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
         {/* 섹션 1 */}
         <>
           <div className="flex flex-wrap justify-center text-5xl font-bold max-md:flex-col max-md:text-[32px]">
@@ -63,7 +117,11 @@ export default function TutorPage() {
 
           <div className="mt-[60px] flex max-w-[1200px] flex-wrap justify-center gap-4 self-center max-md:flex-col max-md:gap-10">
             {tutorList.map((tutor) => (
-              <div key={tutor.name} className="flex w-72 flex-col justify-start">
+              <div
+                key={tutor.name}
+                className="flex w-72 flex-col justify-start"
+                onClick={() => clickTutor(tutor.name)}
+              >
                 <img className="rounded-2xl" src={tutor.img} alt={tutor.name} />
                 <div className="flex flex-row items-center justify-center pt-6">
                   <img src="/icons/usa.svg" />
@@ -153,7 +211,7 @@ export default function TutorPage() {
         </div>
 
         {/* 섹션 2 모바일 */}
-        <div className="526px:hidden mt-[60px]">
+        <div className="mt-[60px] 526px:hidden">
           <div
             className="flex min-h-[1000px] justify-end bg-cover bg-center"
             style={{
