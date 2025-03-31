@@ -74,7 +74,7 @@ export default function NoticePage() {
           className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'all' ? 'bg-[#FFD401]' : 'border'}`}
           onClick={() => setCurrentType('all')}
         >
-          ALL
+          전체
         </button>
         <button
           className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'notice' ? 'bg-[#FFD401]' : 'border'}`}
@@ -91,12 +91,12 @@ export default function NoticePage() {
       </ScrollContainer>
 
       {/* 총 게시글 개수 */}
-      <div className="mt-6 flex gap-2">
+      {/* <div className="mt-6 flex gap-2">
         <p className="font-montserrat font-bold tracking-[-2px]">Total</p>
         <p className="font-montserrat font-bold text-[#7D5FFF]">
           {filteredNoticeList.length}
         </p>
-      </div>
+      </div> */}
 
       {/* 테이블 */}
       <div className="mt-10 overflow-x-auto max-md:hidden">
