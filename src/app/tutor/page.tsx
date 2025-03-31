@@ -181,8 +181,8 @@ export default function TutorPage() {
 
         {/* 튜터 모달 */}
         <dialog id="tutor_modal" className="modal">
-          <div className="modal-box max-w-full focus-visible:outline-none max-md:h-full max-md:max-h-full max-md:w-full max-md:rounded-none md:overflow-hidden">
-            <div className="md:max-h-[80vh] md:overflow-y-auto">
+          <div className="modal-box max-w-full overflow-hidden focus-visible:outline-none max-md:h-full max-md:max-h-full max-md:w-full max-md:rounded-none">
+            <div className="max-h-[80vh] overflow-y-auto max-md:max-h-[95vh]">
               {/* 타이틀 */}
               <div className="flex flex-row justify-between">
                 <div className="flex-center text-[28px] font-bold">
@@ -239,39 +239,18 @@ export default function TutorPage() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minima
                     fuga sequi ullam, reprehenderit illo ea earum assumenda praesentium
                     rem nobis dolorem quo repellat vitae fugiat distinctio, saepe quidem,
-                    itaque hic cum? Fuga maiores ad eveniet saepe maxime hic ipsa, autem
-                    omnis nihil perferendis amet dignissimos incidunt, exercitationem iure
-                    voluptatem culpa minima consequuntur excepturi perspiciatis. Quos,
-                    nesciunt suscipit! Ut facilis tempore earum consequatur, quasi
-                    dignissimos, sequi aliquid rem, ipsam magnam doloribus esse minus
-                    beatae harum obcaecati laudantium rerum aspernatur. Earum?
+                    itaque hic cum?
                   </p>
 
                   <p className="mb-4 text-2xl font-bold max-md:text-xl">취미</p>
                   <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-                    hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-                    hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-                    hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-                    hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-                    hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-                    hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
                     hic.
                   </p>
 
                   <p className="mb-4 text-2xl font-bold max-md:text-xl">경력</p>
                   <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                    nihil.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, hic.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, hic.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, hic.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, hic.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, hic.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, hic.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, hic.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, hic.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, hic.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
                   </p>
                 </div>
               </div>
