@@ -117,8 +117,8 @@ export default function Header() {
 
               <li>
                 <Link
-                  href="/"
-                  className={`text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/aaa') ? 'text-[#FFD401]' : 'text-[#333333]'}`}
+                  href="/tutor"
+                  className={`text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/tutor') ? 'text-[#FFD401]' : 'text-[#333333]'}`}
                   onClick={() => closeDrawer()}
                 >
                   강사진
