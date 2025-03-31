@@ -21,23 +21,19 @@ const config: Config = {
       },
 
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'tooltip-img': "url('/images/tooltip.svg')",
+        'mobile-tutor': "url('/images/mobile-bg-tutor.png')",
+        'tablet-tutor': "url('/images/tablet-bg-tutor.png')",
       },
+
       screens: {
-        '2xs': '321px',
         xs: '480px',
-        '308px': '308px',
-        '398px': '398px',
-        '418px': '418px',
-        '444px': '444px',
-        '526px': '526px',
+        sm: '526px',
       },
+
       spacing: {
         '4.5': '1.125rem',
       },
+
       width: {
         '13': '3.25rem' /* 52px */,
 
@@ -126,10 +122,12 @@ const config: Config = {
         '480': '30rem' /* 480px */,
         '1024': '64rem' /* 1024px */,
       },
+
       maxWidth: {
         '480': '30rem' /* 480px */,
         '1024': '64rem' /* 1024px */,
       },
+
       height: {
         '13': '3.25rem' /* 52px */,
 
@@ -218,28 +216,15 @@ const config: Config = {
         '480': '30rem' /* 480px */,
         '1024': '64rem' /* 1024px */,
       },
+
       translate: {
         '0': '0',
         '100': '100%',
       },
+
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
         pretendard: ['Pretendard', 'sans-serif'],
-      },
-
-      // 산수유람 브랜드 컬러
-      colors: {
-        black: '#1a1a1a',
-        'sansu-black': '#060D0C',
-        'sansu-primary': '#005542',
-        'sansu-secondary': '#36D99D',
-        'sansu-muted': '#A2A2A2',
-        'sansu-gray': '#495057',
-        'sansu-line': '#EFEFEF',
-        'sansu-light': '#F1F3F6',
-        'sansu-light2': '#F8F9FB',
-        'sansu-info': '#2584F3',
-        'sansu-error': '#FF4901',
       },
     },
   },

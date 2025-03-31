@@ -16,12 +16,18 @@ export default function TutorPage() {
     '시범 강의 평가 통과',
   ];
 
-  const clickTutor = (name: string) => {
+  const openTutorModal = (name: string) => {
     const tutor: TutorType = tutorList.filter((e) => e.name === name)[0];
 
     setSelectedTutor(tutor);
 
-    (document.getElementById('my_modal_2') as HTMLDialogElement).showModal();
+    (document.getElementById('tutor_modal') as HTMLDialogElement).showModal();
+  };
+
+  const closeTutorModal = () => {
+    const modal = document.getElementById('tutor_modal') as HTMLDialogElement;
+
+    modal?.close();
   };
 
   useEffect(() => {
@@ -41,54 +47,9 @@ export default function TutorPage() {
   return (
     <div className="mx-auto">
       <div className="mt-[120px] flex flex-col justify-center max-md:mt-[60px]">
-        <dialog id="my_modal_2" className="modal">
-          <div className="modal-box max-w-full">
-            <div className="flex flex-row justify-between">
-              <div className="text-[28px] font-bold">
-                튜터&nbsp;
-                <span className="text-2xl text-[#7D5FFF]">
-                  {selectedTutor?.name ?? ''}
-                </span>
-              </div>
-              <form method="dialog" className="modal-backdrop">
-                <button>
-                  <img src="/icons/x-btn.svg" />
-                </button>
-              </form>
-            </div>
-            <div className="mt-6 h-[640px] bg-gray-400"></div>
-            <div className="mt-10 flex flex-row">
-              <div className="flex w-54 flex-col">
-                <img
-                  className="rounded-2xl"
-                  src={selectedTutor?.img ?? '/icons/x-btn.svg'}
-                  alt={selectedTutor?.name}
-                />
-                <div className="flex flex-row items-center justify-center pt-6">
-                  <img src={selectedTutor?.countryImg ?? '/icons/x-btn.svg'} />
-                  <p className="pl-2 font-montserrat text-2xl font-bold">
-                    {selectedTutor?.name}
-                  </p>
-                </div>
-              </div>
-              <div className="ml-10 flex flex-grow flex-col">
-                <p className="mb-4 text-2xl font-bold">엣지 운영진이 소개하는 튜터</p>
-                <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
-                  데이터만 집어 넣으면 됨
-                </p>
-                <p className="mb-4 text-2xl font-bold">자기소개</p>
-                <p className="mb-4 text-2xl font-bold">취미</p>
-                <p className="mb-4 text-2xl font-bold">경력</p>
-              </div>
-            </div>
-          </div>
-          <form method="dialog" className="modal-backdrop">
-            <button>close</button>
-          </form>
-        </dialog>
         {/* 섹션 1 */}
         <>
-          <div className="flex flex-wrap justify-center text-5xl font-bold max-md:flex-col max-md:text-[32px]">
+          <div className="flex flex-wrap justify-center text-5xl font-bold leading-[150%] max-md:flex-col max-md:text-[32px]">
             <p className="self-center md:pr-4">TESOL/TEFL을 보유한</p>
             <p className="self-center text-[#7D5FFF] md:pr-4">100% 미국·캐나다</p>
             <p className="self-center">원어민 강사진</p>
@@ -119,8 +80,8 @@ export default function TutorPage() {
             {tutorList.map((tutor) => (
               <div
                 key={tutor.name}
-                className="flex w-72 flex-col justify-start"
-                onClick={() => clickTutor(tutor.name)}
+                className="flex w-72 cursor-pointer flex-col justify-start"
+                onClick={() => openTutorModal(tutor.name)}
               >
                 <img className="rounded-2xl" src={tutor.img} alt={tutor.name} />
                 <div className="flex flex-row items-center justify-center pt-6">
@@ -132,7 +93,7 @@ export default function TutorPage() {
                   {tutor.tags.map((tag) => (
                     <div
                       key={tag}
-                      className="rounded-lg bg-[#7D5FFF] bg-opacity-10 px-3 py-2 text-[14px] font-semibold text-[#5542A5]"
+                      className="rounded-lg bg-[#7D5FFF] bg-opacity-10 px-3 py-2 text-xs font-semibold text-[#5542A5]"
                     >
                       #{tag}
                     </div>
@@ -143,14 +104,94 @@ export default function TutorPage() {
           </div>
         </>
 
+        {/* 튜터 모달 */}
+        <dialog id="tutor_modal" className="modal">
+          <div className="modal-box max-w-full focus-visible:outline-none">
+            <div>
+              {/* 타이틀 */}
+              <div className="flex flex-row justify-between">
+                <div className="flex-center text-[28px] font-bold">
+                  튜터&nbsp;
+                  <span className="text-2xl text-[#7D5FFF]">
+                    {selectedTutor?.name ?? ''}
+                  </span>
+                </div>
+
+                <button
+                  onClick={() => {
+                    closeTutorModal();
+                  }}
+                >
+                  <img src="/icons/x-btn.svg" />
+                </button>
+              </div>
+
+              {/* 동영상 */}
+              <div className="mt-6 h-[640px] bg-gray-400" />
+
+              <div className="mt-10 flex flex-row">
+                {/* 프로필 */}
+                <div className="flex w-54 flex-col">
+                  <img
+                    className="rounded-2xl"
+                    src={selectedTutor?.img ?? '/icons/x-btn.svg'}
+                    alt={selectedTutor?.name}
+                  />
+                  <div className="flex flex-row items-center justify-center pt-6">
+                    <img src={selectedTutor?.countryImg ?? '/icons/x-btn.svg'} />
+                    <p className="pl-2 font-montserrat text-2xl font-bold">
+                      {selectedTutor?.name}
+                    </p>
+                  </div>
+                </div>
+
+                {/* 소개 */}
+                <div className="ml-10 flex flex-1 flex-col">
+                  <p className="mb-4 text-2xl font-bold">엣지 운영진이 소개하는 튜터</p>
+                  <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+                    facilis inventore necessitatibus dolores, earum dolore cupiditate
+                    sequi tenetur. Veritatis, ipsa nostrum maiores possimus aliquam earum
+                    tempore voluptatem excepturi dolores qui, nam officia fugit
+                    consequatur dolorum. Alias laboriosam incidunt maiores, ipsa optio
+                    facilis ullam? Corrupti veritatis animi, quia fuga similique commodi?
+                  </p>
+
+                  <p className="mb-4 text-2xl font-bold">자기소개</p>
+                  <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minima
+                    fuga sequi ullam, reprehenderit illo ea earum assumenda praesentium
+                    rem nobis dolorem quo repellat vitae fugiat distinctio, saepe quidem,
+                    itaque hic cum? Fuga maiores ad eveniet saepe maxime hic ipsa, autem
+                    omnis nihil perferendis amet dignissimos incidunt, exercitationem iure
+                    voluptatem culpa minima consequuntur excepturi perspiciatis. Quos,
+                    nesciunt suscipit! Ut facilis tempore earum consequatur, quasi
+                    dignissimos, sequi aliquid rem, ipsam magnam doloribus esse minus
+                    beatae harum obcaecati laudantium rerum aspernatur. Earum?
+                  </p>
+
+                  <p className="mb-4 text-2xl font-bold">취미</p>
+                  <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+                    hic.
+                  </p>
+
+                  <p className="mb-4 text-2xl font-bold">경력</p>
+                  <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form method="dialog" className="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+
         {/* 섹션 2 웹 */}
         <div className="mt-[60px] max-md:hidden">
-          <div
-            className="flex min-h-[448px] justify-end bg-cover bg-center"
-            style={{
-              backgroundImage: 'url(/images/bg-tutor.png)', // 배경 이미지 URL
-            }}
-          >
+          <div className="flex min-h-[448px] justify-end bg-[url(/images/bg-tutor.png)] bg-cover bg-center">
             <div className="self-center pr-[120px]">
               <p className="text-5xl font-bold leading-relaxed text-white">
                 실력과 인성 모두 확인된 튜터만
@@ -177,47 +218,9 @@ export default function TutorPage() {
           </div>
         </div>
 
-        {/* 섹션 2 모바일 - 웹 사이 */}
-        <div className="mt-[60px] max-[526px]:hidden md:hidden">
-          <div
-            className="flex min-h-[1000px] justify-end bg-cover bg-center"
-            style={{
-              backgroundImage: 'url(/images/tablet_bg_tutor.png)', // 배경 이미지 URL
-            }}
-          >
-            <div className="px-4 pt-[60px]">
-              <p className="text-[32px] font-bold leading-tight text-white">
-                실력과 인성
-              </p>
-              <p className="text-[32px] font-bold leading-relaxed text-white">
-                모두 확인된 튜터만
-              </p>
-              <br />
-              <p className="text-base font-normal text-white">
-                엣지영어는 철저한 5단계 검증 과정을 통해 강사를 채용해요.
-              </p>
-              <br />
-              <p className="text-base font-normal text-white">
-                서면 인터뷰와 서류 심사를 통해 기본 자격을 확인하고, 2:1 심층 면접에서
-                인성, 소통능력, 책임감을 꼼꼼히 살펴봅니다. 면접을 통과한 후보는 시범 강의
-                평가를 거쳐 정식 튜터가 됩니다.
-              </p>
-              <br />
-              <p className="text-base font-normal text-white">
-                학습자들이 믿고 배울 수 있도록, 엄격한 절차와 기준으로 강사를 선발합니다.
-              </p>
-            </div>
-          </div>
-        </div>
-
         {/* 섹션 2 모바일 */}
-        <div className="mt-[60px] 526px:hidden">
-          <div
-            className="flex min-h-[1000px] justify-end bg-cover bg-center"
-            style={{
-              backgroundImage: 'url(/images/mobile-bg-tutor.png)', // 배경 이미지 URL
-            }}
-          >
+        <div className="bg-mobile-tutor sm:bg-tablet-tutor mt-[60px] flex min-h-[1000px] justify-end bg-cover bg-center md:hidden">
+          <div className="flex min-h-[1000px] justify-end">
             <div className="px-4 pt-[60px]">
               <p className="text-[32px] font-bold leading-tight text-white">
                 실력과 인성
@@ -226,17 +229,17 @@ export default function TutorPage() {
                 모두 확인된 튜터만
               </p>
               <br />
-              <p className="text-base font-normal text-white">
+              <p className="text-lg text-white">
                 엣지영어는 철저한 5단계 검증 과정을 통해 강사를 채용해요.
               </p>
               <br />
-              <p className="text-base font-normal text-white">
+              <p className="text-lg text-white">
                 서면 인터뷰와 서류 심사를 통해 기본 자격을 확인하고, 2:1 심층 면접에서
                 인성, 소통능력, 책임감을 꼼꼼히 살펴봅니다. 면접을 통과한 후보는 시범 강의
                 평가를 거쳐 정식 튜터가 됩니다.
               </p>
               <br />
-              <p className="text-base font-normal text-white">
+              <p className="text-lg text-white">
                 학습자들이 믿고 배울 수 있도록, 엄격한 절차와 기준으로 강사를 선발합니다.
               </p>
             </div>
