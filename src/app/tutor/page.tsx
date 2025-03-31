@@ -97,7 +97,7 @@ export default function TutorPage() {
           </div>
         </>
         {/* 기존 모달
-      /* <dialog id="tutor_modal" className="modal">
+       <dialog id="tutor_modal" className="modal">
           <div className="modal-box max-w-full focus-visible:outline-none max-md:h-full max-md:max-h-full max-md:w-full max-md:rounded-none">
             <div>
               <div className="flex flex-row justify-between">
@@ -181,8 +181,8 @@ export default function TutorPage() {
 
         {/* 튜터 모달 */}
         <dialog id="tutor_modal" className="modal">
-          <div className="modal-box max-w-full overflow-hidden focus-visible:outline-none max-md:h-full max-md:max-h-full max-md:w-full max-md:rounded-none">
-            <div className="max-h-[80vh] overflow-y-auto max-md:max-h-[95vh]">
+          <div className="modal-box max-w-full overflow-hidden p-0 focus-visible:outline-none max-md:h-full max-md:max-h-full max-md:w-full max-md:rounded-none">
+            <div className="max-h-[80vh] overflow-y-auto p-6 max-md:max-h-[100vh]">
               {/* 타이틀 */}
               <div className="flex flex-row justify-between">
                 <div className="flex-center text-[28px] font-bold">
