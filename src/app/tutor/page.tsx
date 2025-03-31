@@ -9,13 +9,6 @@ export default function TutorPage() {
   const [tutorList, setTutorList] = useState<TutorType[]>([]);
   const [selectedTutor, setSelectedTutor] = useState<TutorType>();
 
-  const introduceList = [
-    '미국・캐나다 출신',
-    'TESOL/TEFL 국제 영어교육 자격증 보유',
-    '영어 교육 경력 1년 이상',
-    '시범 강의 평가 통과',
-  ];
-
   const openTutorModal = (name: string) => {
     const tutor: TutorType = tutorList.filter((e) => e.name === name)[0];
 
@@ -103,11 +96,93 @@ export default function TutorPage() {
             ))}
           </div>
         </>
+        {/* 기존 모달
+      /* <dialog id="tutor_modal" className="modal">
+          <div className="modal-box max-w-full focus-visible:outline-none max-md:h-full max-md:max-h-full max-md:w-full max-md:rounded-none">
+            <div>
+              <div className="flex flex-row justify-between">
+                <div className="flex-center text-[28px] font-bold">
+                  튜터&nbsp;
+                  <span className="text-2xl text-[#7D5FFF]">
+                    {selectedTutor?.name ?? ''}
+                  </span>
+                </div>
+
+                <button
+                  onClick={() => {
+                    closeTutorModal();
+                  }}
+                >
+                  <img src="/icons/x-btn.svg" />
+                </button>
+              </div>
+
+              <div className="mt-6 aspect-video w-full bg-gray-400" />
+
+              <div className="mt-10 flex flex-row max-md:flex-col max-md:items-center">
+                <div className="flex w-54 flex-col max-md:w-full">
+                  <img
+                    className="rounded-2xl"
+                    src={selectedTutor?.img ?? '/icons/x-btn.svg'}
+                    alt={selectedTutor?.name}
+                  />
+                  <div className="flex flex-row items-center justify-center pt-6">
+                    <img src={selectedTutor?.countryImg ?? '/icons/x-btn.svg'} />
+                    <p className="pl-2 font-montserrat text-2xl font-bold">
+                      {selectedTutor?.name}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="ml-10 flex flex-1 flex-col max-md:ml-0 max-md:mt-6">
+                  <p className="mb-4 text-2xl font-bold max-md:text-xl">
+                    엣지 운영진이 소개하는 튜터
+                  </p>
+                  <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+                    facilis inventore necessitatibus dolores, earum dolore cupiditate
+                    sequi tenetur. Veritatis, ipsa nostrum maiores possimus aliquam earum
+                    tempore voluptatem excepturi dolores qui, nam officia fugit
+                    consequatur dolorum. Alias laboriosam incidunt maiores, ipsa optio
+                    facilis ullam? Corrupti veritatis animi, quia fuga similique commodi?
+                  </p>
+
+                  <p className="mb-4 text-2xl font-bold max-md:text-xl">자기소개</p>
+                  <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minima
+                    fuga sequi ullam, reprehenderit illo ea earum assumenda praesentium
+                    rem nobis dolorem quo repellat vitae fugiat distinctio, saepe quidem,
+                    itaque hic cum? Fuga maiores ad eveniet saepe maxime hic ipsa, autem
+                    omnis nihil perferendis amet dignissimos incidunt, exercitationem iure
+                    voluptatem culpa minima consequuntur excepturi perspiciatis. Quos,
+                    nesciunt suscipit! Ut facilis tempore earum consequatur, quasi
+                    dignissimos, sequi aliquid rem, ipsam magnam doloribus esse minus
+                    beatae harum obcaecati laudantium rerum aspernatur. Earum?
+                  </p>
+
+                  <p className="mb-4 text-2xl font-bold max-md:text-xl">취미</p>
+                  <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+                    hic.
+                  </p>
+
+                  <p className="mb-4 text-2xl font-bold max-md:text-xl">경력</p>
+                  <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form method="dialog" className="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog> */}
 
         {/* 튜터 모달 */}
         <dialog id="tutor_modal" className="modal">
-          <div className="modal-box max-w-full focus-visible:outline-none">
-            <div>
+          <div className="modal-box max-w-full focus-visible:outline-none max-md:h-full max-md:max-h-full max-md:w-full max-md:rounded-none md:overflow-hidden">
+            <div className="md:max-h-[80vh] md:overflow-y-auto">
               {/* 타이틀 */}
               <div className="flex flex-row justify-between">
                 <div className="flex-center text-[28px] font-bold">
@@ -175,12 +250,28 @@ export default function TutorPage() {
                   <p className="mb-4 text-2xl font-bold max-md:text-xl">취미</p>
                   <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+                    hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+                    hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+                    hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+                    hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+                    hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+                    hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
                     hic.
                   </p>
 
                   <p className="mb-4 text-2xl font-bold max-md:text-xl">경력</p>
                   <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                    nihil.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, hic.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, hic.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, hic.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, hic.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, hic.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, hic.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, hic.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, hic.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, hic.
                   </p>
                 </div>
               </div>
@@ -290,15 +381,24 @@ export default function TutorPage() {
             엣지영어의 모든 튜터는 아래 자격 요건을 모두 충족해요.
           </p>
           <div className="mt-[40px] grid w-full max-w-[1200px] grid-cols-2 items-center gap-4 self-center">
-            {introduceList.map((e) => (
-              <div
-                key={e}
-                className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-center text-2xl font-medium"
-              >
-                <img src="/icons/check.svg" className="mr-4" />
-                {e}
-              </div>
-            ))}
+            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-center text-2xl font-medium">
+              <img src="/icons/check.svg" className="mr-[16px]" />
+              미국
+              <span className="text-[#D2D2D2]">・</span>
+              캐나다 출신
+            </div>
+            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-center text-2xl font-medium">
+              <img src="/icons/check.svg" className="mr-[16px]" />
+              TESOL/TEFL 국제 영어교육 자격증 보유
+            </div>{' '}
+            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-center text-2xl font-medium">
+              <img src="/icons/check.svg" className="mr-[16px]" />
+              영어 교육 경력 1년 이상
+            </div>{' '}
+            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-center text-2xl font-medium">
+              <img src="/icons/check.svg" className="mr-[16px]" />
+              시범 강의 평가 통과
+            </div>
           </div>
         </div>
 
@@ -315,15 +415,24 @@ export default function TutorPage() {
             아래 자격 요건을 모두 충족해요.
           </p>
           <div className="mt-[40px] flex w-full flex-col justify-stretch gap-4 self-center px-6">
-            {introduceList.map((e) => (
-              <div
-                key={e}
-                className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-4 py-6 text-lg font-medium"
-              >
-                <img src="/icons/check.svg" className="mr-2 h-6 w-6" />
-                {e}
-              </div>
-            ))}
+            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-4 py-6 text-lg font-medium">
+              <img src="/icons/check.svg" className="mr-2 h-6 w-6" />
+              미국
+              <span className="text-[#D2D2D2]">・</span>
+              캐나다 출신
+            </div>
+            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-4 py-6 text-lg font-medium">
+              <img src="/icons/check.svg" className="mr-2 h-6 w-6" />
+              TESOL/TEFL 국제 영어교육 자격증 보유
+            </div>{' '}
+            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-4 py-6 text-lg font-medium">
+              <img src="/icons/check.svg" className="mr-2 h-6 w-6" />
+              영어 교육 경력 1년 이상
+            </div>{' '}
+            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-4 py-6 text-lg font-medium">
+              <img src="/icons/check.svg" className="mr-2 h-6 w-6" />
+              시범 강의 평가 통과
+            </div>
           </div>
         </div>
       </div>
