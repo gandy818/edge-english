@@ -127,11 +127,11 @@ export default function TutorPage() {
               </div>
 
               {/* 동영상 */}
-              <div className="mt-6 h-[640px] bg-gray-400" />
+              <div className="mt-6 aspect-video w-full bg-gray-400" />
 
-              <div className="mt-10 flex flex-row">
+              <div className="mt-10 flex flex-row max-md:flex-col max-md:items-center">
                 {/* 프로필 */}
-                <div className="flex w-54 flex-col">
+                <div className="flex w-54 flex-col max-md:w-full">
                   <img
                     className="rounded-2xl"
                     src={selectedTutor?.img ?? '/icons/x-btn.svg'}
@@ -146,8 +146,10 @@ export default function TutorPage() {
                 </div>
 
                 {/* 소개 */}
-                <div className="ml-10 flex flex-1 flex-col">
-                  <p className="mb-4 text-2xl font-bold">엣지 운영진이 소개하는 튜터</p>
+                <div className="ml-10 flex flex-1 flex-col max-md:ml-0 max-md:mt-6">
+                  <p className="mb-4 text-2xl font-bold max-md:text-xl">
+                    엣지 운영진이 소개하는 튜터
+                  </p>
                   <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
                     facilis inventore necessitatibus dolores, earum dolore cupiditate
@@ -157,7 +159,7 @@ export default function TutorPage() {
                     facilis ullam? Corrupti veritatis animi, quia fuga similique commodi?
                   </p>
 
-                  <p className="mb-4 text-2xl font-bold">자기소개</p>
+                  <p className="mb-4 text-2xl font-bold max-md:text-xl">자기소개</p>
                   <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minima
                     fuga sequi ullam, reprehenderit illo ea earum assumenda praesentium
@@ -170,13 +172,13 @@ export default function TutorPage() {
                     beatae harum obcaecati laudantium rerum aspernatur. Earum?
                   </p>
 
-                  <p className="mb-4 text-2xl font-bold">취미</p>
+                  <p className="mb-4 text-2xl font-bold max-md:text-xl">취미</p>
                   <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
                     hic.
                   </p>
 
-                  <p className="mb-4 text-2xl font-bold">경력</p>
+                  <p className="mb-4 text-2xl font-bold max-md:text-xl">경력</p>
                   <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
                   </p>
