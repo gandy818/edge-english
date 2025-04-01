@@ -182,7 +182,7 @@ export default function TutorPage() {
         {/* 튜터 모달 */}
         <dialog id="tutor_modal" className="modal">
           <div className="modal-box max-w-full overflow-hidden p-0 focus-visible:outline-none max-md:h-full max-md:max-h-full max-md:w-full max-md:rounded-none">
-            <div className="max-h-[80vh] overflow-y-auto p-6 max-md:max-h-[100vh]">
+            <div className="my-6 max-h-[80vh] overflow-y-auto px-6 max-md:max-h-[98vh]">
               {/* 타이틀 */}
               <div className="flex flex-row justify-between">
                 <div className="flex-center text-[28px] font-bold">
@@ -291,7 +291,7 @@ export default function TutorPage() {
         </div>
 
         {/* 섹션 2 모바일 */}
-        <div className="bg-mobile-tutor sm:bg-tablet-tutor mt-[60px] flex min-h-[1000px] justify-end bg-cover bg-center md:hidden">
+        <div className="mt-[60px] flex min-h-[1000px] justify-end bg-mobile-tutor bg-cover bg-center sm:bg-tablet-tutor md:hidden">
           <div className="flex min-h-[1000px] justify-end">
             <div className="px-4 pt-[60px]">
               <p className="text-[32px] font-bold leading-tight text-white">
