@@ -182,9 +182,9 @@ export default function TutorPage() {
         {/* 튜터 모달 */}
         <dialog id="tutor_modal" className="modal">
           <div className="modal-box max-w-full overflow-hidden p-0 focus-visible:outline-none max-md:h-full max-md:max-h-full max-md:w-full max-md:rounded-none">
-            <div className="my-6 max-h-[80vh] overflow-y-auto px-6 max-md:max-h-[98vh]">
+            <div>
               {/* 타이틀 */}
-              <div className="flex flex-row justify-between">
+              <div className="m-6 flex flex-row justify-between">
                 <div className="flex-center text-[28px] font-bold">
                   튜터&nbsp;
                   <span className="text-2xl text-[#7D5FFF]">
@@ -200,58 +200,82 @@ export default function TutorPage() {
                   <img src="/icons/x-btn.svg" />
                 </button>
               </div>
+              <div className="mx-6 max-h-[75vh] overflow-y-auto max-md:max-h-[87vh]">
+                {/* 동영상 */}
+                <iframe
+                  className="aspect-video w-full bg-gray-400"
+                  src="https://www.youtube.com/embed/RJ2TDC7nrtY"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
 
-              {/* 동영상 */}
-              <div className="mt-6 aspect-video w-full bg-gray-400" />
+                <div className="mt-10 flex flex-row max-md:flex-col max-md:items-center">
+                  {/* 프로필 */}
+                  <div className="flex w-54 flex-col max-md:w-full">
+                    <img
+                      className="rounded-2xl"
+                      src={selectedTutor?.img ?? '/icons/x-btn.svg'}
+                      alt={selectedTutor?.name}
+                    />
+                    <div className="flex flex-row items-center justify-center pt-6">
+                      <img src={selectedTutor?.countryImg ?? '/icons/x-btn.svg'} />
+                      <p className="pl-2 font-montserrat text-2xl font-bold">
+                        {selectedTutor?.name}
+                      </p>
+                    </div>
+                  </div>
 
-              <div className="mt-10 flex flex-row max-md:flex-col max-md:items-center">
-                {/* 프로필 */}
-                <div className="flex w-54 flex-col max-md:w-full">
-                  <img
-                    className="rounded-2xl"
-                    src={selectedTutor?.img ?? '/icons/x-btn.svg'}
-                    alt={selectedTutor?.name}
-                  />
-                  <div className="flex flex-row items-center justify-center pt-6">
-                    <img src={selectedTutor?.countryImg ?? '/icons/x-btn.svg'} />
-                    <p className="pl-2 font-montserrat text-2xl font-bold">
-                      {selectedTutor?.name}
+                  {/* 소개 */}
+                  <div className="ml-10 flex flex-1 flex-col max-md:ml-0 max-md:mt-6">
+                    <p className="mb-4 text-2xl font-bold max-md:text-xl">
+                      엣지 운영진이 소개하는 튜터
+                    </p>
+                    <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+                      facilis inventore necessitatibus dolores, earum dolore cupiditate
+                      sequi tenetur. Veritatis, ipsa nostrum maiores possimus aliquam
+                      earum tempore voluptatem excepturi dolores qui, nam officia fugit
+                      consequatur dolorum. Alias laboriosam incidunt maiores, ipsa optio
+                      facilis ullam? Corrupti veritatis animi, quia fuga similique
+                      commodi?
+                    </p>
+
+                    <p className="mb-4 text-2xl font-bold max-md:text-xl">자기소개</p>
+                    <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minima
+                      fuga sequi ullam, reprehenderit illo ea earum assumenda praesentium
+                      rem nobis dolorem quo repellat vitae fugiat distinctio, saepe
+                      quidem, itaque hic cum?
+                    </p>
+
+                    <p className="mb-4 text-2xl font-bold max-md:text-xl">취미</p>
+                    <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+                      hic.
+                    </p>
+
+                    <p className="mb-4 text-2xl font-bold max-md:text-xl">경력</p>
+                    <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                      nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Quod, nihil. Lorem, ipsum dolor sit amet consectetur adipisicing
+                      elit. Quod, nihil. Lorem, ipsum dolor sit amet consectetur
+                      adipisicing elit. Quod, nihil. Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Quod, nihil. Lorem, ipsum dolor sit
+                      amet consectetur adipisicing elit. Quod, nihil. Lorem, ipsum dolor
+                      sit amet consectetur adipisicing elit. Quod, nihil. Lorem, ipsum
+                      dolor sit amet consectetur adipisicing elit. Quod, nihil. Lorem,
+                      ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                      nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Quod, nihil. Lorem, ipsum dolor sit amet consectetur adipisicing
+                      elit. Quod, nihil. Lorem, ipsum dolor sit amet consectetur
+                      adipisicing elit. Quod, nihil. Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Quod, nihil. Lorem, ipsum dolor sit
+                      amet consectetur adipisicing elit. Quod, nihil.
                     </p>
                   </div>
-                </div>
-
-                {/* 소개 */}
-                <div className="ml-10 flex flex-1 flex-col max-md:ml-0 max-md:mt-6">
-                  <p className="mb-4 text-2xl font-bold max-md:text-xl">
-                    엣지 운영진이 소개하는 튜터
-                  </p>
-                  <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
-                    facilis inventore necessitatibus dolores, earum dolore cupiditate
-                    sequi tenetur. Veritatis, ipsa nostrum maiores possimus aliquam earum
-                    tempore voluptatem excepturi dolores qui, nam officia fugit
-                    consequatur dolorum. Alias laboriosam incidunt maiores, ipsa optio
-                    facilis ullam? Corrupti veritatis animi, quia fuga similique commodi?
-                  </p>
-
-                  <p className="mb-4 text-2xl font-bold max-md:text-xl">자기소개</p>
-                  <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minima
-                    fuga sequi ullam, reprehenderit illo ea earum assumenda praesentium
-                    rem nobis dolorem quo repellat vitae fugiat distinctio, saepe quidem,
-                    itaque hic cum?
-                  </p>
-
-                  <p className="mb-4 text-2xl font-bold max-md:text-xl">취미</p>
-                  <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-                    hic.
-                  </p>
-
-                  <p className="mb-4 text-2xl font-bold max-md:text-xl">경력</p>
-                  <p className="text- mb-6 text-pretty text-base font-normal text-[#606060]">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
-                  </p>
                 </div>
               </div>
             </div>
@@ -360,21 +384,21 @@ export default function TutorPage() {
             엣지영어의 모든 튜터는 아래 자격 요건을 모두 충족해요.
           </p>
           <div className="mt-[40px] grid w-full max-w-[1200px] grid-cols-2 items-center gap-4 self-center">
-            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-center text-2xl font-medium">
+            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-2xl font-medium">
               <img src="/icons/check.svg" className="mr-[16px]" />
               미국
               <span className="text-[#D2D2D2]">・</span>
               캐나다 출신
             </div>
-            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-center text-2xl font-medium">
+            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-2xl font-medium">
               <img src="/icons/check.svg" className="mr-[16px]" />
               TESOL/TEFL 국제 영어교육 자격증 보유
             </div>{' '}
-            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-center text-2xl font-medium">
+            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-2xl font-medium">
               <img src="/icons/check.svg" className="mr-[16px]" />
               영어 교육 경력 1년 이상
             </div>{' '}
-            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-center text-2xl font-medium">
+            <div className="flex flex-grow items-center rounded-lg border border-[#E8E8E8] bg-white px-10 py-8 text-2xl font-medium">
               <img src="/icons/check.svg" className="mr-[16px]" />
               시범 강의 평가 통과
             </div>
