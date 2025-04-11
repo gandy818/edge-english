@@ -69,7 +69,7 @@ export default function Pagination({
         return (
           <button key={page} onClick={() => goToPage(page)}>
             <div
-              className={`px-3 py-2 font-montserrat font-medium ${currentPage === page ? 'text-[#000]' : 'text-[#D2D2D2]'}`}
+              className={`px-3 py-2 font-montserrat font-medium ${currentPage === page ? 'text-black' : 'text-[#D2D2D2]'}`}
             >
               {page}
             </div>
