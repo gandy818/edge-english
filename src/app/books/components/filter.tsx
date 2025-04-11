@@ -24,7 +24,7 @@ export default function Filter({ data }: FilterProps) {
           <div
             key={item}
             className={`badge badge-neutral ${
-              filterState === item ? 'border-white' : 'border-[#e8e8e8]'
+              filterState === item ? 'border-white bg-edge-yellow' : 'border-[#e8e8e8]'
             } px-6 py-4 text-base font-bold`}
             onClick={() => setFilterState(item)}
           >
