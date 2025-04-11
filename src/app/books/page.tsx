@@ -1,8 +1,27 @@
+import Filter from './components/filter';
+
+// SSR 방식으로 받아온 데이터라고 가정
+const testData: string[] = [
+  '일반회화',
+  '비즈니스 영어',
+  '여행 영어',
+  '프리토킹',
+  '일반회화',
+  '비즈니스 영어',
+  '여행 영어',
+  '프리토킹',
+  '일반회화',
+  '비즈니스 영어',
+  '여행 영어',
+  '프리토킹',
+  '일반회화',
+];
+
 export default function BooksPage() {
   return (
     <div>
       {/* 지금 내 영어 레벨, 어디쯤일까요? */}
-      <div className="py-15 bg-[#F3F6F8] px-[264px] max-md:px-4">
+      <div className="bg-[#F3F6F8] px-[264px] py-15 max-md:px-4">
         <h1 className="text-center text-[32px] font-bold">
           지금 내 영어 레벨, 어디쯤일까요?
         </h1>
@@ -50,6 +69,16 @@ export default function BooksPage() {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="px-[120px]">
+        <div className="mt-15">
+          <div className="border-b-[1px] border-[#a4a4a4] text-[60px] font-bold">
+            <p>교재 소개</p>
+          </div>
+        </div>
+        <div className="mt-12">
+          <Filter data={testData} />
         </div>
       </div>
     </div>
