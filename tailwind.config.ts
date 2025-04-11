@@ -34,6 +34,13 @@ const config: Config = {
         '4.5': '1.125rem',
       },
 
+      colors: {
+        'edge-light': '#BBB',
+        'edge-gray': '#606060',
+        'edge-yellow': '#FFD401',
+        'edge-purple': '#7D5FFF',
+      },
+
       width: {
         '13': '3.25rem' /* 52px */,
 

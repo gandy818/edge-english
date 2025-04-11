@@ -21,37 +21,40 @@ export default function Header() {
         <div className="flex gap-11 max-md:hidden">
           <Link
             href="/events"
-            className={`text-nowrap ${pathName.startsWith('/events') ? 'font-bold text-[#333]' : 'font-medium text-[#bbb]'}`}
+            className={`text-nowrap ${pathName.startsWith('/events') ? 'font-bold' : 'text-edge-light font-medium'}`}
           >
             이벤트
           </Link>
 
           <Link
             href="/notice"
-            className={`text-nowrap ${pathName.startsWith('/notice') ? 'font-bold text-[#333]' : 'font-medium text-[#bbb]'}`}
+            className={`text-nowrap ${pathName.startsWith('/notice') ? 'font-bold' : 'text-edge-light font-medium'}`}
           >
             공지사항
           </Link>
 
           <Link
-            href="/tutor"
-            className={`text-nowrap ${pathName.startsWith('/tutor') ? 'font-bold text-[#333]' : 'font-medium text-[#bbb]'}`}
+            href="/tutors"
+            className={`text-nowrap ${pathName.startsWith('/tutors') ? 'font-bold' : 'text-edge-light font-medium'}`}
           >
             강사진
           </Link>
 
-          <Link href="/" className="text-nowrap font-medium text-[#bbb]">
+          <Link
+            href="/books"
+            className={`text-nowrap ${pathName.startsWith('/books') ? 'font-bold' : 'text-edge-light font-medium'}`}
+          >
             교재
           </Link>
 
           <Link
             href="/faq"
-            className={`text-nowrap ${pathName.startsWith('/faq') ? 'font-bold text-[#333]' : 'font-medium text-[#bbb]'}`}
+            className={`text-nowrap ${pathName.startsWith('/faq') ? 'font-bold' : 'text-edge-light font-medium'}`}
           >
             자주 묻는 질문
           </Link>
 
-          <Link href="/" className="text-nowrap font-medium text-[#bbb]">
+          <Link href="/" className="text-edge-light text-nowrap font-medium">
             수업료
           </Link>
         </div>
@@ -98,7 +101,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/events"
-                  className={`text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/events') ? 'text-[#FFD401]' : 'text-[#333333]'}`}
+                  className={`text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/events') ? 'text-edge-yellow' : ''}`}
                   onClick={() => closeDrawer()}
                 >
                   이벤트
@@ -108,7 +111,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/notice"
-                  className={`text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/notice') ? 'text-[#FFD401]' : 'text-[#333333]'}`}
+                  className={`text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/notice') ? 'text-edge-yellow' : ''}`}
                   onClick={() => closeDrawer()}
                 >
                   공지사항
@@ -117,8 +120,8 @@ export default function Header() {
 
               <li>
                 <Link
-                  href="/tutor"
-                  className={`text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/tutor') ? 'text-[#FFD401]' : 'text-[#333333]'}`}
+                  href="/tutors"
+                  className={`text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/tutors') ? 'text-edge-yellow' : ']'}`}
                   onClick={() => closeDrawer()}
                 >
                   강사진
@@ -127,8 +130,8 @@ export default function Header() {
 
               <li>
                 <Link
-                  href="/"
-                  className={`text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/aaa') ? 'text-[#FFD401]' : 'text-[#333333]'}`}
+                  href="/books"
+                  className={`text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/books') ? 'text-edge-yellow' : ''}`}
                   onClick={() => closeDrawer()}
                 >
                   교재
@@ -138,7 +141,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/faq"
-                  className={`text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/faq') ? 'text-[#FFD401]' : 'text-[#333333]'}`}
+                  className={`text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/faq') ? 'text-edge-yellow' : ''}`}
                   onClick={() => closeDrawer()}
                 >
                   자주 묻는 질문
@@ -148,7 +151,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/"
-                  className={`text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/aaa') ? 'text-[#FFD401]' : 'text-[#333333]'}`}
+                  className={`text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/aaa') ? 'text-edge-yellow' : ''}`}
                   onClick={() => closeDrawer()}
                 >
                   수업료

@@ -58,19 +58,19 @@ export default function EventPage() {
       {/* 분류 */}
       <ScrollContainer className="mt-10 flex gap-2">
         <button
-          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'all' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`text-nowrap rounded-full px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'all' ? 'bg-edge-yellow' : 'border'}`}
           onClick={() => setCurrentType('all')}
         >
           전체
         </button>
         <button
-          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'inprogress' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`text-nowrap rounded-full px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'inprogress' ? 'bg-edge-yellow' : 'border'}`}
           onClick={() => setCurrentType('inprogress')}
         >
           진행중
         </button>
         <button
-          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'done' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`text-nowrap rounded-full px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'done' ? 'bg-edge-yellow' : 'border'}`}
           onClick={() => setCurrentType('done')}
         >
           마감
@@ -80,7 +80,7 @@ export default function EventPage() {
       {/* 총 게시글 개수 */}
       {/* <div className="mt-6 flex gap-2">
         <p className="font-montserrat font-bold tracking-[-2px]">Total</p>
-        <p className="font-montserrat font-bold text-[#7D5FFF]">
+        <p className="font-montserrat font-bold text-edge-purple">
           {filteredEventList.length}
         </p>
       </div> */}
@@ -90,7 +90,7 @@ export default function EventPage() {
         <table className="table text-center">
           {/* head */}
           <thead className="h-[70px] bg-[#F5F5F5] font-bold">
-            <tr className="border-[#E8E8E8]">
+            <tr className=" ">
               <th>구분</th>
               <th>제목</th>
               <th>작성자</th>
@@ -101,13 +101,13 @@ export default function EventPage() {
             {currentEventList.map((event) => {
               return (
                 <tr
-                  className="cursor-pointer !border-b border-[#E8E8E8]"
+                  className="cursor-pointer !border-b"
                   key={event.index}
                   onClick={() => router.push(`/events/${event.index}`)}
                 >
                   <td>
                     <p
-                      className={`mx-auto w-[74px] rounded-full px-4 py-2 font-medium ${event.status === '진행중' ? 'border-[#E8E8E8] bg-[#FFD401]' : 'border-[#777] bg-[#E8E8E8]'}`}
+                      className={`mx-auto w-[74px] rounded-full px-4 py-2 font-medium ${event.status === '진행중' ? 'bg-edge-yellow' : 'border-[#777] bg-[#E8E8E8]'}`}
                     >
                       {event.status}
                     </p>
@@ -127,13 +127,13 @@ export default function EventPage() {
         {currentEventList.map((event) => {
           return (
             <div
-              className="flex cursor-pointer flex-col gap-4 border-t border-[#E8E8E8] py-4"
+              className="flex cursor-pointer flex-col gap-4 border-t py-4"
               key={event.index}
               onClick={() => router.push(`/events/${event.index}`)}
             >
               <div>
                 <p
-                  className={`w-fit rounded-full px-3 py-2 text-sm font-medium ${event.status === '진행중' ? 'border-[#E8E8E8] bg-[#FFD401]' : 'border-[#777] bg-[#E8E8E8]'}`}
+                  className={`w-fit rounded-full px-3 py-2 text-sm font-medium ${event.status === '진행중' ? 'bg-edge-yellow' : 'border-[#777] bg-[#E8E8E8]'}`}
                 >
                   {event.status}
                 </p>

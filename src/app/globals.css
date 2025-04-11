@@ -5,6 +5,7 @@
 * {
   font-family: 'Pretendard', sans-serif;
   color: #333333;
+  border-color: #e8e8e8;
 
   /* flex 가운데 정렬 */
   .flex-center {

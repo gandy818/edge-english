@@ -42,8 +42,8 @@ export default function EventDetailPage() {
         <h1 className="font-montserrat text-5xl font-semibold text-[#000] max-md:text-[40px]">
           {event?.title}
         </h1>
-        <p className="font-semibold text-[#606060]">
-          등록일 <span className="font-montserrat text-[#606060]">{event?.date}</span>
+        <p className="text-edge-gray font-semibold">
+          등록일 <span className="text-edge-gray font-montserrat">{event?.date}</span>
         </p>
       </div>
 
@@ -51,7 +51,7 @@ export default function EventDetailPage() {
       <pre className="border-t border-[#A4A4A4] py-16">{event?.content}</pre>
 
       {/* 이전글, 다음글 */}
-      <div className="flex flex-col border-b border-t border-[#E8E8E8]">
+      <div className="flex flex-col border-b border-t">
         {prevEvent && (
           <Link
             href={`/events/${prevEvent.index}`}
@@ -72,7 +72,7 @@ export default function EventDetailPage() {
               </svg>
               <p className="text-nowrap font-semibold text-[#000]">이전 글</p>
             </div>
-            <p className="text-[#606060]">{prevEvent?.title}</p>
+            <p className="text-edge-gray">{prevEvent?.title}</p>
           </Link>
         )}
 
@@ -96,7 +96,7 @@ export default function EventDetailPage() {
               </svg>
               <p className="text-nowrap font-semibold text-[#000]">다음 글</p>
             </div>
-            <p className="text-[#606060]">{nextEvent?.title}</p>
+            <p className="text-edge-gray">{nextEvent?.title}</p>
           </Link>
         )}
       </div>

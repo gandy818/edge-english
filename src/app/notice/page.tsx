@@ -71,19 +71,19 @@ export default function NoticePage() {
       {/* 분류 */}
       <ScrollContainer className="mt-10 flex gap-2">
         <button
-          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'all' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`text-nowrap rounded-full px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'all' ? 'bg-edge-yellow' : 'border'}`}
           onClick={() => setCurrentType('all')}
         >
           전체
         </button>
         <button
-          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'notice' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`text-nowrap rounded-full px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'notice' ? 'bg-edge-yellow' : 'border'}`}
           onClick={() => setCurrentType('notice')}
         >
           공지사항
         </button>
         <button
-          className={`text-nowrap rounded-full border-[#E8E8E8] px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'etc' ? 'bg-[#FFD401]' : 'border'}`}
+          className={`text-nowrap rounded-full px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'etc' ? 'bg-edge-yellow' : 'border'}`}
           onClick={() => setCurrentType('etc')}
         >
           기타
@@ -93,7 +93,7 @@ export default function NoticePage() {
       {/* 총 게시글 개수 */}
       {/* <div className="mt-6 flex gap-2">
         <p className="font-montserrat font-bold tracking-[-2px]">Total</p>
-        <p className="font-montserrat font-bold text-[#7D5FFF]">
+        <p className="font-montserrat font-bold text-edge-purple">
           {filteredNoticeList.length}
         </p>
       </div> */}
@@ -103,7 +103,7 @@ export default function NoticePage() {
         <table className="table text-center">
           {/* head */}
           <thead className="h-[70px] bg-[#F5F5F5] font-bold">
-            <tr className="border-[#E8E8E8]">
+            <tr className=" ">
               <th>번호</th>
               <th>구분</th>
               <th>제목</th>
@@ -115,13 +115,13 @@ export default function NoticePage() {
             {currentNoticeList.map((notice, index) => {
               return (
                 <tr
-                  className="cursor-pointer !border-b border-[#E8E8E8]"
+                  className="cursor-pointer !border-b"
                   key={index}
                   onClick={() => router.push(`/notice/${notice.index}`)}
                 >
                   <td className="flex-center">
                     {notice.isPinned ? (
-                      <p className="flex w-fit gap-1 rounded-full bg-[#7D5FFF] px-4 py-2 font-semibold text-white">
+                      <p className="bg-edge-purple flex w-fit gap-1 rounded-full px-4 py-2 font-semibold text-white">
                         <img src="/icons/pin.svg" />
                         중요
                       </p>
@@ -151,14 +151,14 @@ export default function NoticePage() {
         {currentNoticeList.map((notice, index) => {
           return (
             <div
-              className="flex cursor-pointer flex-col gap-4 border-t border-[#E8E8E8] py-4"
+              className="flex cursor-pointer flex-col gap-4 border-t py-4"
               key={index}
               onClick={() => router.push(`/notice/${notice.index}`)}
             >
               <div>
                 {notice.isPinned ? (
                   <div className="flex items-center gap-2">
-                    <p className="flex w-fit gap-1 rounded-full bg-[#7D5FFF] px-4 py-2 text-sm font-semibold text-white max-md:px-3">
+                    <p className="bg-edge-purple flex w-fit gap-1 rounded-full px-4 py-2 text-sm font-semibold text-white max-md:px-3">
                       <img src="/icons/pin.svg" />
                       중요
                     </p>

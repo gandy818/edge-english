@@ -41,8 +41,8 @@ export default function NoticeDetailPage() {
         <h1 className="font-montserrat text-5xl font-semibold text-[#000] max-md:text-[40px]">
           {notice?.title}
         </h1>
-        <p className="font-semibold text-[#606060]">
-          등록일 <span className="font-montserrat text-[#606060]">{notice?.date}</span>
+        <p className="text-edge-gray font-semibold">
+          등록일 <span className="text-edge-gray font-montserrat">{notice?.date}</span>
         </p>
       </div>
 
@@ -50,7 +50,7 @@ export default function NoticeDetailPage() {
       <pre className="border-t border-[#A4A4A4] py-16">{notice?.content}</pre>
 
       {/* 이전글, 다음글 */}
-      <div className="flex flex-col border-b border-t border-[#E8E8E8]">
+      <div className="flex flex-col border-b border-t">
         {prevNotice && (
           <Link
             href={`/notice/${prevNotice.index}`}
@@ -71,7 +71,7 @@ export default function NoticeDetailPage() {
               </svg>
               <p className="text-nowrap font-semibold text-[#000]">이전 글</p>
             </div>
-            <p className="text-[#606060]">{prevNotice?.title}</p>
+            <p className="text-edge-gray">{prevNotice?.title}</p>
           </Link>
         )}
 
@@ -95,7 +95,7 @@ export default function NoticeDetailPage() {
               </svg>
               <p className="text-nowrap font-semibold text-[#000]">다음 글</p>
             </div>
-            <p className="text-[#606060]">{nextNotice?.title}</p>
+            <p className="text-edge-gray">{nextNotice?.title}</p>
           </Link>
         )}
       </div>
