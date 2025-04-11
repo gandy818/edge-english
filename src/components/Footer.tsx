@@ -55,13 +55,13 @@ export default function Footer() {
         {/* sns */}
         <div className="mt-8 flex gap-3">
           <Link href="https://pf.kakao.com/_blxgib" target="_blank">
-            <img src="/icons/kakao.svg" alt="kakao" />
+            <img src="/icons/footer/kakao.svg" alt="kakao" />
           </Link>
           <Link href="https://www.instagram.com/tangerine_english_" target="_blank">
-            <img src="/icons/instagram.svg" alt="instagram" />
+            <img src="/icons/footer/instagram.svg" alt="instagram" />
           </Link>
           <Link href="/">
-            <img src="/icons/youtube.svg" alt="youtube" />
+            <img src="/icons/footer/youtube.svg" alt="youtube" />
           </Link>
         </div>
       </div>

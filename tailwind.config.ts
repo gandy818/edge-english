@@ -21,8 +21,8 @@ const config: Config = {
       },
 
       backgroundImage: {
-        'mobile-tutor': "url('/images/mobile-bg-tutor.png')",
-        'tablet-tutor': "url('/images/tablet-bg-tutor.png')",
+        'mobile-tutor': "url('/images/tutor/mobile-bg-tutor.png')",
+        'tablet-tutor': "url('/images/tutor/tablet-bg-tutor.png')",
       },
 
       screens: {

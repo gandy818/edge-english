@@ -122,7 +122,7 @@ export default function NoticePage() {
                   <td className="flex-center">
                     {notice.isPinned ? (
                       <p className="bg-edge-purple flex w-fit gap-1 rounded-full px-4 py-2 font-semibold text-white">
-                        <img src="/icons/pin.svg" />
+                        <img src="/icons/notice/pin.svg" />
                         중요
                       </p>
                     ) : (
@@ -159,7 +159,7 @@ export default function NoticePage() {
                 {notice.isPinned ? (
                   <div className="flex items-center gap-2">
                     <p className="bg-edge-purple flex w-fit gap-1 rounded-full px-4 py-2 text-sm font-semibold text-white max-md:px-3">
-                      <img src="/icons/pin.svg" />
+                      <img src="/icons/notice/pin.svg" />
                       중요
                     </p>
                     <p className="font-medium">공지사항</p>

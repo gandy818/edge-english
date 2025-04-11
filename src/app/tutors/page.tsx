@@ -61,7 +61,7 @@ export default function TutorsPage() {
               className="mb-15 mt-10 flex flex-row justify-center rounded-lg bg-[#FFEB3B] px-[40px] py-[16px]"
             >
               <img
-                src="/icons/kakao-btn.svg"
+                src="/icons/floating/kakao-btn.svg"
                 alt="kakao channel button"
                 className="h-6 w-6"
               />
@@ -78,7 +78,7 @@ export default function TutorsPage() {
               >
                 <img className="rounded-2xl" src={tutor.img} alt={tutor.name} />
                 <div className="flex flex-row items-center justify-center pt-6">
-                  <img src="/icons/usa.svg" />
+                  <img src={tutor.countryImg} alt="tutor's contry image" />
                   <p className="pl-2 font-montserrat text-2xl font-bold">{tutor.name}</p>
                 </div>
                 <p className="mt-2 self-center text-center font-bold">{tutor.desc}</p>
@@ -206,7 +206,7 @@ export default function TutorsPage() {
 
         {/* 섹션 2 웹 */}
         <div className="mt-[60px] max-md:hidden">
-          <div className="flex min-h-[448px] justify-end bg-[url(/images/bg-tutor.png)] bg-cover bg-center">
+          <div className="flex min-h-[448px] justify-end bg-[url(/images/tutor/bg-tutor.png)] bg-cover bg-center">
             <div className="self-center pr-[120px]">
               <p className="text-5xl font-bold leading-relaxed text-white">
                 실력과 인성 모두 확인된 튜터만
@@ -267,7 +267,7 @@ export default function TutorsPage() {
           <div className="mt-[60px] flex flex-row justify-start">
             {[1, 2, 3, 4, 5].map((e) => (
               <div key={e} className="flex-grow">
-                <img src={`/icons/step-${e}.svg`} />
+                <img src={`/icons/tutor/step-${e}.svg`} />
               </div>
             ))}
           </div>
@@ -281,12 +281,12 @@ export default function TutorsPage() {
           <div className="mt-[60px] flex flex-col justify-center">
             {[1, 2, 3, 4, 5].map((e) => (
               <div key={e}>
-                <img src={`/icons/mobile-step-${e}.svg`} />
+                <img src={`/icons/tutor/mobile-step-${e}.svg`} />
                 {e === 5 ? (
                   <div></div>
                 ) : (
                   <div className="my-4 flex justify-center">
-                    <img src="/icons/arrow-down.svg" />
+                    <img src="/icons/tutor/arrow-down.svg" />
                   </div>
                 )}
               </div>
@@ -304,21 +304,21 @@ export default function TutorsPage() {
           </p>
           <div className="mt-[40px] grid w-full max-w-[1200px] grid-cols-2 items-center gap-4 self-center">
             <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-2xl font-medium">
-              <img src="/icons/check.svg" className="mr-[16px]" />
+              <img src="/icons/tutor/check.svg" className="mr-[16px]" />
               미국
               <span className="text-[#D2D2D2]">・</span>
               캐나다 출신
             </div>
             <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-2xl font-medium">
-              <img src="/icons/check.svg" className="mr-[16px]" />
+              <img src="/icons/tutor/check.svg" className="mr-[16px]" />
               TESOL/TEFL 국제 영어교육 자격증 보유
             </div>{' '}
             <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-2xl font-medium">
-              <img src="/icons/check.svg" className="mr-[16px]" />
+              <img src="/icons/tutor/check.svg" className="mr-[16px]" />
               영어 교육 경력 1년 이상
             </div>{' '}
             <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-2xl font-medium">
-              <img src="/icons/check.svg" className="mr-[16px]" />
+              <img src="/icons/tutor/check.svg" className="mr-[16px]" />
               시범 강의 평가 통과
             </div>
           </div>
@@ -338,21 +338,21 @@ export default function TutorsPage() {
           </p>
           <div className="mt-[40px] flex w-full flex-col justify-stretch gap-4 self-center px-6">
             <div className="flex flex-grow items-center rounded-lg border bg-white px-4 py-6 text-lg font-medium">
-              <img src="/icons/check.svg" className="mr-2 h-6 w-6" />
+              <img src="/icons/tutor/check.svg" className="mr-2 h-6 w-6" />
               미국
               <span className="text-[#D2D2D2]">・</span>
               캐나다 출신
             </div>
             <div className="flex flex-grow items-center rounded-lg border bg-white px-4 py-6 text-lg font-medium">
-              <img src="/icons/check.svg" className="mr-2 h-6 w-6" />
+              <img src="/icons/tutor/check.svg" className="mr-2 h-6 w-6" />
               TESOL/TEFL 국제 영어교육 자격증 보유
             </div>{' '}
             <div className="flex flex-grow items-center rounded-lg border bg-white px-4 py-6 text-lg font-medium">
-              <img src="/icons/check.svg" className="mr-2 h-6 w-6" />
+              <img src="/icons/tutor/check.svg" className="mr-2 h-6 w-6" />
               영어 교육 경력 1년 이상
             </div>{' '}
             <div className="flex flex-grow items-center rounded-lg border bg-white px-4 py-6 text-lg font-medium">
-              <img src="/icons/check.svg" className="mr-2 h-6 w-6" />
+              <img src="/icons/tutor/check.svg" className="mr-2 h-6 w-6" />
               시범 강의 평가 통과
             </div>
           </div>
