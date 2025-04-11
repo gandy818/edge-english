@@ -22,7 +22,7 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
 
   return (
     <>
-      <div className="mt-[60px] flex max-w-[1200px] flex-wrap justify-center gap-4 self-center max-md:flex-col max-md:gap-10">
+      <div className="mt-15 flex max-w-[1200px] flex-wrap justify-center gap-4 self-center max-md:flex-col max-md:gap-10">
         {tutorList.map((tutor) => (
           <div
             key={tutor.name}

@@ -9,7 +9,7 @@ export default async function TutorPage() {
 
   return (
     <div className="mx-auto">
-      <div className="mt-[120px] flex flex-col justify-center max-md:mt-[60px]">
+      <div className="max-md:mt-15 mt-[120px] flex flex-col justify-center">
         {/* 섹션 1 */}
         <>
           <div className="flex flex-wrap justify-center text-5xl font-bold leading-[150%] max-md:flex-col max-md:text-[32px]">
@@ -42,7 +42,7 @@ export default async function TutorPage() {
         </>
 
         {/* 섹션 2 웹 */}
-        <div className="mt-[60px] max-md:hidden">
+        <div className="mt-15 max-md:hidden">
           <div className="flex min-h-[448px] justify-end bg-[url(/images/tutor/bg-tutor.png)] bg-cover bg-center">
             <div className="self-center pr-[120px]">
               <p className="text-5xl font-bold leading-relaxed text-white">
@@ -71,9 +71,9 @@ export default async function TutorPage() {
         </div>
 
         {/* 섹션 2 모바일 */}
-        <div className="bg-mobile-tutor sm:bg-tablet-tutor mt-[60px] flex min-h-[1000px] justify-end bg-cover bg-center md:hidden">
+        <div className="bg-mobile-tutor sm:bg-tablet-tutor mt-15 flex min-h-[1000px] justify-end bg-cover bg-center md:hidden">
           <div className="flex min-h-[1000px] justify-end">
-            <div className="px-4 pt-[60px]">
+            <div className="pt-15 px-4">
               <p className="text-[32px] font-bold leading-tight text-white">
                 실력과 인성
               </p>
@@ -101,7 +101,7 @@ export default async function TutorPage() {
         {/* 섹션 3 웹 */}
         <div className="mt-[120px] flex flex-col items-center max-md:hidden">
           <p className="text-5xl font-bold">엣지영어 5단계 강사 선발 과정</p>
-          <div className="mt-[60px] flex flex-row justify-start">
+          <div className="mt-15 flex flex-row justify-start">
             {[1, 2, 3, 4, 5].map((e) => (
               <div key={e} className="flex-grow">
                 <img src={`/icons/tutor/step-${e}.svg`} />
@@ -111,11 +111,11 @@ export default async function TutorPage() {
         </div>
 
         {/* 섹션 3 모바일 */}
-        <div className="mt-[60px] flex flex-col items-center text-center md:hidden">
+        <div className="mt-15 flex flex-col items-center text-center md:hidden">
           <p className="text-[32px] font-bold">
             엣지영어 <br /> 5단계 강사 선발 과정
           </p>
-          <div className="mt-[60px] flex flex-col justify-center">
+          <div className="mt-15 flex flex-col justify-center">
             {[1, 2, 3, 4, 5].map((e) => (
               <div key={e}>
                 <img src={`/icons/tutor/mobile-step-${e}.svg`} />
@@ -162,7 +162,7 @@ export default async function TutorPage() {
         </div>
 
         {/* 섹션 4 모바일 */}
-        <div className="mt-[60px] flex w-full flex-col bg-[#F3F6F8] py-[60px] md:hidden">
+        <div className="mt-15 py-15 flex w-full flex-col bg-[#F3F6F8] md:hidden">
           <p className="self-center text-center text-[32px] font-bold">
             어떤 튜터를 만나도
             <br />

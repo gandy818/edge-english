@@ -31,7 +31,9 @@ const config: Config = {
       },
 
       spacing: {
-        '4.5': '1.125rem',
+        '4.5': '1.125rem' /* 18px */,
+
+        '15': '3.75rem' /* 60px */,
       },
 
       colors: {
