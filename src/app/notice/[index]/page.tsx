@@ -15,7 +15,7 @@ export default function NoticeDetailPage() {
 
   const getNoticeDetail = async () => {
     try {
-      const res = await axios.get<PostType[]>('/data/notice.json');
+      const res = await axios.get<PostType[]>('/data/notices.json');
 
       const { data } = res;
 

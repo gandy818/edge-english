@@ -19,7 +19,7 @@ export default function NoticePage() {
   // 공지사항 목록 불러오기
   const getNoticeList = async () => {
     try {
-      const res = await axios.get('/data/notice.json');
+      const res = await axios.get('/data/notices.json');
 
       setNoticeList(res.data);
     } catch (err) {

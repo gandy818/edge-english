@@ -243,6 +243,7 @@ const config: Config = {
       {
         light: {
           primary: '#005542',
+          'btn-border': '0px',
         },
       },
     ],
