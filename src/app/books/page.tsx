@@ -77,8 +77,6 @@ export default async function BooksPage() {
     },
   ];
 
-  console.log(process.env.NEXT_PUBLIC_URL);
-
   return (
     <div>
       {/* 지금 내 영어 레벨, 어디쯤일까요? */}
