@@ -1,15 +1,10 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import ScrollContainer from 'react-indiana-drag-scroll';
 
 export default function FaqPage() {
   const [currentType, setCurrentType] = useState('all');
-
-  useEffect(() => {
-    console.log(process.env.NEXT_PUBLIC_URL);
-    console.log('콘솔 테스트');
-  }, []);
 
   return (
     <div className="mx-auto max-w-[1200px] max-md:px-4">
