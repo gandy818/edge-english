@@ -90,7 +90,7 @@ export default function EventPage() {
         <table className="table text-center">
           {/* head */}
           <thead className="h-[70px] bg-[#F5F5F5] font-bold">
-            <tr className=" ">
+            <tr className="border-[#e8e8e8]">
               <th>구분</th>
               <th>제목</th>
               <th>작성자</th>
@@ -101,7 +101,7 @@ export default function EventPage() {
             {currentEventList.map((event) => {
               return (
                 <tr
-                  className="cursor-pointer !border-b"
+                  className="cursor-pointer !border-b border-[#e8e8e8]"
                   key={event.index}
                   onClick={() => router.push(`/events/${event.index}`)}
                 >

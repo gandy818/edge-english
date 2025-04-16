@@ -1,6 +1,54 @@
 import { BookType } from '@/types/BookType';
 import BookList from '../../components/books/BookList';
 
+// const bookList: BookType[] = [
+//   {
+//     level: '입문',
+//     category: '',
+//     title: '인터체인지1',
+//     describe:
+//       '세계적으로 유명한 케임브리지 출판사에서 만든 영어학습교재입니다. 책 한권으로 말하기, 문법, 발음, 듣기, 쓰기, 읽기를 균형 있게 배울 수 있어 프리토킹이 아직 어려운 초보 학습자에게 추천하는 교재입니다.',
+//     pdf: '',
+//     buyLink: '/',
+//   },
+//   {
+//     level: '입문',
+//     category: '일반회화',
+//     title: '인터체인지2',
+//     describe:
+//       '세계적으로 유명한 케임브리지 출판사에서 만든 영어학습교재입니다. 책 한권으로 말하기, 문법, 발음, 듣기, 쓰기, 읽기를 균형 있게 배울 수 있어 프리토킹이 아직 어려운 초보 학습자에게 추천하는 교재입니다.',
+//     pdf: '',
+//     buyLink: '/',
+//   },
+//   {
+//     level: '입문',
+//     category: '비즈니스 영어',
+//     title: '인터체인지3',
+//     describe:
+//       '세계적으로 유명한 케임브리지 출판사에서 만든 영어학습교재입니다. 책 한권으로 말하기, 문법, 발음, 듣기, 쓰기, 읽기를 균형 있게 배울 수 있어 프리토킹이 아직 어려운 초보 학습자에게 추천하는 교재입니다.',
+//     pdf: '',
+//     buyLink: '/',
+//   },
+//   {
+//     level: '입문',
+//     category: '여행 영어',
+//     title: '인터체인지4',
+//     describe:
+//       '세계적으로 유명한 케임브리지 출판사에서 만든 영어학습교재입니다. 책 한권으로 말하기, 문법, 발음, 듣기, 쓰기, 읽기를 균형 있게 배울 수 있어 프리토킹이 아직 어려운 초보 학습자에게 추천하는 교재입니다.',
+//     pdf: '',
+//     buyLink: '/',
+//   },
+//   {
+//     level: '입문',
+//     category: '프리토킹',
+//     title: '인터체인지5',
+//     describe:
+//       '세계적으로 유명한 케임브리지 출판사에서 만든 영어학습교재입니다. 책 한권으로 말하기, 문법, 발음, 듣기, 쓰기, 읽기를 균형 있게 배울 수 있어 프리토킹이 아직 어려운 초보 학습자에게 추천하는 교재입니다.',
+//     pdf: '',
+//     buyLink: '/',
+//   },
+// ];
+
 const LEVEL_LIST = [
   {
     simbol: 'bronze',
@@ -25,56 +73,9 @@ const LEVEL_LIST = [
 ];
 
 export default async function BooksPage() {
-  // const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/data/books.json`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/data/books.json`);
 
-  // const bookList: BookType[] = await res.json();
-  const bookList: BookType[] = [
-    {
-      level: '입문',
-      category: '',
-      title: '인터체인지1',
-      describe:
-        '세계적으로 유명한 케임브리지 출판사에서 만든 영어학습교재입니다. 책 한권으로 말하기, 문법, 발음, 듣기, 쓰기, 읽기를 균형 있게 배울 수 있어 프리토킹이 아직 어려운 초보 학습자에게 추천하는 교재입니다.',
-      pdf: '',
-      buyLink: '/',
-    },
-    {
-      level: '입문',
-      category: '일반회화',
-      title: '인터체인지2',
-      describe:
-        '세계적으로 유명한 케임브리지 출판사에서 만든 영어학습교재입니다. 책 한권으로 말하기, 문법, 발음, 듣기, 쓰기, 읽기를 균형 있게 배울 수 있어 프리토킹이 아직 어려운 초보 학습자에게 추천하는 교재입니다.',
-      pdf: '',
-      buyLink: '/',
-    },
-    {
-      level: '입문',
-      category: '비즈니스 영어',
-      title: '인터체인지3',
-      describe:
-        '세계적으로 유명한 케임브리지 출판사에서 만든 영어학습교재입니다. 책 한권으로 말하기, 문법, 발음, 듣기, 쓰기, 읽기를 균형 있게 배울 수 있어 프리토킹이 아직 어려운 초보 학습자에게 추천하는 교재입니다.',
-      pdf: '',
-      buyLink: '/',
-    },
-    {
-      level: '입문',
-      category: '여행 영어',
-      title: '인터체인지4',
-      describe:
-        '세계적으로 유명한 케임브리지 출판사에서 만든 영어학습교재입니다. 책 한권으로 말하기, 문법, 발음, 듣기, 쓰기, 읽기를 균형 있게 배울 수 있어 프리토킹이 아직 어려운 초보 학습자에게 추천하는 교재입니다.',
-      pdf: '',
-      buyLink: '/',
-    },
-    {
-      level: '입문',
-      category: '프리토킹',
-      title: '인터체인지5',
-      describe:
-        '세계적으로 유명한 케임브리지 출판사에서 만든 영어학습교재입니다. 책 한권으로 말하기, 문법, 발음, 듣기, 쓰기, 읽기를 균형 있게 배울 수 있어 프리토킹이 아직 어려운 초보 학습자에게 추천하는 교재입니다.',
-      pdf: '',
-      buyLink: '/',
-    },
-  ];
+  const bookList: BookType[] = await res.json();
 
   return (
     <div>

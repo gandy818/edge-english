@@ -103,7 +103,7 @@ export default function NoticePage() {
         <table className="table text-center">
           {/* head */}
           <thead className="h-[70px] bg-[#F5F5F5] font-bold">
-            <tr className=" ">
+            <tr className="border-[#e8e8e8]">
               <th>번호</th>
               <th>구분</th>
               <th>제목</th>
@@ -115,7 +115,7 @@ export default function NoticePage() {
             {currentNoticeList.map((notice, index) => {
               return (
                 <tr
-                  className="cursor-pointer !border-b"
+                  className="cursor-pointer !border-b border-[#e8e8e8]"
                   key={index}
                   onClick={() => router.push(`/notice/${notice.index}`)}
                 >

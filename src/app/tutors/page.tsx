@@ -2,20 +2,20 @@ import TutorGallery from '@/components/tutros/TutorGallery';
 import { TutorType } from '@/types/TutorType';
 import Link from 'next/link';
 
+// const tutorList: TutorType[] = [
+//   {
+//     name: 'Grace',
+//     desc: '금융학을 전공한, 한국인 영어 티칭 경력이 풍부한 미국인 튜터',
+//     tags: ['TEFL', '금융학전공', '간호대학원재학'],
+//     img: '/images/tutor/tutor.jpg',
+//     countryImg: '/icons/tutor/usa.svg',
+//   },
+// ];
+
 export default async function TutorPage() {
-  // const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/data/tutors.json`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/data/tutors.json`);
 
-  // const tutorList: TutorType[] = await res.json();
-
-  const tutorList: TutorType[] = [
-    {
-      name: 'Grace',
-      desc: '금융학을 전공한, 한국인 영어 티칭 경력이 풍부한 미국인 튜터',
-      tags: ['TEFL', '금융학전공', '간호대학원재학'],
-      img: '/images/tutor/tutor.jpg',
-      countryImg: '/icons/tutor/usa.svg',
-    },
-  ];
+  const tutorList: TutorType[] = await res.json();
 
   return (
     <div className="mx-auto">
