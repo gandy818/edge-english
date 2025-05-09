@@ -19,12 +19,12 @@ export default async function TutorPage() {
 
   return (
     <div className="mx-auto">
-      <div className="max-md:mt-15 mt-[120px] flex flex-col justify-center">
+      <div className="mt-[120px] flex flex-col justify-center max-md:mt-15">
         {/* 섹션 1 */}
         <>
           <div className="flex flex-wrap justify-center text-5xl font-bold leading-[150%] max-md:flex-col max-md:text-[32px]">
             <p className="self-center md:pr-4">TESOL/TEFL을 보유한</p>
-            <p className="text-edge-purple self-center md:pr-4">100% 미국·캐나다</p>
+            <p className="self-center text-edge-purple md:pr-4">100% 미국·캐나다</p>
             <p className="self-center">원어민 강사진</p>
           </div>
           <div className="mt-6 flex justify-center">
@@ -81,9 +81,9 @@ export default async function TutorPage() {
         </div>
 
         {/* 섹션 2 모바일 */}
-        <div className="bg-mobile-tutor sm:bg-tablet-tutor mt-15 flex min-h-[1000px] justify-end bg-cover bg-center md:hidden">
+        <div className="mt-15 flex min-h-[1000px] justify-end bg-mobile-tutor bg-cover bg-center sm:bg-tablet-tutor md:hidden">
           <div className="flex min-h-[1000px] justify-end">
-            <div className="pt-15 px-4">
+            <div className="px-4 pt-15">
               <p className="text-[32px] font-bold leading-tight text-white">
                 실력과 인성
               </p>
@@ -114,7 +114,7 @@ export default async function TutorPage() {
           <div className="mt-15 flex flex-row justify-start">
             {[1, 2, 3, 4, 5].map((e) => (
               <div key={e} className="flex-grow">
-                <img src={`/icons/tutor/step-${e}.svg`} />
+                <img src={`/icons/tutor/step-${e}.svg`} alt={`step ${e} img`} />
               </div>
             ))}
           </div>
@@ -128,12 +128,15 @@ export default async function TutorPage() {
           <div className="mt-15 flex flex-col justify-center">
             {[1, 2, 3, 4, 5].map((e) => (
               <div key={e}>
-                <img src={`/icons/tutor/mobile-step-${e}.svg`} />
+                <img
+                  src={`/icons/tutor/mobile-step-${e}.svg`}
+                  alt={`mobile step ${e} img`}
+                />
                 {e === 5 ? (
                   <div></div>
                 ) : (
                   <div className="my-4 flex justify-center">
-                    <img src="/icons/tutor/arrow-down.svg" />
+                    <img src="/icons/tutor/arrow-down.svg" alt="arrow down" />
                   </div>
                 )}
               </div>
@@ -151,28 +154,28 @@ export default async function TutorPage() {
           </p>
           <div className="mt-[40px] grid w-full max-w-[1200px] grid-cols-2 items-center gap-4 self-center">
             <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-2xl font-medium">
-              <img src="/icons/tutor/check.svg" className="mr-[16px]" />
+              <img src="/icons/tutor/check.svg" className="mr-[16px]" alt="check" />
               미국
               <span className="text-[#D2D2D2]">・</span>
               캐나다 출신
             </div>
             <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-2xl font-medium">
-              <img src="/icons/tutor/check.svg" className="mr-[16px]" />
+              <img src="/icons/tutor/check.svg" className="mr-[16px]" alt="check" />
               TESOL/TEFL 국제 영어교육 자격증 보유
             </div>{' '}
             <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-2xl font-medium">
-              <img src="/icons/tutor/check.svg" className="mr-[16px]" />
+              <img src="/icons/tutor/check.svg" className="mr-[16px]" alt="check" />
               영어 교육 경력 1년 이상
             </div>{' '}
             <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-2xl font-medium">
-              <img src="/icons/tutor/check.svg" className="mr-[16px]" />
+              <img src="/icons/tutor/check.svg" className="mr-[16px]" alt="check" />
               시범 강의 평가 통과
             </div>
           </div>
         </div>
 
         {/* 섹션 4 모바일 */}
-        <div className="mt-15 py-15 flex w-full flex-col bg-[#F3F6F8] md:hidden">
+        <div className="mt-15 flex w-full flex-col bg-[#F3F6F8] py-15 md:hidden">
           <p className="self-center text-center text-[32px] font-bold">
             어떤 튜터를 만나도
             <br />
@@ -185,21 +188,21 @@ export default async function TutorPage() {
           </p>
           <div className="mt-[40px] flex w-full flex-col justify-stretch gap-4 self-center px-6">
             <div className="flex flex-grow items-center rounded-lg border bg-white px-4 py-6 text-lg font-medium">
-              <img src="/icons/tutor/check.svg" className="mr-2 h-6 w-6" />
+              <img src="/icons/tutor/check.svg" className="mr-2 h-6 w-6" alt="check" />
               미국
               <span className="text-[#D2D2D2]">・</span>
               캐나다 출신
             </div>
             <div className="flex flex-grow items-center rounded-lg border bg-white px-4 py-6 text-lg font-medium">
-              <img src="/icons/tutor/check.svg" className="mr-2 h-6 w-6" />
+              <img src="/icons/tutor/check.svg" className="mr-2 h-6 w-6" alt="check" />
               TESOL/TEFL 국제 영어교육 자격증 보유
             </div>{' '}
             <div className="flex flex-grow items-center rounded-lg border bg-white px-4 py-6 text-lg font-medium">
-              <img src="/icons/tutor/check.svg" className="mr-2 h-6 w-6" />
+              <img src="/icons/tutor/check.svg" className="mr-2 h-6 w-6" alt="check" />
               영어 교육 경력 1년 이상
             </div>{' '}
             <div className="flex flex-grow items-center rounded-lg border bg-white px-4 py-6 text-lg font-medium">
-              <img src="/icons/tutor/check.svg" className="mr-2 h-6 w-6" />
+              <img src="/icons/tutor/check.svg" className="mr-2 h-6 w-6" alt="check" />
               시범 강의 평가 통과
             </div>
           </div>

@@ -13,21 +13,21 @@ export default function NoticeDetailPage() {
   const [prevNotice, setPrevNotice] = useState<PostType>();
   const [nextNotice, setNextNotice] = useState<PostType>();
 
-  const getNoticeDetail = async () => {
-    try {
-      const res = await axios.get<PostType[]>('/data/notices.json');
-
-      const { data } = res;
-
-      setNotice(data.filter((item) => item.index === Number(currentIndex))[0]);
-      setPrevNotice(data.filter((item) => item.index === Number(currentIndex) + 1)[0]); // 다음글
-      setNextNotice(data.filter((item) => item.index === Number(currentIndex) - 1)[0]); // 이전글
-    } catch (err) {
-      console.error(err);
-    }
-  };
-
   useEffect(() => {
+    const getNoticeDetail = async () => {
+      try {
+        const res = await axios.get<PostType[]>('/data/notices.json');
+
+        const { data } = res;
+
+        setNotice(data.filter((item) => item.index === Number(currentIndex))[0]);
+        setPrevNotice(data.filter((item) => item.index === Number(currentIndex) + 1)[0]); // 다음글
+        setNextNotice(data.filter((item) => item.index === Number(currentIndex) - 1)[0]); // 이전글
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
     getNoticeDetail();
   }, []);
 
@@ -41,8 +41,8 @@ export default function NoticeDetailPage() {
         <h1 className="font-montserrat text-5xl font-semibold text-black max-md:text-[40px]">
           {notice?.title}
         </h1>
-        <p className="text-edge-gray font-semibold">
-          등록일 <span className="text-edge-gray font-montserrat">{notice?.date}</span>
+        <p className="font-semibold text-edge-gray">
+          등록일 <span className="font-montserrat text-edge-gray">{notice?.date}</span>
         </p>
       </div>
 

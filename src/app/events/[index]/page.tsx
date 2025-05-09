@@ -13,22 +13,21 @@ export default function EventDetailPage() {
   const [prevEvent, setPrevEvent] = useState<PostType>();
   const [nextEvent, setNextEvent] = useState<PostType>();
 
-  const getEventDetail = async () => {
-    try {
-      const res = await axios.get<PostType[]>('/data/events.json');
-
-      const { data } = res;
-
-      setEvent(data.filter((item) => item.index === Number(currentIndex))[0]);
-      setPrevEvent(data.filter((item) => item.index === Number(currentIndex) + 1)[0]); // 다음글
-      setNextEvent(data.filter((item) => item.index === Number(currentIndex) - 1)[0]); // 이전글
-    } catch (err) {
-      console.error(err);
-    }
-  };
-
   useEffect(() => {
-    console.log(nextEvent);
+    const getEventDetail = async () => {
+      try {
+        const res = await axios.get<PostType[]>('/data/events.json');
+
+        const { data } = res;
+
+        setEvent(data.filter((item) => item.index === Number(currentIndex))[0]);
+        setPrevEvent(data.filter((item) => item.index === Number(currentIndex) + 1)[0]); // 다음글
+        setNextEvent(data.filter((item) => item.index === Number(currentIndex) - 1)[0]); // 이전글
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
     getEventDetail();
   }, []);
 
@@ -40,8 +39,8 @@ export default function EventDetailPage() {
         <h1 className="font-montserrat text-5xl font-semibold text-black max-md:text-[40px]">
           {event?.title}
         </h1>
-        <p className="text-edge-gray font-semibold">
-          등록일 <span className="text-edge-gray font-montserrat">{event?.date}</span>
+        <p className="font-semibold text-edge-gray">
+          등록일 <span className="font-montserrat text-edge-gray">{event?.date}</span>
         </p>
       </div>
 

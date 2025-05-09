@@ -39,7 +39,7 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
               {tutor.tags.map((tag) => (
                 <div
                   key={tag}
-                  className="bg-edge-purple rounded-lg bg-opacity-10 px-3 py-2 text-xs font-semibold text-[#5542A5]"
+                  className="rounded-lg bg-edge-purple bg-opacity-10 px-3 py-2 text-xs font-semibold text-[#5542A5]"
                 >
                   #{tag}
                 </div>
@@ -57,7 +57,7 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
             <div className="m-6 flex flex-row justify-between">
               <div className="flex-center text-[28px] font-bold">
                 튜터&nbsp;
-                <span className="text-edge-purple text-2xl">
+                <span className="text-2xl text-edge-purple">
                   {selectedTutor?.name ?? ''}
                 </span>
               </div>
@@ -90,7 +90,10 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
                     alt={selectedTutor?.name}
                   />
                   <div className="flex flex-row items-center justify-center pt-6">
-                    <img src={selectedTutor?.countryImg ?? '/icons/x-btn.svg'} />
+                    <img
+                      src={selectedTutor?.countryImg ?? '/icons/x-btn.svg'}
+                      alt="x button"
+                    />
                     <p className="pl-2 font-montserrat text-2xl font-bold">
                       {selectedTutor?.name}
                     </p>
@@ -102,7 +105,7 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
                   <p className="mb-4 text-2xl font-bold max-md:text-xl">
                     엣지 운영진이 소개하는 튜터
                   </p>
-                  <p className="text- text-edge-gray mb-6 text-pretty text-base font-normal">
+                  <p className="text- mb-6 text-pretty text-base font-normal text-edge-gray">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
                     facilis inventore necessitatibus dolores, earum dolore cupiditate
                     sequi tenetur. Veritatis, ipsa nostrum maiores possimus aliquam earum
@@ -112,7 +115,7 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
                   </p>
 
                   <p className="mb-4 text-2xl font-bold max-md:text-xl">자기소개</p>
-                  <p className="text- text-edge-gray mb-6 text-pretty text-base font-normal">
+                  <p className="text- mb-6 text-pretty text-base font-normal text-edge-gray">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minima
                     fuga sequi ullam, reprehenderit illo ea earum assumenda praesentium
                     rem nobis dolorem quo repellat vitae fugiat distinctio, saepe quidem,
@@ -120,13 +123,13 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
                   </p>
 
                   <p className="mb-4 text-2xl font-bold max-md:text-xl">취미</p>
-                  <p className="text- text-edge-gray mb-6 text-pretty text-base font-normal">
+                  <p className="text- mb-6 text-pretty text-base font-normal text-edge-gray">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
                     hic.
                   </p>
 
                   <p className="mb-4 text-2xl font-bold max-md:text-xl">경력</p>
-                  <p className="text- text-edge-gray mb-6 text-pretty text-base font-normal">
+                  <p className="text- mb-6 text-pretty text-base font-normal text-edge-gray">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
