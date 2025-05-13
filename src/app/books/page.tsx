@@ -1,5 +1,6 @@
 import { BookType } from '@/types/BookType';
 import BookList from '../../components/books/BookList';
+import rawBookList from '@/data/books.json';
 
 // const bookList: BookType[] = [
 //   {
@@ -73,9 +74,10 @@ const LEVEL_LIST = [
 ];
 
 export default async function BooksPage() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/data/books.json`);
+  // const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/data/books.json`);
 
-  const bookList: BookType[] = await res.json();
+  // const bookList: BookType[] = await res.json();
+  const bookList = rawBookList as BookType[];
 
   return (
     <div>

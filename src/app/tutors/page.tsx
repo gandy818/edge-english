@@ -1,6 +1,7 @@
 import TutorGallery from '@/components/tutros/TutorGallery';
 import { TutorType } from '@/types/TutorType';
 import Link from 'next/link';
+import rawTutorList from '@/data/tutors.json';
 
 // const tutorList: TutorType[] = [
 //   {
@@ -13,9 +14,10 @@ import Link from 'next/link';
 // ];
 
 export default async function TutorPage() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/data/tutors.json`);
+  // const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/data/tutors.json`);
 
-  const tutorList: TutorType[] = await res.json();
+  // const tutorList: TutorType[] = await res.json();
+  const tutorList: TutorType[] = rawTutorList;
 
   return (
     <div className="mx-auto">
