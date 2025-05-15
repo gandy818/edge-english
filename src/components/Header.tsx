@@ -21,40 +21,43 @@ export default function Header() {
         <div className="flex gap-11 max-md:hidden">
           <Link
             href="/events"
-            className={`text-nowrap ${pathName.startsWith('/events') ? 'font-bold' : 'text-edge-light font-medium'}`}
+            className={`text-nowrap ${pathName.startsWith('/events') ? 'font-bold' : 'font-medium text-edge-light'}`}
           >
             이벤트
           </Link>
 
           <Link
             href="/notice"
-            className={`text-nowrap ${pathName.startsWith('/notice') ? 'font-bold' : 'text-edge-light font-medium'}`}
+            className={`text-nowrap ${pathName.startsWith('/notice') ? 'font-bold' : 'font-medium text-edge-light'}`}
           >
             공지사항
           </Link>
 
           <Link
             href="/tutors"
-            className={`text-nowrap ${pathName.startsWith('/tutors') ? 'font-bold' : 'text-edge-light font-medium'}`}
+            className={`text-nowrap ${pathName.startsWith('/tutors') ? 'font-bold' : 'font-medium text-edge-light'}`}
           >
             강사진
           </Link>
 
           <Link
             href="/books"
-            className={`text-nowrap ${pathName.startsWith('/books') ? 'font-bold' : 'text-edge-light font-medium'}`}
+            className={`text-nowrap ${pathName.startsWith('/books') ? 'font-bold' : 'font-medium text-edge-light'}`}
           >
             교재
           </Link>
 
           <Link
             href="/faq"
-            className={`text-nowrap ${pathName.startsWith('/faq') ? 'font-bold' : 'text-edge-light font-medium'}`}
+            className={`text-nowrap ${pathName.startsWith('/faq') ? 'font-bold' : 'font-medium text-edge-light'}`}
           >
             자주 묻는 질문
           </Link>
 
-          <Link href="/" className="text-edge-light text-nowrap font-medium">
+          <Link
+            href="/price"
+            className={`text-nowrap ${pathName.startsWith('/price') ? 'font-bold' : 'font-medium text-edge-light'}`}
+          >
             수업료
           </Link>
         </div>
