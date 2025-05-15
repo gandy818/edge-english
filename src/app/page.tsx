@@ -44,14 +44,14 @@ export default function Home() {
 
           <h2 className="mt-8 text-center text-[32px] text-[#4A4A4A]">
             엣지영어에서 실력이 검증된{' '}
-            <span className="font-semibold text-[#333]">‘북미 원어민 강사’</span>에게
-            합리적인 가격으로 영어를 배워보세요!
+            <span className="font-semibold">‘북미 원어민 강사’</span>에게 합리적인
+            가격으로 영어를 배워보세요!
           </h2>
         </>
 
         {/* 수강신청하기 */}
         <div className="mx-auto mt-10 w-fit">
-          <button className="btn h-[58px] w-50 border-none bg-edge-yellow font-bold text-[#333] hover:bg-edge-yellow hover:text-[#333]">
+          <button className="btn h-[58px] w-50 border-none bg-edge-yellow font-bold hover:bg-edge-yellow hover:text-[#333]">
             수강신청하기
           </button>
         </div>
