@@ -155,24 +155,207 @@ export default function Home() {
       </div>
 
       {/* 섹션 4 화상영어 수강생들의 흔한 고민 */}
-      <div className="relative aspect-[1440/1430] w-full">
-        <Image
-          src={'/images/main/main-chats.png'}
-          alt="An infographic showing common online English learning concerns and how Edge English solves them with native tutors and review tools."
-          fill
-          className="object-contain"
-        />
+      <div
+        className="p-[120px]"
+        style={{
+          background: `linear-gradient(180deg, rgba(238,199,5,0.20) 0%, rgba(254,254,254,0.04) 100%), #FFFAF6`,
+        }}
+      >
+        <h3 className="text-center text-[50px] font-medium text-[#140F33]">
+          화상영어 수강생들의 흔한 고민,
+        </h3>
+        <h4 className="text-center text-[50px] font-bold text-[#F80]">
+          엣지영어는 이렇게 해결합니다!
+        </h4>
+
+        <div className="mt-10 flex flex-col gap-4 px-15">
+          {/* 말풍선 01 */}
+          <div className="flex gap-2">
+            <Image
+              src={'/icons/main/student01.png'}
+              alt="student 1 memoji"
+              width={96}
+              height={96}
+              className="h-24 shrink-0 self-end"
+            />
+            <div className="chat chat-start flex-1">
+              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg">
+                강사만 계속 말하는 것 같아요.
+              </div>
+            </div>
+          </div>
+
+          {/* 튜터 말풍선 01 */}
+          <div className="flex gap-2">
+            <div className="chat chat-end flex-1">
+              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg">
+                엣지영어 튜터는 학생의 말하기를 이끌어내도록 훈련된 원어민이에요. <br />{' '}
+                수업 중 함께 말할 수 있는 교재를 사용하니까, 듣기만 하는 수업과는 달라요!
+              </div>
+            </div>
+            <Image
+              src={'/icons/main/tutor01.png'}
+              alt="tutor memoji"
+              width={96}
+              height={96}
+              className="h-24 shrink-0 self-end"
+            />
+          </div>
+
+          {/* 말풍선 02 */}
+          <div className="flex gap-2">
+            <Image
+              src={'/icons/main/student02.png'}
+              alt="student 2 memoji"
+              width={96}
+              height={96}
+              className="h-24 shrink-0 self-end"
+            />
+            <div className="chat chat-start flex-1">
+              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg">
+                강사의 발음이 아쉬워요.
+              </div>
+            </div>
+          </div>
+
+          {/* 튜터 말풍선 02 */}
+          <div className="flex gap-2">
+            <div className="chat chat-end flex-1">
+              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg">
+                엣지영어 강사는 100% 미국·캐나다 출신 원어민으로, <br /> 어느 튜터를
+                만나도 북미식 발음을 배울 수 있어요.
+              </div>
+            </div>
+            <Image
+              src={'/icons/main/tutor01.png'}
+              alt="tutor memoji"
+              width={96}
+              height={96}
+              className="h-24 shrink-0 self-end"
+            />
+          </div>
+
+          {/* 말풍선 03 */}
+          <div className="flex gap-2">
+            <Image
+              src={'/icons/main/student03.png'}
+              alt="student 3 memoji"
+              width={96}
+              height={96}
+              className="h-24 shrink-0 self-end"
+            />
+            <div className="chat chat-start flex-1">
+              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg">
+                강사의 전문성이 부족해 보여요.
+              </div>
+            </div>
+          </div>
+
+          {/* 튜터 말풍선 03 */}
+          <div className="flex gap-2">
+            <div className="chat chat-end flex-1">
+              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg">
+                엣지영어의 모든 강사는 TESOL/TEFL(국제 영어 교육 자격증)을 기본으로
+                보유하고 있으며, <br /> 철저한 5단계 검증 절차를 모두 통과한 선생님만
+                채용합니다.
+              </div>
+            </div>
+            <Image
+              src={'/icons/main/tutor01.png'}
+              alt="tutor memoji"
+              width={96}
+              height={96}
+              className="h-24 shrink-0 self-end"
+            />
+          </div>
+
+          {/* 말풍선 04 */}
+          <div className="flex gap-2">
+            <Image
+              src={'/icons/main/student04.png'}
+              alt="student 4 memoji"
+              width={96}
+              height={96}
+              className="h-24 shrink-0 self-end"
+            />
+            <div className="chat chat-start flex-1">
+              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg">
+                수업 때 배운 표현을 다시 쓰고 싶은데, 정확히 뭐였는지 생각이 안 나요.
+              </div>
+            </div>
+          </div>
+
+          {/* 튜터 말풍선 04 */}
+          <div className="flex gap-2">
+            <div className="chat chat-end flex-1">
+              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg">
+                수업에서 배운 내용을 놓치지 않도록, 모든 수업 후 복습 노트를 제공합니다.{' '}
+                <br /> 중요한 표현을 다시 확인하고, 배운 영어를 확실히 내 것으로 만들 수
+                있어요!
+              </div>
+            </div>
+            <Image
+              src={'/icons/main/tutor01.png'}
+              alt="tutor memoji"
+              width={96}
+              height={96}
+              className="h-24 shrink-0 self-end"
+            />
+          </div>
+        </div>
       </div>
 
       {/* 섹션 5 매번 작심삼일로 끝났다면? */}
-      <div className="relative aspect-[1440/560] w-full">
-        <Image
-          src={'/images/main/we-can-help.png'}
-          alt="we can help"
-          fill
-          className="object-contain"
-        />
+      <div
+        className="relative aspect-[1440/560] w-full bg-contain bg-no-repeat px-36 py-32"
+        style={{ backgroundImage: "url('/images/main/we-can-help-bg.png')" }}
+      >
+        <p
+          className="text- text-center text-[56px] font-bold text-white"
+          style={{ textShadow: '0px 0px 10px rgba(0, 0, 0, 0.50)' }}
+        >
+          영어, 매번 작심삼일로 끝났다면? <br />
+          포기하지 않도록 엣지영어가 도와드릴게요!
+        </p>
+        <p
+          className="mt-8 text-center text-[32px] font-medium text-white"
+          style={{ textShadow: '0px 0px 10px rgba(0, 0, 0, 0.50)' }}
+        >
+          운영진들의 오랜 강사 경력과 노하우를 바탕으로 완성된 학습시스템을 소개합니다.
+        </p>
       </div>
+
+      {/* 섹션 6 지속 가능한 영어 학습 시스템 */}
+      <>
+        <div className="bg-[#F3F6F8] px-[180px] pb-[140px] pt-[100px]">
+          <h3 className="pb-15 text-center text-[50px] font-bold text-[#140F33]">
+            지속 가능한 영어 학습 시스템
+          </h3>
+          <div className="flex justify-between gap-16">
+            <div className="flex-1">
+              <span className="block h-[61px] w-fit rounded-full border-none bg-edge-yellow px-6 py-4 text-2xl font-bold text-[#333]">
+                포인트1
+              </span>
+              <h4 className="pt-6 text-[50px] font-bold leading-[120%] text-[#140F33]">
+                고정제 수업으로 <br />
+                만드는 영어 루틴
+              </h4>
+              <p className="mt-8 text-2xl leading-[140%] text-edge-gray">
+                정해진 요일과 시간에 꾸준히 진행되는 고정제 수업은 바쁜 일상 속에서도
+                영어를 포기하지 않도록 강력한 동기부여가 됩니다.
+              </p>
+            </div>
+            <div className="flex-center flex-1">
+              <Image
+                src={'/images/main/point01.png'}
+                alt="point 01"
+                width={580}
+                height={400}
+              />
+            </div>
+          </div>
+        </div>
+      </>
     </div>
   );
 }
