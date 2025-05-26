@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import RealReviews from './components/main/RealReviews';
 
 export default function Home() {
   return (
@@ -327,6 +328,7 @@ export default function Home() {
 
       {/* 섹션 6 지속 가능한 영어 학습 시스템 */}
       <>
+        {/* 포인트 1 */}
         <div className="bg-[#F3F6F8] px-[180px] pb-[140px] pt-[100px]">
           <h3 className="pb-15 text-center text-[50px] font-bold text-[#140F33]">
             지속 가능한 영어 학습 시스템
@@ -345,6 +347,7 @@ export default function Home() {
                 영어를 포기하지 않도록 강력한 동기부여가 됩니다.
               </p>
             </div>
+
             <div className="flex-center flex-1">
               <Image
                 src={'/images/main/point01.png'}
@@ -355,7 +358,156 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* 포인트 2 */}
+        <div className="px-[180px] pb-[140px] pt-[100px]">
+          <div className="flex justify-between gap-16">
+            <div className="flex-center flex-1">
+              <Image
+                src={'/images/main/point02.png'}
+                alt="point 02"
+                width={580}
+                height={400}
+              />
+            </div>
+
+            <div className="flex-1">
+              <span className="block h-[61px] w-fit rounded-full border-none bg-edge-yellow px-6 py-4 text-2xl font-bold text-[#333]">
+                포인트2
+              </span>
+              <h4 className="pt-6 text-[50px] font-bold leading-[120%] text-[#140F33]">
+                다양한 주제의 <br />
+                고퀄리티 교재 완비
+              </h4>
+              <p className="mt-8 text-2xl leading-[140%] text-edge-gray">
+                비즈니스, 여행, 일상 등 다양한 상황의 영어를 연습할 수 있는 세계적으로
+                인정받은 고품질 교재를 사용합니다.
+              </p>
+              <p className="mt-2 text-2xl text-[#a4a4a4]">
+                * 대부분 옥스포드 출판 교재 사용
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 포인트 3 */}
+        <div className="bg-[#F3F6F8] px-[180px] pb-[140px] pt-[100px]">
+          <div className="flex justify-between gap-16">
+            <div className="flex-1">
+              <span className="block h-[61px] w-fit rounded-full border-none bg-edge-yellow px-6 py-4 text-2xl font-bold text-[#333]">
+                포인트3
+              </span>
+              <h4 className="pt-6 text-[50px] font-bold leading-[120%] text-[#140F33]">
+                전원 미국·캐나다 출신 <br />
+                원어민 강사진
+              </h4>
+              <p className="mt-8 text-2xl leading-[140%] text-edge-gray">
+                영어에는 다양한 억양이 있지만, 한국 학습자에게 가장 익숙한 북미식 발음을
+                사용하는 튜터만으로 구성되어있어요.
+              </p>
+            </div>
+
+            <div className="flex-center flex-1">
+              <Image
+                src={'/images/main/point03.png'}
+                alt="point 03"
+                width={580}
+                height={400}
+              />
+            </div>
+          </div>
+        </div>
       </>
+
+      {/* 섹션7 솔직 찐후기 */}
+      <div className="py-[120px] text-center">
+        <p className="px-[140px] text-[22px] font-semibold text-edge-purple">
+          솔직 찐후기
+        </p>
+        <h3 className="mt-4 px-[140px] text-[50px] font-bold text-[#140F33]">
+          왜 모두 엣지영어에 만족할까요?
+        </h3>
+
+        <RealReviews />
+      </div>
+
+      {/* 섹션8 */}
+      <div
+        className="w-full py-15"
+        style={{ background: 'linear-gradient(115deg, #F3F6F8 0%, #D9D0FF 100%)' }}
+      >
+        <div>
+          <img
+            className="mx-auto justify-self-center"
+            src="/icons/main/check.svg"
+            alt="보라색 체크 표시 아이콘"
+            width={64}
+            height={64}
+          />
+          <h3
+            className="mx-auto w-fit text-[50px] font-bold"
+            style={{
+              background: 'linear-gradient(89deg, #322585 19.7%, #7D5FFF 76.42%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+            }}
+          >
+            엣지영어만의 특별한 디테일
+          </h3>
+          <h4 className="mx-auto w-fit text-2xl text-[#A4A4A4]">
+            한국인이 영어에서 느끼는 어려움을 누구보다 잘 아니까. <br /> 초급부터 고급까지
+            모든 학습자를 만족 시키는 엣지 포인트!
+          </h4>
+
+          <div className="relative mx-[110px] mt-6 flex h-[90px] w-full rounded-2xl">
+            {/* POINT 01 */}
+            <div
+              className="absolute left-0 flex h-full w-[22rem] items-center justify-center text-xl font-bold text-white"
+              style={{
+                background: 'linear-gradient(90deg, #b99cff 0%, #7D5FFF 100%)',
+                clipPath: 'polygon(0 0, 93% 0, 100% 50%, 93% 100%, 0 100%, 0 10%)',
+                borderTopLeftRadius: '24px',
+                borderBottomLeftRadius: '24px',
+              }}
+              // clipPath: 'polygon(0 10%, 93% 0, 100% 50%, 93% 100%, 0 90%, 0 10%)',
+            >
+              POINT 01
+            </div>
+            {/* POINT 02 */}
+            <div
+              className="absolute left-[20rem] flex h-full w-[22rem] items-center justify-center text-xl font-bold text-white opacity-60"
+              style={{
+                background: '#6C53BC',
+                clipPath: 'polygon(0 0, 93% 0, 100% 50%, 93% 100%, 0 100%, 7% 50%)',
+              }}
+            >
+              POINT 02
+            </div>
+            {/* POINT 03 */}
+            <div
+              className="absolute left-[40rem] flex h-full w-[22rem] items-center justify-center text-xl font-bold text-white opacity-60"
+              style={{
+                background: '#5B44A3',
+                clipPath: 'polygon(0 0, 93% 0, 100% 50%, 93% 100%, 0 100%, 7% 50%)',
+              }}
+            >
+              POINT 03
+            </div>
+            {/* POINT 04 */}
+            <div
+              className="absolute left-[60rem] flex h-full w-[22rem] items-center justify-center text-xl font-bold text-white opacity-60"
+              style={{
+                background: '#6C53BC',
+                clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%, 7% 50%)',
+                borderTopRightRadius: '24px',
+                borderBottomRightRadius: '24px',
+              }}
+            >
+              POINT 04
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
