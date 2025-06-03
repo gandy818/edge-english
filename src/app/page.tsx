@@ -1,5 +1,6 @@
+import RealReviews from '@/components/main/RealReviews';
+import PointsTab from '@/components/main/pointsTab';
 import Image from 'next/image';
-import RealReviews from './components/main/RealReviews';
 
 export default function Home() {
   return (
@@ -63,7 +64,66 @@ export default function Home() {
       </div>
 
       {/* 섹션 2 탠저린샘의 10초 영어 */}
-      <div className="h-[934px] bg-[#FFFAF6]"></div>
+      <div
+        className="bg-[#FFFAF6] bg-right-bottom bg-no-repeat p-[120px] text-center"
+        style={{
+          backgroundImage: "url('/images/main/shorts-bg.svg')",
+        }}
+      >
+        <div className="w-4/5">
+          <h2 className="text-[50px] font-semibold text-[#140F33]">
+            엣지영어 대표 <span className="text-[#f80]">탠저린샘의 10초영어</span>
+          </h2>
+          <h3 className="mt-4 text-2xl text-[#8e8e8e]">
+            한국인이 자주 막히는 영어 표현, 탠저린쌤이 빠르게 정리해드려요
+          </h3>
+
+          {/* 숏츠 */}
+          <div className="mt-10 flex gap-6">
+            <iframe
+              src={`https://www.youtube.com/embed/FkJ3hjifTzk?autoplay=0`}
+              title="YouTube Shorts"
+              className="aspect-[9/16] flex-1 rounded-2xl"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+            <iframe
+              src={`https://www.youtube.com/embed/FkJ3hjifTzk?autoplay=0`}
+              title="YouTube Shorts"
+              className="aspect-[9/16] flex-1 rounded-2xl"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+            <iframe
+              src={`https://www.youtube.com/embed/FkJ3hjifTzk?autoplay=0`}
+              title="YouTube Shorts"
+              className="aspect-[9/16] flex-1 rounded-2xl"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+
+          {/* 버튼 */}
+          <div className="mx-auto mt-6 w-fit">
+            <button className="btn h-14 rounded-lg bg-edge-yellow px-8 py-4 font-bold">
+              더 많은 표현 보러가기
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="py-4 text-center"
+        style={{
+          background:
+            'var(--g01, linear-gradient(90deg, #AA96FF -2.03%, #7D5FFF 102.29%))',
+        }}
+      >
+        <p className="text-lg text-white">
+          영어영문학전공 영어강사,{' '}
+          <span className="font-semibold text-[#FFEB3B]">「탠저린의 써먹는 영어」</span>{' '}
+          유튜브,인스타그램,블로그 운영 중
+        </p>
+      </div>
 
       {/* 섹션 3 수업 절차 */}
       <div className="mx-auto my-[120px] w-fit text-center">
@@ -454,57 +514,19 @@ export default function Home() {
           >
             엣지영어만의 특별한 디테일
           </h3>
-          <h4 className="mx-auto w-fit text-2xl text-[#A4A4A4]">
+          <h4 className="mx-auto mt-6 w-fit text-2xl text-[#4A4A4A]">
             한국인이 영어에서 느끼는 어려움을 누구보다 잘 아니까. <br /> 초급부터 고급까지
             모든 학습자를 만족 시키는 엣지 포인트!
           </h4>
 
-          <div className="relative mx-[110px] mt-6 flex h-[90px] w-full rounded-2xl">
-            {/* POINT 01 */}
-            <div
-              className="absolute left-0 flex h-full w-[22rem] items-center justify-center text-xl font-bold text-white"
-              style={{
-                background: 'linear-gradient(90deg, #b99cff 0%, #7D5FFF 100%)',
-                clipPath: 'polygon(0 0, 93% 0, 100% 50%, 93% 100%, 0 100%, 0 10%)',
-                borderTopLeftRadius: '24px',
-                borderBottomLeftRadius: '24px',
-              }}
-              // clipPath: 'polygon(0 10%, 93% 0, 100% 50%, 93% 100%, 0 90%, 0 10%)',
-            >
-              POINT 01
-            </div>
-            {/* POINT 02 */}
-            <div
-              className="absolute left-[20rem] flex h-full w-[22rem] items-center justify-center text-xl font-bold text-white opacity-60"
-              style={{
-                background: '#6C53BC',
-                clipPath: 'polygon(0 0, 93% 0, 100% 50%, 93% 100%, 0 100%, 7% 50%)',
-              }}
-            >
-              POINT 02
-            </div>
-            {/* POINT 03 */}
-            <div
-              className="absolute left-[40rem] flex h-full w-[22rem] items-center justify-center text-xl font-bold text-white opacity-60"
-              style={{
-                background: '#5B44A3',
-                clipPath: 'polygon(0 0, 93% 0, 100% 50%, 93% 100%, 0 100%, 7% 50%)',
-              }}
-            >
-              POINT 03
-            </div>
-            {/* POINT 04 */}
-            <div
-              className="absolute left-[60rem] flex h-full w-[22rem] items-center justify-center text-xl font-bold text-white opacity-60"
-              style={{
-                background: '#6C53BC',
-                clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%, 7% 50%)',
-                borderTopRightRadius: '24px',
-                borderBottomRightRadius: '24px',
-              }}
-            >
-              POINT 04
-            </div>
+          <div className="mt-15">
+            <PointsTab />
+          </div>
+
+          <div className="mx-auto mt-15 w-fit">
+            <button className="btn h-14 rounded-lg bg-[#4a4a4a] px-2 py-4 font-bold text-white">
+              수강신청 (30초면 충분해요)
+            </button>
           </div>
         </div>
       </div>

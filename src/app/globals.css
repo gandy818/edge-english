@@ -17,6 +17,26 @@
   background-color: white;
 }
 
+.arrow-right {
+  position: relative;
+}
+
+.arrow-right:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -48px;
+  top: 0;
+  width: 48px;
+  height: 100%;
+  background: inherit;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  z-index: 2;
+  /* transition: background 0.2s; */
+}
+.arrow-right.active:not(:last-child)::after {
+  background: #7d5fff;
+}
+
 /* 폰트 패밀리 설정 */
 @font-face {
   font-family: 'Pretendard';
