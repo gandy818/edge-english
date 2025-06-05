@@ -64,50 +64,52 @@ export default function Home() {
       </div>
 
       {/* 섹션 2 탠저린샘의 10초 영어 */}
-      <div
-        className="bg-[#FFFAF6] bg-right-bottom bg-no-repeat p-[120px] text-center"
-        style={{
-          backgroundImage: "url('/images/main/shorts-bg.svg')",
-        }}
-      >
-        <div className="w-4/5">
-          <h2 className="text-[50px] font-semibold text-[#140F33]">
-            엣지영어 대표 <span className="text-[#f80]">탠저린샘의 10초영어</span>
-          </h2>
-          <h3 className="mt-4 text-2xl text-[#8e8e8e]">
-            한국인이 자주 막히는 영어 표현, 탠저린쌤이 빠르게 정리해드려요
-          </h3>
+      <div className="bg-[#FFFAF6] bg-right-bottom bg-no-repeat text-center">
+        <div className="mx-auto flex w-fit items-end gap-1 pt-[7.5rem]">
+          <div className="pb-[7.5rem]">
+            <h2 className="text-[50px] font-semibold text-[#140F33]">
+              엣지영어 대표 <span className="text-[#f80]">탠저린샘의 10초영어</span>
+            </h2>
+            <h3 className="mt-4 text-2xl text-[#8e8e8e]">
+              한국인이 자주 막히는 영어 표현, 탠저린쌤이 빠르게 정리해드려요
+            </h3>
 
-          {/* 숏츠 */}
-          <div className="mt-10 flex gap-6">
-            <iframe
-              src={`https://www.youtube.com/embed/FkJ3hjifTzk?autoplay=0`}
-              title="YouTube Shorts"
-              className="aspect-[9/16] flex-1 rounded-2xl"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-            <iframe
-              src={`https://www.youtube.com/embed/FkJ3hjifTzk?autoplay=0`}
-              title="YouTube Shorts"
-              className="aspect-[9/16] flex-1 rounded-2xl"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-            <iframe
-              src={`https://www.youtube.com/embed/FkJ3hjifTzk?autoplay=0`}
-              title="YouTube Shorts"
-              className="aspect-[9/16] flex-1 rounded-2xl"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            {/* 숏츠 */}
+            <div className="mt-10 flex gap-6">
+              <iframe
+                src={`https://www.youtube.com/embed/FkJ3hjifTzk?autoplay=0`}
+                title="YouTube Shorts"
+                className="aspect-[9/16] rounded-2xl"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+              <iframe
+                src={`https://www.youtube.com/embed/FkJ3hjifTzk?autoplay=0`}
+                title="YouTube Shorts"
+                className="aspect-[9/16] rounded-2xl"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+              <iframe
+                src={`https://www.youtube.com/embed/FkJ3hjifTzk?autoplay=0`}
+                title="YouTube Shorts"
+                className="aspect-[9/16] rounded-2xl"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+
+            {/* 버튼 */}
+            <div className="mx-auto mt-6 w-fit">
+              <button className="btn h-14 rounded-lg bg-edge-yellow px-8 py-4 font-bold">
+                더 많은 표현 보러가기
+              </button>
+            </div>
           </div>
 
-          {/* 버튼 */}
-          <div className="mx-auto mt-6 w-fit">
-            <button className="btn h-14 rounded-lg bg-edge-yellow px-8 py-4 font-bold">
-              더 많은 표현 보러가기
-            </button>
+          {/* 탠저린쌤 */}
+          <div className="">
+            <img src="/images/main/shorts-bg.svg" width={404} height={788} />
           </div>
         </div>
       </div>
