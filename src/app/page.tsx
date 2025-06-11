@@ -1,12 +1,13 @@
 import RealReviews from '@/components/main/RealReviews';
-import PointsTab from '@/components/main/pointsTab';
+import PointsTab from '@/components/main/PointsTab';
 import Image from 'next/image';
+import MobileShortsSwiper from '@/components/main/MobileShortsSwiper';
 
 export default function Home() {
   return (
     <div>
       {/* 섹션 1 */}
-      <div className="mx-auto mb-[120px] mt-15 w-fit self-center">
+      <div className="mx-auto mb-[120px] mt-15 w-fit self-center max-md:px-4.5">
         <Image
           src="/images/main/memoji.png"
           alt="memoji"
@@ -15,7 +16,7 @@ export default function Home() {
           className="justify-self-center"
         />
         <p
-          className="mx-auto w-fit text-[32px] font-extrabold"
+          className="mx-auto w-fit text-[32px] font-extrabold max-md:text-[28px]"
           style={{
             background: 'linear-gradient(90deg, #FCB045, #FD1D1D, #833AB4)',
             WebkitBackgroundClip: 'text',
@@ -29,117 +30,177 @@ export default function Home() {
 
         {/* 타이틀 */}
         <>
-          <h1 className="mt-[26px] text-center text-5xl font-bold">
-            엣지영어는 영어 교육 전문가들이 만든
+          <h1 className="mt-[26px] text-center text-5xl font-bold leading-[120%] max-md:text-[28px]">
+            엣지영어는
+            <span className="hidden max-md:inline">
+              <br />
+            </span>
+            영어 교육 전문가들이 만든
           </h1>
 
-          <div className="mt-4 flex justify-center gap-4">
-            <h1 className="content-center text-5xl font-bold">1:1 미국 · 캐나다</h1>
-            <Image
-              src="/images/main/flag.png"
-              alt="usa and canaga flags"
-              width={186}
-              height={90}
-            />
-            <h1 className="content-center text-5xl font-bold">화상영어 브랜드입니다.</h1>
+          <div className="mx-auto mt-4 flex w-fit justify-center gap-4 max-md:block">
+            <div className="flex gap-4">
+              <h1 className="content-center text-5xl font-bold max-md:text-[28px]">
+                1:1 미국 · 캐나다{' '}
+              </h1>
+              <div className="aspect-[186/90] w-[186px] max-md:w-[105px]">
+                <Image
+                  src="/images/main/flag.png"
+                  alt="usa and canaga flags"
+                  width={186}
+                  height={90}
+                />
+              </div>
+            </div>
+
+            <h1 className="content-center text-5xl font-bold leading-[120%] max-md:text-[28px]">
+              화상영어 브랜드입니다.
+            </h1>
           </div>
 
-          <h2 className="mt-8 text-center text-2xl">
+          <h2 className="mt-8 text-center text-2xl max-md:mt-6 max-md:text-base">
             13년차 영어 튜터 시에나 & 누적 조회수 300만+ 영어 컨텐츠 제작자 탠저린이 함께
             만들었어요.
           </h2>
-          <h2 className="mt-8 text-center text-[32px] text-[#4A4A4A]">
-            엣지영어에서 실력이 검증된{' '}
-            <span className="font-semibold">‘북미 원어민 강사’</span>에게 합리적인
-            가격으로 영어를 배워보세요!
+          <h2 className="mt-8 text-center text-[32px] text-[#4A4A4A] max-md:mt-4 max-md:text-xl">
+            실력이 검증된 <span className="font-semibold">‘북미 원어민 강사’</span>에게
+            합리적인 가격으로 영어를 배워보세요!
           </h2>
         </>
 
         {/* 수강신청하기 */}
         <div className="mx-auto mt-10 w-fit">
-          <button className="btn h-[58px] w-50 border-none bg-edge-yellow font-bold text-[#333] hover:bg-edge-yellow hover:text-[#333]">
+          <button className="btn h-[58px] w-50 border-none bg-edge-yellow font-bold text-[#333]">
             수강신청하기
           </button>
         </div>
       </div>
 
-      {/* 섹션 2 탠저린샘의 10초 영어 */}
-      <div className="bg-[#FFFAF6] bg-right-bottom bg-no-repeat text-center">
-        <div className="mx-auto flex w-fit items-end gap-1 pt-[7.5rem]">
-          <div className="pb-[7.5rem]">
-            <h2 className="text-[50px] font-semibold text-[#140F33]">
-              엣지영어 대표 <span className="text-[#f80]">탠저린샘의 10초영어</span>
-            </h2>
-            <h3 className="mt-4 text-2xl text-[#8e8e8e]">
-              한국인이 자주 막히는 영어 표현, 탠저린쌤이 빠르게 정리해드려요
-            </h3>
+      {/* 섹션 2 탠저린샘의 10초 영어 pc */}
+      <div className="max-md:hidden">
+        <div className="bg-[#FFFAF6] bg-right-bottom bg-no-repeat px-4.5 text-center">
+          <div className="mx-auto flex w-fit items-end gap-1 pt-[7.5rem]">
+            <div className="min-w-0 flex-1 pb-[7.5rem]">
+              <h2 className="text-[50px] font-semibold text-[#140F33]">
+                엣지영어 대표 <span className="text-[#f80]">탠저린샘의 10초영어</span>
+              </h2>
+              <h3 className="mt-4 text-2xl text-[#8e8e8e]">
+                한국인이 자주 막히는 영어 표현, 탠저린쌤이 빠르게 정리해드려요
+              </h3>
 
-            {/* 숏츠 */}
-            <div className="mt-10 flex gap-6">
-              <iframe
-                src={`https://www.youtube.com/embed/FkJ3hjifTzk?autoplay=0`}
-                title="YouTube Shorts"
-                className="aspect-[9/16] rounded-2xl"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-              <iframe
-                src={`https://www.youtube.com/embed/FkJ3hjifTzk?autoplay=0`}
-                title="YouTube Shorts"
-                className="aspect-[9/16] rounded-2xl"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-              <iframe
-                src={`https://www.youtube.com/embed/FkJ3hjifTzk?autoplay=0`}
-                title="YouTube Shorts"
-                className="aspect-[9/16] rounded-2xl"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+              {/* 숏츠 */}
+              <div className="mt-10 flex gap-6">
+                <iframe
+                  src={`https://www.youtube.com/embed/FkJ3hjifTzk?autoplay=0`}
+                  title="YouTube Shorts"
+                  className="aspect-[9/16] min-w-0 rounded-2xl"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+                <iframe
+                  src={`https://www.youtube.com/embed/_rRgqVq4gfw?autoplay=0`}
+                  title="YouTube Shorts"
+                  className="aspect-[9/16] min-w-0 rounded-2xl"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+                <iframe
+                  src={`https://www.youtube.com/embed/Yj7pm_r38rc?autoplay=0`}
+                  title="YouTube Shorts"
+                  className="aspect-[9/16] min-w-0 rounded-2xl"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+
+              {/* 버튼 */}
+              <div className="mx-auto mt-6 w-fit">
+                <button className="btn h-14 rounded-lg border-none bg-edge-yellow px-8 py-4 font-bold">
+                  더 많은 표현 보러가기
+                </button>
+              </div>
             </div>
 
-            {/* 버튼 */}
-            <div className="mx-auto mt-6 w-fit">
-              <button className="btn h-14 rounded-lg bg-edge-yellow px-8 py-4 font-bold">
-                더 많은 표현 보러가기
-              </button>
+            {/* 탠저린쌤 */}
+            <div className="aspect-[404/788]">
+              <Image
+                src="/images/main/shorts-bg.svg"
+                alt="진솔언니"
+                width={404}
+                height={788}
+              />
             </div>
-          </div>
-
-          {/* 탠저린쌤 */}
-          <div className="">
-            <img src="/images/main/shorts-bg.svg" width={404} height={788} />
           </div>
         </div>
+        <div
+          className="py-4 text-center"
+          style={{
+            background:
+              'var(--g01, linear-gradient(90deg, #AA96FF -2.03%, #7D5FFF 102.29%))',
+          }}
+        >
+          <p className="text-lg text-white">
+            영어영문학전공 영어강사,{' '}
+            <span className="font-semibold text-[#FFEB3B]">「탠저린의 써먹는 영어」</span>{' '}
+            유튜브,인스타그램,블로그 운영 중
+          </p>
+        </div>
       </div>
-      <div
-        className="py-4 text-center"
-        style={{
-          background:
-            'var(--g01, linear-gradient(90deg, #AA96FF -2.03%, #7D5FFF 102.29%))',
-        }}
-      >
-        <p className="text-lg text-white">
-          영어영문학전공 영어강사,{' '}
-          <span className="font-semibold text-[#FFEB3B]">「탠저린의 써먹는 영어」</span>{' '}
-          유튜브,인스타그램,블로그 운영 중
-        </p>
+
+      {/* 섹션 2 탠저린샘의 10초 영어 mobile */}
+      <div className="bg-[#FFFAF6] bg-right-bottom bg-no-repeat text-center md:hidden">
+        <h2 className="pt-10 text-[34px] font-semibold text-[#140F33]">
+          엣지영어 대표 <br /> <span className="text-[#f80]">탠저린샘의 10초영어</span>
+        </h2>
+        <h3 className="mt-4 text-lg text-[#8e8e8e]">
+          한국인이 자주 막히는 영어 표현, <br /> 탠저린쌤이 빠르게 정리해드려요
+        </h3>
+
+        {/* 탠저린쌤 */}
+        <div className="flex-center mt-6">
+          <img src="/images/main/mobile-shorts-bg.svg" width={184} height={237} />
+        </div>
+
+        <div
+          className="px-4.5 py-4 text-center"
+          style={{
+            background:
+              'var(--g01, linear-gradient(90deg, #AA96FF -2.03%, #7D5FFF 102.29%))',
+          }}
+        >
+          <p className="text-lg text-white">
+            영어영문학전공 영어강사,{' '}
+            <span className="font-semibold text-[#FFEB3B]">「탠저린의 써먹는 영어」</span>{' '}
+            유튜브,인스타그램,블로그 운영 중
+          </p>
+        </div>
+
+        {/* 숏츠 */}
+        <MobileShortsSwiper />
+
+        {/* 버튼 */}
+        <div className="mx-auto mt-6 w-fit pb-15">
+          <button className="btn h-14 rounded-lg border-none bg-edge-yellow px-8 py-4 font-bold">
+            더 많은 표현 보러가기
+          </button>
+        </div>
       </div>
 
       {/* 섹션 3 수업 절차 */}
-      <div className="mx-auto my-[120px] w-fit text-center">
-        <h3 className="text-5xl font-bold text-[#140F33]">수업절차</h3>
-        <div className="flex-center mt-10 flex-wrap">
+      <div className="mx-auto my-[120px] w-fit px-4.5 text-center max-md:my-15">
+        <h3 className="text-5xl font-bold text-[#140F33] max-md:text-[34px]">수업절차</h3>
+        <div className="flex-center mt-10 flex-wrap max-md:grid max-md:grid-cols-2 max-md:gap-6">
           {/* step 01 */}
-          <div className="rounded-3xl border border-dashed border-edge-yellow p-1">
-            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-[#FFD4011A] p-6">
+          <div className="w-fit rounded-3xl border border-dashed border-edge-yellow p-1">
+            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-[#FFD4011A] p-6 max-md:h-33 max-md:p-4">
               <span className="badge border-none bg-[#AA96FF] p-2 font-montserrat text-xs font-medium text-white">
                 STEP 01
               </span>
               <div>
-                <p className="text-xl font-bold">수강 신청서 제출</p>
-                <p className="h-11 text-sm text-edge-gray">
+                <p className="text-xl font-bold max-md:text-base max-md:tracking-[-0.8px]">
+                  수강 신청서 제출
+                </p>
+                <p className="h-11 text-sm text-edge-gray max-md:text-xs">
                   (신청 먼저, 결제는 나중에 할 수 있어요)
                 </p>
               </div>
@@ -147,7 +208,7 @@ export default function Home() {
           </div>
 
           {/* arrow */}
-          <div className="px-6">
+          <div className="px-6 max-md:hidden">
             <Image
               src={'/icons/main/yellow-right-arrow.svg'}
               width={24}
@@ -157,20 +218,22 @@ export default function Home() {
           </div>
 
           {/* step 02 */}
-          <div className="rounded-3xl border border-dashed border-edge-yellow p-1">
-            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-[#FFD40126] p-6">
+          <div className="w-fit rounded-3xl border border-dashed border-edge-yellow p-1">
+            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-[#FFD4011A] p-6 max-md:h-33 max-md:p-4">
               <span className="badge border-none bg-[#AA96FF] p-2 font-montserrat text-xs font-medium text-white">
                 STEP 02
               </span>
               <div>
-                <p className="text-xl font-bold">수강 안내</p>
-                <p className="h-11 text-sm text-edge-gray">(강사&교재 매칭)</p>
+                <p className="text-xl font-bold max-md:text-base">수강 안내</p>
+                <p className="h-11 text-sm text-edge-gray max-md:text-xs">
+                  (강사&교재 매칭)
+                </p>
               </div>
             </div>
           </div>
 
           {/* arrow */}
-          <div className="px-6">
+          <div className="px-6 max-md:hidden">
             <Image
               src={'/icons/main/yellow-right-arrow.svg'}
               width={24}
@@ -180,20 +243,20 @@ export default function Home() {
           </div>
 
           {/* step 03 */}
-          <div className="rounded-3xl border border-dashed border-edge-yellow p-1">
-            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-[#FFD4014D] p-6">
+          <div className="w-fit rounded-3xl border border-dashed border-edge-yellow p-1">
+            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-[#FFD4011A] p-6 max-md:h-33 max-md:p-4">
               <span className="badge border-none bg-[#AA96FF] p-2 font-montserrat text-xs font-medium text-white">
                 STEP 03
               </span>
               <div>
-                <p className="text-xl font-bold">결제</p>
-                <p className="h-11 text-sm text-edge-gray"></p>
+                <p className="text-xl font-bold max-md:text-base">결제</p>
+                <p className="h-11 text-sm text-edge-gray max-md:text-xs"></p>
               </div>
             </div>
           </div>
 
           {/* arrow */}
-          <div className="px-6">
+          <div className="px-6 max-md:hidden">
             <Image
               src={'/icons/main/yellow-right-arrow.svg'}
               width={24}
@@ -203,14 +266,14 @@ export default function Home() {
           </div>
 
           {/* step 04 */}
-          <div className="rounded-3xl border border-dashed border-edge-yellow p-1">
-            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-[#FFD40180] p-6">
+          <div className="w-fit rounded-3xl border border-dashed border-edge-yellow p-1">
+            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-[#FFD4011A] p-6 max-md:h-33 max-md:p-4">
               <span className="badge border-none bg-[#AA96FF] p-2 font-montserrat text-xs font-medium text-white">
                 STEP 04
               </span>
               <div>
-                <p className="text-xl font-bold">수업 시작</p>
-                <p className="h-11 text-sm text-edge-gray"></p>
+                <p className="text-xl font-bold max-md:text-base">수업 시작</p>
+                <p className="h-11 text-sm text-edge-gray max-md:text-xs"></p>
               </div>
             </div>
           </div>

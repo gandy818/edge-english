@@ -31,10 +31,19 @@
   background: inherit;
   clip-path: polygon(0 0, 100% 50%, 0 100%);
   z-index: 2;
-  /* transition: background 0.2s; */
 }
 .arrow-right.active:not(:last-child)::after {
   background: #7d5fff;
+}
+
+/* swiper */
+.swiper-pagination-bullet {
+  background-color: #f2dccb !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f80 !important;
 }
 
 /* 폰트 패밀리 설정 */
