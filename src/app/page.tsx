@@ -282,19 +282,19 @@ export default function Home() {
 
       {/* 섹션 4 화상영어 수강생들의 흔한 고민 */}
       <div
-        className="p-[120px]"
+        className="p-[120px] max-md:px-4.5 max-md:py-15"
         style={{
           background: `linear-gradient(180deg, rgba(238,199,5,0.20) 0%, rgba(254,254,254,0.04) 100%), #FFFAF6`,
         }}
       >
-        <h3 className="text-center text-[50px] font-medium text-[#140F33]">
+        <h3 className="text-center text-[50px] font-medium text-[#140F33] max-md:text-2xl">
           화상영어 수강생들의 흔한 고민,
         </h3>
-        <h4 className="text-center text-[50px] font-bold text-[#F80]">
+        <h4 className="text-center text-[50px] font-bold text-[#F80] max-md:text-2xl">
           엣지영어는 이렇게 해결합니다!
         </h4>
 
-        <div className="mt-10 flex flex-col gap-4 px-15">
+        <div className="mt-10 flex flex-col gap-4 px-15 max-md:px-2">
           {/* 말풍선 01 */}
           <div className="flex gap-2">
             <Image
@@ -302,10 +302,10 @@ export default function Home() {
               alt="student 1 memoji"
               width={96}
               height={96}
-              className="h-24 shrink-0 self-end"
+              className="h-24 shrink-0 self-end max-md:h-16 max-md:w-16"
             />
             <div className="chat chat-start flex-1">
-              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg">
+              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg max-md:text-sm">
                 강사만 계속 말하는 것 같아요.
               </div>
             </div>
@@ -314,7 +314,7 @@ export default function Home() {
           {/* 튜터 말풍선 01 */}
           <div className="flex gap-2">
             <div className="chat chat-end flex-1">
-              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg">
+              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg max-md:text-sm">
                 엣지영어 튜터는 학생의 말하기를 이끌어내도록 훈련된 원어민이에요. <br />{' '}
                 수업 중 함께 말할 수 있는 교재를 사용하니까, 듣기만 하는 수업과는 달라요!
               </div>
@@ -324,7 +324,7 @@ export default function Home() {
               alt="tutor memoji"
               width={96}
               height={96}
-              className="h-24 shrink-0 self-end"
+              className="h-24 shrink-0 self-end max-md:h-16 max-md:w-16"
             />
           </div>
 
@@ -335,10 +335,10 @@ export default function Home() {
               alt="student 2 memoji"
               width={96}
               height={96}
-              className="h-24 shrink-0 self-end"
+              className="h-24 shrink-0 self-end max-md:h-16 max-md:w-16"
             />
             <div className="chat chat-start flex-1">
-              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg">
+              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg max-md:text-sm">
                 강사의 발음이 아쉬워요.
               </div>
             </div>
@@ -347,7 +347,7 @@ export default function Home() {
           {/* 튜터 말풍선 02 */}
           <div className="flex gap-2">
             <div className="chat chat-end flex-1">
-              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg">
+              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg max-md:text-sm">
                 엣지영어 강사는 100% 미국·캐나다 출신 원어민으로, <br /> 어느 튜터를
                 만나도 북미식 발음을 배울 수 있어요.
               </div>
@@ -357,7 +357,7 @@ export default function Home() {
               alt="tutor memoji"
               width={96}
               height={96}
-              className="h-24 shrink-0 self-end"
+              className="h-24 shrink-0 self-end max-md:h-16 max-md:w-16"
             />
           </div>
 
@@ -368,10 +368,10 @@ export default function Home() {
               alt="student 3 memoji"
               width={96}
               height={96}
-              className="h-24 shrink-0 self-end"
+              className="h-24 shrink-0 self-end max-md:h-16 max-md:w-16"
             />
             <div className="chat chat-start flex-1">
-              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg">
+              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg max-md:text-sm">
                 강사의 전문성이 부족해 보여요.
               </div>
             </div>
@@ -380,7 +380,7 @@ export default function Home() {
           {/* 튜터 말풍선 03 */}
           <div className="flex gap-2">
             <div className="chat chat-end flex-1">
-              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg">
+              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg max-md:text-sm">
                 엣지영어의 모든 강사는 TESOL/TEFL(국제 영어 교육 자격증)을 기본으로
                 보유하고 있으며, <br /> 철저한 5단계 검증 절차를 모두 통과한 선생님만
                 채용합니다.
@@ -391,7 +391,7 @@ export default function Home() {
               alt="tutor memoji"
               width={96}
               height={96}
-              className="h-24 shrink-0 self-end"
+              className="h-24 shrink-0 self-end max-md:h-16 max-md:w-16"
             />
           </div>
 
@@ -402,10 +402,10 @@ export default function Home() {
               alt="student 4 memoji"
               width={96}
               height={96}
-              className="h-24 shrink-0 self-end"
+              className="h-24 shrink-0 self-end max-md:h-16 max-md:w-16"
             />
             <div className="chat chat-start flex-1">
-              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg">
+              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg max-md:text-sm">
                 수업 때 배운 표현을 다시 쓰고 싶은데, 정확히 뭐였는지 생각이 안 나요.
               </div>
             </div>
@@ -414,7 +414,7 @@ export default function Home() {
           {/* 튜터 말풍선 04 */}
           <div className="flex gap-2">
             <div className="chat chat-end flex-1">
-              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg">
+              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg max-md:text-sm">
                 수업에서 배운 내용을 놓치지 않도록, 모든 수업 후 복습 노트를 제공합니다.{' '}
                 <br /> 중요한 표현을 다시 확인하고, 배운 영어를 확실히 내 것으로 만들 수
                 있어요!
@@ -425,7 +425,7 @@ export default function Home() {
               alt="tutor memoji"
               width={96}
               height={96}
-              className="h-24 shrink-0 self-end"
+              className="h-24 shrink-0 self-end max-md:h-16 max-md:w-16"
             />
           </div>
         </div>
