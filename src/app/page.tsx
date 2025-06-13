@@ -436,6 +436,9 @@ export default function Home() {
         className="relative aspect-[1440/560] w-full bg-contain bg-no-repeat px-36 py-32 max-md:hidden"
         style={{ backgroundImage: "url('/images/main/we-can-help-bg.png')" }}
       >
+        <p className="mx-auto w-fit pr-12 text-[50px] font-bold text-edge-yellow">
+          .&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.
+        </p>
         <p
           className="text-center text-[56px] font-bold text-white"
           style={{ textShadow: '0px 0px 10px rgba(0, 0, 0, 0.50)' }}
