@@ -30,7 +30,7 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
             onClick={() => openTutorModal(tutor.name)}
           >
             <img
-              className="aspect-[4/5] w-full rounded-2xl"
+              className="aspect-[4/5] w-full rounded-2xl object-cover"
               src={tutor.img}
               alt={tutor.name}
             />
