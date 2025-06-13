@@ -1,5 +1,5 @@
 import RealReviews from '@/components/main/RealReviews';
-import PointsTab from '@/components/main/PointsTab';
+import PointsTab from '@/components/main/pointsTab';
 import Image from 'next/image';
 import MobileShortsSwiper from '@/components/main/MobileShortsSwiper';
 

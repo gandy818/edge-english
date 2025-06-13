@@ -29,7 +29,11 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
             className="flex w-72 cursor-pointer flex-col justify-start"
             onClick={() => openTutorModal(tutor.name)}
           >
-            <img className="rounded-2xl" src={tutor.img} alt={tutor.name} />
+            <img
+              className="aspect-[4/5] w-full rounded-2xl"
+              src={tutor.img}
+              alt={tutor.name}
+            />
             <div className="flex flex-row items-center justify-center pt-6">
               <img src={tutor.countryImg} alt="tutor's contry image" />
               <p className="pl-2 font-montserrat text-2xl font-bold">{tutor.name}</p>
@@ -73,20 +77,20 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
             </div>
             <div className="mx-6 mb-10 max-h-[75vh] overflow-y-auto max-md:max-h-[87vh]">
               {/* 동영상 */}
-              <iframe
-                className="aspect-video w-full bg-gray-400"
-                src="https://www.youtube.com/embed/qMwzWk81tVM"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
+              <video
+                className="aspect-video w-full rounded-2xl bg-gray-400"
+                src={selectedTutor?.videoUrl}
+                controls
+                playsInline
+                preload="metadata"
               />
 
               <div className="mt-10 flex flex-row max-md:flex-col max-md:items-center">
                 {/* 프로필 */}
                 <div className="flex w-54 flex-col max-md:w-full">
                   <img
-                    className="rounded-2xl"
-                    src={selectedTutor?.img ?? '/icons/x-btn.svg'}
+                    className="aspect-[4/5] w-full rounded-2xl"
+                    src={selectedTutor?.popupImg ?? '/icons/x-btn.svg'}
                     alt={selectedTutor?.name}
                   />
                   <div className="flex flex-row items-center justify-center pt-6">
@@ -106,45 +110,22 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
                     엣지 운영진이 소개하는 튜터
                   </p>
                   <p className="text- mb-6 text-pretty text-base font-normal text-edge-gray">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
-                    facilis inventore necessitatibus dolores, earum dolore cupiditate
-                    sequi tenetur. Veritatis, ipsa nostrum maiores possimus aliquam earum
-                    tempore voluptatem excepturi dolores qui, nam officia fugit
-                    consequatur dolorum. Alias laboriosam incidunt maiores, ipsa optio
-                    facilis ullam? Corrupti veritatis animi, quia fuga similique commodi?
+                    {selectedTutor?.introduce1}
                   </p>
 
                   <p className="mb-4 text-2xl font-bold max-md:text-xl">자기소개</p>
                   <p className="text- mb-6 text-pretty text-base font-normal text-edge-gray">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minima
-                    fuga sequi ullam, reprehenderit illo ea earum assumenda praesentium
-                    rem nobis dolorem quo repellat vitae fugiat distinctio, saepe quidem,
-                    itaque hic cum?
+                    {selectedTutor?.introduce2}
                   </p>
 
                   <p className="mb-4 text-2xl font-bold max-md:text-xl">취미</p>
                   <p className="text- mb-6 text-pretty text-base font-normal text-edge-gray">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-                    hic.
+                    {selectedTutor?.hobbys}
                   </p>
 
                   <p className="mb-4 text-2xl font-bold max-md:text-xl">경력</p>
                   <p className="text- mb-6 text-pretty text-base font-normal text-edge-gray">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
+                    {selectedTutor?.career}
                   </p>
                 </div>
               </div>
