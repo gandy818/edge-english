@@ -8,7 +8,7 @@ interface FilterProps {
 }
 
 export default function BookList({ bookList }: FilterProps) {
-  const filters = bookList.map((item) => item.category);
+  const filters = ['', ...new Set(bookList.map((item) => item.category))];
 
   const [filterState, setFilterState] = useState('');
   const [filteredBookList, setFilteredBookList] = useState<BookType[]>(bookList);
@@ -45,17 +45,26 @@ export default function BookList({ bookList }: FilterProps) {
       <div className="mt-[34px] flex flex-col gap-10">
         {filteredBookList.map((item, idx) => (
           <div key={idx} className="gap-16 rounded-lg border p-10 md:flex">
-            <div className="flex gap-6">
-              {/* 책 이미지 */}
-              <div className="h-50 w-35 flex-shrink-0 bg-slate-200" />
+            <div className="flex flex-1 gap-6">
+              <img
+                src={item.img}
+                alt={item.title}
+                className="h-[200px] w-[140px] flex-shrink-0 rounded-lg object-cover"
+              />
 
               {/* 책 설명 */}
               <div>
-                <div className="badge badge-outline h-auto border-[#e8e8e8] px-4 py-2">
-                  {item.level}
-                </div>
+                {item.level.map((e, idx2) => (
+                  <div
+                    key={idx2}
+                    className="badge badge-outline mr-2 h-auto border-[#e8e8e8] px-4 py-2"
+                  >
+                    {e}
+                  </div>
+                ))}
+
                 <h2 className="mt-4 text-[22px] font-bold">{item.title}</h2>
-                <p className="text-edge-gray mt-8 text-lg max-md:hidden">
+                <p className="mt-8 text-lg text-edge-gray max-md:hidden">
                   {item.describe}
                 </p>
               </div>
@@ -66,12 +75,12 @@ export default function BookList({ bookList }: FilterProps) {
               <button className="btn h-[58px] rounded-lg border border-[#e8e8e8] hover:border-[#e8e8e8] md:w-50">
                 미리보기
               </button>
-              <button className="bg-edge-yellow hover:bg-edge-yellow btn h-[58px] rounded-lg border-none md:w-50">
+              <button className="btn h-[58px] rounded-lg border-none bg-edge-yellow hover:bg-edge-yellow md:w-50">
                 구매하기
               </button>
             </div>
 
-            <p className="text-edge-gray mt-8 text-lg max-md:mt-6 md:hidden">
+            <p className="mt-8 text-lg text-edge-gray max-md:mt-6 md:hidden">
               {item.describe}
             </p>
           </div>

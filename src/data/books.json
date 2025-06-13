@@ -1,42 +1,119 @@
 [
   {
-    "level": "입문",
-    "category": "",
-    "title": "인터체인지1",
-    "describe": "세계적으로 유명한 케임브리지 출판사에서 만든 영어학습교재입니다. 책 한권으로 말하기, 문법, 발음, 듣기, 쓰기, 읽기를 균형 있게 배울 수 있어 프리토킹이 아직 어려운 초보 학습자에게 추천하는 교재입니다.",
-    "pdf": "",
-    "buyLink": "/"
-  },
-  {
-    "level": "입문",
-    "category": "일반회화",
-    "title": "인터체인지2",
-    "describe": "세계적으로 유명한 케임브리지 출판사에서 만든 영어학습교재입니다. 책 한권으로 말하기, 문법, 발음, 듣기, 쓰기, 읽기를 균형 있게 배울 수 있어 프리토킹이 아직 어려운 초보 학습자에게 추천하는 교재입니다.",
-    "pdf": "",
-    "buyLink": "/"
-  },
-  {
-    "level": "입문",
-    "category": "비즈니스 영어",
-    "title": "인터체인지3",
-    "describe": "세계적으로 유명한 케임브리지 출판사에서 만든 영어학습교재입니다. 책 한권으로 말하기, 문법, 발음, 듣기, 쓰기, 읽기를 균형 있게 배울 수 있어 프리토킹이 아직 어려운 초보 학습자에게 추천하는 교재입니다.",
-    "pdf": "",
-    "buyLink": "/"
-  },
-  {
-    "level": "입문",
+    "title": "Can you believe it?1",
+    "describe": "",
+    "level": ["입문", "초급", "중급"],
     "category": "여행 영어",
-    "title": "인터체인지4",
-    "describe": "세계적으로 유명한 케임브리지 출판사에서 만든 영어학습교재입니다. 책 한권으로 말하기, 문법, 발음, 듣기, 쓰기, 읽기를 균형 있게 배울 수 있어 프리토킹이 아직 어려운 초보 학습자에게 추천하는 교재입니다.",
-    "pdf": "",
-    "buyLink": "/"
+    "pdf": "https://www.yes24.com/Product/Viewer/Preview/120215494",
+    "buyLink": "https://www.yes24.com/Product/Goods/120215494",
+    "img": "/images/books/book1.jpg"
   },
   {
-    "level": "입문",
-    "category": "프리토킹",
-    "title": "인터체인지5",
-    "describe": "세계적으로 유명한 케임브리지 출판사에서 만든 영어학습교재입니다. 책 한권으로 말하기, 문법, 발음, 듣기, 쓰기, 읽기를 균형 있게 배울 수 있어 프리토킹이 아직 어려운 초보 학습자에게 추천하는 교재입니다.",
+    "title": "Can you believe it?2",
+    "describe": "",
+    "level": ["입문", "초급", "중급"],
+    "category": "일반회화",
     "pdf": "",
-    "buyLink": "/"
+    "buyLink": "",
+    "img": "/images/books/book2.jpg"
+  },
+  {
+    "title": "Can you believe it?3",
+    "describe": "",
+    "level": ["초급", "중급"],
+    "category": "일반회화",
+    "pdf": "",
+    "buyLink": "",
+    "img": "/images/books/book3.jpg"
+  },
+  {
+    "title": "Can you believe it?4",
+    "describe": "",
+    "level": ["초급", "중급"],
+    "category": "비즈니스 영어",
+    "pdf": "",
+    "buyLink": "",
+    "img": "/images/books/book4.jpg"
+  },
+  {
+    "title": "Speak now 1",
+    "describe": "",
+    "level": ["초급", "중급"],
+    "category": "비즈니스 영어",
+    "pdf": "",
+    "buyLink": "",
+    "img": "/images/books/book5.JPG"
+  },
+  {
+    "title": "Speak now 2",
+    "describe": "",
+    "level": ["초급", "중급"],
+    "category": "비즈니스 영어",
+    "pdf": "",
+    "buyLink": "",
+    "img": "/images/books/book6.JPG"
+  },
+  {
+    "title": "Speak now 3",
+    "describe": "",
+    "level": ["초급", "중급"],
+    "category": "일반회화",
+    "pdf": "",
+    "buyLink": "",
+    "img": "/images/books/book7.JPG"
+  },
+  {
+    "title": "Speak now 4",
+    "describe": "",
+    "level": ["초급", "중급"],
+    "category": "비즈니스 영어",
+    "pdf": "",
+    "buyLink": "",
+    "img": "/images/books/book8.JPG"
+  },
+  {
+    "title": "TED Ed",
+    "describe": "",
+    "level": ["초급", "중급"],
+    "category": "일반회화",
+    "pdf": "",
+    "buyLink": "",
+    "img": "/images/books/book9.JPG"
+  },
+  {
+    "title": "프리토킹",
+    "describe": "",
+    "level": ["초급", "중급"],
+    "category": "프리토킹",
+    "pdf": "",
+    "buyLink": "",
+    "img": "/images/books/book.JPG"
+  },
+  {
+    "title": "American English file",
+    "describe": "문법부터 차근차근 정석으로 밟고싶은 사람",
+    "level": ["입문", "초급"],
+    "category": "여행 영어",
+    "pdf": "",
+    "buyLink": "",
+    "img": "/images/books/book.JPG"
+  },
+  {
+    "title": "여행영어",
+    "describe": "",
+    "level": ["입문", "초급", "중급"],
+    "category": "여행 영어",
+    "pdf": "",
+    "buyLink": "",
+    "img": "/images/books/book.JPG"
+  },
+  {
+    "title": "화상영어 멘토음집",
+    "describe": "",
+    "level": [],
+    "category": "프리토킹",
+    "pdf": "",
+    "buyLink": "",
+    "img": "/images/books/book.JPG"
   }
 ]
