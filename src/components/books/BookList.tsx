@@ -64,7 +64,7 @@ export default function BookList({ bookList }: FilterProps) {
                 ))}
 
                 <h2 className="mt-4 text-[22px] font-bold">{item.title}</h2>
-                <p className="mt-8 text-lg text-edge-gray max-md:hidden">
+                <p className="mt-8 whitespace-pre-line text-lg text-edge-gray max-md:hidden">
                   {item.describe}
                 </p>
               </div>
@@ -72,12 +72,20 @@ export default function BookList({ bookList }: FilterProps) {
 
             {/* 버튼들 */}
             <div className="flex flex-col gap-4 self-center max-md:mt-4 max-md:gap-2">
-              <button className="btn h-[58px] rounded-lg border border-[#e8e8e8] hover:border-[#e8e8e8] md:w-50">
+              <a
+                href={item.pdf}
+                target="_blank"
+                className="btn h-[58px] rounded-lg border border-[#e8e8e8] bg-transparent hover:border-[#e8e8e8] md:w-50"
+              >
                 미리보기
-              </button>
-              <button className="btn h-[58px] rounded-lg border-none bg-edge-yellow hover:bg-edge-yellow md:w-50">
+              </a>
+              <a
+                href={item.buyLink}
+                target="_blank"
+                className="btn h-[58px] rounded-lg border-none bg-edge-yellow hover:bg-edge-yellow md:w-50"
+              >
                 구매하기
-              </button>
+              </a>
             </div>
 
             <p className="mt-8 text-lg text-edge-gray max-md:mt-6 md:hidden">

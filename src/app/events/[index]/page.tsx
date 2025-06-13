@@ -1,10 +1,10 @@
 'use client';
 
 import { PostType } from '@/types/PostType';
-import axios from 'axios';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import rawEventList from '@/data/events.json';
 
 export default function EventDetailPage() {
   const param = useParams();
@@ -14,21 +14,11 @@ export default function EventDetailPage() {
   const [nextEvent, setNextEvent] = useState<PostType>();
 
   useEffect(() => {
-    const getEventDetail = async () => {
-      try {
-        const res = await axios.get<PostType[]>('/data/events.json');
+    const eventList = rawEventList as PostType[];
 
-        const { data } = res;
-
-        setEvent(data.filter((item) => item.index === Number(currentIndex))[0]);
-        setPrevEvent(data.filter((item) => item.index === Number(currentIndex) + 1)[0]); // 다음글
-        setNextEvent(data.filter((item) => item.index === Number(currentIndex) - 1)[0]); // 이전글
-      } catch (err) {
-        console.error(err);
-      }
-    };
-
-    getEventDetail();
+    setEvent(eventList.filter((item) => item.index === Number(currentIndex))[0]);
+    setPrevEvent(eventList.filter((item) => item.index === Number(currentIndex) + 1)[0]); // 다음글
+    setNextEvent(eventList.filter((item) => item.index === Number(currentIndex) - 1)[0]); // 이전글
   }, []);
 
   return (
@@ -36,7 +26,7 @@ export default function EventDetailPage() {
       {/* 타이틀 */}
       <div className="mt-[120px] flex flex-col gap-6 border-t-4 border-black py-16">
         <p className="font-montserrat text-2xl font-semibold text-black">{event?.type}</p>
-        <h1 className="font-montserrat text-5xl font-semibold text-black max-md:text-[40px]">
+        <h1 className="font-montserrat text-5xl font-semibold leading-normal text-black max-md:text-[40px]">
           {event?.title}
         </h1>
         <p className="font-semibold text-edge-gray">
@@ -45,7 +35,9 @@ export default function EventDetailPage() {
       </div>
 
       {/* 본문 */}
-      <pre className="border-t border-[#A4A4A4] py-16">{event?.content}</pre>
+      <pre className="border-t border-[#A4A4A4] py-16 font-pretendard">
+        {event?.content}
+      </pre>
 
       {/* 이전글, 다음글 */}
       <div className="flex flex-col border-b border-t">

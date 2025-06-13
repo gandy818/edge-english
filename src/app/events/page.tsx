@@ -3,45 +3,33 @@
 import Pagination from '@/components/Pagination';
 import TextDivider from '@/components/TextDivider';
 import { PostType } from '@/types/PostType';
-import axios from 'axios';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import ScrollContainer from 'react-indiana-drag-scroll';
+import rawEventList from '@/data/events.json';
 
 export default function EventPage() {
   const router = useRouter();
   const [currentPage, setCurrentPage] = useState(1);
   const [currentType, setCurrentType] = useState('all');
-  const [eventList, setEventList] = useState<PostType[]>([]);
   const [filteredEventList, setFilteredEventList] = useState<PostType[]>([]);
   const itemsPerPage = 10; // 한 페이지 당 게시물 개수
 
-  const getEventList = async () => {
-    try {
-      const res = await axios.get('/data/events.json');
-
-      setEventList(res.data);
-    } catch (err) {
-      console.error(err);
-    }
-  };
-
-  useEffect(() => {
-    getEventList();
-  }, []);
+  const eventList = rawEventList as PostType[];
 
   // 선택한 필터에 맞게 필터링
   useEffect(() => {
-    let updatedList = eventList.reverse();
+    let updatedList = [...eventList]; // 원본 복사 (절대 reverse 직접X)
 
     if (currentType === 'inprogress') {
-      updatedList = eventList.filter((event) => event?.status === '진행중');
+      updatedList = updatedList.filter((event) => event?.status === '진행중');
     } else if (currentType === 'done') {
-      updatedList = eventList.filter((event) => event?.status === '마감');
+      updatedList = updatedList.filter((event) => event?.status === '마감');
     }
 
+    updatedList = updatedList.reverse(); // 무조건 reverse (최신순)
     setFilteredEventList(updatedList);
-    setCurrentPage(1); // 필터 변경 시 첫 페이지로 이동
+    setCurrentPage(1);
   }, [currentType, eventList]);
 
   // 현재 페이지에 해당하는 게시글만 가져오기
