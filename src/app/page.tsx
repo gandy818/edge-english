@@ -431,13 +431,13 @@ export default function Home() {
         </div>
       </div>
 
-      {/* 섹션 5 매번 작심삼일로 끝났다면? */}
+      {/* 섹션 5 pc 매번 작심삼일로 끝났다면? */}
       <div
-        className="relative aspect-[1440/560] w-full bg-contain bg-no-repeat px-36 py-32"
+        className="relative aspect-[1440/560] w-full bg-contain bg-no-repeat px-36 py-32 max-md:hidden"
         style={{ backgroundImage: "url('/images/main/we-can-help-bg.png')" }}
       >
         <p
-          className="text- text-center text-[56px] font-bold text-white"
+          className="text-center text-[56px] font-bold text-white"
           style={{ textShadow: '0px 0px 10px rgba(0, 0, 0, 0.50)' }}
         >
           영어, 매번 작심삼일로 끝났다면? <br />
@@ -451,23 +451,50 @@ export default function Home() {
         </p>
       </div>
 
+      {/* 섹션 5 mobile 매번 작심삼일로 끝났다면? */}
+      <div
+        className="aspect-[340/372] bg-contain px-4.5 py-15 md:hidden"
+        style={{ backgroundImage: "url('/images/main/we-can-help-bg-mobile.png')" }}
+      >
+        <p className="mx-auto w-fit pr-5 text-xl font-bold text-edge-yellow">
+          .&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.
+        </p>
+        <p
+          className="text-center text-2xl font-bold text-white"
+          style={{ textShadow: '0px 0px 10px rgba(0, 0, 0, 0.50)' }}
+        >
+          영어, 매번 작심삼일로 끝났다면? <br />
+          포기하지 않도록 엣지영어가 <br /> 도와드릴게요!
+        </p>
+        <p
+          className="mt-8 text-center font-medium text-white"
+          style={{ textShadow: '0px 0px 10px rgba(0, 0, 0, 0.50)' }}
+        >
+          운영진들의 오랜 강사 경력과 노하우를 바탕으로 완성된 학습시스템을 소개합니다.
+        </p>
+      </div>
+
       {/* 섹션 6 지속 가능한 영어 학습 시스템 */}
       <>
         {/* 포인트 1 */}
-        <div className="bg-[#F3F6F8] px-[180px] pb-[140px] pt-[100px]">
-          <h3 className="pb-15 text-center text-[50px] font-bold text-[#140F33]">
-            지속 가능한 영어 학습 시스템
+        <div className="bg-[#F3F6F8] px-[180px] pb-[140px] pt-[100px] max-md:px-4.5 max-md:py-15">
+          <h3 className="pb-15 text-center text-[50px] font-bold text-[#140F33] max-md:text-[32px]">
+            지속 가능한
+            <span className="md:hidden">
+              <br />
+            </span>
+            영어 학습 시스템
           </h3>
-          <div className="flex justify-between gap-16">
+          <div className="justify-between gap-16 md:flex">
             <div className="flex-1">
-              <span className="block h-[61px] w-fit rounded-full border-none bg-edge-yellow px-6 py-4 text-2xl font-bold text-[#333]">
+              <span className="block w-fit rounded-full border-none bg-edge-yellow px-6 py-4 font-bold leading-none text-[#333] max-md:px-4 max-md:py-2 md:h-[61px] md:text-2xl">
                 포인트1
               </span>
-              <h4 className="pt-6 text-[50px] font-bold leading-[120%] text-[#140F33]">
+              <h4 className="pt-6 text-[50px] font-bold leading-[120%] text-[#140F33] max-md:text-2xl">
                 고정제 수업으로 <br />
                 만드는 영어 루틴
               </h4>
-              <p className="mt-8 text-2xl leading-[140%] text-edge-gray">
+              <p className="mt-8 text-2xl leading-[140%] text-edge-gray max-md:mt-6 max-md:text-base">
                 정해진 요일과 시간에 꾸준히 진행되는 고정제 수업은 바쁜 일상 속에서도
                 영어를 포기하지 않도록 강력한 동기부여가 됩니다.
               </p>
