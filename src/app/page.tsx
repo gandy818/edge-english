@@ -1,5 +1,5 @@
 import RealReviews from '@/components/main/RealReviews';
-import PointsTab from '@/components/main/pointsTab';
+import PointsTab from '@/components/main/DetailPointTab';
 import Image from 'next/image';
 import MobileShortsSwiper from '@/components/main/MobileShortsSwiper';
 
@@ -125,7 +125,7 @@ export default function Home() {
             <div className="aspect-[404/788]">
               <Image
                 src="/images/main/shorts-bg.svg"
-                alt="진솔언니"
+                alt="탠저린샘"
                 width={404}
                 height={788}
               />
@@ -485,13 +485,17 @@ export default function Home() {
             </span>
             영어 학습 시스템
           </h3>
+
           <div className="justify-between gap-16 md:flex">
             <div className="flex-1">
               <span className="block w-fit rounded-full border-none bg-edge-yellow px-6 py-4 font-bold leading-none text-[#333] max-md:px-4 max-md:py-2 md:h-[61px] md:text-2xl">
                 포인트1
               </span>
               <h4 className="pt-6 text-[50px] font-bold leading-[120%] text-[#140F33] max-md:text-2xl">
-                고정제 수업으로 <br />
+                고정제 수업으로{' '}
+                <span className="max-md:hidden">
+                  <br />
+                </span>
                 만드는 영어 루틴
               </h4>
               <p className="mt-8 text-2xl leading-[140%] text-edge-gray max-md:mt-6 max-md:text-base">
@@ -500,7 +504,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex-center flex-1">
+            <div className="flex-center flex-1 max-md:mt-10">
               <Image
                 src={'/images/main/point01.png'}
                 alt="point 01"
@@ -512,9 +516,29 @@ export default function Home() {
         </div>
 
         {/* 포인트 2 */}
-        <div className="px-[180px] pb-[140px] pt-[100px]">
-          <div className="flex justify-between gap-16">
-            <div className="flex-center flex-1">
+        <div className="px-[180px] pb-[140px] pt-[100px] max-md:px-4.5 max-md:py-15">
+          <div className="flex-row-reverse justify-between gap-16 md:flex">
+            <div className="flex-1">
+              <span className="block w-fit rounded-full border-none bg-edge-yellow px-6 py-4 font-bold leading-none text-[#333] max-md:px-4 max-md:py-2 md:h-[61px] md:text-2xl">
+                포인트2
+              </span>
+              <h4 className="pt-6 text-[50px] font-bold leading-[120%] text-[#140F33] max-md:text-2xl">
+                다양한 주제의{' '}
+                <span className="max-md:hidden">
+                  <br />
+                </span>
+                고퀄리티 교재 완비
+              </h4>
+              <p className="mt-8 text-2xl leading-[140%] text-edge-gray max-md:mt-6 max-md:text-base">
+                비즈니스, 여행, 일상 등 다양한 상황의 영어를 연습할 수 있는 세계적으로
+                인정받은 고품질 교재를 사용합니다.
+              </p>
+              <p className="mt-2 text-2xl text-[#a4a4a4] max-md:mt-2 max-md:text-base">
+                * 대부분 옥스포드 출판 교재 사용
+              </p>
+            </div>
+
+            <div className="flex-center flex-1 max-md:mt-10">
               <Image
                 src={'/images/main/point02.png'}
                 alt="point 02"
@@ -522,44 +546,27 @@ export default function Home() {
                 height={400}
               />
             </div>
-
-            <div className="flex-1">
-              <span className="block h-[61px] w-fit rounded-full border-none bg-edge-yellow px-6 py-4 text-2xl font-bold text-[#333]">
-                포인트2
-              </span>
-              <h4 className="pt-6 text-[50px] font-bold leading-[120%] text-[#140F33]">
-                다양한 주제의 <br />
-                고퀄리티 교재 완비
-              </h4>
-              <p className="mt-8 text-2xl leading-[140%] text-edge-gray">
-                비즈니스, 여행, 일상 등 다양한 상황의 영어를 연습할 수 있는 세계적으로
-                인정받은 고품질 교재를 사용합니다.
-              </p>
-              <p className="mt-2 text-2xl text-[#a4a4a4]">
-                * 대부분 옥스포드 출판 교재 사용
-              </p>
-            </div>
           </div>
         </div>
 
         {/* 포인트 3 */}
-        <div className="bg-[#F3F6F8] px-[180px] pb-[140px] pt-[100px]">
-          <div className="flex justify-between gap-16">
+        <div className="bg-[#F3F6F8] px-[180px] pb-[140px] pt-[100px] max-md:px-4.5 max-md:py-15">
+          <div className="justify-between gap-16 md:flex">
             <div className="flex-1">
-              <span className="block h-[61px] w-fit rounded-full border-none bg-edge-yellow px-6 py-4 text-2xl font-bold text-[#333]">
+              <span className="block w-fit rounded-full border-none bg-edge-yellow px-6 py-4 font-bold leading-none text-[#333] max-md:px-4 max-md:py-2 md:h-[61px] md:text-2xl">
                 포인트3
               </span>
-              <h4 className="pt-6 text-[50px] font-bold leading-[120%] text-[#140F33]">
+              <h4 className="pt-6 text-[50px] font-bold leading-[120%] text-[#140F33] max-md:text-2xl">
                 전원 미국·캐나다 출신 <br />
                 원어민 강사진
               </h4>
-              <p className="mt-8 text-2xl leading-[140%] text-edge-gray">
+              <p className="mt-8 text-2xl leading-[140%] text-edge-gray max-md:mt-6 max-md:text-base">
                 영어에는 다양한 억양이 있지만, 한국 학습자에게 가장 익숙한 북미식 발음을
                 사용하는 튜터만으로 구성되어있어요.
               </p>
             </div>
 
-            <div className="flex-center flex-1">
+            <div className="flex-center flex-1 max-md:mt-10">
               <Image
                 src={'/images/main/point03.png'}
                 alt="point 03"
@@ -572,12 +579,16 @@ export default function Home() {
       </>
 
       {/* 섹션7 솔직 찐후기 */}
-      <div className="py-[120px] text-center">
-        <p className="px-[140px] text-[22px] font-semibold text-edge-purple">
+      <div className="py-[120px] text-center max-md:py-15">
+        <p className="px-[140px] text-[22px] font-semibold text-edge-purple max-md:px-4.5">
           솔직 찐후기
         </p>
-        <h3 className="mt-4 px-[140px] text-[50px] font-bold text-[#140F33]">
-          왜 모두 엣지영어에 만족할까요?
+        <h3 className="mt-4 px-[140px] text-[50px] font-bold text-[#140F33] max-md:px-4.5 max-md:text-[32px]">
+          왜 모두 엣지영어에
+          <span className="md:hidden">
+            <br />
+          </span>
+          만족할까요?
         </h3>
 
         <RealReviews />
@@ -585,7 +596,7 @@ export default function Home() {
 
       {/* 섹션8 */}
       <div
-        className="w-full py-15"
+        className="w-full py-15 max-md:px-4.5"
         style={{ background: 'linear-gradient(115deg, #F3F6F8 0%, #D9D0FF 100%)' }}
       >
         <div>
@@ -597,25 +608,29 @@ export default function Home() {
             height={64}
           />
           <h3
-            className="mx-auto w-fit text-[50px] font-bold"
+            className="mx-auto w-fit text-[50px] font-bold max-md:text-[32px]"
             style={{
               background: 'linear-gradient(89deg, #322585 19.7%, #7D5FFF 76.42%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
             }}
           >
-            엣지영어만의 특별한 디테일
+            엣지영어만의
+            <span className="md:hidden">
+              <br />
+            </span>
+            특별한 디테일
           </h3>
-          <h4 className="mx-auto mt-6 w-fit text-2xl text-[#4A4A4A]">
+          <h4 className="mx-auto mt-6 w-fit text-2xl text-[#4A4A4A] max-md:text-base">
             한국인이 영어에서 느끼는 어려움을 누구보다 잘 아니까. <br /> 초급부터 고급까지
             모든 학습자를 만족 시키는 엣지 포인트!
           </h4>
 
-          <div className="mt-15">
+          <div className="mt-15 max-md:mt-10">
             <PointsTab />
           </div>
 
-          <div className="mx-auto mt-15 w-fit">
+          <div className="mx-auto mt-15 w-fit max-md:mt-10">
             <button className="btn h-14 rounded-lg bg-[#4a4a4a] px-2 py-4 font-bold text-white">
               수강신청 (30초면 충분해요)
             </button>
