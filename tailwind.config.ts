@@ -239,15 +239,7 @@ const config: Config = {
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: [
-      {
-        light: {
-          primary: '#005542',
-          'btn-border': '0px',
-        },
-      },
-    ],
-    darkTheme: false,
+    themes: ['light'],
   },
 };
 export default config;
