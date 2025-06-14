@@ -59,11 +59,17 @@ export default function Home() {
           </div>
 
           <h2 className="mt-8 text-center text-2xl max-md:mt-6 max-md:text-base">
-            13년차 영어 튜터 시에나 & 누적 조회수 300만+ 영어 컨텐츠 제작자 탠저린이 함께
-            만들었어요.
+            13년차 영어 튜터 시에나 & 누적 조회수 300만+
+            <span className="md:hidden">
+              <br />
+            </span>
+            영어 컨텐츠 제작자 탠저린이 함께 만들었어요.
           </h2>
           <h2 className="mt-8 text-center text-[32px] text-[#4A4A4A] max-md:mt-4 max-md:text-xl">
-            실력이 검증된 <span className="font-semibold">‘북미 원어민 강사’</span>에게
+            실력이 검증된 <span className="font-semibold">‘북미 원어민 강사’</span>에게{' '}
+            <span className="md:hidden">
+              <br />
+            </span>
             합리적인 가격으로 영어를 배워보세요!
           </h2>
         </>
