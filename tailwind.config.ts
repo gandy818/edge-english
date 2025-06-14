@@ -247,6 +247,7 @@ const config: Config = {
         },
       },
     ],
+    darkTheme: false,
   },
 };
 export default config;

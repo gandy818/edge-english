@@ -3,7 +3,7 @@ import TextDivider from './TextDivider';
 
 export default function Footer() {
   return (
-    <footer className="flex-center pb-[120px] pt-15 max-md:mb-16 max-md:px-4 max-md:pt-10">
+    <footer className="flex-center px-4 py-15 max-md:pt-10">
       <div className="w-full max-w-[1200px]">
         {/* 로고 */}
         <Link href="/" className="inline-block">
