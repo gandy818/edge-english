@@ -7,13 +7,13 @@ export default function Home() {
   return (
     <div>
       {/* 섹션 1 */}
-      <div className="mx-auto mb-[120px] mt-15 w-fit self-center max-md:px-4.5">
+      <div className="mx-auto mb-[120px] mt-15 w-fit self-center px-4.5">
         <Image
           src="/images/main/memoji.png"
           alt="memoji"
           width={304}
           height={168}
-          className="justify-self-center"
+          className="mx-auto justify-self-center"
         />
         <p
           className="mx-auto w-fit text-[32px] font-extrabold max-md:text-[28px]"
@@ -30,7 +30,7 @@ export default function Home() {
 
         {/* 타이틀 */}
         <>
-          <h1 className="mt-[26px] text-center text-5xl font-bold leading-[120%] max-md:text-[28px]">
+          <h1 className="mt-[26px] text-center text-5xl font-bold leading-[120%] max-lg:text-4xl max-md:text-[28px]">
             엣지영어는
             <span className="hidden max-md:inline">
               <br />
@@ -40,10 +40,10 @@ export default function Home() {
 
           <div className="mx-auto mt-4 flex w-fit justify-center gap-4 max-md:block">
             <div className="flex gap-4">
-              <h1 className="content-center text-5xl font-bold max-md:text-[28px]">
+              <h1 className="content-center text-5xl font-bold max-lg:text-4xl max-md:text-[28px]">
                 1:1 미국 · 캐나다{' '}
               </h1>
-              <div className="aspect-[186/90] w-[186px] max-md:w-[105px]">
+              <div className="aspect-[186/90] w-[186px] max-lg:w-[105px]">
                 <Image
                   src="/images/main/flag.png"
                   alt="usa and canaga flags"
@@ -53,7 +53,7 @@ export default function Home() {
               </div>
             </div>
 
-            <h1 className="content-center text-5xl font-bold leading-[120%] max-md:text-[28px]">
+            <h1 className="content-center text-5xl font-bold leading-[120%] max-lg:text-4xl max-md:text-[28px]">
               화상영어 브랜드입니다.
             </h1>
           </div>
@@ -82,10 +82,18 @@ export default function Home() {
           <div className="mx-auto flex w-fit items-end gap-1 pt-[7.5rem]">
             <div className="min-w-0 flex-1 pb-[7.5rem]">
               <h2 className="text-[50px] font-semibold text-[#140F33]">
-                엣지영어 대표 <span className="text-[#f80]">탠저린샘의 10초영어</span>
+                엣지영어 대표{' '}
+                <span className="lg:hidden">
+                  <br />
+                </span>
+                <span className="text-[#f80]">탠저린샘의 10초영어</span>
               </h2>
               <h3 className="mt-4 text-2xl text-[#8e8e8e]">
-                한국인이 자주 막히는 영어 표현, 탠저린쌤이 빠르게 정리해드려요
+                한국인이 자주 막히는 영어 표현,
+                <span className="lg:hidden">
+                  <br />
+                </span>
+                탠저린쌤이 빠르게 정리해드려요
               </h3>
 
               {/* 숏츠 */}
@@ -484,16 +492,16 @@ export default function Home() {
       {/* 섹션 6 지속 가능한 영어 학습 시스템 */}
       <>
         {/* 포인트 1 */}
-        <div className="bg-[#F3F6F8] px-[180px] pb-[140px] pt-[100px] max-md:px-4.5 max-md:py-15">
+        <div className="bg-[#F3F6F8] px-4.5 pb-[140px] pt-[100px] max-md:py-15">
           <h3 className="pb-15 text-center text-[50px] font-bold text-[#140F33] max-md:text-[32px]">
-            지속 가능한
+            지속 가능한{' '}
             <span className="md:hidden">
               <br />
             </span>
             영어 학습 시스템
           </h3>
 
-          <div className="justify-between gap-16 md:flex">
+          <div className="mx-auto max-w-[1080px] justify-between gap-16 md:flex">
             <div className="flex-1">
               <span className="block w-fit rounded-full border-none bg-edge-yellow px-6 py-4 font-bold leading-none text-[#333] max-md:px-4 max-md:py-2 md:h-[61px] md:text-2xl">
                 포인트1
@@ -523,8 +531,8 @@ export default function Home() {
         </div>
 
         {/* 포인트 2 */}
-        <div className="px-[180px] pb-[140px] pt-[100px] max-md:px-4.5 max-md:py-15">
-          <div className="flex-row-reverse justify-between gap-16 md:flex">
+        <div className="px-4.5 pb-[140px] pt-[100px] max-md:py-15">
+          <div className="mx-auto max-w-[1080px] flex-row-reverse justify-between gap-16 md:flex">
             <div className="flex-1">
               <span className="block w-fit rounded-full border-none bg-edge-yellow px-6 py-4 font-bold leading-none text-[#333] max-md:px-4 max-md:py-2 md:h-[61px] md:text-2xl">
                 포인트2
@@ -557,8 +565,8 @@ export default function Home() {
         </div>
 
         {/* 포인트 3 */}
-        <div className="bg-[#F3F6F8] px-[180px] pb-[140px] pt-[100px] max-md:px-4.5 max-md:py-15">
-          <div className="justify-between gap-16 md:flex">
+        <div className="bg-[#F3F6F8] px-4.5 pb-[140px] pt-[100px] max-md:py-15">
+          <div className="mx-auto max-w-[1080px] justify-between gap-16 md:flex">
             <div className="flex-1">
               <span className="block w-fit rounded-full border-none bg-edge-yellow px-6 py-4 font-bold leading-none text-[#333] max-md:px-4 max-md:py-2 md:h-[61px] md:text-2xl">
                 포인트3

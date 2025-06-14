@@ -134,7 +134,7 @@ export default function PointsTab() {
                   : '#614BC0',
             }}
           >
-            <p className="w-fit font-montserrat font-bold text-white">{`POINT 0${num}`}</p>
+            <p className="mx-auto w-fit font-montserrat font-bold text-white">{`POINT 0${num}`}</p>
           </button>
         ))}
       </div>
