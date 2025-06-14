@@ -29,7 +29,7 @@ const EDGE_DETAILS = [
         </p>
       </>
     ),
-    image: '/images/main/detail01.svg',
+    image: '/images/main/detail01.png',
     alt: '',
   },
   {
@@ -44,7 +44,7 @@ const EDGE_DETAILS = [
         </p>
       </>
     ),
-    image: '/images/main/detail02.svg',
+    image: '/images/main/detail02.png',
     alt: '',
   },
   {
@@ -60,7 +60,7 @@ const EDGE_DETAILS = [
         </p>
       </>
     ),
-    image: '/images/main/detail03.svg',
+    image: '/images/main/detail03.png',
     alt: '',
   },
   {
@@ -74,7 +74,7 @@ const EDGE_DETAILS = [
         </p>
       </>
     ),
-    image: '/images/main/detail04.svg',
+    image: '/images/main/detail04.png',
     alt: '',
   },
 ];
@@ -115,53 +115,32 @@ export default function PointsTab() {
   return (
     <div className="mx-auto max-w-[1220px]">
       {/* tab */}
-      <div className="flex h-25 max-md:h-14">
-        {/* POINT 01 */}
-        <button
-          className={`flex-center flex-1 text-2xl max-md:text-xs ${active === 1 ? 'active' : ''}`}
-          onClick={() => setActive(1)}
-          style={{
-            borderTopLeftRadius: '1rem',
-            background: TAB_BG_MATRIX[active - 1][0],
-          }}
-        >
-          <p className={`w-fit font-montserrat font-bold text-white`}>POINT 01</p>
-        </button>
-        {/* POINT 02 */}
-        <button
-          className={`flex-center flex-1 text-2xl max-md:text-xs ${active === 2 ? 'active' : ''}`}
-          onClick={() => setActive(2)}
-          style={{
-            background: TAB_BG_MATRIX[active - 1][1],
-          }}
-        >
-          <p className={`w-fit font-montserrat font-bold text-white`}>POINT 02</p>
-        </button>
-        {/* POINT 03 */}
-        <button
-          className={`flex-center flex-1 text-2xl max-md:text-xs ${active === 3 ? 'active' : ''}`}
-          onClick={() => setActive(3)}
-          style={{
-            background: TAB_BG_MATRIX[active - 1][2],
-          }}
-        >
-          <p className={`w-fit font-montserrat font-bold text-white`}>POINT 03</p>
-        </button>
-        {/* POINT 04 */}
-        <button
-          className={`flex-center flex-1 text-2xl max-md:text-xs ${active === 4 ? 'active' : ''}`}
-          onClick={() => setActive(4)}
-          style={{
-            borderTopRightRadius: '1rem',
-            background: TAB_BG_MATRIX[active - 1][3],
-          }}
-        >
-          <p className={`w-fit font-montserrat font-bold text-white`}>POINT 04</p>
-        </button>
+      <div className="flex h-25 rounded-t-2xl bg-[#614BC0] max-md:h-14">
+        {[1, 2, 3, 4].map((num, idx) => (
+          <button
+            key={num}
+            className={[
+              'flex-center flex-1 text-2xl max-md:text-xs',
+              active === num ? 'active' : '',
+              active + 1 === num && active < 4 ? 'snake' : '',
+            ].join(' ')}
+            onClick={() => setActive(num)}
+            style={{
+              borderTopLeftRadius: idx === 0 ? '1rem' : undefined,
+              borderTopRightRadius: idx === 3 ? '1rem' : undefined,
+              background:
+                active === num
+                  ? 'linear-gradient(90deg, #AA96FF -2.03%, #7D5FFF 102.29%)'
+                  : '#614BC0',
+            }}
+          >
+            <p className="w-fit font-montserrat font-bold text-white">{`POINT 0${num}`}</p>
+          </button>
+        ))}
       </div>
 
       {/* content */}
-      <div className="flex h-[500px] w-full rounded-b-2xl bg-white px-[47px] py-6 max-md:h-[532px] max-md:flex-col-reverse max-md:px-4.5">
+      <div className="flex min-h-[534px] w-full rounded-b-2xl bg-white px-[47px] py-6 max-md:h-auto max-md:flex-col-reverse max-md:px-4.5">
         <div className="flex-1 p-6 max-md:p-0">
           <span className="font-montserrat text-2xl font-bold text-[#7D5FFF] max-md:text-lg max-md:leading-none">
             point 0{currentDetail.index}

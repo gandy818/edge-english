@@ -158,7 +158,7 @@ export default function Home() {
 
         {/* 탠저린쌤 */}
         <div className="flex-center mt-6">
-          <img src="/images/main/mobile-shorts-bg.svg" width={184} height={237} />
+          <img src="/images/main/mobile-shorts-bg.png" width={184} height={237} />
         </div>
 
         <div
@@ -473,7 +473,11 @@ export default function Home() {
           className="mt-8 text-center font-medium text-white"
           style={{ textShadow: '0px 0px 10px rgba(0, 0, 0, 0.50)' }}
         >
-          운영진들의 오랜 강사 경력과 노하우를 바탕으로 완성된 학습시스템을 소개합니다.
+          운영진들의 오랜 강사 경력과 노하우를 바탕으로
+          <span className="md:hidden">
+            <br />
+          </span>
+          완성된 학습시스템을 소개합니다.
         </p>
       </div>
 

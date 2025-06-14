@@ -17,25 +17,6 @@
   background-color: white;
 }
 
-.arrow-right {
-  position: relative;
-}
-
-.arrow-right:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  right: -48px;
-  top: 0;
-  width: 48px;
-  height: 100%;
-  background: inherit;
-  clip-path: polygon(0 0, 100% 50%, 0 100%);
-  z-index: 2;
-}
-.arrow-right.active:not(:last-child)::after {
-  background: #7d5fff;
-}
-
 /* swiper */
 .swiper-pagination-bullet {
   background-color: #f2dccb !important;
@@ -44,6 +25,26 @@
 
 .swiper-pagination-bullet-active {
   background-color: #f80 !important;
+}
+
+@keyframes snake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  80% {
+    transform: translateX(-1px);
+  }
+}
+
+.snake {
+  animation: snake 1s infinite;
 }
 
 /* 폰트 패밀리 설정 */

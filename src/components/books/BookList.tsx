@@ -64,7 +64,7 @@ export default function BookList({ bookList }: FilterProps) {
                 ))}
 
                 <h2 className="mt-4 text-[22px] font-bold">{item.title}</h2>
-                <p className="mt-8 whitespace-pre-line text-lg text-edge-gray max-md:hidden">
+                <p className="mt-1 whitespace-pre-line text-lg text-edge-gray max-md:hidden">
                   {item.describe}
                 </p>
               </div>

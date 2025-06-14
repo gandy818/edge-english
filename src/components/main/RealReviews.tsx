@@ -116,7 +116,7 @@ export default function RealReviews() {
         {cardList.map((card, idx) => (
           <div
             key={idx}
-            className="card card-lg w-[33.75rem] min-w-[33.75rem] rounded-3xl bg-base-100 shadow-sm"
+            className="card card-lg w-[33.75rem] min-w-[33.75rem] rounded-3xl bg-base-100 bg-white shadow-sm"
           >
             <div className="card-body gap-4 rounded-3xl border text-center">
               <p className="content-center">{card.content}</p>
