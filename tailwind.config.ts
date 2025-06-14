@@ -237,6 +237,7 @@ const config: Config = {
       },
     },
   },
+  darkMode: 'class',
   plugins: [require('daisyui')],
   daisyui: {
     themes: ['light'],
