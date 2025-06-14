@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import Bubble from './common/bubble/Bubble';
 
 export default function Header() {
   const pathName = usePathname();
@@ -11,10 +12,10 @@ export default function Header() {
   const closeDrawer = () => setIsDrawerOpen(false);
 
   return (
-    <header className="flex-center h-[70px] max-md:px-4">
-      <div className="flex w-full max-w-[1200px] max-md:justify-between md:gap-64">
+    <header className="flex-center min-h-[70px] px-4 py-4">
+      <div className="flex w-full items-center justify-between">
         <Link href="/">
-          <img src="/images/logo.svg" alt="logo" />
+          <img src="/images/logo.svg" alt="logo" className="min-w-20" />
         </Link>
 
         {/* gnb */}
@@ -60,6 +61,15 @@ export default function Header() {
           >
             수업료
           </Link>
+        </div>
+
+        <div className="relative flex gap-2 max-md:hidden">
+          <button className="btn rounded-lg border-none bg-edge-yellow text-sm font-semibold text-[#333]">
+            수강신청
+          </button>
+          <button className="btn rounded-lg border-none bg-edge-gray text-sm font-semibold text-white">
+            체험수업
+          </button>
         </div>
 
         {/* 모바일 햄버거 메뉴 */}

@@ -137,11 +137,12 @@ export default function Home() {
 
             {/* 탠저린쌤 */}
             <div className="aspect-[404/788]">
-              <Image
+              <img
                 src="/images/main/shorts-bg.svg"
                 alt="탠저린샘"
-                width={404}
-                height={788}
+                // width={404}
+                // height={788}
+                className="h-[788px] w-[404px] md:w-[300px]"
               />
             </div>
           </div>
@@ -647,7 +648,7 @@ export default function Home() {
             모든 학습자를 만족 시키는 엣지 포인트!
           </h4>
 
-          <div className="mt-15 max-md:mt-10">
+          <div className="mt-15 px-4.5 max-md:mt-10">
             <PointsTab />
           </div>
 

@@ -38,7 +38,7 @@ export default function EventPage() {
   const currentEventList = filteredEventList.slice(indexOfFirstitem, indexOfLastItem); // 현재 페이지의 게시물 데이터
 
   return (
-    <div className="mx-auto max-w-[1200px] max-md:px-4">
+    <div className="mx-auto max-w-[1200px] px-4">
       <div className="mt-[120px] border-b border-[#A4A4A4] max-md:mt-16">
         <h1 className="pb-3 text-[68px] font-bold max-md:text-[40px]">이벤트</h1>
       </div>
