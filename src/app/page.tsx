@@ -297,7 +297,7 @@ export default function Home() {
 
       {/* 섹션 4 화상영어 수강생들의 흔한 고민 */}
       <div
-        className="p-[120px] max-md:px-4.5 max-md:py-15"
+        className="p-[7.5rem] max-xl:p-16 max-md:px-4.5 max-md:py-15"
         style={{
           background: `linear-gradient(180deg, rgba(238,199,5,0.20) 0%, rgba(254,254,254,0.04) 100%), #FFFAF6`,
         }}
@@ -448,21 +448,21 @@ export default function Home() {
 
       {/* 섹션 5 pc 매번 작심삼일로 끝났다면? */}
       <div
-        className="relative aspect-[1440/560] w-full bg-contain bg-no-repeat px-36 py-32 max-md:hidden"
+        className="relative aspect-[1440/560] w-full bg-contain bg-no-repeat px-36 py-32 max-xl:px-4.5 max-xl:py-16 max-md:hidden"
         style={{ backgroundImage: "url('/images/main/we-can-help-bg.png')" }}
       >
-        <p className="mx-auto w-fit pr-12 text-[50px] font-bold text-edge-yellow">
+        <p className="mx-auto w-fit pr-12 text-[50px] font-bold text-edge-yellow max-xl:text-5xl">
           .&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.
         </p>
         <p
-          className="text-center text-[56px] font-bold text-white"
+          className="text-center text-[56px] font-bold text-white max-xl:text-5xl max-xl:leading-tight"
           style={{ textShadow: '0px 0px 10px rgba(0, 0, 0, 0.50)' }}
         >
           영어, 매번 작심삼일로 끝났다면? <br />
           포기하지 않도록 엣지영어가 도와드릴게요!
         </p>
         <p
-          className="mt-8 text-center text-[32px] font-medium text-white"
+          className="mt-8 text-center text-[32px] font-medium text-white max-xl:text-2xl"
           style={{ textShadow: '0px 0px 10px rgba(0, 0, 0, 0.50)' }}
         >
           운영진들의 오랜 강사 경력과 노하우를 바탕으로 완성된 학습시스템을 소개합니다.
@@ -520,7 +520,7 @@ export default function Home() {
                 </span>
                 만드는 영어 루틴
               </h4>
-              <p className="mt-8 text-2xl leading-[140%] text-edge-gray max-md:mt-6 max-md:text-base">
+              <p className="mt-8 text-[1.4rem] leading-[140%] text-edge-gray max-md:mt-6 max-md:text-base">
                 정해진 요일과 시간에 꾸준히 진행되는 고정제 수업은 바쁜 일상 속에서도
                 영어를 포기하지 않도록 강력한 동기부여가 됩니다.
               </p>
@@ -551,11 +551,11 @@ export default function Home() {
                 </span>
                 고퀄리티 교재 완비
               </h4>
-              <p className="mt-8 text-2xl leading-[140%] text-edge-gray max-md:mt-6 max-md:text-base">
+              <p className="mt-8 text-[1.4rem] leading-[140%] text-edge-gray max-md:mt-6 max-md:text-base">
                 비즈니스, 여행, 일상 등 다양한 상황의 영어를 연습할 수 있는 세계적으로
                 인정받은 고품질 교재를 사용합니다.
               </p>
-              <p className="mt-2 text-2xl text-[#a4a4a4] max-md:mt-2 max-md:text-base">
+              <p className="mt-2 text-[1.4rem] text-[#a4a4a4] max-md:mt-2 max-md:text-base">
                 * 대부분 옥스포드 출판 교재 사용
               </p>
             </div>
@@ -582,7 +582,7 @@ export default function Home() {
                 전원 미국·캐나다 출신 <br />
                 원어민 강사진
               </h4>
-              <p className="mt-8 text-2xl leading-[140%] text-edge-gray max-md:mt-6 max-md:text-base">
+              <p className="mt-8 text-[1.4rem] leading-[140%] text-edge-gray max-md:mt-6 max-md:text-base">
                 영어에는 다양한 억양이 있지만, 한국 학습자에게 가장 익숙한 북미식 발음을
                 사용하는 튜터만으로 구성되어있어요.
               </p>

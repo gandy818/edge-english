@@ -9,3 +9,15 @@
   border-color: var(--after-border);
   left: 50%;
 }
+
+.bubbleRightTail:after {
+  content: '';
+  background: var(--after-bg, white);
+  top: 50%;
+  width: 17px;
+  height: 17px;
+  transform: translateY(-50%) rotate(45deg) skew(0deg);
+  border-radius: 2px;
+  border-color: var(--after-border);
+  right: -5px;
+}

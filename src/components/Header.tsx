@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import Bubble from './common/bubble/Bubble';
+import BubbleRightTail from './common/bubble/BubbleRightTail';
 
 export default function Header() {
   const pathName = usePathname();
@@ -18,7 +18,6 @@ export default function Header() {
           <img src="/images/logo.svg" alt="logo" className="min-w-20" />
         </Link>
 
-        {/* gnb */}
         <div className="flex gap-11 max-md:hidden">
           <Link
             href="/events"
@@ -64,6 +63,16 @@ export default function Header() {
         </div>
 
         <div className="relative flex gap-2 max-md:hidden">
+          <div className="max-xl:hidden">
+            <BubbleRightTail
+              text="회원가입 없이 간편 신청하기"
+              bg="#1A1A1A"
+              left={-205}
+              top={4}
+              textClassName="text-white text-sm"
+            />
+          </div>
+
           <button className="btn rounded-lg border-none bg-edge-yellow text-sm font-semibold text-[#333]">
             수강신청
           </button>
