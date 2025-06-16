@@ -12,7 +12,7 @@ export default function Header() {
   const closeDrawer = () => setIsDrawerOpen(false);
 
   return (
-    <header className="flex-center min-h-[70px] px-4 py-4">
+    <header className="flex-center sticky top-0 z-10 min-h-[70px] bg-white px-4 py-4">
       <div className="flex w-full items-center gap-12">
         <Link href="/">
           <img src="/images/logo.svg" alt="logo" className="min-w-20" />
@@ -125,7 +125,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/events"
-                  className={`text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/events') ? 'text-edge-yellow' : ''}`}
+                  className={`active:bg-white! text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/events') ? 'text-edge-yellow' : ''}`}
                   onClick={() => closeDrawer()}
                 >
                   이벤트
@@ -174,8 +174,8 @@ export default function Header() {
 
               <li>
                 <Link
-                  href="/"
-                  className={`text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/aaa') ? 'text-edge-yellow' : ''}`}
+                  href="/price"
+                  className={`text-nowrap py-4 text-[22px] font-bold ${pathName.startsWith('/price') ? 'text-edge-yellow' : ''}`}
                   onClick={() => closeDrawer()}
                 >
                   수업료

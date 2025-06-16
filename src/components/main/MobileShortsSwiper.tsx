@@ -51,13 +51,13 @@ export default function MobileShortsSwiper() {
         </SwiperSlide>
       </Swiper>
       <button
-        className="custom-swiper-prev absolute left-0 top-1/2 z-10 -translate-y-1/2"
+        className="custom-swiper-prev absolute left-0 top-1/2 z-[9] -translate-y-1/2"
         type="button"
       >
         <img src="/icons/pagination-prev1.png" alt="이전" className="h-12 w-9" />
       </button>
       <button
-        className="custom-swiper-next absolute right-0 top-1/2 z-10 -translate-y-1/2"
+        className="custom-swiper-next absolute right-0 top-1/2 z-[9] -translate-y-1/2"
         type="button"
       >
         <img src="/icons/pagination-next1.png" alt="다음" className="h-12 w-9" />
