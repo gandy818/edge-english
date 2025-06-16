@@ -201,6 +201,85 @@ export default function Home() {
         </div>
       </div>
 
+      {/* test */}
+      <div className="flex">
+        <div className="w-fit rounded-3xl border border-dashed border-edge-yellow p-1">
+          <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-red-200 p-6 max-lg:h-40 max-lg:p-2 max-md:h-33 max-md:p-4">
+            <span className="badge border-none bg-[#AA96FF] p-2 font-montserrat text-xs font-medium text-white">
+              STEP 01
+            </span>
+            <div>
+              <p className="text-xl font-bold max-lg:tracking-[-0.8px] max-md:text-base">
+                수강 신청서 제출
+              </p>
+              <p className="h-11 text-sm text-edge-gray max-md:text-xs">
+                (신청 먼저, 결제는 나중에 할 수 있어요)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* step 02 */}
+        <div className="w-fit rounded-3xl border border-dashed border-edge-yellow p-1">
+          <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-red-200 p-6 max-lg:h-40 max-lg:p-2 max-md:h-33 max-md:p-4">
+            <span className="badge border-none bg-[#AA96FF] p-2 font-montserrat text-xs font-medium text-white">
+              STEP 02
+            </span>
+            <div>
+              <p className="text-xl font-bold max-md:text-base">수강 안내</p>
+              <p className="h-11 text-sm text-edge-gray max-md:text-xs">
+                (강사&교재 매칭)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* === */}
+      <div className="flex">
+        <div className="w-fit rounded-3xl border border-dashed border-edge-yellow p-1">
+          <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-red-200 p-6 max-lg:h-40 max-lg:p-2 max-md:h-33 max-md:p-4">
+            <span className="badge border-none bg-[#AA96FF] p-2 font-montserrat text-xs font-medium text-white">
+              STEP 01
+            </span>
+            <div>
+              <p className="text-xl font-bold max-lg:tracking-[-0.8px] max-md:text-base">
+                수강 신청서 제출
+              </p>
+              <p className="h-11 text-sm text-edge-gray max-md:text-xs">
+                (신청 먼저, 결제는 나중에 할 수 있어요)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* arrow */}
+        <div className="px-6 max-lg:px-1 max-md:hidden">
+          <Image
+            src={'/icons/main/yellow-right-arrow.svg'}
+            width={24}
+            height={24}
+            alt="yellow-right-arrow.svg"
+          />
+        </div>
+
+        {/* step 02 */}
+        <div className="w-fit rounded-3xl border border-dashed border-edge-yellow p-1">
+          <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-red-200 p-6 max-lg:h-40 max-lg:p-2 max-md:h-33 max-md:p-4">
+            <span className="badge border-none bg-[#AA96FF] p-2 font-montserrat text-xs font-medium text-white">
+              STEP 02
+            </span>
+            <div>
+              <p className="text-xl font-bold max-md:text-base">수강 안내</p>
+              <p className="h-11 text-sm text-edge-gray max-md:text-xs">
+                (강사&교재 매칭)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* test */}
+
       {/* 섹션 3 수업 절차 */}
       <div className="mx-auto my-[120px] w-fit text-center max-md:my-15 max-md:px-4.5">
         <h3 className="text-5xl font-bold text-[#140F33] max-md:text-[34px]">수업절차</h3>
