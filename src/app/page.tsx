@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       {/* 섹션 1 */}
-      <div className="mx-auto mb-[120px] mt-15 w-fit self-center px-4.5">
+      <div className="mx-auto mb-[120px] mt-15 w-fit self-center px-4.5 max-md:mt-10">
         <Image
           src="/images/main/memoji.png"
           alt="memoji"
@@ -202,17 +202,17 @@ export default function Home() {
       </div>
 
       {/* 섹션 3 수업 절차 */}
-      <div className="mx-auto my-[120px] w-fit px-4.5 text-center max-md:my-15">
+      <div className="mx-auto my-[120px] w-fit text-center max-md:my-15 max-md:px-4.5">
         <h3 className="text-5xl font-bold text-[#140F33] max-md:text-[34px]">수업절차</h3>
-        <div className="flex-center mt-10 flex-wrap max-md:grid max-md:grid-cols-2 max-md:gap-6">
+        <div className="flex-center mt-10 max-md:grid max-md:grid-cols-2 max-md:flex-wrap max-md:gap-6">
           {/* step 01 */}
           <div className="w-fit rounded-3xl border border-dashed border-edge-yellow p-1">
-            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-[#FFD4011A] p-6 max-md:h-33 max-md:p-4">
+            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-[#FFD4011A] p-6 max-lg:h-40 max-lg:p-2 max-md:h-33 max-md:p-4">
               <span className="badge border-none bg-[#AA96FF] p-2 font-montserrat text-xs font-medium text-white">
                 STEP 01
               </span>
               <div>
-                <p className="text-xl font-bold max-md:text-base max-md:tracking-[-0.8px]">
+                <p className="text-xl font-bold max-lg:tracking-[-0.8px] max-md:text-base">
                   수강 신청서 제출
                 </p>
                 <p className="h-11 text-sm text-edge-gray max-md:text-xs">
@@ -223,7 +223,7 @@ export default function Home() {
           </div>
 
           {/* arrow */}
-          <div className="px-6 max-md:hidden">
+          <div className="px-6 max-lg:px-1 max-md:hidden">
             <Image
               src={'/icons/main/yellow-right-arrow.svg'}
               width={24}
@@ -234,7 +234,7 @@ export default function Home() {
 
           {/* step 02 */}
           <div className="w-fit rounded-3xl border border-dashed border-edge-yellow p-1">
-            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-[#FFD4011A] p-6 max-md:h-33 max-md:p-4">
+            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-[#FFD4011A] p-6 max-lg:h-40 max-lg:p-2 max-md:h-33 max-md:p-4">
               <span className="badge border-none bg-[#AA96FF] p-2 font-montserrat text-xs font-medium text-white">
                 STEP 02
               </span>
@@ -248,7 +248,7 @@ export default function Home() {
           </div>
 
           {/* arrow */}
-          <div className="px-6 max-md:hidden">
+          <div className="px-6 max-lg:px-1 max-md:hidden">
             <Image
               src={'/icons/main/yellow-right-arrow.svg'}
               width={24}
@@ -259,7 +259,7 @@ export default function Home() {
 
           {/* step 03 */}
           <div className="w-fit rounded-3xl border border-dashed border-edge-yellow p-1">
-            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-[#FFD4011A] p-6 max-md:h-33 max-md:p-4">
+            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-[#FFD4011A] p-6 max-lg:h-40 max-lg:p-2 max-md:h-33 max-md:p-4">
               <span className="badge border-none bg-[#AA96FF] p-2 font-montserrat text-xs font-medium text-white">
                 STEP 03
               </span>
@@ -271,7 +271,7 @@ export default function Home() {
           </div>
 
           {/* arrow */}
-          <div className="px-6 max-md:hidden">
+          <div className="px-6 max-lg:px-1 max-md:hidden">
             <Image
               src={'/icons/main/yellow-right-arrow.svg'}
               width={24}
@@ -282,7 +282,7 @@ export default function Home() {
 
           {/* step 04 */}
           <div className="w-fit rounded-3xl border border-dashed border-edge-yellow p-1">
-            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-[#FFD4011A] p-6 max-md:h-33 max-md:p-4">
+            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-[#FFD4011A] p-6 max-lg:h-40 max-lg:p-2 max-md:h-33 max-md:p-4">
               <span className="badge border-none bg-[#AA96FF] p-2 font-montserrat text-xs font-medium text-white">
                 STEP 04
               </span>
@@ -455,14 +455,14 @@ export default function Home() {
           .&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.
         </p>
         <p
-          className="text-center text-[56px] font-bold text-white max-xl:text-5xl max-xl:leading-tight"
+          className="text-center text-[56px] font-bold text-white max-xl:text-5xl max-xl:leading-tight max-lg:text-4xl"
           style={{ textShadow: '0px 0px 10px rgba(0, 0, 0, 0.50)' }}
         >
           영어, 매번 작심삼일로 끝났다면? <br />
           포기하지 않도록 엣지영어가 도와드릴게요!
         </p>
         <p
-          className="mt-8 text-center text-[32px] font-medium text-white max-xl:text-2xl"
+          className="mt-8 text-center text-[32px] font-medium text-white max-xl:text-2xl max-lg:text-xl"
           style={{ textShadow: '0px 0px 10px rgba(0, 0, 0, 0.50)' }}
         >
           운영진들의 오랜 강사 경력과 노하우를 바탕으로 완성된 학습시스템을 소개합니다.
@@ -513,14 +513,14 @@ export default function Home() {
               <span className="block w-fit rounded-full border-none bg-edge-yellow px-6 py-4 font-bold leading-none text-[#333] max-md:px-4 max-md:py-2 md:h-[61px] md:text-2xl">
                 포인트1
               </span>
-              <h4 className="pt-6 text-[50px] font-bold leading-[120%] text-[#140F33] max-md:text-2xl">
+              <h4 className="pt-6 text-[50px] font-bold leading-[120%] text-[#140F33] max-lg:text-4xl max-md:text-2xl">
                 고정제 수업으로{' '}
                 <span className="max-md:hidden">
                   <br />
                 </span>
                 만드는 영어 루틴
               </h4>
-              <p className="mt-8 text-[1.4rem] leading-[140%] text-edge-gray max-md:mt-6 max-md:text-base">
+              <p className="mt-8 text-[1.4rem] leading-[140%] text-edge-gray max-lg:text-xl max-md:mt-6 max-md:text-base">
                 정해진 요일과 시간에 꾸준히 진행되는 고정제 수업은 바쁜 일상 속에서도
                 영어를 포기하지 않도록 강력한 동기부여가 됩니다.
               </p>
@@ -544,18 +544,18 @@ export default function Home() {
               <span className="block w-fit rounded-full border-none bg-edge-yellow px-6 py-4 font-bold leading-none text-[#333] max-md:px-4 max-md:py-2 md:h-[61px] md:text-2xl">
                 포인트2
               </span>
-              <h4 className="pt-6 text-[50px] font-bold leading-[120%] text-[#140F33] max-md:text-2xl">
+              <h4 className="pt-6 text-[50px] font-bold leading-[120%] text-[#140F33] max-lg:text-4xl max-md:text-2xl">
                 다양한 주제의{' '}
                 <span className="max-md:hidden">
                   <br />
                 </span>
                 고퀄리티 교재 완비
               </h4>
-              <p className="mt-8 text-[1.4rem] leading-[140%] text-edge-gray max-md:mt-6 max-md:text-base">
+              <p className="mt-8 text-[1.4rem] leading-[140%] text-edge-gray max-lg:text-xl max-md:mt-6 max-md:text-base">
                 비즈니스, 여행, 일상 등 다양한 상황의 영어를 연습할 수 있는 세계적으로
                 인정받은 고품질 교재를 사용합니다.
               </p>
-              <p className="mt-2 text-[1.4rem] text-[#a4a4a4] max-md:mt-2 max-md:text-base">
+              <p className="mt-2 text-[1.4rem] text-[#a4a4a4] max-lg:text-xl max-md:mt-2 max-md:text-base">
                 * 대부분 옥스포드 출판 교재 사용
               </p>
             </div>
@@ -578,14 +578,14 @@ export default function Home() {
               <span className="block w-fit rounded-full border-none bg-edge-yellow px-6 py-4 font-bold leading-none text-[#333] max-md:px-4 max-md:py-2 md:h-[61px] md:text-2xl">
                 포인트3
               </span>
-              <h4 className="pt-6 text-[50px] font-bold leading-[120%] text-[#140F33] max-md:text-2xl">
+              <h4 className="pt-6 text-[50px] font-bold leading-[120%] text-[#140F33] max-lg:text-4xl max-md:text-2xl">
                 전원 미국·캐나다 출신{' '}
                 <span className="max-md:hidden">
                   <br />
                 </span>
                 원어민 강사진
               </h4>
-              <p className="mt-8 text-[1.4rem] leading-[140%] text-edge-gray max-md:mt-6 max-md:text-base">
+              <p className="mt-8 text-[1.4rem] leading-[140%] text-edge-gray max-lg:text-xl max-md:mt-6 max-md:text-base">
                 영어에는 다양한 억양이 있지만, 한국 학습자에게 가장 익숙한 북미식 발음을
                 사용하는 튜터만으로 구성되어있어요.
               </p>
@@ -608,7 +608,7 @@ export default function Home() {
         <p className="px-[140px] text-[22px] font-semibold text-edge-purple max-md:px-4.5">
           솔직 찐후기
         </p>
-        <h3 className="mt-4 px-[140px] text-[50px] font-bold text-[#140F33] max-md:px-4.5 max-md:text-[32px]">
+        <h3 className="mt-4 text-[50px] font-bold text-[#140F33] max-md:px-4.5 max-md:text-[32px]">
           왜 모두 엣지영어에
           <span className="md:hidden">
             <br />
@@ -621,7 +621,7 @@ export default function Home() {
 
       {/* 섹션8 */}
       <div
-        className="w-full py-15 max-md:px-4.5"
+        className="w-full px-4.5 py-15"
         style={{ background: 'linear-gradient(115deg, #F3F6F8 0%, #D9D0FF 100%)' }}
       >
         <div>
@@ -640,13 +640,13 @@ export default function Home() {
               WebkitTextFillColor: 'transparent',
             }}
           >
-            엣지영어만의
+            엣지영어만의{' '}
             <span className="md:hidden">
               <br />
             </span>
             특별한 디테일
           </h3>
-          <h4 className="mx-auto mt-6 w-fit text-2xl text-[#4A4A4A] max-md:text-base">
+          <h4 className="mx-auto mt-6 w-fit text-2xl text-[#4A4A4A] max-md:text-[15px] max-md:leading-normal">
             한국인이 영어에서 느끼는 어려움을 누구보다 잘 아니까. <br /> 초급부터 고급까지
             모든 학습자를 만족 시키는 엣지 포인트!
           </h4>
