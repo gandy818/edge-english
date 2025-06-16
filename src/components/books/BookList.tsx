@@ -54,14 +54,16 @@ export default function BookList({ bookList }: FilterProps) {
 
               {/* 책 설명 */}
               <div>
-                {item.level.map((e, idx2) => (
-                  <div
-                    key={idx2}
-                    className="badge badge-outline mr-2 h-auto border-[#e8e8e8] px-4 py-2"
-                  >
-                    {e}
-                  </div>
-                ))}
+                <div className="flex">
+                  {item.level.map((e, idx2) => (
+                    <div
+                      key={idx2}
+                      className="mr-2 h-auto w-fit rounded-full border border-[#e8e8e8] px-4 py-2 leading-none"
+                    >
+                      {e}
+                    </div>
+                  ))}
+                </div>
 
                 <h2 className="mt-4 text-[22px] font-bold">{item.title}</h2>
                 <p className="mt-1 whitespace-pre-line text-lg text-edge-gray max-md:hidden">

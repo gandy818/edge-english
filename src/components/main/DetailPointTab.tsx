@@ -152,7 +152,7 @@ export default function PointsTab() {
           </div>
           <div className="py-10 max-md:mt-4 max-md:py-2">{currentDetail.contents}</div>
         </div>
-        <div className="flex-center flex-1">
+        <div className="flex-center flex-1 self-center max-md:min-h-[285px] max-md:max-w-[276px]">
           <img src={currentDetail.image} alt={currentDetail.alt} />
         </div>
       </div>

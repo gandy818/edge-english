@@ -648,7 +648,7 @@ export default function Home() {
             모든 학습자를 만족 시키는 엣지 포인트!
           </h4>
 
-          <div className="mt-15 px-4.5 max-md:mt-10">
+          <div className="mt-15 max-md:mt-10">
             <PointsTab />
           </div>
 

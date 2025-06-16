@@ -34,7 +34,7 @@ export default async function BooksPage() {
   return (
     <div>
       {/* 지금 내 영어 레벨, 어디쯤일까요? */}
-      <div className="bg-[#F3F6F8] py-[60px] max-md:px-4">
+      <div className="bg-[#F3F6F8] px-4 py-[60px]">
         <div className="mx-auto max-w-[912px]">
           <h1 className="text-center text-[32px] font-bold">
             지금 내 영어 레벨, 어디쯤일까요?
@@ -67,7 +67,7 @@ export default async function BooksPage() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-[1200px] max-md:px-4">
+      <div className="mx-auto max-w-[1200px] px-4">
         <div className="mt-15 border-b border-[#A4A4A4] max-md:mt-16">
           <h1 className="text-[68px] font-bold max-md:text-[40px]">교재 소개</h1>
         </div>
