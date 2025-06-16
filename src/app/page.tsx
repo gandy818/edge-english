@@ -207,7 +207,7 @@ export default function Home() {
         <div className="flex-center mt-10 max-md:grid max-md:grid-cols-2 max-md:flex-wrap max-md:gap-6">
           {/* step 01 */}
           <div className="w-fit rounded-3xl border border-dashed border-edge-yellow p-1">
-            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-[#FFD4011A] p-6 max-lg:h-40 max-lg:p-2 max-md:h-33 max-md:p-4">
+            <div className="flex-center aspect-square h-48 flex-col gap-4 rounded-3xl bg-orange-300 p-6 max-lg:h-40 max-lg:bg-red-400 max-lg:p-2 max-md:h-33 max-md:bg-blue-200 max-md:p-4">
               <span className="badge border-none bg-[#AA96FF] p-2 font-montserrat text-xs font-medium text-white">
                 STEP 01
               </span>
