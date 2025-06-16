@@ -107,21 +107,21 @@ export default function Home() {
                 <iframe
                   src={`https://www.youtube.com/embed/FkJ3hjifTzk?autoplay=0`}
                   title="YouTube Shorts"
-                  className="aspect-[9/16] min-w-0 rounded-2xl"
+                  className="aspect-[9/16] min-w-0 rounded-2xl max-lg:w-40"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />
                 <iframe
                   src={`https://www.youtube.com/embed/_rRgqVq4gfw?autoplay=0`}
                   title="YouTube Shorts"
-                  className="aspect-[9/16] min-w-0 rounded-2xl"
+                  className="aspect-[9/16] min-w-0 rounded-2xl max-lg:w-40"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />
                 <iframe
-                  src={`https://www.youtube.com/embed/Yj7pm_r38rc?autoplay=0`}
+                  src={`https://www.youtube.com/embed/Yj7pm_r38rc?autoplay=0 `}
                   title="YouTube Shorts"
-                  className="aspect-[9/16] min-w-0 rounded-2xl"
+                  className="aspect-[9/16] min-w-0 rounded-2xl max-lg:w-40"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />
@@ -140,9 +140,9 @@ export default function Home() {
               <img
                 src="/images/main/shorts-bg.svg"
                 alt="탠저린샘"
-                // width={404}
-                // height={788}
-                className="h-[788px] w-[404px] md:w-[300px]"
+                width={404}
+                height={788}
+                className="max-lg:w-[300px]"
               />
             </div>
           </div>

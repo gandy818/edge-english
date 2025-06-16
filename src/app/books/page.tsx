@@ -37,7 +37,11 @@ export default async function BooksPage() {
       <div className="bg-[#F3F6F8] px-4 py-[60px]">
         <div className="mx-auto max-w-[912px]">
           <h1 className="text-center text-[32px] font-bold">
-            지금 내 영어 레벨, 어디쯤일까요?
+            지금 내 영어 레벨,
+            <span className="md:hidden">
+              <br />
+            </span>
+            어디쯤일까요?
           </h1>
 
           {/* 레벨 */}

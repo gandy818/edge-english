@@ -13,72 +13,74 @@ export default function Header() {
 
   return (
     <header className="flex-center min-h-[70px] px-4 py-4">
-      <div className="flex w-full items-center justify-between">
+      <div className="flex w-full items-center gap-8">
         <Link href="/">
           <img src="/images/logo.svg" alt="logo" className="min-w-20" />
         </Link>
 
-        <div className="flex gap-11 max-md:hidden">
-          <Link
-            href="/events"
-            className={`text-nowrap ${pathName.startsWith('/events') ? 'font-bold' : 'font-medium text-edge-light'}`}
-          >
-            이벤트
-          </Link>
+        <div className="flex w-full items-center justify-between">
+          <div className="flex gap-11 max-xl:gap-7 max-md:hidden">
+            <Link
+              href="/events"
+              className={`text-nowrap ${pathName.startsWith('/events') ? 'font-bold' : 'font-medium text-edge-light'}`}
+            >
+              이벤트
+            </Link>
 
-          <Link
-            href="/notice"
-            className={`text-nowrap ${pathName.startsWith('/notice') ? 'font-bold' : 'font-medium text-edge-light'}`}
-          >
-            공지사항
-          </Link>
+            <Link
+              href="/notice"
+              className={`text-nowrap ${pathName.startsWith('/notice') ? 'font-bold' : 'font-medium text-edge-light'}`}
+            >
+              공지사항
+            </Link>
 
-          <Link
-            href="/tutors"
-            className={`text-nowrap ${pathName.startsWith('/tutors') ? 'font-bold' : 'font-medium text-edge-light'}`}
-          >
-            강사진
-          </Link>
+            <Link
+              href="/tutors"
+              className={`text-nowrap ${pathName.startsWith('/tutors') ? 'font-bold' : 'font-medium text-edge-light'}`}
+            >
+              강사진
+            </Link>
 
-          <Link
-            href="/books"
-            className={`text-nowrap ${pathName.startsWith('/books') ? 'font-bold' : 'font-medium text-edge-light'}`}
-          >
-            교재
-          </Link>
+            <Link
+              href="/books"
+              className={`text-nowrap ${pathName.startsWith('/books') ? 'font-bold' : 'font-medium text-edge-light'}`}
+            >
+              교재
+            </Link>
 
-          <Link
-            href="/faq"
-            className={`text-nowrap ${pathName.startsWith('/faq') ? 'font-bold' : 'font-medium text-edge-light'}`}
-          >
-            자주 묻는 질문
-          </Link>
+            <Link
+              href="/faq"
+              className={`text-nowrap ${pathName.startsWith('/faq') ? 'font-bold' : 'font-medium text-edge-light'}`}
+            >
+              자주 묻는 질문
+            </Link>
 
-          <Link
-            href="/price"
-            className={`text-nowrap ${pathName.startsWith('/price') ? 'font-bold' : 'font-medium text-edge-light'}`}
-          >
-            수업료
-          </Link>
-        </div>
-
-        <div className="relative flex gap-2 max-md:hidden">
-          <div className="max-xl:hidden">
-            <BubbleRightTail
-              text="회원가입 없이 간편 신청하기"
-              bg="#1A1A1A"
-              left={-205}
-              top={4}
-              textClassName="text-white text-sm"
-            />
+            <Link
+              href="/price"
+              className={`text-nowrap ${pathName.startsWith('/price') ? 'font-bold' : 'font-medium text-edge-light'}`}
+            >
+              수업료
+            </Link>
           </div>
 
-          <button className="btn rounded-lg border-none bg-edge-yellow text-sm font-semibold text-[#333]">
-            수강신청
-          </button>
-          <button className="btn rounded-lg border-none bg-edge-gray text-sm font-semibold text-white">
-            체험수업
-          </button>
+          <div className="relative flex gap-2 max-md:hidden">
+            <div>
+              <BubbleRightTail
+                text="회원가입 없이 간편 신청하기"
+                bg="#1A1A1A"
+                left={-205}
+                top={4}
+                textClassName="text-white text-sm"
+              />
+            </div>
+
+            <button className="btn rounded-lg border-none bg-edge-yellow text-sm font-semibold text-[#333]">
+              수강신청
+            </button>
+            <button className="btn rounded-lg border-none bg-edge-gray text-sm font-semibold text-white">
+              체험수업
+            </button>
+          </div>
         </div>
 
         {/* 모바일 햄버거 메뉴 */}

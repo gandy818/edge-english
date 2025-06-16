@@ -63,7 +63,7 @@ export default function NoticePage() {
   const currentNoticeList = [...pinnedNotices, ...paginatedNotices];
 
   return (
-    <div className="mx-auto max-w-[1200px] max-md:px-4">
+    <div className="mx-auto max-w-[1200px] px-4">
       <div className="mt-[120px] border-b border-[#A4A4A4] max-md:mt-16">
         <h1 className="text-[68px] font-bold max-md:text-[40px]">공지사항</h1>
       </div>

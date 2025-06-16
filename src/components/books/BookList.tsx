@@ -44,7 +44,7 @@ export default function BookList({ bookList }: FilterProps) {
 
       <div className="mt-[34px] flex flex-col gap-10">
         {filteredBookList.map((item, idx) => (
-          <div key={idx} className="gap-16 rounded-lg border p-10 md:flex">
+          <div key={idx} className="gap-16 rounded-lg border p-10 max-md:p-4.5 md:flex">
             <div className="flex flex-1 gap-6">
               <img
                 src={item.img}
@@ -54,11 +54,11 @@ export default function BookList({ bookList }: FilterProps) {
 
               {/* 책 설명 */}
               <div>
-                <div className="flex">
+                <div className="flex flex-wrap gap-2">
                   {item.level.map((e, idx2) => (
                     <div
                       key={idx2}
-                      className="mr-2 h-auto w-fit rounded-full border border-[#e8e8e8] px-4 py-2 leading-none"
+                      className="h-auto w-fit whitespace-nowrap rounded-full border border-[#e8e8e8] px-4 py-2 leading-none max-md:px-3 max-md:text-sm"
                     >
                       {e}
                     </div>
@@ -81,16 +81,18 @@ export default function BookList({ bookList }: FilterProps) {
               >
                 미리보기
               </a>
-              <a
-                href={item.buyLink}
-                target="_blank"
-                className="btn h-[58px] rounded-lg border-none bg-edge-yellow hover:bg-edge-yellow md:w-50"
-              >
-                구매하기
-              </a>
+              {item.buyLink && (
+                <a
+                  href={item.buyLink}
+                  target="_blank"
+                  className="btn h-[58px] rounded-lg border-none bg-edge-yellow hover:bg-edge-yellow md:w-50"
+                >
+                  구매하기
+                </a>
+              )}
             </div>
 
-            <p className="mt-8 text-lg text-edge-gray max-md:mt-6 md:hidden">
+            <p className="mt-8 text-lg text-edge-gray max-md:mt-6 max-md:text-base md:hidden">
               {item.describe}
             </p>
           </div>
