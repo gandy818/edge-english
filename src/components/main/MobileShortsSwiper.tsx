@@ -26,7 +26,7 @@ export default function MobileShortsSwiper() {
           <iframe
             src={`https://www.youtube.com/embed/FkJ3hjifTzk?autoplay=0`}
             title="YouTube Shorts"
-            className="mx-auto aspect-[9/16] rounded-2xl"
+            className="mx-auto aspect-[9/16] min-h-[533px] rounded-2xl"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
@@ -35,7 +35,7 @@ export default function MobileShortsSwiper() {
           <iframe
             src={`https://www.youtube.com/embed/_rRgqVq4gfw?autoplay=0`}
             title="YouTube Shorts"
-            className="mx-auto aspect-[9/16] rounded-2xl"
+            className="mx-auto aspect-[9/16] min-h-[533px] rounded-2xl"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
@@ -44,7 +44,7 @@ export default function MobileShortsSwiper() {
           <iframe
             src={`https://www.youtube.com/embed/Yj7pm_r38rc?autoplay=0`}
             title="YouTube Shorts"
-            className="mx-auto aspect-[9/16] rounded-2xl"
+            className="mx-auto aspect-[9/16] min-h-[533px] rounded-2xl"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />

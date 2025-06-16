@@ -13,13 +13,13 @@ export default function Header() {
 
   return (
     <header className="flex-center min-h-[70px] px-4 py-4">
-      <div className="flex w-full items-center gap-8">
+      <div className="flex w-full items-center gap-12">
         <Link href="/">
           <img src="/images/logo.svg" alt="logo" className="min-w-20" />
         </Link>
 
         <div className="flex w-full items-center justify-between">
-          <div className="flex gap-11 max-xl:gap-7 max-md:hidden">
+          <div className="flex gap-11 max-xl:gap-7 max-lg:gap-6 max-md:hidden">
             <Link
               href="/events"
               className={`text-nowrap ${pathName.startsWith('/events') ? 'font-bold' : 'font-medium text-edge-light'}`}
@@ -64,7 +64,7 @@ export default function Header() {
           </div>
 
           <div className="relative flex gap-2 max-md:hidden">
-            <div>
+            <div className="max-lg:hidden">
               <BubbleRightTail
                 text="회원가입 없이 간편 신청하기"
                 bg="#1A1A1A"
