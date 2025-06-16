@@ -579,7 +579,10 @@ export default function Home() {
                 포인트3
               </span>
               <h4 className="pt-6 text-[50px] font-bold leading-[120%] text-[#140F33] max-md:text-2xl">
-                전원 미국·캐나다 출신 <br />
+                전원 미국·캐나다 출신{' '}
+                <span className="max-md:hidden">
+                  <br />
+                </span>
                 원어민 강사진
               </h4>
               <p className="mt-8 text-[1.4rem] leading-[140%] text-edge-gray max-md:mt-6 max-md:text-base">

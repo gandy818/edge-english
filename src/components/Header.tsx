@@ -84,7 +84,7 @@ export default function Header() {
         </div>
 
         {/* 모바일 햄버거 메뉴 */}
-        <div className="drawer drawer-end w-auto md:hidden">
+        <div className="drawer drawer-end min-h-8 w-auto min-w-8 md:hidden">
           <input
             id="hamburger-menu"
             type="checkbox"
