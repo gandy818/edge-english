@@ -10,7 +10,7 @@
     "introduce2": "My name is Grace, and I'm from New Orleans, USA. I originally had a background in business finance. However, after graduating from college, I decided to pursue a career in English education—and that's what brought me to Korea. I've taught students of all ages—from kindergarten and elementary to middle school students, and even adults. A big part of my teaching philosophy is making sure every class is student-centered. I always make sure you feel engaged and confident after every lesson.",
     "hobbys": "",
     "career": "국내 중학교 원어민 교사",
-    "videoUrl": "/images/tutor/data/david_video.MOV"
+    "videoUrl": "https://www.youtube.com/embed/4CIYJSGiTro"
   },
   {
     "name": "Amanda",
@@ -23,7 +23,7 @@
     "introduce2": "Hello welcome to my classroom. My name is Amanda Jo. In this classroom we learn, we help each other, and we have fun. It's okay to make mistakes. We all learn together. You are important. You are welcome here. I am happy you are here.",
     "hobbys": "",
     "career": "온라인 티칭 5년, 영어·언어예술·수학 보조교사",
-    "videoUrl": "/images/tutor/data/david_video.MOV"
+    "videoUrl": "https://www.youtube.com/embed/dxGw7LwpQwA"
   },
   {
     "name": "David",
@@ -36,7 +36,7 @@
     "introduce2": "My name is Dave, and I've been a teacher for over 12 years. I specialize in teaching students of all ages, including adults and professionals, to develop strong communication skills that work in real life—not just in textbooks.",
     "hobbys": "하키, 골프, 테니스, 달리기, 야구, 농구",
     "career": "교육학 석사, 13년 교육 경력, 캐나다 국제학교 교사",
-    "videoUrl": "/images/tutor/data/david_video.MOV"
+    "videoUrl": "https://www.youtube.com/embed/Re3BbZEAozU"
   },
   {
     "name": "Rai",
@@ -49,7 +49,7 @@
     "introduce2": "Hello! My name is Rai, and I'll be your teacher. I have a Bachelor's in Education and have been teaching students around the world for over 10 years. Let's grow step by step!",
     "hobbys": "",
     "career": "유아교육전공, 캐나다 유치원 교사, 온라인 티칭 8년",
-    "videoUrl": "/images/tutor/data/david_video.MOV"
+    "videoUrl": "https://www.youtube.com/embed/NJjw8puYFtk"
   },
   {
     "name": "Caroline",
@@ -62,6 +62,6 @@
     "introduce2": "Hi everyone! I'm Caroline, an English teacher from the US with over 8 years of experience. My lessons are calm, clear, and friendly. I focus on conversation, pronunciation, grammar, and cultural tips.",
     "hobbys": "",
     "career": "9년 교육 경력, 국제학교 초등교사",
-    "videoUrl": "/images/tutor/data/david_video.MOV"
+    "videoUrl": "https://www.youtube.com/embed/ZDfGbeXia1w"
   }
 ]

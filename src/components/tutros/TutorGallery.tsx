@@ -77,12 +77,12 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
             </div>
             <div className="mx-6 mb-10 max-h-[75vh] overflow-y-auto max-md:max-h-[87vh]">
               {/* 동영상 */}
-              <video
-                className="aspect-video w-full rounded-2xl bg-gray-400"
+              <iframe
+                className="aspect-[9/16] w-full min-w-0 rounded-2xl bg-gray-400"
                 src={selectedTutor?.videoUrl}
-                controls
-                playsInline
-                preload="metadata"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
               />
 
               <div className="mt-10 flex flex-row max-md:flex-col max-md:items-center">
