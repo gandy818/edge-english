@@ -55,7 +55,7 @@ export default async function TutorPage() {
 
         {/* 섹션 2 웹 */}
         <div className="mt-15 max-md:hidden">
-          <div className="flex min-h-[448px] justify-end bg-[url(/images/tutor/bg-tutor.png)] bg-cover bg-center">
+          <div className="flex min-h-[448px] justify-end bg-[url(/images/tutor/bg-tutor.png)] bg-cover bg-center px-4.5">
             <div className="self-center pr-[120px]">
               <p className="text-5xl font-bold leading-relaxed text-white">
                 실력과 인성 모두 확인된 튜터만
@@ -147,7 +147,7 @@ export default async function TutorPage() {
         </div>
 
         {/* 섹션 4 웹 */}
-        <div className="mt-[120px] flex w-full flex-col bg-[#F3F6F8] py-[120px] max-md:hidden">
+        <div className="mt-[120px] flex w-full flex-col bg-[#F3F6F8] px-4.5 py-[120px] max-md:hidden">
           <p className="self-center text-5xl font-bold">
             어떤 튜터를 만나도 안심할 수 있어요.
           </p>

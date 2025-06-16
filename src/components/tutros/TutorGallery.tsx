@@ -7,11 +7,22 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
   const [selectedTutor, setSelectedTutor] = useState<TutorType>();
 
   const openTutorModal = (name: string) => {
-    const tutor: TutorType = tutorList.filter((e) => e.name === name)[0];
+    const tutor = tutorList.find((e) => e.name === name); // 선택된 튜터를 tutorList에서 찾음
 
-    setSelectedTutor(tutor);
+    setSelectedTutor(undefined); // 이전 tutor 데이터를 undefined로 초기화
 
-    (document.getElementById('tutor_modal') as HTMLDialogElement).showModal();
+    const modal = document.getElementById('tutor_modal') as HTMLDialogElement; // 모달(dialog) 요소를 가져옴
+
+    // 모달이 이미 열려 있다면, 먼저 닫음
+    if (modal && modal.open) {
+      modal.close();
+    }
+
+    // 10ms 뒤 데이터 세팅
+    setTimeout(() => {
+      setSelectedTutor(tutor);
+      modal.showModal();
+    }, 10);
   };
 
   const closeTutorModal = () => {
@@ -75,10 +86,10 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
                 <img src="/icons/x-btn.svg" alt="x-button" />
               </button>
             </div>
-            <div className="mx-6 mb-10 max-h-[75vh] overflow-y-auto max-md:max-h-[87vh]">
+            <div className="scrollbar-hide mx-6 mb-10 max-h-[75vh] overflow-y-auto max-md:max-h-[87vh]">
               {/* 동영상 */}
               <iframe
-                className="aspect-[9/16] w-full min-w-0 rounded-2xl bg-gray-400"
+                className="aspect-[16/9] w-full min-w-0 rounded-2xl bg-gray-400"
                 src={selectedTutor?.videoUrl}
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

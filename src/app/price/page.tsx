@@ -162,7 +162,7 @@ export default function PricePage() {
             <Bubble
               text="주 1회 수업은 50분 수업만 가능합니다."
               top={-27}
-              left={50}
+              left={'12%'}
               bg="#A0F4FF"
             />
 

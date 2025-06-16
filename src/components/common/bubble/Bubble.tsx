@@ -3,7 +3,7 @@ import './bubble.css';
 interface BubbleType {
   text: string;
   top?: number;
-  left?: number;
+  left?: number | string;
   bg?: string;
   textClassName?: string;
   border?: boolean;
@@ -21,7 +21,10 @@ export default function Bubble({
 
   return (
     <div>
-      <div className="absolute" style={{ top: `${top}px`, left: `${left}px` }}>
+      <div
+        className="absolute"
+        style={{ top: `${top}px`, left: typeof left === 'number' ? `${left}px` : left }}
+      >
         <div
           className={`bubble shadow-shadow1 h-fit text-nowrap rounded-lg border px-4.5 py-2 after:absolute after:border`}
           style={
@@ -40,7 +43,10 @@ export default function Bubble({
           </p>
         </div>
       </div>
-      <div className="absolute" style={{ top: `${top}px`, left: `${left}px` }}>
+      <div
+        className="absolute"
+        style={{ top: `${top}px`, left: typeof left === 'number' ? `${left}px` : left }}
+      >
         {/* ml-[1px] mt-[1px] : border 떄문 */}
         <div
           className={`ml-[1px] mt-[1px] h-fit text-nowrap rounded-lg px-4.5 py-2`}
