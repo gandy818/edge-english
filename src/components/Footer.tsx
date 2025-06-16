@@ -23,7 +23,7 @@ export default function Footer() {
 
         <div className="mt-2 flex items-center text-sm text-edge-gray max-md:mt-1 max-md:hidden">
           <p className="text-edge-gray">
-            주소 : [21372] 인천광역시 부평구 길주남로 143, 103동 203호{' '}
+            주소 : [21345] 인천광역시 부평구 길주남로 143, 103동{' '}
           </p>
           <TextDivider />
           <p className="text-edge-gray">
@@ -51,7 +51,7 @@ export default function Footer() {
             <span className="font-montserrat text-edge-gray">support@edgeenglish.kr</span>
           </p>
           <p className="mt-1 text-edge-gray">
-            주소 : [21372] 인천광역시 부평구 길주남로 143, 103동 203호{' '}
+            주소 : [21372] 인천광역시 부평구 길주남로 143, 103동{' '}
           </p>
           <p className="mt-1 text-edge-gray">
             사업자등록번호 :{' '}
@@ -73,9 +73,9 @@ export default function Footer() {
         </div>
 
         <div className="mt-4">
-          <p className="font-montserrat text-lg font-extrabold leading-none text-edge-gray">
+          {/* <p className="font-montserrat text-lg font-extrabold leading-none text-edge-gray">
             010-5012-1553
-          </p>
+          </p> */}
           <p className="mt-2 text-sm text-edge-gray">
             평일 09:00 ~ 18:00(점심시간 12:00~13:00), 주말/공휴일 휴무
           </p>
