@@ -4,6 +4,7 @@ interface BubbleType {
   text: string;
   top?: number;
   left?: number | string;
+  right?: number | string;
   bg?: string;
   textClassName?: string;
   border?: boolean;
@@ -13,6 +14,7 @@ export default function Bubble({
   text,
   top,
   left,
+  right,
   bg = 'white',
   textClassName,
   border = false,
@@ -23,7 +25,11 @@ export default function Bubble({
     <div>
       <div
         className="absolute"
-        style={{ top: `${top}px`, left: typeof left === 'number' ? `${left}px` : left }}
+        style={{
+          top: `${top}px`,
+          left: typeof left === 'number' ? `${left}px` : left,
+          right: typeof right === 'number' ? `${right}px` : right,
+        }}
       >
         <div
           className={`bubble shadow-shadow1 h-fit text-nowrap rounded-lg border px-4.5 py-2 after:absolute after:border`}
@@ -37,7 +43,7 @@ export default function Bubble({
           }
         >
           <p
-            className={`text-center font-bold leading-none text-[#31313C] ${textClassName}`}
+            className={`whitespace-normal break-words text-center font-bold leading-none text-[#31313C] ${textClassName}`}
           >
             {text}
           </p>
@@ -45,7 +51,11 @@ export default function Bubble({
       </div>
       <div
         className="absolute"
-        style={{ top: `${top}px`, left: typeof left === 'number' ? `${left}px` : left }}
+        style={{
+          top: `${top}px`,
+          left: typeof left === 'number' ? `${left}px` : left,
+          right: typeof right === 'number' ? `${right}px` : right,
+        }}
       >
         {/* ml-[1px] mt-[1px] : border 떄문 */}
         <div
@@ -53,7 +63,7 @@ export default function Bubble({
           style={{ background: bg }}
         >
           <p
-            className={`text-center font-bold leading-none text-[#31313C] ${textClassName}`}
+            className={`whitespace-normal break-words text-center font-bold leading-none text-[#31313C] ${textClassName}`}
           >
             {text}
           </p>
