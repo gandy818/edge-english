@@ -3,6 +3,7 @@ import PointsTab from '@/components/main/DetailPointTab';
 import Image from 'next/image';
 import MobileShortsSwiper from '@/components/main/MobileShortsSwiper';
 import Link from 'next/link';
+import Bubble from '@/components/common/bubble/Bubble';
 
 export default function Home() {
   return (
@@ -673,14 +674,18 @@ export default function Home() {
             <PointsTab />
           </div>
 
-          <div className="mx-auto mt-15 w-fit max-md:mt-10">
-            <Link
-              href="https://forms.gle/rkvoS9ut3a5eSe659"
-              target="_blank"
-              className="btn h-14 rounded-lg bg-[#4a4a4a] px-2 py-4 font-bold text-white"
-            >
-              수강신청 (30초면 충분해요)
-            </Link>
+          <div className="relative mx-auto mt-15 w-fit max-md:mt-10">
+            <div className="w-[228px] self-center text-center">
+              <Bubble text="30초면 충분해요" bg="#333333" textClassName="text-white" />
+
+              <Link
+                href="https://forms.gle/rkvoS9ut3a5eSe659"
+                target="_blank"
+                className="btn mx-auto mt-12 h-14 w-50 rounded-lg border-none bg-[#4A4A4A] px-14 py-5 font-bold text-white"
+              >
+                수강 신청하기
+              </Link>
+            </div>
           </div>
         </div>
       </div>
