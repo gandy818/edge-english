@@ -11,7 +11,7 @@ export default function FloatingMenu() {
   };
 
   return (
-    <div className="fixed bottom-[4.5rem] right-4.5 z-20 flex flex-col gap-2 xs:bottom-10 xs:right-10">
+    <div className="fixed bottom-[4.5rem] right-4.5 z-[19] flex flex-col gap-2 xs:bottom-10 xs:right-10">
       {/* 카카오 버튼 */}
       <Link
         href="https://pf.kakao.com/_blxgib"
