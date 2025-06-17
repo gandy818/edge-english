@@ -2,6 +2,7 @@ import RealReviews from '@/components/main/RealReviews';
 import PointsTab from '@/components/main/DetailPointTab';
 import Image from 'next/image';
 import MobileShortsSwiper from '@/components/main/MobileShortsSwiper';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -77,7 +78,9 @@ export default function Home() {
         {/* 수강신청하기 */}
         <div className="mx-auto mt-10 w-fit">
           <button className="btn h-[58px] w-50 border-none bg-edge-yellow font-bold text-[#333]">
-            수강신청하기
+            <Link href="https://forms.gle/rkvoS9ut3a5eSe659" target="_blank">
+              수강신청하기
+            </Link>
           </button>
         </div>
       </div>
@@ -130,7 +133,12 @@ export default function Home() {
               {/* 버튼 */}
               <div className="mx-auto mt-6 w-fit">
                 <button className="btn h-14 rounded-lg border-none bg-edge-yellow px-8 py-4 font-bold">
-                  더 많은 표현 보러가기
+                  <Link
+                    href="https://www.instagram.com/tangerine_english_/"
+                    target="_blank"
+                  >
+                    더 많은 표현 보러가기
+                  </Link>
                 </button>
               </div>
             </div>
@@ -657,7 +665,9 @@ export default function Home() {
 
           <div className="mx-auto mt-15 w-fit max-md:mt-10">
             <button className="btn h-14 rounded-lg bg-[#4a4a4a] px-2 py-4 font-bold text-white">
-              수강신청 (30초면 충분해요)
+              <Link href="https://forms.gle/rkvoS9ut3a5eSe659" target="_blank">
+                수강신청 (30초면 충분해요)
+              </Link>
             </button>
           </div>
         </div>

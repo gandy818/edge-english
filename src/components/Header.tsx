@@ -75,7 +75,9 @@ export default function Header() {
             </div>
 
             <button className="btn rounded-lg border-none bg-edge-yellow text-sm font-semibold text-[#333]">
-              수강신청
+              <Link href="https://forms.gle/rkvoS9ut3a5eSe659" target="_blank">
+                수강신청
+              </Link>
             </button>
             <button className="btn rounded-lg border-none bg-edge-gray text-sm font-semibold text-white">
               체험수업
