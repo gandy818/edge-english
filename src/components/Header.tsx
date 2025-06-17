@@ -211,7 +211,8 @@ export default function Header() {
                 <button
                   className="btn flex-1 rounded-lg border-none bg-edge-gray text-sm font-semibold text-white"
                   onClick={() => {
-                    openModal(), closeDrawer();
+                    openModal();
+                    closeDrawer();
                   }}
                 >
                   체험수업
