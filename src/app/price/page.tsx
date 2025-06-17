@@ -1,4 +1,5 @@
 import Bubble from '@/components/common/bubble/Bubble';
+import Link from 'next/link';
 
 export default function PricePage() {
   return (
@@ -244,9 +245,13 @@ export default function PricePage() {
             textClassName="text-white"
           />
 
-          <button className="btn mx-auto mt-10 h-14 w-50 rounded-lg border-none bg-[#4A4A4A] px-14 py-5 font-bold text-white">
+          <Link
+            href="https://forms.gle/rkvoS9ut3a5eSe659"
+            target="_blank"
+            className="btn mx-auto mt-10 h-14 w-50 rounded-lg border-none bg-[#4A4A4A] px-14 py-5 font-bold text-white"
+          >
             수강 신청하기
-          </button>
+          </Link>
         </div>
       </div>
     </div>

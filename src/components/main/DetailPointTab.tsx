@@ -87,29 +87,43 @@ export default function PointsTab() {
 
   return (
     <div className="mx-auto max-w-[1220px]">
-      {/* tab */}
-      <div className="flex h-25 rounded-t-2xl bg-[#614BC0] max-md:h-14">
-        {[1, 2, 3, 4].map((num, idx) => (
-          <button
-            key={num}
-            className={[
-              'flex-center flex-1 text-2xl max-md:text-xs',
-              active === num ? 'active' : '',
-              active + 1 === num && active < 4 ? 'snake' : '',
-            ].join(' ')}
-            onClick={() => setActive(num)}
-            style={{
-              borderTopLeftRadius: idx === 0 ? '1rem' : undefined,
-              borderTopRightRadius: idx === 3 ? '1rem' : undefined,
-              background:
-                active === num
-                  ? 'linear-gradient(90deg, #AA96FF -2.03%, #7D5FFF 102.29%)'
-                  : '#614BC0',
-            }}
-          >
-            <p className="mx-auto w-fit font-montserrat font-bold text-white">{`POINT 0${num}`}</p>
-          </button>
-        ))}
+      <div className="relative">
+        {/* tab */}
+        <div className="flex h-25 rounded-t-2xl bg-[#614BC0] max-md:h-14">
+          {[1, 2, 3, 4].map((num, idx) => (
+            <button
+              key={num}
+              className={[
+                'flex flex-1 items-center justify-center text-2xl max-md:text-xs',
+                active === num ? 'active' : '',
+                active + 1 === num && active < 4 ? 'snake' : '',
+              ].join(' ')}
+              onClick={() => setActive(num)}
+              style={{
+                borderTopLeftRadius: idx === 0 ? '1rem' : undefined,
+                borderTopRightRadius: idx === 3 ? '1rem' : undefined,
+                background:
+                  active === num
+                    ? 'linear-gradient(90deg, #AA96FF -2.03%, #7D5FFF 102.29%)'
+                    : '#614BC0',
+              }}
+            >
+              <p className="mx-auto w-fit font-montserrat font-bold text-white">{`POINT 0${num}`}</p>
+              {/* {active === num && (
+              <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-edge-yellow" />
+            )} */}
+            </button>
+          ))}
+        </div>
+
+        {/* 슬라이딩 노란색 바 */}
+        <div
+          className="absolute bottom-0 left-0 z-0 h-1.5 bg-edge-yellow transition-all duration-300"
+          style={{
+            width: `${100 / 4}%`, // 탭 개수에 맞게 자동계산
+            transform: `translateX(${(active - 1) * 100}%)`,
+          }}
+        />
       </div>
 
       {/* content */}

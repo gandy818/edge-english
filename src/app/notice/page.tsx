@@ -3,33 +3,19 @@
 import Pagination from '@/components/Pagination';
 import TextDivider from '@/components/TextDivider';
 import { PostType } from '@/types/PostType';
-import axios from 'axios';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import ScrollContainer from 'react-indiana-drag-scroll';
+import rawNoticeList from '@/data/notices.json';
 
 export default function NoticePage() {
   const router = useRouter();
   const [currentPage, setCurrentPage] = useState(1);
   const [currentType, setCurrentType] = useState('all');
-  const [noticeList, setNoticeList] = useState<PostType[]>([]);
   const [filteredNoticeList, setFilteredNoticeList] = useState<PostType[]>([]);
   const itemsPerPage = 10; // 한 페이지 당 게시물 개수
 
-  // 공지사항 목록 불러오기
-  const getNoticeList = async () => {
-    try {
-      const res = await axios.get('/data/notices.json');
-
-      setNoticeList(res.data);
-    } catch (err) {
-      console.error(err);
-    }
-  };
-
-  useEffect(() => {
-    getNoticeList();
-  }, []);
+  const noticeList = rawNoticeList as PostType[];
 
   // 선택한 필터에 맞게 필터링
   useEffect(() => {

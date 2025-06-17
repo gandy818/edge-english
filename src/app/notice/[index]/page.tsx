@@ -5,6 +5,7 @@ import axios from 'axios';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import rawNoticeList from '@/data/notices.json';
 
 export default function NoticeDetailPage() {
   const param = useParams();
@@ -14,21 +15,11 @@ export default function NoticeDetailPage() {
   const [nextNotice, setNextNotice] = useState<PostType>();
 
   useEffect(() => {
-    const getNoticeDetail = async () => {
-      try {
-        const res = await axios.get<PostType[]>('/data/notices.json');
+    const eventList = rawNoticeList as PostType[];
 
-        const { data } = res;
-
-        setNotice(data.filter((item) => item.index === Number(currentIndex))[0]);
-        setPrevNotice(data.filter((item) => item.index === Number(currentIndex) + 1)[0]); // 다음글
-        setNextNotice(data.filter((item) => item.index === Number(currentIndex) - 1)[0]); // 이전글
-      } catch (err) {
-        console.error(err);
-      }
-    };
-
-    getNoticeDetail();
+    setNotice(eventList.filter((item) => item.index === Number(currentIndex))[0]);
+    setPrevNotice(eventList.filter((item) => item.index === Number(currentIndex) + 1)[0]); // 다음글
+    setNextNotice(eventList.filter((item) => item.index === Number(currentIndex) - 1)[0]); // 이전글
   }, [currentIndex]);
 
   return (
@@ -47,7 +38,14 @@ export default function NoticeDetailPage() {
       </div>
 
       {/* 본문 */}
-      <pre className="border-t border-[#A4A4A4] py-16">{notice?.content}</pre>
+      {notice && (
+        <div className="border-t border-[#A4A4A4] py-16">
+          <div
+            className="prose max-w-none"
+            dangerouslySetInnerHTML={{ __html: notice.content }}
+          />
+        </div>
+      )}
 
       {/* 이전글, 다음글 */}
       <div className="flex flex-col border-b border-t">

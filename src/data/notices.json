@@ -1,0 +1,12 @@
+[
+  {
+    "index": 0,
+    "type": "공지사항",
+    "status": "공지사항",
+    "date": "2025-06-17",
+    "title": "공지사항 게시판 이용 안내",
+    "writer": "엣지영어",
+    "content": "<p>안녕하세요, 엣지영어입니다.<br>이 게시판은 수업 운영과 관련된 <b>중요한 소식들을 안내하는 공간</b>입니다.</p> <br /> <p>앞으로 아래와 같은 공지가 이곳에 게시됩니다:</p> <br /> <ul><li>✔ 수업 및 강사 관련 변경 사항</li> <li>✔ 공휴일 및 정기 휴강 안내</li> <li>✔ 수강 규정 또는 시스템 이용 관련 안내</li> <li>✔ 사이트 점검 등 기술적 공지</li></ul> <br /> <p>🎉 할인/이벤트 소식은 <b>이벤트 게시판</b>에서 확인해 주세요!</p> <br /> <p>문의 사항은 언제든<br><a href='mailto:support@edgeenglish.kr' style='color:#2366d1;text-decoration:underline;'>📧 support@edgeenglish.kr</a> 또는 카카오톡 채널을 통해 연락 주세요.</p> <br /> <p>영어 학습의 여정을 함께하는 모든 분들을 진심으로 응원합니다.<br />더 나은 수업 환경을 위해 늘 한 발 앞서 준비하겠습니다.</p> <br /><br /> <p>감사합니다.<br/ ><strong>엣지영어 드림</strong></p>",
+    "isPinned": true
+  }
+]

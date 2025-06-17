@@ -87,11 +87,13 @@ export default function Header() {
               />
             </div>
 
-            <button className="btn rounded-lg border-none bg-edge-yellow text-sm font-semibold text-[#333]">
-              <Link href="https://forms.gle/rkvoS9ut3a5eSe659" target="_blank">
-                수강신청
-              </Link>
-            </button>
+            <Link
+              href="https://forms.gle/rkvoS9ut3a5eSe659"
+              target="_blank"
+              className="btn rounded-lg border-none bg-edge-yellow text-sm font-semibold text-[#333]"
+            >
+              수강신청
+            </Link>
             <button
               className="btn rounded-lg border-none bg-edge-gray text-sm font-semibold text-white"
               onClick={() => openModal()}
@@ -203,11 +205,13 @@ export default function Header() {
               </li>
 
               <li className="flex flex-row gap-2 py-8">
-                <button className="btn flex-1 rounded-lg border-none bg-edge-yellow text-sm font-semibold text-[#333]">
-                  <Link href="https://forms.gle/rkvoS9ut3a5eSe659" target="_blank">
-                    수강신청
-                  </Link>
-                </button>
+                <Link
+                  href="https://forms.gle/rkvoS9ut3a5eSe659"
+                  target="_blank"
+                  className="btn flex-1 rounded-lg border-none bg-edge-yellow text-sm font-semibold text-[#333]"
+                >
+                  수강신청
+                </Link>
                 <button
                   className="btn flex-1 rounded-lg border-none bg-edge-gray text-sm font-semibold text-white"
                   onClick={() => {
