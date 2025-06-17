@@ -29,7 +29,7 @@ export default function NoticeDetailPage() {
     };
 
     getNoticeDetail();
-  }, []);
+  }, [currentIndex]);
 
   return (
     <div className="mx-auto max-w-[1200px] px-4">

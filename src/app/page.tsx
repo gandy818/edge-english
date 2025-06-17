@@ -181,7 +181,12 @@ export default function Home() {
 
         {/* 탠저린쌤 */}
         <div className="flex-center mt-6">
-          <img src="/images/main/mobile-shorts-bg.png" width={184} height={237} />
+          <img
+            src="/images/main/mobile-shorts-bg.png"
+            alt="탠저린샘"
+            width={184}
+            height={237}
+          />
         </div>
 
         <div

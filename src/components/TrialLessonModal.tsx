@@ -32,7 +32,7 @@ export default function TrialLessonModal() {
           50분 수업 17,900원
         </p>
         <p className="mt-6 text-center text-sm font-bold">
-          💡"체험이 아닌, 진짜 수업으로 시작하세요"💡
+          💡&quot;체험이 아닌, 진짜 수업으로 시작하세요&quot;💡
         </p>
         <button className="btn mt-12 w-full rounded-lg border-none bg-edge-gray py-6 text-sm font-semibold text-white">
           <Link href="https://forms.gle/rkvoS9ut3a5eSe659" target="_blank">

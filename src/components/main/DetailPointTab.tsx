@@ -79,33 +79,6 @@ const EDGE_DETAILS = [
   },
 ];
 
-const TAB_BG_MATRIX = [
-  [
-    'linear-gradient(90deg, #AA96FF -2.03%, #7D5FFF 102.29%)', // 1 active
-    '#614BC0',
-    '#5542A5',
-    '#614BC0',
-  ],
-  [
-    '#614BC0',
-    'linear-gradient(90deg, #AA96FF -2.03%, #7D5FFF 102.29%)', // 2 active
-    '#5542A5',
-    '#614BC0',
-  ],
-  [
-    '#614BC0',
-    '#5542A5',
-    'linear-gradient(90deg, #AA96FF -2.03%, #7D5FFF 102.29%)', // 3 active
-    '#614BC0',
-  ],
-  [
-    '#614BC0',
-    '#5542A5',
-    '#614BC0',
-    'linear-gradient(90deg, #AA96FF -2.03%, #7D5FFF 102.29%)', // 4 active
-  ],
-];
-
 export default function PointsTab() {
   const [active, setActive] = useState(1);
 

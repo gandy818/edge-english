@@ -19,7 +19,7 @@ export default function EventDetailPage() {
     setEvent(eventList.filter((item) => item.index === Number(currentIndex))[0]);
     setPrevEvent(eventList.filter((item) => item.index === Number(currentIndex) + 1)[0]); // 다음글
     setNextEvent(eventList.filter((item) => item.index === Number(currentIndex) - 1)[0]); // 이전글
-  }, []);
+  }, [currentIndex]);
 
   return (
     <div className="mx-auto max-w-[1200px] px-4">
