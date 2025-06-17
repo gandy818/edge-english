@@ -8,7 +8,12 @@ interface FilterProps {
 }
 
 export default function BookList({ bookList }: FilterProps) {
-  const filters = ['', ...new Set(bookList.map((item) => item.category))];
+  const filters = [
+    '',
+    ...Array.from(
+      new Set(bookList.flatMap((item) => item.category.split(',').map((c) => c.trim())))
+    ),
+  ];
 
   const [filterState, setFilterState] = useState('');
   const [filteredBookList, setFilteredBookList] = useState<BookType[]>(bookList);
@@ -18,9 +23,15 @@ export default function BookList({ bookList }: FilterProps) {
       setFilteredBookList(bookList);
       return;
     }
-
-    setFilteredBookList(bookList.filter((item) => item.category === filterState));
-  }, [filterState]);
+    setFilteredBookList(
+      bookList.filter((item) =>
+        item.category
+          .split(',')
+          .map((c) => c.trim())
+          .includes(filterState)
+      )
+    );
+  }, [filterState, bookList]);
 
   return (
     <div className="flex flex-col gap-4">
@@ -92,7 +103,7 @@ export default function BookList({ bookList }: FilterProps) {
               )}
             </div>
 
-            <p className="mt-8 text-lg text-edge-gray max-md:mt-6 max-md:text-base md:hidden">
+            <p className="mt-8 whitespace-pre-line text-lg text-edge-gray max-md:mt-6 max-md:text-base md:hidden">
               {item.describe}
             </p>
           </div>

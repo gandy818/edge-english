@@ -162,8 +162,8 @@ export default function PricePage() {
             <Bubble
               text="주 1회 수업은 50분 수업만 가능합니다."
               top={-27}
-              left={30}
-              right={30}
+              // left={30}
+              // right={30}
               bg="#A0F4FF"
             />
 
@@ -244,7 +244,7 @@ export default function PricePage() {
             textClassName="text-white"
           />
 
-          <button className="btn mx-auto mt-14 h-14 w-50 rounded-lg border-none bg-[#4A4A4A] px-14 py-5 font-bold text-white">
+          <button className="btn mx-auto mt-10 h-14 w-50 rounded-lg border-none bg-[#4A4A4A] px-14 py-5 font-bold text-white">
             수강 신청하기
           </button>
         </div>

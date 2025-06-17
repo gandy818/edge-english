@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import BubbleRightTail from './common/bubble/BubbleRightTail';
 import TrialLessonModal from './TrialLessonModal';
+import BubbleTopTail from './common/bubble/BubbleTopTail';
 
 export default function Header() {
   const pathName = usePathname();
@@ -209,10 +210,19 @@ export default function Header() {
                 </button>
                 <button
                   className="btn flex-1 rounded-lg border-none bg-edge-gray text-sm font-semibold text-white"
-                  onClick={() => openModal()}
+                  onClick={() => {
+                    openModal(), closeDrawer();
+                  }}
                 >
                   체험수업
                 </button>
+                <BubbleTopTail
+                  text="30초만에 시작하기!"
+                  bg="#1A1A1A"
+                  left={3}
+                  top={84}
+                  textClassName="text-white text-xs font-semibold"
+                />
               </li>
             </ul>
           </div>

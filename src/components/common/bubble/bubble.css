@@ -21,3 +21,29 @@
   border-color: var(--after-border);
   right: -5px;
 }
+
+.bubbleTopTail:after {
+  content: '';
+  background: var(--after-bg, white);
+  top: -4px;
+  width: 17px;
+  height: 17px;
+  transform: translateX(-50%) rotate(45deg) skew(0deg);
+  border-radius: 2px;
+  border-color: var(--after-border);
+  left: 50%;
+}
+
+.animate-up-down {
+  animation: upDown 2.1s ease-in-out infinite;
+}
+
+@keyframes upDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}

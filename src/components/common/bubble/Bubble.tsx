@@ -13,8 +13,8 @@ interface BubbleType {
 export default function Bubble({
   text,
   top,
-  left,
-  right,
+  left = 0,
+  right = 0,
   bg = 'white',
   textClassName,
   border = false,
@@ -24,7 +24,7 @@ export default function Bubble({
   return (
     <div>
       <div
-        className="absolute"
+        className="animate-up-down absolute"
         style={{
           top: `${top}px`,
           left: typeof left === 'number' ? `${left}px` : left,
@@ -52,7 +52,7 @@ export default function Bubble({
         </div>
       </div>
       <div
-        className="absolute"
+        className="animate-up-down absolute"
         style={{
           top: `${top}px`,
           left: typeof left === 'number' ? `${left}px` : left,

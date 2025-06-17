@@ -32,7 +32,7 @@ export default function NoticeDetailPage() {
   }, []);
 
   return (
-    <div className="mx-auto max-w-[1200px] max-md:px-4">
+    <div className="mx-auto max-w-[1200px] px-4">
       {/* 타이틀 */}
       <div className="mt-[120px] flex flex-col gap-6 border-t-4 border-black py-16">
         <p className="font-montserrat text-2xl font-semibold text-black">
@@ -103,7 +103,7 @@ export default function NoticeDetailPage() {
       {/* 목록으로 */}
       <Link
         href={'/notice'}
-        className="flex-center mx-auto mt-16 h-14 w-50 cursor-pointer gap-2 rounded-lg bg-[#606060] font-bold text-white"
+        className="mx-auto mt-16 flex h-14 w-50 cursor-pointer items-center justify-center gap-2 rounded-lg bg-[#606060] font-bold text-white"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
