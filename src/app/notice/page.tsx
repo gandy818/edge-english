@@ -51,7 +51,7 @@ export default function NoticePage() {
   return (
     <div className="mx-auto max-w-[1200px] px-4">
       <div className="mt-[120px] border-b border-[#A4A4A4] max-md:mt-16">
-        <h1 className="text-[68px] font-bold max-md:text-[40px]">공지사항</h1>
+        <h1 className="pb-3 text-5xl font-bold max-md:text-[40px]">공지사항</h1>
       </div>
 
       {/* 분류 */}

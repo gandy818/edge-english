@@ -61,16 +61,19 @@ export default async function BooksPage() {
             </div>
           </div>
 
-          <p className="mt-6 text-center text-[22px] font-medium text-[#777777] max-md:text-base">
-            수강 중 언제든지, 횟수 제한없이 교재를 변경하실 수 있어요. 부담 없이
-            시작해보세요!
+          <p className="mt-6 text-center text-lg font-medium text-[#777777] max-md:text-base">
+            수강 중 언제든지 교재를 변경할 수 있어요.
+            <span className="md:hidden">
+              <br />
+            </span>
+            부담 없이 시작해보세요!
           </p>
         </div>
       </div>
 
       <div className="mx-auto max-w-[1200px] px-4">
         <div className="mt-15 border-b border-[#A4A4A4] max-md:mt-16">
-          <h1 className="text-[68px] font-bold max-md:text-[40px]">교재 소개</h1>
+          <h1 className="pb-3 text-5xl font-bold max-md:text-[40px]">교재 소개</h1>
         </div>
 
         <div className="mt-12">

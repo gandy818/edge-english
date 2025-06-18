@@ -30,7 +30,7 @@ export default async function TutorPage() {
             <p className="self-center">원어민 강사진</p>
           </div>
           <div className="mt-6 flex justify-center">
-            <p className="text-center text-2xl font-normal text-[#4A4A4A] max-md:text-base">
+            <p className="text-center text-xl font-normal text-[#4A4A4A] max-md:text-base">
               강사 선택 고민될 땐?&nbsp;
               <br className="md:hidden" />
               엣지 운영진이 도와드릴게요!
@@ -56,26 +56,26 @@ export default async function TutorPage() {
         {/* 섹션 2 웹 */}
         <div className="mt-15 max-md:hidden">
           <div className="flex min-h-[448px] justify-end bg-[url(/images/tutor/bg-tutor.png)] bg-cover bg-center px-4.5">
-            <div className="self-center pr-[120px]">
-              <p className="text-5xl font-bold leading-relaxed text-white">
+            <div className="self-center pr-[120px] max-lg:pr-[35px]">
+              <p className="text-4xl font-bold leading-relaxed text-white">
                 실력과 인성 모두 확인된 튜터만
               </p>
-              <p className="text-[22px] font-normal text-white">
+              <p className="text-xl font-normal text-white">
                 엣지영어는 철저한 5단계 검증 과정을 통해 강사를 채용해요.
               </p>
               <br />
-              <p className="text-[22px] font-normal text-white">
+              <p className="text-xl font-normal text-white">
                 서면 인터뷰와 서류 심사로 기본 자격을 확인하고,
               </p>
-              <p className="text-[22px] font-normal text-white">
+              <p className="text-xl font-normal text-white">
                 2:1 심층 면접에서 인성과 소통 능력, 책임감을 꼼꼼히 살펴봅니다.
               </p>
-              <p className="text-[22px] font-normal text-white">
+              <p className="text-xl font-normal text-white">
                 면접을 통과한 강사는 실전 수업 평가와 2개월 집중 모니터링을 거쳐야 정식
                 튜터가 됩니다.
               </p>
               <br />
-              <p className="text-[22px] font-normal text-white">
+              <p className="text-xl font-normal text-white">
                 학습자들이 믿고 배울 수 있도록, 엄격한 절차와 기준으로 강사를 선발합니다.
               </p>
             </div>
@@ -83,8 +83,8 @@ export default async function TutorPage() {
         </div>
 
         {/* 섹션 2 모바일 */}
-        <div className="mt-15 flex min-h-[1000px] justify-end bg-mobile-tutor bg-cover bg-center sm:bg-tablet-tutor md:hidden">
-          <div className="flex min-h-[1000px] justify-end">
+        <div className="mt-15 flex min-h-[700px] justify-end bg-mobile-tutor bg-cover bg-bottom sm:bg-tablet-tutor md:hidden">
+          <div className="flex min-h-[700px] justify-end">
             <div className="px-4 pt-15">
               <p className="text-[32px] font-bold leading-tight text-white">
                 실력과 인성
@@ -112,7 +112,7 @@ export default async function TutorPage() {
 
         {/* 섹션 3 웹 */}
         <div className="mt-[120px] flex flex-col items-center max-md:hidden">
-          <p className="text-5xl font-bold">엣지영어 5단계 강사 선발 과정</p>
+          <p className="text-4xl font-bold">엣지영어 5단계 강사 선발 과정</p>
           <div className="mt-15 flex flex-row justify-start">
             {[1, 2, 3, 4, 5].map((e) => (
               <div key={e} className="flex-grow">
@@ -148,10 +148,10 @@ export default async function TutorPage() {
 
         {/* 섹션 4 웹 */}
         <div className="mt-[120px] flex w-full flex-col bg-[#F3F6F8] px-4.5 py-[120px] max-md:hidden">
-          <p className="self-center text-5xl font-bold">
+          <p className="self-center text-4xl font-bold">
             어떤 튜터를 만나도 안심할 수 있어요.
           </p>
-          <p className="mt-6 self-center text-2xl font-normal text-[#4A4A4A]">
+          <p className="mt-6 self-center text-xl font-normal text-[#4A4A4A]">
             엣지영어의 모든 튜터는 아래 자격 요건을 모두 충족해요.
           </p>
           <div className="mt-[40px] grid w-full max-w-[1200px] grid-cols-2 items-center gap-4 self-center">

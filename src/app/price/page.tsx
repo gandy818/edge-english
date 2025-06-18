@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function PricePage() {
   return (
-    <div className="bg-[#F3F6F8] py-[120px]">
+    <div className="bg-[#F3F6F8] py-[120px] max-md:py-[60px]">
       <div className="mx-auto flex max-w-[1200px] flex-col gap-10">
         {/* 타이틀 */}
         <div className="text-center">
@@ -11,7 +11,7 @@ export default function PricePage() {
             EDGE ENGLISH
           </p>
           <h1 className="mt-4 text-5xl font-bold leading-tight max-md:text-2xl">
-            엣지있는 <br /> <span className="text-[#5542A5]">원어민 1:1 화상영어</span>
+            엣지있는 <br /> <span className="text-[#5542A5]">원어민 1:1 화상영어 </span>
             수업료
           </h1>
         </div>
@@ -40,7 +40,7 @@ export default function PricePage() {
                 <p className="flex items-center gap-1 text-xl max-md:text-sm">
                   월
                   <span className="font-montserrat text-2xl font-extrabold max-md:text-lg">
-                    130,000
+                    134,000
                   </span>
                   원
                 </p>
@@ -60,7 +60,7 @@ export default function PricePage() {
                 <p className="flex items-center gap-1 text-xl max-md:text-sm">
                   월
                   <span className="font-montserrat text-2xl font-extrabold max-md:text-lg">
-                    188,000
+                    189,000
                   </span>
                   원
                 </p>
@@ -80,7 +80,7 @@ export default function PricePage() {
                 <p className="flex items-center gap-1 text-xl max-md:text-sm">
                   월
                   <span className="font-montserrat text-2xl font-extrabold max-md:text-lg">
-                    299,000
+                    310,000
                   </span>
                   원
                 </p>

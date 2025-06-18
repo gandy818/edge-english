@@ -1,7 +1,6 @@
 'use client';
 
 import { PostType } from '@/types/PostType';
-import axios from 'axios';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -25,11 +24,9 @@ export default function NoticeDetailPage() {
   return (
     <div className="mx-auto max-w-[1200px] px-4">
       {/* 타이틀 */}
-      <div className="mt-[120px] flex flex-col gap-6 border-t-4 border-black py-16">
-        <p className="font-montserrat text-2xl font-semibold text-black">
-          {notice?.type}
-        </p>
-        <h1 className="font-montserrat text-5xl font-semibold text-black max-md:text-[40px]">
+      <div className="mt-[120px] flex flex-col gap-6 border-t-4 border-black py-8">
+        <p className="font-montserrat text-xl font-medium text-black">{notice?.type}</p>
+        <h1 className="font-montserrat text-3xl font-semibold leading-normal text-black">
           {notice?.title}
         </h1>
         <p className="font-semibold text-edge-gray">
