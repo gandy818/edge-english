@@ -501,7 +501,7 @@ export default function Home() {
       <>
         {/* 포인트 1 */}
         <div className="bg-[#F3F6F8] px-4.5 pb-[140px] pt-[100px] max-md:py-15">
-          <h3 className="pb-15 text-center text-4xl font-bold text-[#140F33] max-md:text-[32px]">
+          <h3 className="pb-15 text-center text-5xl font-bold text-[#140F33] max-md:text-[32px]">
             지속 가능한{' '}
             <span className="md:hidden">
               <br />
