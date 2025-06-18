@@ -132,7 +132,7 @@ export default function Header() {
             <ul className="menu min-h-full w-80 bg-white p-4 text-base-content">
               {/* 헤더 */}
               <li>
-                <div className="flex justify-between">
+                <div className="flex justify-between hover:bg-white">
                   <Link href="/">
                     <img src="/images/logo.svg" alt="logo" />
                   </Link>

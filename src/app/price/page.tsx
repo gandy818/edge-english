@@ -32,7 +32,7 @@ export default function PricePage() {
                 <span className="text-nowrap rounded bg-[#FFEDB8] p-2 font-medium max-md:text-xs">
                   주 2회
                 </span>
-                <p className="mt-4 font-medium tracking-tight text-[#666] max-md:text-sm">
+                <p className="mt-4 whitespace-nowrap font-medium tracking-tight text-[#666] max-md:text-sm">
                   월 횟수 <span className="font-bold text-[#666]">8</span>회
                 </p>
               </div>
@@ -52,7 +52,7 @@ export default function PricePage() {
                 <span className="text-nowrap rounded bg-[#FFEDB8] p-2 font-medium max-md:text-xs">
                   주 3회
                 </span>
-                <p className="mt-4 font-medium tracking-tight text-[#666] max-md:text-sm">
+                <p className="mt-4 whitespace-nowrap font-medium tracking-tight text-[#666] max-md:text-sm">
                   월 횟수 <span className="font-bold text-[#666]">12</span>회
                 </p>
               </div>
@@ -72,7 +72,7 @@ export default function PricePage() {
                 <span className="text-nowrap rounded bg-[#FFEDB8] p-2 font-medium max-md:text-xs">
                   주 5회
                 </span>
-                <p className="mt-4 font-medium tracking-tight text-[#666] max-md:text-sm">
+                <p className="mt-4 whitespace-nowrap font-medium tracking-tight text-[#666] max-md:text-sm">
                   월 횟수 <span className="font-bold text-[#666]">20</span>회
                 </p>
               </div>
@@ -102,11 +102,40 @@ export default function PricePage() {
                 <span className="text-nowrap rounded bg-[#7D5FFF1A] p-2 font-medium max-md:text-xs">
                   주 2회
                 </span>
-                <p className="mt-4 font-medium tracking-tight text-[#666] max-md:text-sm">
+                <p className="mt-4 whitespace-nowrap font-medium tracking-tight text-[#666] max-md:text-sm">
                   월 횟수 <span className="font-bold text-[#666]">8</span>회
                 </p>
               </div>
-              <div>
+
+              <div className="flex gap-2">
+                {/* 인기 뱃지 */}
+                <div className="flex items-center gap-1 whitespace-nowrap rounded-full bg-edge-purple p-2 font-extrabold text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="16"
+                    viewBox="0 0 17 16"
+                    fill="none"
+                  >
+                    <g clipPath="url(#clip0_1555_1020)">
+                      <path
+                        d="M14.9751 7.17815L12.1626 9.60502L13.0195 13.2344C13.0668 13.4314 13.0546 13.638 12.9845 13.8281C12.9144 14.0182 12.7896 14.1833 12.6257 14.3025C12.4618 14.4217 12.2663 14.4896 12.0639 14.4977C11.8614 14.5059 11.6611 14.4538 11.4882 14.3481L8.33199 12.4056L5.17387 14.3481C5.00101 14.4532 4.80093 14.5048 4.59883 14.4963C4.39673 14.4879 4.20163 14.4199 4.03812 14.3008C3.8746 14.1817 3.74998 14.0169 3.67993 13.8272C3.60989 13.6374 3.59756 13.4312 3.64449 13.2344L4.50449 9.60502L1.69199 7.17815C1.53905 7.04596 1.42845 6.87166 1.37398 6.67699C1.31952 6.48232 1.32361 6.27592 1.38575 6.08356C1.44789 5.89121 1.56533 5.72142 1.72339 5.59541C1.88145 5.4694 2.07313 5.39274 2.27449 5.37502L5.96199 5.07752L7.38449 1.63502C7.46149 1.44741 7.59254 1.28693 7.76097 1.17398C7.92941 1.06104 8.12763 1.00073 8.33043 1.00073C8.53323 1.00073 8.73145 1.06104 8.89989 1.17398C9.06832 1.28693 9.19937 1.44741 9.27637 1.63502L10.6982 5.07752L14.3857 5.37502C14.5875 5.39208 14.7797 5.46831 14.9384 5.59415C15.097 5.71999 15.215 5.88984 15.2775 6.08243C15.34 6.27502 15.3443 6.48178 15.2899 6.6768C15.2354 6.87182 15.1246 7.04644 14.9714 7.17877L14.9751 7.17815Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1555_1020">
+                        <rect
+                          width="16"
+                          height="16"
+                          fill="white"
+                          transform="translate(0.332031)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  인기
+                </div>
                 <p className="flex items-center gap-1 text-xl max-md:text-sm">
                   월
                   <span className="font-montserrat text-2xl font-extrabold max-md:text-lg">
@@ -122,7 +151,7 @@ export default function PricePage() {
                 <span className="text-nowrap rounded bg-[#7D5FFF1A] p-2 font-medium max-md:text-xs">
                   주 3회
                 </span>
-                <p className="mt-4 font-medium tracking-tight text-[#666] max-md:text-sm">
+                <p className="mt-4 whitespace-nowrap font-medium tracking-tight text-[#666] max-md:text-sm">
                   월 횟수 <span className="font-bold text-[#666]">12</span>회
                 </p>
               </div>
@@ -142,7 +171,7 @@ export default function PricePage() {
                 <span className="text-nowrap rounded bg-[#7D5FFF1A] p-2 font-medium max-md:text-xs">
                   주 5회
                 </span>
-                <p className="mt-4 font-medium tracking-tight text-[#666] max-md:text-sm">
+                <p className="mt-4 whitespace-nowrap font-medium tracking-tight text-[#666] max-md:text-sm">
                   월 횟수 <span className="font-bold text-[#666]">20</span>회
                 </p>
               </div>
@@ -180,7 +209,7 @@ export default function PricePage() {
                 <span className="text-nowrap rounded bg-[#09246B1A] p-2 font-medium max-md:text-xs">
                   주 1회
                 </span>
-                <p className="mt-4 font-medium tracking-tight text-[#666] max-md:text-sm">
+                <p className="mt-4 whitespace-nowrap font-medium tracking-tight text-[#666] max-md:text-sm">
                   월 횟수 <span className="font-bold text-[#666]">4</span>회
                 </p>
               </div>
@@ -200,7 +229,7 @@ export default function PricePage() {
                 <span className="text-nowrap rounded bg-[#09246B1A] p-2 font-medium max-md:text-xs">
                   주 2회
                 </span>
-                <p className="mt-4 font-medium tracking-tight text-[#666] max-md:text-sm">
+                <p className="mt-4 whitespace-nowrap font-medium tracking-tight text-[#666] max-md:text-sm">
                   월 횟수 <span className="font-bold text-[#666]">8</span>회
                 </p>
               </div>
@@ -220,7 +249,7 @@ export default function PricePage() {
                 <span className="text-nowrap rounded bg-[#09246B1A] p-2 font-medium max-md:text-xs">
                   주 3회
                 </span>
-                <p className="mt-4 font-medium tracking-tight text-[#666] max-md:text-sm">
+                <p className="mt-4 whitespace-nowrap font-medium tracking-tight text-[#666] max-md:text-sm">
                   월 횟수 <span className="font-bold text-[#666]">12</span>회
                 </p>
               </div>

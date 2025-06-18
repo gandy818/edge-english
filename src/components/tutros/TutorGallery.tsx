@@ -29,6 +29,7 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
     const modal = document.getElementById('tutor_modal') as HTMLDialogElement;
 
     modal?.close();
+    setSelectedTutor(undefined);
   };
 
   return (
@@ -116,7 +117,7 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
                 </div>
 
                 {/* 소개 */}
-                <div className="ml-10 flex flex-1 flex-col max-md:ml-0 max-md:mt-6">
+                <div className="mb-10 ml-10 flex flex-1 flex-col max-md:ml-0 max-md:mt-6">
                   <p className="mb-4 text-2xl font-bold max-md:text-xl">
                     엣지 운영진이 소개하는 튜터
                   </p>
