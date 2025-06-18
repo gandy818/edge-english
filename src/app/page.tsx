@@ -321,7 +321,7 @@ export default function Home() {
               className="h-24 shrink-0 self-end max-md:h-16 max-md:w-16"
             />
             <div className="chat chat-start flex-1">
-              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg max-md:text-sm">
+              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-xl font-semibold text-[#333] shadow-lg max-md:text-sm">
                 강사만 계속 말하는 것 같아요.
               </div>
             </div>
@@ -330,7 +330,7 @@ export default function Home() {
           {/* 튜터 말풍선 01 */}
           <div className="flex gap-2">
             <div className="chat chat-end flex-1">
-              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg max-md:text-sm">
+              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-xl font-semibold text-[#333] shadow-lg max-md:text-sm">
                 엣지영어 튜터는 학생의 말하기를 이끌어내도록 훈련된 원어민이에요. <br />{' '}
                 수업 중 함께 말할 수 있는 교재를 사용하니까, 듣기만 하는 수업과는 달라요!
               </div>
@@ -354,7 +354,7 @@ export default function Home() {
               className="h-24 shrink-0 self-end max-md:h-16 max-md:w-16"
             />
             <div className="chat chat-start flex-1">
-              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg max-md:text-sm">
+              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-xl font-semibold text-[#333] shadow-lg max-md:text-sm">
                 강사의 발음이 아쉬워요.
               </div>
             </div>
@@ -363,7 +363,7 @@ export default function Home() {
           {/* 튜터 말풍선 02 */}
           <div className="flex gap-2">
             <div className="chat chat-end flex-1">
-              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg max-md:text-sm">
+              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-xl font-semibold text-[#333] shadow-lg max-md:text-sm">
                 엣지영어 강사는 100% 미국·캐나다 출신 원어민으로, <br /> 어느 튜터를
                 만나도 북미식 발음을 배울 수 있어요.
               </div>
@@ -387,7 +387,7 @@ export default function Home() {
               className="h-24 shrink-0 self-end max-md:h-16 max-md:w-16"
             />
             <div className="chat chat-start flex-1">
-              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg max-md:text-sm">
+              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-xl font-semibold text-[#333] shadow-lg max-md:text-sm">
                 강사의 전문성이 부족해 보여요.
               </div>
             </div>
@@ -396,7 +396,7 @@ export default function Home() {
           {/* 튜터 말풍선 03 */}
           <div className="flex gap-2">
             <div className="chat chat-end flex-1">
-              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg max-md:text-sm">
+              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-xl font-semibold text-[#333] shadow-lg max-md:text-sm">
                 엣지영어의 모든 강사는 TESOL/TEFL(국제 영어 교육 자격증)을 기본으로
                 보유하고 있으며, <br /> 철저한 5단계 검증 절차를 모두 통과한 선생님만
                 채용합니다.
@@ -421,7 +421,7 @@ export default function Home() {
               className="h-24 shrink-0 self-end max-md:h-16 max-md:w-16"
             />
             <div className="chat chat-start flex-1">
-              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg max-md:text-sm">
+              <div className="chat-bubble rounded-3xl bg-white px-7 py-4.5 text-xl font-semibold text-[#333] shadow-lg max-md:text-sm">
                 수업 때 배운 표현을 다시 쓰고 싶은데, 정확히 뭐였는지 생각이 안 나요.
               </div>
             </div>
@@ -430,7 +430,7 @@ export default function Home() {
           {/* 튜터 말풍선 04 */}
           <div className="flex gap-2">
             <div className="chat chat-end flex-1">
-              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-2xl font-semibold text-[#333] shadow-lg max-md:text-sm">
+              <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-xl font-semibold text-[#333] shadow-lg max-md:text-sm">
                 수업에서 배운 내용을 놓치지 않도록, 모든 수업 후 복습 노트를 제공합니다.{' '}
                 <br /> 중요한 표현을 다시 확인하고, 배운 영어를 확실히 내 것으로 만들 수
                 있어요!
@@ -501,7 +501,7 @@ export default function Home() {
       <>
         {/* 포인트 1 */}
         <div className="bg-[#F3F6F8] px-4.5 pb-[140px] pt-[100px] max-md:py-15">
-          <h3 className="pb-15 text-center text-5xl font-bold text-[#140F33] max-md:text-[32px]">
+          <h3 className="pb-24 text-center text-5xl font-bold text-[#140F33] max-md:text-[32px]">
             지속 가능한{' '}
             <span className="md:hidden">
               <br />
@@ -509,7 +509,7 @@ export default function Home() {
             영어 학습 시스템
           </h3>
 
-          <div className="mx-auto max-w-[1080px] justify-between gap-16 md:flex">
+          <div className="mx-auto max-w-[1080px] justify-between gap-8 md:flex">
             <div className="flex-1">
               <span className="block w-fit rounded-full border-none bg-edge-yellow px-4 py-3 text-lg font-bold leading-none text-[#333] max-md:px-4 max-md:py-2">
                 포인트1
@@ -536,7 +536,7 @@ export default function Home() {
 
         {/* 포인트 2 */}
         <div className="px-4.5 pb-[140px] pt-[100px] max-md:py-15">
-          <div className="mx-auto max-w-[1080px] flex-row-reverse justify-between gap-16 md:flex">
+          <div className="mx-auto max-w-[1080px] flex-row-reverse justify-between gap-8 md:flex">
             <div className="flex-1">
               <span className="block w-fit rounded-full border-none bg-edge-yellow px-4 py-3 text-lg font-bold leading-none text-[#333] max-md:px-4 max-md:py-2">
                 포인트2
@@ -566,13 +566,13 @@ export default function Home() {
 
         {/* 포인트 3 */}
         <div className="bg-[#F3F6F8] px-4.5 pb-[140px] pt-[100px] max-md:py-15">
-          <div className="mx-auto max-w-[1080px] justify-between gap-16 md:flex">
+          <div className="mx-auto max-w-[1080px] justify-between gap-8 md:flex">
             <div className="flex-1">
               <span className="block w-fit rounded-full border-none bg-edge-yellow px-4 py-3 text-lg font-bold leading-none text-[#333] max-md:px-4 max-md:py-2">
                 포인트3
               </span>
               <h4 className="pt-4 text-4xl font-bold leading-[120%] text-[#140F33] max-lg:text-4xl max-md:text-2xl">
-                전원 미·캐나다 출신 원어민 강사진
+                전원 미국·캐나다 출신 원어민 강사진
               </h4>
               <p className="mt-8 text-xl leading-[140%] text-edge-gray max-lg:text-xl max-md:mt-6 max-md:text-base">
                 영어에는 다양한 억양이 있지만, 한국 학습자에게 가장 익숙한 북미식 발음을
