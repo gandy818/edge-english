@@ -50,10 +50,9 @@ export default function NoticePage() {
 
   return (
     <div className="mx-auto max-w-[1200px] px-4">
-      <div className="mt-[120px] border-b border-[#A4A4A4] max-md:mt-16">
+      <div className="mt-[120px] border-b border-[#A4A4A4] max-md:mt-8">
         <h1 className="pb-3 text-5xl font-bold max-md:text-[40px]">공지사항</h1>
       </div>
-
       {/* 분류 */}
       <ScrollContainer className="mt-10 flex gap-2">
         <button
@@ -75,7 +74,6 @@ export default function NoticePage() {
           기타
         </button>
       </ScrollContainer>
-
       {/* 총 게시글 개수 */}
       {/* <div className="mt-6 flex gap-2">
         <p className="font-montserrat font-bold tracking-[-2px]">Total</p>
@@ -83,7 +81,6 @@ export default function NoticePage() {
           {filteredNoticeList.length}
         </p>
       </div> */}
-
       {/* 테이블 */}
       <div className="mt-10 overflow-x-auto max-md:hidden">
         <table className="table text-center">
@@ -131,7 +128,6 @@ export default function NoticePage() {
           </tbody>
         </table>
       </div>
-
       {/* 모바일 리스트 */}
       <div className="mt-6 overflow-x-auto md:hidden">
         {currentNoticeList.map((notice, index) => {
@@ -154,7 +150,9 @@ export default function NoticePage() {
                   <p className="font-medium">공지사항</p>
                 )}
               </div>
-              <div className="max-w-56 truncate font-medium">{notice.title}</div>
+              <div className="max-w-56 truncate font-medium max-md:max-w-80">
+                {notice.title}
+              </div>
               <div className="flex items-center font-medium">
                 {notice.writer}
                 <TextDivider />
@@ -166,12 +164,12 @@ export default function NoticePage() {
       </div>
 
       {/* 페이지네이션 */}
-      <div className="flex-center mt-24 max-md:mt-16">
+      <div className="flex-center mt-24 max-md:mt-12">
         <Pagination
-          totalItems={nonPinnedNotices.length} // ✅ 공지글 제외한 일반 게시글 개수만 전달
+          totalItems={nonPinnedNotices.length} // 공지글 제외한 일반 게시글 개수만 전달
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
-          itemsPerPage={availableSlots} // ✅ 공지글 제외 후 한 페이지에 표시할 개수
+          itemsPerPage={availableSlots} // 공지글 제외 후 한 페이지에 표시할 개수
         />
       </div>
     </div>

@@ -24,8 +24,8 @@ const EDGE_DETAILS = [
           해요.
         </p>
         <p className="mt-4 text-[#8E8E8E] max-md:mt-2 max-md:text-xs">
-          * TESOL/TEFL이란? 영어가 모국어가 아닌 사람들에게 영어를 가르치는 국제영어교사
-          자격증
+          * TESOL/TEFL이란? <br /> 영어가 모국어가 아닌 사람들에게 영어를 가르치는
+          국제영어교사 자격증
         </p>
       </>
     ),
@@ -38,7 +38,7 @@ const EDGE_DETAILS = [
     contents: (
       <>
         <p className="text-2xl font-medium max-md:text-base">
-          5단계 검증 시스템을 통해{' '}
+          5단계 검증 시스템을 통해 <br />
           <span className="font-semibold">자격부터 인성, 수업 역량까지 철저히 확인</span>
           해요.
         </p>
@@ -53,10 +53,10 @@ const EDGE_DETAILS = [
     contents: (
       <>
         <p className="text-xl max-md:text-base">
-          📌 전화·이메일·회의까지, 실제 직장에서 쓰이는 표현만 골라 배웁니다.
+          📌 전화·이메일·회의까지, 실제 직장에서 쓰이는 표현만 골라 배워요.
         </p>
         <p className="mt-4 text-xl max-md:mt-1 max-md:text-base">
-          📌 영어 면접과 발표도 원어민 튜터와 1:1로 연습하며 자신 있게 준비할 수 있어요.
+          📌 영어 면접·발표도 원어민 튜터와 1:1 연습으로 자신 있게 준비해요.
         </p>
       </>
     ),
@@ -69,8 +69,15 @@ const EDGE_DETAILS = [
     contents: (
       <>
         <p className="text-2xl font-semibold max-md:text-base">
-          튜터가 매 수업 후 정리해주는 노트로 복습은 물론, 놓친 부분도 다시 확인할 수
-          있어요.
+          튜터가 매 수업 후 정리해주는 노트로{' '}
+          <span className="md:hidden">
+            <br />
+          </span>
+          복습은 물론,{' '}
+          <span className="max-md:hidden">
+            <br />
+          </span>
+          놓친 부분도 다시 확인할 수 있어요.
         </p>
       </>
     ),
@@ -124,7 +131,7 @@ export default function PointsTab() {
       </div>
 
       {/* content */}
-      <div className="flex min-h-[534px] w-full rounded-b-2xl bg-white px-[47px] py-6 max-md:h-auto max-md:flex-col-reverse max-md:px-4.5">
+      <div className="flex min-h-[480px] w-full rounded-b-2xl bg-white px-[47px] py-6 max-md:h-auto max-md:min-h-[534px] max-md:flex-col-reverse max-md:px-4.5 max-md:pt-0">
         <div className="flex-1 p-6 max-md:p-0">
           <span className="font-montserrat text-xl font-bold text-[#7D5FFF] max-md:text-lg max-md:leading-none">
             point 0{currentDetail.index}
@@ -136,7 +143,7 @@ export default function PointsTab() {
           </div>
           <div className="py-10 max-md:mt-4 max-md:py-2">{currentDetail.contents}</div>
         </div>
-        <div className="flex-center flex-1 self-center max-md:min-h-[285px] max-md:max-w-[276px]">
+        <div className="flex-center flex-1 self-center max-md:min-h-[250px] max-md:max-w-[276px]">
           <img src={currentDetail.image} alt={currentDetail.alt} />
         </div>
       </div>

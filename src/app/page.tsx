@@ -545,8 +545,8 @@ export default function Home() {
                 다양한 주제의 고퀄리티 교재 완비
               </h4>
               <p className="mt-8 text-xl leading-[140%] text-edge-gray max-lg:text-xl max-md:mt-6 max-md:text-base">
-                비즈니스, 여행, 일상 등 다양한 상황의 영어를 연습할 수 있는 세계적으로
-                인정받은 고품질 교재를 사용합니다.
+                비즈니스, 여행, 일상 등 다양한 상황의 영어를 연습할 수 있도록 세계적으로
+                인정받은 교재를 사용합니다.
               </p>
               <p className="mt-2 text-xl text-[#a4a4a4] max-lg:text-xl max-md:mt-2 max-md:text-base">
                 * 대부분 옥스포드 출판 교재 사용
@@ -572,7 +572,7 @@ export default function Home() {
                 포인트3
               </span>
               <h4 className="pt-4 text-4xl font-bold leading-[120%] text-[#140F33] max-lg:text-4xl max-md:text-2xl">
-                전원 미국·캐나다 출신 원어민 강사진
+                전원 미·캐나다 출신 원어민 강사진
               </h4>
               <p className="mt-8 text-xl leading-[140%] text-edge-gray max-lg:text-xl max-md:mt-6 max-md:text-base">
                 영어에는 다양한 억양이 있지만, 한국 학습자에게 가장 익숙한 북미식 발음을

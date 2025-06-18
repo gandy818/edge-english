@@ -1,8 +1,11 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function FloatingMenu() {
+  const pathName = usePathname();
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -12,13 +15,15 @@ export default function FloatingMenu() {
 
   return (
     <div>
-      <Link
-        href="https://forms.gle/rkvoS9ut3a5eSe659"
-        target="_blank"
-        className="fixed bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-edge-yellow px-10 py-4 font-semibold shadow-md"
-      >
-        회원가입 없이 간편 수강신청하기
-      </Link>
+      {pathName === '/' && (
+        <Link
+          href="https://forms.gle/rkvoS9ut3a5eSe659"
+          target="_blank"
+          className="fixed bottom-4 left-1/2 z-[1] -translate-x-1/2 whitespace-nowrap rounded-full bg-edge-yellow px-10 py-4 font-semibold shadow-md"
+        >
+          회원가입 없이 간편 수강신청하기
+        </Link>
+      )}
       <div className="fixed bottom-[4.5rem] right-4.5 z-[19] flex flex-col gap-2 xs:bottom-10 xs:right-10">
         {/* 카카오 버튼 */}
         <Link

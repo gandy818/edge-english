@@ -39,7 +39,7 @@ export default function EventPage() {
 
   return (
     <div className="mx-auto max-w-[1200px] px-4">
-      <div className="mt-[120px] border-b border-[#A4A4A4] max-md:mt-16">
+      <div className="mt-[120px] border-b border-[#A4A4A4] max-md:mt-8">
         <h1 className="pb-3 text-5xl font-bold max-md:text-[40px]">이벤트</h1>
       </div>
 
@@ -126,7 +126,9 @@ export default function EventPage() {
                   {event.status}
                 </p>
               </div>
-              <div className="max-w-56 truncate font-medium">{event.title}</div>
+              <div className="max-w-56 truncate font-medium max-md:max-w-80">
+                {event.title}
+              </div>
               <div className="flex items-center font-medium">
                 {event.writer}
                 <TextDivider />
@@ -138,7 +140,7 @@ export default function EventPage() {
       </div>
 
       {/* 페이지네이션 */}
-      <div className="flex-center mt-24">
+      <div className="flex-center mt-24 max-md:mt-12">
         <Pagination
           totalItems={filteredEventList.length}
           currentPage={currentPage}

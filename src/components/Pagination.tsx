@@ -13,7 +13,7 @@ export default function Pagination({
   setCurrentPage,
   itemsPerPage = 10,
 }: PaginationProps) {
-  const totalPages = Math.ceil(totalItems / itemsPerPage); // 전체 게시물 개수를 한 페이지당 개수로 나누고 올림 (나머지가 있어도 새로운 페이지가 필요하므로)
+  const totalPages = Math.max(1, Math.ceil(totalItems / itemsPerPage)); // 전체 게시물 개수를 한 페이지당 개수로 나누고 올림 (나머지가 있어도 새로운 페이지가 필요하므로), 최솟값을 1로 보정
   const maxPageNumbers = 5; // 최대 5개 숫자만 보이도록 설정
 
   // 현재 페이지가 속산 그룹 계산

@@ -24,7 +24,7 @@ export default function NoticeDetailPage() {
   return (
     <div className="mx-auto max-w-[1200px] px-4">
       {/* 타이틀 */}
-      <div className="mt-[120px] flex flex-col gap-6 border-t-4 border-black py-8">
+      <div className="mt-[120px] flex flex-col gap-6 border-t-4 border-black py-8 max-md:mt-8">
         <p className="font-montserrat text-xl font-medium text-black">{notice?.type}</p>
         <h1 className="font-montserrat text-3xl font-semibold leading-normal text-black">
           {notice?.title}
@@ -66,7 +66,7 @@ export default function NoticeDetailPage() {
               </svg>
               <p className="text-nowrap font-semibold text-black">이전 글</p>
             </div>
-            <p className="text-edge-gray">{prevNotice?.title}</p>
+            <p className="truncate text-edge-gray max-md:max-w-56">{prevNotice?.title}</p>
           </Link>
         )}
 
@@ -90,7 +90,7 @@ export default function NoticeDetailPage() {
               </svg>
               <p className="text-nowrap font-semibold text-black">다음 글</p>
             </div>
-            <p className="text-edge-gray">{nextNotice?.title}</p>
+            <p className="truncate text-edge-gray max-md:max-w-56">{nextNotice?.title}</p>
           </Link>
         )}
       </div>
