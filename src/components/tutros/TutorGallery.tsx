@@ -1,6 +1,7 @@
 'use client';
 
 import { TutorType } from '@/types/TutorType';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) {
@@ -41,11 +42,14 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
             className="flex w-72 cursor-pointer flex-col justify-start"
             onClick={() => openTutorModal(tutor.name)}
           >
-            <img
+            <Image
               className="aspect-[4/5] w-full rounded-2xl object-cover"
               src={tutor.img}
               alt={tutor.name}
+              width={288}
+              height={360}
             />
+
             <div className="flex flex-row items-center justify-center pt-6">
               <img src={tutor.countryImg} alt="tutor's contry image" />
               <p className="pl-2 font-montserrat text-2xl font-bold">{tutor.name}</p>
@@ -99,17 +103,20 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
 
               <div className="mt-10 flex flex-row max-md:flex-col max-md:items-center">
                 {/* 프로필 */}
-                <div className="flex w-54 flex-col max-md:w-full">
-                  <img
-                    className="aspect-[4/5] w-full rounded-2xl"
-                    src={selectedTutor?.popupImg ?? '/icons/x-btn.svg'}
-                    alt={selectedTutor?.name}
-                  />
-                  <div className="flex flex-row items-center justify-center pt-6">
-                    <img
-                      src={selectedTutor?.countryImg ?? '/icons/x-btn.svg'}
-                      alt="x button"
+                <div className="relative flex h-67 w-54 flex-col max-md:h-auto max-md:w-full">
+                  {selectedTutor?.popupImg && (
+                    <Image
+                      className="aspect-[4/5] w-full rounded-2xl"
+                      src={selectedTutor?.popupImg}
+                      alt={selectedTutor?.name}
+                      width={216}
+                      height={258}
                     />
+                  )}
+                  <div className="flex flex-row items-center justify-center pt-6">
+                    {selectedTutor?.countryImg && (
+                      <img src={selectedTutor?.countryImg} alt="x button" />
+                    )}
                     <p className="pl-2 font-montserrat text-2xl font-bold">
                       {selectedTutor?.name}
                     </p>

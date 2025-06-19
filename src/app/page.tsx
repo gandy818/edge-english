@@ -90,32 +90,25 @@ export default function Home() {
                 탠저린쌤이 빠르게 정리해드려요
               </h3>
 
-              {/* 숏츠 */}
               <div className="mt-10 flex gap-6">
-                <iframe
-                  src={`https://www.youtube.com/embed/FkJ3hjifTzk?autoplay=0`}
-                  title="YouTube Shorts"
-                  className="aspect-[9/16] min-w-0 rounded-2xl max-lg:w-40"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-                <iframe
-                  src={`https://www.youtube.com/embed/_rRgqVq4gfw?autoplay=0`}
-                  title="YouTube Shorts"
-                  className="aspect-[9/16] min-w-0 rounded-2xl max-lg:w-40"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-                <iframe
-                  src={`https://www.youtube.com/embed/Yj7pm_r38rc?autoplay=0 `}
-                  title="YouTube Shorts"
-                  className="aspect-[9/16] min-w-0 rounded-2xl max-lg:w-40"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+                {['FkJ3hjifTzk', '_rRgqVq4gfw', 'Yj7pm_r38rc'].map((id) => {
+                  return (
+                    <div
+                      className="aspect-[9/16] w-full max-w-[300px] overflow-hidden rounded-2xl bg-black max-lg:max-w-40"
+                      key={id}
+                    >
+                      <iframe
+                        src={`https://www.youtube.com/embed/${id}?autoplay=0`}
+                        title="YouTube Shorts"
+                        className="h-full w-full"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  );
+                })}
               </div>
 
-              {/* 버튼 */}
               <div className="mx-auto mt-6 w-fit">
                 <Link
                   href="https://www.instagram.com/tangerine_english_/"
@@ -127,10 +120,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* 탠저린쌤 */}
             <div className="aspect-[404/788]">
-              <img
-                src="/images/main/shorts-bg.svg"
+              <Image
+                src="/images/main/shorts-bg.png"
                 alt="탠저린샘"
                 width={404}
                 height={788}
@@ -509,7 +501,7 @@ export default function Home() {
             영어 학습 시스템
           </h3>
 
-          <div className="mx-auto max-w-[1080px] justify-between gap-8 md:flex">
+          <div className="mx-auto max-w-[1080px] justify-between gap-16 md:flex">
             <div className="flex-1">
               <span className="block w-fit rounded-full border-none bg-edge-yellow px-4 py-3 text-lg font-bold leading-none text-[#333] max-md:px-4 max-md:py-2">
                 포인트1
@@ -536,7 +528,7 @@ export default function Home() {
 
         {/* 포인트 2 */}
         <div className="px-4.5 pb-[140px] pt-[100px] max-md:py-15">
-          <div className="mx-auto max-w-[1080px] flex-row-reverse justify-between gap-8 md:flex">
+          <div className="mx-auto max-w-[1080px] flex-row-reverse justify-between gap-16 md:flex">
             <div className="flex-1">
               <span className="block w-fit rounded-full border-none bg-edge-yellow px-4 py-3 text-lg font-bold leading-none text-[#333] max-md:px-4 max-md:py-2">
                 포인트2
@@ -566,13 +558,13 @@ export default function Home() {
 
         {/* 포인트 3 */}
         <div className="bg-[#F3F6F8] px-4.5 pb-[140px] pt-[100px] max-md:py-15">
-          <div className="mx-auto max-w-[1080px] justify-between gap-8 md:flex">
+          <div className="mx-auto max-w-[1080px] justify-between gap-16 md:flex">
             <div className="flex-1">
               <span className="block w-fit rounded-full border-none bg-edge-yellow px-4 py-3 text-lg font-bold leading-none text-[#333] max-md:px-4 max-md:py-2">
                 포인트3
               </span>
               <h4 className="pt-4 text-4xl font-bold leading-[120%] text-[#140F33] max-lg:text-4xl max-md:text-2xl">
-                전원 미국·캐나다 출신 원어민 강사진
+                전원 미국·캐나다 원어민 강사진
               </h4>
               <p className="mt-8 text-xl leading-[140%] text-edge-gray max-lg:text-xl max-md:mt-6 max-md:text-base">
                 영어에는 다양한 억양이 있지만, 한국 학습자에게 가장 익숙한 북미식 발음을

@@ -5,6 +5,7 @@ import { useState } from 'react';
 const EDGE_DETAILS = [
   {
     index: 1,
+    subTitle: '국제영어교사 자격',
     title: (
       <>
         100% TESOL/TEFL
@@ -34,6 +35,7 @@ const EDGE_DETAILS = [
   },
   {
     index: 2,
+    subTitle: '5단계 검증 완료',
     title: '5단계 검증으로 선별된 튜터',
     contents: (
       <>
@@ -49,6 +51,7 @@ const EDGE_DETAILS = [
   },
   {
     index: 3,
+    subTitle: '비즈니스 영어',
     title: '비지니스 영어·면접·발표 \n 준비 완벽 지원',
     contents: (
       <>
@@ -65,6 +68,7 @@ const EDGE_DETAILS = [
   },
   {
     index: 4,
+    subTitle: '개별 수업 노트',
     title: '수업 노트 개별 제공',
     contents: (
       <>
@@ -134,7 +138,7 @@ export default function PointsTab() {
       <div className="flex min-h-[480px] w-full rounded-b-2xl bg-white px-[47px] py-6 max-md:h-auto max-md:min-h-[534px] max-md:flex-col-reverse max-md:px-4.5 max-md:pt-0">
         <div className="flex-1 p-6 max-md:p-0">
           <span className="font-montserrat text-xl font-bold text-[#7D5FFF] max-md:text-lg max-md:leading-none">
-            point 0{currentDetail.index}
+            {currentDetail.subTitle}
           </span>
           <div className="border-b-2 border-dashed pb-6 max-md:pb-4">
             <p className="mt-4 whitespace-pre-line text-4xl font-extrabold leading-[120%] max-md:mt-2 max-md:text-2xl">
