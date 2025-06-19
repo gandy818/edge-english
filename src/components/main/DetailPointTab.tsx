@@ -100,7 +100,7 @@ export default function PointsTab() {
     <div className="mx-auto max-w-[1220px]">
       <div className="relative">
         {/* tab */}
-        <div className="flex h-22 rounded-t-2xl bg-[#614BC0] max-md:h-14">
+        {/* <div className="flex h-22 rounded-t-2xl bg-[#614BC0] max-md:h-14">
           {[1, 2, 3, 4].map((num, idx) => (
             <button
               key={num}
@@ -124,16 +124,35 @@ export default function PointsTab() {
               </p>
             </button>
           ))}
+        </div> */}
+        <div className="flex h-16 gap-1 rounded-t-2xl border-b-2 max-md:h-12">
+          {[1, 2, 3, 4].map((num, idx) => (
+            <button
+              key={num}
+              className="flex flex-1 items-center justify-center rounded-t-xl text-xl max-md:text-xs"
+              onClick={() => setActive(num)}
+              style={{
+                background:
+                  active === num
+                    ? 'linear-gradient(90deg, #AA96FF -2.03%, #7D5FFF 102.29%)'
+                    : '#614BC0',
+              }}
+            >
+              <p className="mx-auto w-fit font-montserrat font-bold text-white">
+                {EDGE_DETAILS[idx].subTitle}
+              </p>
+            </button>
+          ))}
         </div>
 
         {/* 슬라이딩 노란색 바 */}
-        <div
+        {/* <div
           className="absolute bottom-0 left-0 z-0 h-1.5 bg-edge-yellow transition-all duration-300"
           style={{
             width: `${100 / 4}%`, // 탭 개수에 맞게 자동계산
             transform: `translateX(${(active - 1) * 100}%)`,
           }}
-        />
+        /> */}
       </div>
 
       {/* content */}
