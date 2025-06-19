@@ -6,7 +6,22 @@ import FloatingMenu from '@/components/FloatingMenu';
 
 export const metadata: Metadata = {
   title: '엣지영어',
-  description: '영어 강사들이 만든 원어민 화상영어 브랜드입니다.',
+  description: '영어 교육 전문가들이 만든 원어민 화상영어 브랜드입니다.',
+  keywords: ['화상영어', '화상영어플랫폼', '원어민화상영어', '탠저린', '시에나'],
+  openGraph: {
+    type: 'website',
+    siteName: '엣지영어',
+    title: '엣지영어',
+    description: '영어 교육 전문가들이 만든 원어민 화상영어 브랜드입니다.',
+    images: ['https://edgeenglish.kr/images/og-image.png'],
+    url: 'https://edgeenglish.kr',
+  },
+  twitter: {
+    card: 'summary',
+    title: '엣지영어',
+    description: '영어 교육 전문가들이 만든 원어민 화상영어 브랜드입니다.',
+    images: ['https://edgeenglish.kr/images/og-image.png'],
+  },
 };
 
 export default function RootLayout({
