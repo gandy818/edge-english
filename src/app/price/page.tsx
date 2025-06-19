@@ -7,10 +7,10 @@ export default function PricePage() {
       <div className="mx-auto flex max-w-[1200px] flex-col gap-10">
         {/* 타이틀 */}
         <div className="text-center">
-          <p className="font-montserrat text-[22px] font-semibold text-[#AA96FF] max-md:text-base">
+          <p className="font-montserrat text-xl font-semibold text-[#AA96FF] max-md:text-base">
             EDGE ENGLISH
           </p>
-          <h1 className="mt-4 text-5xl font-bold leading-tight max-md:text-2xl">
+          <h1 className="mt-4 text-4xl font-bold leading-tight max-md:text-2xl">
             엣지있는 <br /> <span className="text-[#5542A5]">원어민 1:1 화상영어 </span>
             수업료
           </h1>

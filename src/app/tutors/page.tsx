@@ -9,10 +9,10 @@ export default async function TutorPage() {
 
   return (
     <div className="mx-auto">
-      <div className="mt-[120px] flex flex-col justify-center max-md:mt-15">
+      <div className="mt-20 flex flex-col justify-center max-md:mt-15">
         {/* 섹션 1 */}
         <>
-          <div className="flex flex-wrap justify-center text-5xl font-bold leading-[150%] max-md:flex-col max-md:text-[32px]">
+          <div className="flex flex-wrap justify-center text-4xl font-bold leading-[150%] max-md:flex-col max-md:text-[32px]">
             <p className="self-center md:pr-4">TESOL/TEFL을 보유한</p>
             <p className="self-center text-edge-purple md:pr-4">100% 미국·캐나다</p>
             <p className="self-center">원어민 강사진</p>
@@ -101,7 +101,7 @@ export default async function TutorPage() {
         </div>
 
         {/* 섹션 3 웹 */}
-        <div className="mt-[120px] flex flex-col items-center max-md:hidden">
+        <div className="mt-20 flex flex-col items-center max-md:hidden">
           <p className="text-4xl font-bold">엣지영어 5단계 강사 선발 과정</p>
           <div className="mt-15 flex flex-row justify-start">
             {[1, 2, 3, 4, 5].map((e) => (
@@ -137,29 +137,29 @@ export default async function TutorPage() {
         </div>
 
         {/* 섹션 4 웹 */}
-        <div className="mt-[120px] flex w-full flex-col bg-[#F3F6F8] px-4.5 py-[120px] max-md:hidden">
+        <div className="mt-20 flex w-full flex-col bg-[#F3F6F8] px-4.5 py-20 max-md:hidden">
           <p className="self-center text-4xl font-bold">
             어떤 튜터를 만나도 안심할 수 있어요.
           </p>
           <p className="mt-6 self-center text-xl font-normal text-[#4A4A4A]">
             엣지영어의 모든 튜터는 아래 자격 요건을 모두 충족해요.
           </p>
-          <div className="mt-[40px] grid w-full max-w-[1200px] grid-cols-2 items-center gap-4 self-center">
-            <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-2xl font-medium">
+          <div className="mt-10 grid w-full max-w-[1200px] grid-cols-2 items-center gap-4 self-center">
+            <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-xl font-medium">
               <img src="/icons/tutor/check.svg" className="mr-[16px]" alt="check" />
               미국
               <span className="text-[#D2D2D2]">・</span>
               캐나다 출신
             </div>
-            <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-2xl font-medium">
+            <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-xl font-medium">
               <img src="/icons/tutor/check.svg" className="mr-[16px]" alt="check" />
               TESOL/TEFL 국제 영어교육 자격증 보유
             </div>{' '}
-            <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-2xl font-medium">
+            <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-xl font-medium">
               <img src="/icons/tutor/check.svg" className="mr-[16px]" alt="check" />
               영어 교육 경력 1년 이상
             </div>{' '}
-            <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-2xl font-medium">
+            <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-xl font-medium">
               <img src="/icons/tutor/check.svg" className="mr-[16px]" alt="check" />
               시범 강의 평가 통과
             </div>

@@ -24,7 +24,7 @@ export default function EventDetailPage() {
   return (
     <div className="mx-auto max-w-[1200px] px-4">
       {/* 타이틀 */}
-      <div className="mt-[120px] flex flex-col gap-6 border-t-4 border-black py-8 max-md:mt-8">
+      <div className="mt-20 flex flex-col gap-6 border-t-4 border-black py-8 max-md:mt-8">
         <p className="font-montserrat text-xl font-medium text-black">{event?.type}</p>
         <h1 className="font-montserrat text-3xl font-semibold leading-normal text-black">
           {event?.title}

@@ -8,44 +8,44 @@ export default function FaqPage() {
 
   return (
     <div className="mx-auto max-w-[1200px] px-4">
-      <div className="mt-[120px] border-b border-[#A4A4A4] max-md:mt-8">
-        <h1 className="pb-3 text-5xl font-bold max-md:text-[40px]">FAQ</h1>
+      <div className="mt-20 border-b border-[#A4A4A4] max-md:mt-8">
+        <h1 className="pb-3 text-4xl font-bold max-md:text-[40px]">FAQ</h1>
       </div>
 
       {/* 분류 */}
-      <ScrollContainer className="mt-10 flex gap-2">
+      <ScrollContainer className="mt-8 flex gap-2">
         <button
-          className={`text-nowrap rounded-full px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'all' ? 'bg-edge-yellow' : 'border'}`}
+          className={`h-fit text-nowrap rounded-full px-4 py-2 text-sm font-bold max-md:px-4 max-md:py-2 ${currentType === 'all' ? 'bg-edge-yellow' : 'border'}`}
           onClick={() => setCurrentType('all')}
         >
           ALL
         </button>
         <button
-          className={`text-nowrap rounded-full px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === '수강신청' ? 'bg-edge-yellow' : 'border'}`}
+          className={`h-fit text-nowrap rounded-full px-4 py-2 text-sm font-bold max-md:px-4 max-md:py-2 ${currentType === '수강신청' ? 'bg-edge-yellow' : 'border'}`}
           onClick={() => setCurrentType('수강신청')}
         >
           수강 신청
         </button>
         <button
-          className={`text-nowrap rounded-full px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === '수업관련' ? 'bg-edge-yellow' : 'border'}`}
+          className={`h-fit text-nowrap rounded-full px-4 py-2 text-sm font-bold max-md:px-4 max-md:py-2 ${currentType === '수업관련' ? 'bg-edge-yellow' : 'border'}`}
           onClick={() => setCurrentType('수업관련')}
         >
           수업 관련
         </button>
         <button
-          className={`text-nowrap rounded-full px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === '수강권' ? 'bg-edge-yellow' : 'border'}`}
+          className={`h-fit text-nowrap rounded-full px-4 py-2 text-sm font-bold max-md:px-4 max-md:py-2 ${currentType === '수강권' ? 'bg-edge-yellow' : 'border'}`}
           onClick={() => setCurrentType('수강권')}
         >
           수강권
         </button>
         <button
-          className={`text-nowrap rounded-full px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === '결제' ? 'bg-edge-yellow' : 'border'}`}
+          className={`h-fit text-nowrap rounded-full px-4 py-2 text-sm font-bold max-md:px-4 max-md:py-2 ${currentType === '결제' ? 'bg-edge-yellow' : 'border'}`}
           onClick={() => setCurrentType('결제')}
         >
           결제
         </button>
         <button
-          className={`text-nowrap rounded-full px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === '기타' ? 'bg-edge-yellow' : 'border'}`}
+          className={`h-fit text-nowrap rounded-full px-4 py-2 text-sm font-bold max-md:px-4 max-md:py-2 ${currentType === '기타' ? 'bg-edge-yellow' : 'border'}`}
           onClick={() => setCurrentType('기타')}
         >
           기타
@@ -53,7 +53,7 @@ export default function FaqPage() {
       </ScrollContainer>
 
       {/* 아코디언 */}
-      <div className="relative z-0 mt-10 overflow-x-auto">
+      <div className="relative z-0 mt-8 overflow-x-auto">
         {/* drawer 위로 올라오지 않게 하기 위해 relatvie와 z-index 추가 */}
         <div className="collapse collapse-arrow rounded-none border-b">
           <input type="checkbox" className="peer" />

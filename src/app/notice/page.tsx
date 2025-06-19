@@ -51,39 +51,33 @@ export default function NoticePage() {
 
   return (
     <div className="mx-auto max-w-[1200px] px-4">
-      <div className="mt-[120px] border-b border-[#A4A4A4] max-md:mt-8">
-        <h1 className="pb-3 text-5xl font-bold max-md:text-[40px]">공지사항</h1>
+      <div className="mt-20 border-b border-[#A4A4A4] max-md:mt-8">
+        <h1 className="pb-3 text-4xl font-bold max-md:text-[40px]">공지사항</h1>
       </div>
       {/* 분류 */}
-      <ScrollContainer className="mt-10 flex gap-2">
+      <ScrollContainer className="mt-8 flex gap-2">
         <button
-          className={`text-nowrap rounded-full px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'all' ? 'bg-edge-yellow' : 'border'}`}
+          className={`h-fit text-nowrap rounded-full px-4 py-2 text-sm font-bold max-md:px-4 max-md:py-2 ${currentType === 'all' ? 'bg-edge-yellow' : 'border'}`}
           onClick={() => setCurrentType('all')}
         >
           전체
         </button>
         <button
-          className={`text-nowrap rounded-full px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'notice' ? 'bg-edge-yellow' : 'border'}`}
+          className={`h-fit text-nowrap rounded-full px-4 py-2 text-sm font-bold max-md:px-4 max-md:py-2 ${currentType === 'notice' ? 'bg-edge-yellow' : 'border'}`}
           onClick={() => setCurrentType('notice')}
         >
           공지사항
         </button>
         <button
-          className={`text-nowrap rounded-full px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${currentType === 'etc' ? 'bg-edge-yellow' : 'border'}`}
+          className={`h-fit text-nowrap rounded-full px-4 py-2 text-sm font-bold max-md:px-4 max-md:py-2 ${currentType === 'etc' ? 'bg-edge-yellow' : 'border'}`}
           onClick={() => setCurrentType('etc')}
         >
           기타
         </button>
       </ScrollContainer>
-      {/* 총 게시글 개수 */}
-      {/* <div className="mt-6 flex gap-2">
-        <p className="font-montserrat font-bold tracking-[-2px]">Total</p>
-        <p className="font-montserrat font-bold text-edge-purple">
-          {filteredNoticeList.length}
-        </p>
-      </div> */}
+
       {/* 테이블 */}
-      <div className="mt-10 overflow-x-auto max-md:hidden">
+      <div className="mt-8 overflow-x-auto max-md:hidden">
         <table className="table text-center">
           {/* head */}
           <thead className="h-[70px] bg-[#F5F5F5] font-bold">

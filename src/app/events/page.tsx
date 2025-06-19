@@ -65,14 +65,6 @@ export default function EventPage() {
         </button>
       </ScrollContainer>
 
-      {/* 총 게시글 개수 */}
-      {/* <div className="mt-6 flex gap-2">
-        <p className="font-montserrat font-bold tracking-[-2px]">Total</p>
-        <p className="font-montserrat font-bold text-edge-purple">
-          {filteredEventList.length}
-        </p>
-      </div> */}
-
       {/* 테이블 */}
       <div className="mt-8 overflow-x-auto max-md:hidden">
         <table className="table text-center">

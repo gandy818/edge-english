@@ -37,14 +37,14 @@ export default function BookList({ bookList }: FilterProps) {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-wrap items-center gap-2">
-        <h2 className="mr-15 text-2xl font-medium max-md:mr-5 max-md:text-base">
+        <h2 className="mr-4 text-xl font-medium max-md:mr-5 max-md:text-base">
           학습 주제
         </h2>
 
         {filters.map((item) => (
           <button
             key={item}
-            className={`text-nowrap rounded-full px-6 py-3 font-bold !leading-none max-md:px-4 max-md:py-2 ${
+            className={`h-fit text-nowrap rounded-full px-4 py-2 text-sm font-bold max-md:px-4 max-md:py-2 ${
               filterState === item ? 'bg-edge-yellow' : 'border'
             } `}
             onClick={() => setFilterState(item)}
@@ -68,11 +68,12 @@ export default function BookList({ bookList }: FilterProps) {
 
               {/* 책 설명 */}
               <div>
+                {/* 레벨 */}
                 <div className="flex flex-wrap gap-2">
                   {item.level.map((e, idx2) => (
                     <div
                       key={idx2}
-                      className="h-auto w-fit whitespace-nowrap rounded-full border border-[#e8e8e8] px-4 py-2 leading-none max-md:px-3 max-md:text-sm"
+                      className="h-auto w-fit whitespace-nowrap rounded-full border border-[#e8e8e8] px-4 py-2 text-sm leading-none max-md:px-3"
                     >
                       {e}
                     </div>
