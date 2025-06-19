@@ -32,7 +32,7 @@ export default function Home() {
 
         {/* 타이틀 */}
         <>
-          <h1 className="mt-[26px] text-center text-5xl font-bold leading-[120%] max-lg:text-4xl max-md:mt-5 max-md:text-[28px]">
+          <h1 className="mt-[26px] text-center text-4xl font-bold leading-[120%] max-lg:text-4xl max-md:mt-5 max-md:text-[28px]">
             엣지영어는{' '}
             <span className="hidden max-md:inline">
               <br />
@@ -42,7 +42,7 @@ export default function Home() {
 
           <div className="mx-auto mt-2 flex w-fit justify-center gap-4 max-md:mt-0 max-md:block">
             <div className="flex gap-4 max-md:items-end max-md:gap-1">
-              <h1 className="content-center text-5xl font-bold max-lg:text-4xl max-md:text-[28px]">
+              <h1 className="content-center text-4xl font-bold max-lg:text-4xl max-md:text-[28px]">
                 1:1 미국 · 캐나다{' '}
               </h1>
               <div className="aspect-[109/57] w-[109px] max-lg:w-[70px]">
@@ -55,12 +55,12 @@ export default function Home() {
               </div>
             </div>
 
-            <h1 className="content-center text-5xl font-bold leading-[120%] max-lg:text-4xl max-md:text-[28px]">
+            <h1 className="content-center text-4xl font-bold leading-[120%] max-lg:text-4xl max-md:text-[28px]">
               화상영어 브랜드입니다.
             </h1>
           </div>
 
-          <h2 className="mt-8 text-center text-2xl max-md:mt-6 max-md:text-base">
+          <h2 className="mt-8 text-center text-xl max-md:mt-6 max-md:text-base">
             13년차 영어 튜터 시에나 & 누적 조회수 300만+
             <span className="md:hidden">
               <br />
@@ -75,14 +75,14 @@ export default function Home() {
         <div className="bg-[#FFFAF6] bg-right-bottom bg-no-repeat px-4.5 text-center">
           <div className="mx-auto flex w-fit items-end gap-1 pt-[7.5rem]">
             <div className="min-w-0 flex-1 pb-[7.5rem]">
-              <h2 className="text-5xl font-semibold text-[#140F33]">
+              <h2 className="text-4xl font-semibold text-[#140F33]">
                 엣지영어 대표{' '}
                 <span className="lg:hidden">
                   <br />
                 </span>
                 <span className="text-[#f80]">탠저린샘의 10초영어</span>
               </h2>
-              <h3 className="mt-4 text-2xl text-[#8e8e8e]">
+              <h3 className="mt-4 text-xl text-[#8e8e8e]">
                 한국인이 자주 막히는 영어 표현,
                 <span className="lg:hidden">
                   <br />
@@ -196,7 +196,7 @@ export default function Home() {
 
       {/* 섹션 3 수업 절차 */}
       <div className="mx-auto my-[120px] w-fit text-center max-md:my-15 max-md:px-4.5">
-        <h3 className="text-5xl font-bold text-[#140F33] max-md:text-[34px]">수업절차</h3>
+        <h3 className="text-4xl font-bold text-[#140F33] max-md:text-[34px]">수업절차</h3>
         <div className="mt-10 flex items-center justify-center max-md:grid max-md:grid-cols-2 max-md:flex-wrap max-md:gap-6">
           {/* step 01 */}
           <div className="w-fit rounded-3xl border border-dashed border-edge-yellow p-1">
@@ -295,10 +295,10 @@ export default function Home() {
           background: `linear-gradient(180deg, rgba(238,199,5,0.20) 0%, rgba(254,254,254,0.04) 100%), #FFFAF6`,
         }}
       >
-        <h3 className="text-center text-5xl font-medium text-[#140F33] max-md:text-2xl">
+        <h3 className="text-center text-4xl font-medium text-[#140F33] max-md:text-2xl">
           화상영어 수강생들의 흔한 고민,
         </h3>
-        <h4 className="mt-3 text-center text-5xl font-bold text-[#F80] max-md:text-2xl">
+        <h4 className="mt-3 text-center text-4xl font-bold text-[#F80] max-md:text-2xl">
           엣지영어는 이렇게 해결합니다!
         </h4>
 
@@ -444,18 +444,18 @@ export default function Home() {
         className="relative w-full bg-cover bg-center bg-no-repeat px-4.5 py-32 max-md:hidden"
         style={{ backgroundImage: "url('/images/main/we-can-help-bg.png')" }}
       >
-        <p className="mx-auto w-fit pr-12 text-5xl font-bold text-edge-yellow max-xl:text-5xl">
+        <p className="mx-auto w-fit pr-12 text-4xl font-bold text-edge-yellow">
           .&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.
         </p>
         <p
-          className="text-center text-5xl font-bold !leading-normal text-white max-xl:text-5xl max-lg:text-4xl"
+          className="text-center text-4xl font-bold !leading-normal text-white max-lg:text-4xl"
           style={{ textShadow: '0px 0px 10px rgba(0, 0, 0, 0.50)' }}
         >
           영어, 매번 작심삼일로 끝났다면? <br />
           포기하지 않도록 엣지영어가 도와드릴게요!
         </p>
         <p
-          className="mt-8 text-center text-2xl font-medium text-white max-xl:text-2xl max-lg:text-xl"
+          className="mt-8 text-center text-xl font-medium text-white max-xl:text-2xl max-lg:text-xl"
           style={{ textShadow: '0px 0px 10px rgba(0, 0, 0, 0.50)' }}
         >
           운영진들의 오랜 강사 경력과 노하우를 바탕으로 완성된 학습시스템을 소개합니다.
@@ -493,7 +493,7 @@ export default function Home() {
       <>
         {/* 포인트 1 */}
         <div className="bg-[#F3F6F8] px-4.5 pb-[140px] pt-[100px] max-md:py-15">
-          <h3 className="pb-24 text-center text-5xl font-bold text-[#140F33] max-md:text-[32px]">
+          <h3 className="pb-24 text-center text-4xl font-bold text-[#140F33] max-md:text-[32px]">
             지속 가능한{' '}
             <span className="md:hidden">
               <br />
@@ -503,13 +503,13 @@ export default function Home() {
 
           <div className="mx-auto max-w-[1080px] justify-between gap-16 md:flex">
             <div className="flex-1">
-              <span className="block w-fit rounded-full border-none bg-edge-yellow px-4 py-3 text-lg font-bold leading-none text-[#333] max-md:px-4 max-md:py-2">
+              <span className="block w-fit rounded-full border-none bg-edge-yellow px-4 py-3 font-bold leading-none text-[#333] max-md:px-4 max-md:py-2">
                 포인트1
               </span>
-              <h4 className="pt-4 text-4xl font-bold leading-[120%] text-[#140F33] max-lg:text-4xl max-md:text-2xl">
+              <h4 className="pt-4 text-3xl font-bold leading-[120%] text-[#140F33] max-lg:text-4xl max-md:text-2xl">
                 고정제 수업으로 만드는 영어 루틴
               </h4>
-              <p className="mt-8 text-xl leading-[140%] text-edge-gray max-lg:text-xl max-md:mt-6 max-md:text-base">
+              <p className="mt-8 text-lg leading-[140%] text-edge-gray max-lg:text-xl max-md:mt-6 max-md:text-base">
                 정해진 요일과 시간에 꾸준히 진행되는 고정제 수업은 바쁜 일상 속에서도
                 영어를 포기하지 않도록 강력한 동기부여가 됩니다.
               </p>
@@ -530,17 +530,17 @@ export default function Home() {
         <div className="px-4.5 pb-[140px] pt-[100px] max-md:py-15">
           <div className="mx-auto max-w-[1080px] flex-row-reverse justify-between gap-16 md:flex">
             <div className="flex-1">
-              <span className="block w-fit rounded-full border-none bg-edge-yellow px-4 py-3 text-lg font-bold leading-none text-[#333] max-md:px-4 max-md:py-2">
+              <span className="block w-fit rounded-full border-none bg-edge-yellow px-4 py-3 font-bold leading-none text-[#333] max-md:px-4 max-md:py-2">
                 포인트2
               </span>
-              <h4 className="pt-4 text-4xl font-bold leading-[120%] text-[#140F33] max-lg:text-4xl max-md:text-2xl">
+              <h4 className="pt-4 text-3xl font-bold leading-[120%] text-[#140F33] max-lg:text-4xl max-md:text-2xl">
                 다양한 주제의 고퀄리티 교재 완비
               </h4>
-              <p className="mt-8 text-xl leading-[140%] text-edge-gray max-lg:text-xl max-md:mt-6 max-md:text-base">
+              <p className="mt-8 text-lg leading-[140%] text-edge-gray max-lg:text-xl max-md:mt-6 max-md:text-base">
                 비즈니스, 여행, 일상 등 다양한 상황의 영어를 연습할 수 있도록 세계적으로
                 인정받은 교재를 사용합니다.
               </p>
-              <p className="mt-2 text-xl text-[#a4a4a4] max-lg:text-xl max-md:mt-2 max-md:text-base">
+              <p className="mt-2 text-lg text-[#a4a4a4] max-lg:text-xl max-md:mt-2 max-md:text-base">
                 * 대부분 옥스포드 출판 교재 사용
               </p>
             </div>
@@ -560,13 +560,13 @@ export default function Home() {
         <div className="bg-[#F3F6F8] px-4.5 pb-[140px] pt-[100px] max-md:py-15">
           <div className="mx-auto max-w-[1080px] justify-between gap-16 md:flex">
             <div className="flex-1">
-              <span className="block w-fit rounded-full border-none bg-edge-yellow px-4 py-3 text-lg font-bold leading-none text-[#333] max-md:px-4 max-md:py-2">
+              <span className="block w-fit rounded-full border-none bg-edge-yellow px-4 py-3 font-bold leading-none text-[#333] max-md:px-4 max-md:py-2">
                 포인트3
               </span>
-              <h4 className="pt-4 text-4xl font-bold leading-[120%] text-[#140F33] max-lg:text-4xl max-md:text-2xl">
+              <h4 className="pt-4 text-3xl font-bold leading-[120%] text-[#140F33] max-lg:text-4xl max-md:text-2xl">
                 전원 미국·캐나다 원어민 강사진
               </h4>
-              <p className="mt-8 text-xl leading-[140%] text-edge-gray max-lg:text-xl max-md:mt-6 max-md:text-base">
+              <p className="mt-8 text-lg leading-[140%] text-edge-gray max-lg:text-xl max-md:mt-6 max-md:text-base">
                 영어에는 다양한 억양이 있지만, 한국 학습자에게 가장 익숙한 북미식 발음을
                 사용하는 튜터만으로 구성되어있어요.
               </p>

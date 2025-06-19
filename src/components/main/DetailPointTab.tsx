@@ -138,7 +138,9 @@ export default function PointsTab() {
                     : '#614BC0',
               }}
             >
-              <p className="mx-auto w-fit font-montserrat font-bold text-white">
+              <p
+                className={`mx-auto w-fit font-montserrat font-bold ${active === num ? 'text-white' : 'text-white'} `}
+              >
                 {EDGE_DETAILS[idx].subTitle}
               </p>
             </button>
