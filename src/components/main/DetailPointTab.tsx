@@ -52,7 +52,7 @@ const EDGE_DETAILS = [
   {
     index: 3,
     subTitle: '비즈니스 영어',
-    title: '비지니스 영어·면접·발표 \n 준비 완벽 지원',
+    title: '비지니스 영어·면접·발표 준비 완벽 지원',
     contents: (
       <>
         <p className="text-xl max-md:text-base">
@@ -72,7 +72,7 @@ const EDGE_DETAILS = [
     title: '수업 노트 개별 제공',
     contents: (
       <>
-        <p className="text-2xl font-semibold max-md:text-base">
+        <p className="text-2xl font-medium max-md:text-base">
           튜터가 매 수업 후 정리해주는 노트로{' '}
           <span className="md:hidden">
             <br />
@@ -100,12 +100,12 @@ export default function PointsTab() {
     <div className="mx-auto max-w-[1220px]">
       <div className="relative">
         {/* tab */}
-        <div className="flex h-25 rounded-t-2xl bg-[#614BC0] max-md:h-14">
+        <div className="flex h-22 rounded-t-2xl bg-[#614BC0] max-md:h-14">
           {[1, 2, 3, 4].map((num, idx) => (
             <button
               key={num}
               className={[
-                'flex flex-1 items-center justify-center text-2xl max-md:text-xs',
+                'flex flex-1 items-center justify-center text-xl max-md:text-xs',
                 active === num ? 'active' : '',
                 active + 1 === num && active < 4 ? 'snake' : '',
               ].join(' ')}
@@ -119,7 +119,9 @@ export default function PointsTab() {
                     : '#614BC0',
               }}
             >
-              <p className="mx-auto w-fit font-montserrat font-bold text-white">{`POINT 0${num}`}</p>
+              <p className="mx-auto w-fit font-montserrat font-bold text-white">
+                {EDGE_DETAILS[idx].subTitle}
+              </p>
             </button>
           ))}
         </div>
@@ -137,11 +139,11 @@ export default function PointsTab() {
       {/* content */}
       <div className="flex min-h-[480px] w-full rounded-b-2xl bg-white px-[47px] py-6 max-md:h-auto max-md:min-h-[534px] max-md:flex-col-reverse max-md:px-4.5 max-md:pt-0">
         <div className="flex-1 p-6 max-md:p-0">
-          <span className="font-montserrat text-xl font-bold text-[#7D5FFF] max-md:text-lg max-md:leading-none">
+          {/* <span className="font-montserrat text-xl font-bold text-[#7D5FFF] max-md:text-lg max-md:leading-none">
             {currentDetail.subTitle}
-          </span>
+          </span> */}
           <div className="border-b-2 border-dashed pb-6 max-md:pb-4">
-            <p className="mt-4 whitespace-pre-line text-4xl font-extrabold leading-[120%] max-md:mt-2 max-md:text-2xl">
+            <p className="mt-4 whitespace-pre-line text-3xl font-extrabold leading-[120%] max-md:mt-2 max-md:text-2xl">
               {currentDetail.title}
             </p>
           </div>

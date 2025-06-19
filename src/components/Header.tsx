@@ -6,6 +6,7 @@ import { useState } from 'react';
 import BubbleRightTail from './common/bubble/BubbleRightTail';
 import TrialLessonModal from './TrialLessonModal';
 import BubbleTopTail from './common/bubble/BubbleTopTail';
+import Image from 'next/image';
 
 export default function Header() {
   const pathName = usePathname();
@@ -28,7 +29,13 @@ export default function Header() {
     <header className="flex-center sticky top-0 z-20 min-h-[70px] bg-white px-4 py-4">
       <div className="flex w-full items-center gap-12">
         <Link href="/">
-          <img src="/images/logo.svg" alt="logo" className="min-w-20" />
+          <Image
+            src="/images/logo.svg"
+            alt="logo"
+            className="min-w-20"
+            width={80}
+            height={24}
+          />
         </Link>
 
         <div className="flex w-full items-center justify-between">
@@ -116,10 +123,12 @@ export default function Header() {
           />
           <div className="drawer-content">
             <label htmlFor="hamburger-menu">
-              <img
+              <Image
                 alt="mobile hamburger menu icon"
                 src="/icons/mobile-menu.svg"
                 className="cursor-pointer"
+                width={32}
+                height={32}
               />
             </label>
           </div>
@@ -128,18 +137,20 @@ export default function Header() {
               htmlFor="hamburger-menu"
               aria-label="close sidebar"
               className="drawer-overlay"
-            ></label>
+            />
             <ul className="menu min-h-full w-80 bg-white p-4 text-base-content">
               {/* 헤더 */}
               <li>
                 <div className="flex justify-between hover:bg-white">
                   <Link href="/">
-                    <img src="/images/logo.svg" alt="logo" />
+                    <Image src="/images/logo.svg" alt="logo" width={80} height={24} />
                   </Link>
-                  <img
+                  <Image
                     alt="x icon"
                     src="/icons/x-btn.svg"
                     onClick={() => closeDrawer()}
+                    width={32}
+                    height={32}
                   />
                 </div>
               </li>

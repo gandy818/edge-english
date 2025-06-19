@@ -1,6 +1,7 @@
 'use client';
 
 import { BookType } from '@/types/BookType';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 interface FilterProps {
@@ -57,10 +58,12 @@ export default function BookList({ bookList }: FilterProps) {
         {filteredBookList.map((item, idx) => (
           <div key={idx} className="gap-16 rounded-lg border p-10 max-md:p-4.5 md:flex">
             <div className="flex flex-1 gap-6">
-              <img
+              <Image
                 src={item.img}
                 alt={item.title}
                 className="h-[200px] w-[140px] flex-shrink-0 rounded-lg object-cover"
+                width={140}
+                height={200}
               />
 
               {/* 책 설명 */}

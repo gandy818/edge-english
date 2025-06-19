@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -32,10 +33,11 @@ export default function FloatingMenu() {
           className="rounded-full border-2 border-white bg-[#FFEB3B] p-[11px]"
           style={{ boxShadow: '0px 0px 10px 0px rgba(0, 0, 0, 0.11)' }}
         >
-          <img
+          <Image
             src="/icons/floating/kakao-btn.svg"
             alt="kakao channel button"
-            className="h-6 w-6"
+            width={24}
+            height={24}
           />
         </Link>
 
@@ -45,10 +47,11 @@ export default function FloatingMenu() {
           className="rounded-full border border-[#F3F3F3] bg-white p-[11px]"
           style={{ boxShadow: '0px 0px 10px 0px rgba(0, 0, 0, 0.11)' }}
         >
-          <img
+          <Image
             src="/icons/floating/top-btn.svg"
             alt="move to top button"
-            className="h-6 w-6"
+            width={24}
+            height={24}
           />
         </button>
       </div>

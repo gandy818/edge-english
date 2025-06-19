@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import ScrollContainer from 'react-indiana-drag-scroll';
 import rawNoticeList from '@/data/notices.json';
+import Image from 'next/image';
 
 export default function NoticePage() {
   const router = useRouter();
@@ -105,7 +106,12 @@ export default function NoticePage() {
                   <td className="flex-center">
                     {notice.isPinned ? (
                       <p className="flex w-fit gap-1 rounded-full bg-edge-purple px-4 py-2 font-semibold text-white">
-                        <img src="/icons/notice/pin.svg" alt="white pin" />
+                        <Image
+                          src="/icons/notice/pin.svg"
+                          alt="white pin"
+                          width={16}
+                          height={16}
+                        />
                         중요
                       </p>
                     ) : (
@@ -141,7 +147,12 @@ export default function NoticePage() {
                 {notice.isPinned ? (
                   <div className="flex items-center gap-2">
                     <p className="flex w-fit gap-1 rounded-full bg-edge-purple px-4 py-2 text-sm font-semibold text-white max-md:px-3">
-                      <img src="/icons/notice/pin.svg" alt="white pin" />
+                      <Image
+                        src="/icons/notice/pin.svg"
+                        alt="white pin"
+                        width={16}
+                        height={16}
+                      />
                       중요
                     </p>
                     <p className="font-medium">공지사항</p>

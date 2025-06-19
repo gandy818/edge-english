@@ -157,7 +157,7 @@ export default function Home() {
 
         {/* 탠저린쌤 */}
         <div className="flex-center mt-6">
-          <img
+          <Image
             src="/images/main/mobile-shorts-bg.png"
             alt="탠저린샘"
             width={184}
@@ -606,7 +606,7 @@ export default function Home() {
         style={{ background: 'linear-gradient(115deg, #F3F6F8 0%, #D9D0FF 100%)' }}
       >
         <div>
-          <img
+          <Image
             className="mx-auto justify-self-center"
             src="/icons/main/check.svg"
             alt="보라색 체크 표시 아이콘"

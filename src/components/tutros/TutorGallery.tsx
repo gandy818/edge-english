@@ -51,7 +51,12 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
             />
 
             <div className="flex flex-row items-center justify-center pt-6">
-              <img src={tutor.countryImg} alt="tutor's contry image" />
+              <Image
+                src={tutor.countryImg}
+                alt="tutor's contry image"
+                width={32}
+                height={22}
+              />
               <p className="pl-2 font-montserrat text-2xl font-bold">{tutor.name}</p>
             </div>
             <p className="mt-2 self-center text-center font-bold">{tutor.desc}</p>
@@ -59,7 +64,7 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
               {tutor.tags.map((tag) => (
                 <div
                   key={tag}
-                  className="rounded-lg bg-edge-purple bg-opacity-10 px-3 py-2 text-xs font-semibold text-[#5542A5]"
+                  className="rounded-lg bg-edge-purple bg-opacity-10 px-2 py-1 text-[11px] font-semibold text-[#5542A5]"
                 >
                   #{tag}
                 </div>
@@ -88,7 +93,7 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
                 }}
                 className="focus-visible:outline-none"
               >
-                <img src="/icons/x-btn.svg" alt="x-button" />
+                <Image src="/icons/x-btn.svg" alt="x-button" width={32} height={32} />
               </button>
             </div>
             <div className="scrollbar-hide mx-6 mb-10 max-h-[75vh] overflow-y-auto max-md:max-h-[87vh]">
@@ -115,7 +120,12 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
                   )}
                   <div className="flex flex-row items-center justify-center pt-6">
                     {selectedTutor?.countryImg && (
-                      <img src={selectedTutor?.countryImg} alt="x button" />
+                      <Image
+                        src={selectedTutor?.countryImg}
+                        alt="tutor's contry image"
+                        width={32}
+                        height={22}
+                      />
                     )}
                     <p className="pl-2 font-montserrat text-2xl font-bold">
                       {selectedTutor?.name}
