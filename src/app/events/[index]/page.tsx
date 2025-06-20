@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import rawEventList from '@/data/events.json';
+import Image from 'next/image';
 
 export default function EventDetailPage() {
   const param = useParams();
@@ -35,9 +36,20 @@ export default function EventDetailPage() {
       </div>
 
       {/* 본문 */}
-      <pre className="border-t border-[#A4A4A4] py-16 font-pretendard">
-        {event?.content}
-      </pre>
+      {event && (
+        <div className="border-t border-[#A4A4A4] py-16 font-pretendard max-md:py-8">
+          <div
+            className="prose max-w-none"
+            dangerouslySetInnerHTML={{ __html: event.content }}
+          />
+        </div>
+      )}
+
+      {event?.img && (
+        <div className="relative mx-auto mb-32 aspect-[2/3] w-full max-w-[500px] max-md:mb-16">
+          <Image src={event.img} alt="event image" fill />
+        </div>
+      )}
 
       {/* 이전글, 다음글 */}
       <div className="flex flex-col border-b border-t">

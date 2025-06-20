@@ -7,4 +7,5 @@ export interface PostType {
   writer: string;
   content: string;
   isPinned?: boolean;
+  img?: string;
 }
