@@ -61,7 +61,7 @@ export default function BookList({ bookList }: FilterProps) {
               <Image
                 src={item.img}
                 alt={item.title}
-                className="h-[200px] w-[140px] flex-shrink-0 rounded-lg object-cover"
+                className="h-[200px] w-[140px] flex-shrink-0 rounded-lg border object-cover"
                 width={140}
                 height={200}
               />
