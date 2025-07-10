@@ -46,7 +46,7 @@ export default function EventDetailPage() {
       )}
 
       {event?.img && (
-        <div className="relative mx-auto mb-32 aspect-[2/3] w-full max-w-[500px] max-md:mb-16">
+        <div className="relative mb-32 aspect-[3240/4500] w-full max-w-[500px] max-md:mb-16">
           <Image src={event.img} alt="event image" fill />
         </div>
       )}
