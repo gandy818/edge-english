@@ -1,7 +1,7 @@
 [
   {
     "name": "Grace",
-    "desc": "금융학을 전공한, 한국인 영어 티칭 경력이 풍부한 미국인 튜터",
+    "desc": "금융학을 전공한, 한국인 영어 티칭 경력이 \n 풍부한 미국인 튜터",
     "tags": ["TEFL", "금융학전공", "간호대학원재학"],
     "img": "/images/tutor/data/grace_main.jpg",
     "countryImg": "/icons/tutor/usa.svg",
@@ -14,7 +14,7 @@
   },
   {
     "name": "Amanda",
-    "desc": "5년 이상 온라인 수업 경력의 TEFL & TESOL 보유 튜터",
+    "desc": "5년 경력 온라인 수업 진행한 TEFL & TESOL 자격증 보유 튜터",
     "tags": ["TEFL", "TESOL", "HR전공", "비즈니스영어전문", "리딩특화"],
     "img": "/images/tutor/data/amanda_main.JPG",
     "countryImg": "/icons/tutor/usa.svg",

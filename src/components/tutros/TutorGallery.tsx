@@ -59,7 +59,7 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
               />
               <p className="pl-2 font-montserrat text-2xl font-bold">{tutor.name}</p>
             </div>
-            <p className="mt-2 self-center text-center font-bold">{tutor.desc}</p>
+            <p className="mt-2 self-center text-center font-bold whitespace-pre-line">{tutor.desc}</p>
             <div className="mt-4 flex flex-wrap justify-center gap-1">
               {tutor.tags.map((tag) => (
                 <div
