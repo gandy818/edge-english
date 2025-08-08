@@ -1,7 +1,6 @@
 'use client';
 
 import { TutorType } from '@/types/TutorType';
-import Image from 'next/image';
 import { useState } from 'react';
 
 export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) {
@@ -42,7 +41,7 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
             className="flex w-72 cursor-pointer flex-col justify-start"
             onClick={() => openTutorModal(tutor.name)}
           >
-            <Image
+            <img
               className="aspect-[4/5] w-full rounded-2xl object-cover"
               src={tutor.img}
               alt={tutor.name}
@@ -51,7 +50,7 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
             />
 
             <div className="flex flex-row items-center justify-center pt-6">
-              <Image
+              <img
                 src={tutor.countryImg}
                 alt="tutor's contry image"
                 width={32}
@@ -59,7 +58,9 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
               />
               <p className="pl-2 font-montserrat text-2xl font-bold">{tutor.name}</p>
             </div>
-            <p className="mt-2 self-center text-center font-bold whitespace-pre-line">{tutor.desc}</p>
+            <p className="mt-2 self-center whitespace-pre-line text-center font-bold">
+              {tutor.desc}
+            </p>
             <div className="mt-4 flex flex-wrap justify-center gap-1">
               {tutor.tags.map((tag) => (
                 <div
@@ -93,7 +94,7 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
                 }}
                 className="focus-visible:outline-none"
               >
-                <Image src="/icons/x-btn.svg" alt="x-button" width={32} height={32} />
+                <img src="/icons/x-btn.svg" alt="x-button" width={32} height={32} />
               </button>
             </div>
             <div className="scrollbar-hide mx-6 mb-10 max-h-[75vh] overflow-y-auto max-md:max-h-[87vh]">
@@ -110,7 +111,7 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
                 {/* 프로필 */}
                 <div className="relative flex h-67 w-54 flex-col max-md:h-auto max-md:w-full">
                   {selectedTutor?.popupImg && (
-                    <Image
+                    <img
                       className="aspect-[4/5] w-full rounded-2xl"
                       src={selectedTutor?.popupImg}
                       alt={selectedTutor?.name}
@@ -120,7 +121,7 @@ export default function TutorGallery({ tutorList }: { tutorList: TutorType[] }) 
                   )}
                   <div className="flex flex-row items-center justify-center pt-6">
                     {selectedTutor?.countryImg && (
-                      <Image
+                      <img
                         src={selectedTutor?.countryImg}
                         alt="tutor's contry image"
                         width={32}

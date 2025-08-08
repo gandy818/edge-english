@@ -6,7 +6,6 @@ import { useState } from 'react';
 import BubbleRightTail from './common/bubble/BubbleRightTail';
 import TrialLessonModal from './TrialLessonModal';
 import BubbleTopTail from './common/bubble/BubbleTopTail';
-import Image from 'next/image';
 
 export default function Header() {
   const pathName = usePathname();
@@ -29,7 +28,7 @@ export default function Header() {
     <header className="flex-center sticky top-0 z-20 min-h-[70px] bg-white px-4 py-4">
       <div className="flex w-full items-center gap-12">
         <Link href="/">
-          <Image
+          <img
             src="/images/logo.svg"
             alt="logo"
             className="min-w-20"
@@ -123,7 +122,7 @@ export default function Header() {
           />
           <div className="drawer-content">
             <label htmlFor="hamburger-menu">
-              <Image
+              <img
                 alt="mobile hamburger menu icon"
                 src="/icons/mobile-menu.svg"
                 className="cursor-pointer"
@@ -143,9 +142,9 @@ export default function Header() {
               <li>
                 <div className="flex justify-between hover:bg-white">
                   <Link href="/">
-                    <Image src="/images/logo.svg" alt="logo" width={80} height={24} />
+                    <img src="/images/logo.svg" alt="logo" width={80} height={24} />
                   </Link>
-                  <Image
+                  <img
                     alt="x icon"
                     src="/icons/x-btn.svg"
                     onClick={() => closeDrawer()}

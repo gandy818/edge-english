@@ -1,7 +1,6 @@
 import { BookType } from '@/types/BookType';
 import BookList from '../../components/books/BookList';
 import rawBookList from '@/data/books.json';
-import Image from 'next/image';
 
 const LEVEL_LIST = [
   {
@@ -48,7 +47,7 @@ export default async function BooksPage() {
               {LEVEL_LIST.map((item, idx) => (
                 <div className="rounded border bg-white px-6 py-4" key={idx}>
                   <div className="items-center gap-2 break-words text-lg font-semibold md:flex">
-                    <Image
+                    <img
                       src={`/icons/books/${item.simbol}.png`}
                       alt={`${item.simbol} icon`}
                       width={32}

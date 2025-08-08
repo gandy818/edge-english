@@ -1,6 +1,5 @@
 import RealReviews from '@/components/main/RealReviews';
 import PointsTab from '@/components/main/DetailPointTab';
-import Image from 'next/image';
 import MobileShortsSwiper from '@/components/main/MobileShortsSwiper';
 import Link from 'next/link';
 import Bubble from '@/components/common/bubble/Bubble';
@@ -10,7 +9,7 @@ export default function Home() {
     <div>
       {/* 섹션 1 */}
       <div className="mx-auto mb-[120px] mt-15 w-fit self-center px-4.5 max-md:mb-20 max-md:mt-10">
-        <Image
+        <img
           src="/images/main/memoji.png"
           alt="memoji"
           width={304}
@@ -46,7 +45,7 @@ export default function Home() {
                 1:1 미국 · 캐나다{' '}
               </h1>
               <div className="aspect-[109/57] w-[109px] max-lg:w-[70px]">
-                <Image
+                <img
                   src="/images/main/flag.png"
                   alt="usa and canaga flags"
                   width={109}
@@ -121,7 +120,7 @@ export default function Home() {
             </div>
 
             <div className="aspect-[404/788]">
-              <Image
+              <img
                 src="/images/main/shorts-bg.png"
                 alt="탠저린샘"
                 width={404}
@@ -157,7 +156,7 @@ export default function Home() {
 
         {/* 탠저린쌤 */}
         <div className="flex-center mt-6">
-          <Image
+          <img
             src="/images/main/mobile-shorts-bg.png"
             alt="탠저린샘"
             width={184}
@@ -200,7 +199,7 @@ export default function Home() {
         style={{ background: 'linear-gradient(115deg, #F3F6F8 0%, #D9D0FF 100%)' }}
       >
         <div>
-          <Image
+          <img
             className="mx-auto justify-self-center"
             src="/icons/main/check.svg"
             alt="보라색 체크 표시 아이콘"
@@ -257,7 +256,7 @@ export default function Home() {
 
           {/* arrow */}
           <div className="px-6 max-lg:px-1 max-md:hidden">
-            <Image
+            <img
               src={'/icons/main/yellow-right-arrow.svg'}
               width={24}
               height={24}
@@ -282,7 +281,7 @@ export default function Home() {
 
           {/* arrow */}
           <div className="px-6 max-lg:px-1 max-md:hidden">
-            <Image
+            <img
               src={'/icons/main/yellow-right-arrow.svg'}
               width={24}
               height={24}
@@ -305,7 +304,7 @@ export default function Home() {
 
           {/* arrow */}
           <div className="px-6 max-lg:px-1 max-md:hidden">
-            <Image
+            <img
               src={'/icons/main/yellow-right-arrow.svg'}
               width={24}
               height={24}
@@ -346,7 +345,7 @@ export default function Home() {
           <div className="mt-10 flex flex-col gap-4 px-15 max-md:px-2">
             {/* 말풍선 01 */}
             <div className="flex gap-2">
-              <Image
+              <img
                 src={'/icons/main/student01.png'}
                 alt="student 1 memoji"
                 width={96}
@@ -369,7 +368,7 @@ export default function Home() {
                   달라요!
                 </div>
               </div>
-              <Image
+              <img
                 src={'/icons/main/tutor01.png'}
                 alt="tutor memoji"
                 width={96}
@@ -380,7 +379,7 @@ export default function Home() {
 
             {/* 말풍선 02 */}
             <div className="flex gap-2">
-              <Image
+              <img
                 src={'/icons/main/student02.png'}
                 alt="student 2 memoji"
                 width={96}
@@ -402,7 +401,7 @@ export default function Home() {
                   만나도 북미식 발음을 배울 수 있어요.
                 </div>
               </div>
-              <Image
+              <img
                 src={'/icons/main/tutor01.png'}
                 alt="tutor memoji"
                 width={96}
@@ -413,7 +412,7 @@ export default function Home() {
 
             {/* 말풍선 03 */}
             <div className="flex gap-2">
-              <Image
+              <img
                 src={'/icons/main/student033.png'}
                 alt="student 3 memoji"
                 width={96}
@@ -436,7 +435,7 @@ export default function Home() {
                   채용합니다.
                 </div>
               </div>
-              <Image
+              <img
                 src={'/icons/main/tutor01.png'}
                 alt="tutor memoji"
                 width={96}
@@ -447,7 +446,7 @@ export default function Home() {
 
             {/* 말풍선 04 */}
             <div className="flex gap-2">
-              <Image
+              <img
                 src={'/icons/main/student04.png'}
                 alt="student 4 memoji"
                 width={96}
@@ -470,7 +469,7 @@ export default function Home() {
                   있어요!
                 </div>
               </div>
-              <Image
+              <img
                 src={'/icons/main/tutor01.png'}
                 alt="tutor memoji"
                 width={96}
@@ -559,7 +558,7 @@ export default function Home() {
             </div>
 
             <div className="flex-center flex-1 max-md:mt-10">
-              <Image
+              <img
                 src={'/images/main/point01.png'}
                 alt="point 01"
                 width={580}
@@ -589,7 +588,7 @@ export default function Home() {
             </div>
 
             <div className="flex-center flex-1 max-md:mt-10">
-              <Image
+              <img
                 src={'/images/main/point02.png'}
                 alt="point 02"
                 width={580}
@@ -616,7 +615,7 @@ export default function Home() {
             </div>
 
             <div className="flex-center flex-1 max-md:mt-10">
-              <Image
+              <img
                 src={'/images/main/point03.png'}
                 alt="point 03"
                 width={580}
