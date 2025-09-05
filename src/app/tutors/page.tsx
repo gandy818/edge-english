@@ -1,9 +1,11 @@
+'use client';
+
 import TutorGallery from '@/components/tutros/TutorGallery';
 import { TutorType } from '@/types/TutorType';
 import Link from 'next/link';
 import rawTutorList from '@/data/tutors.json';
 
-export default async function TutorPage() {
+export default function TutorPage() {
   const tutorList: TutorType[] = rawTutorList;
 
   return (

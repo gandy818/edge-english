@@ -1,3 +1,5 @@
+'use client';
+
 import { BookType } from '@/types/BookType';
 import BookList from '../../components/books/BookList';
 import rawBookList from '@/data/books.json';
@@ -25,7 +27,7 @@ const LEVEL_LIST = [
   },
 ];
 
-export default async function BooksPage() {
+export default function BooksPage() {
   const bookList = rawBookList as BookType[];
 
   return (
