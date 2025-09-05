@@ -1,3 +1,5 @@
+'use client';
+
 import RealReviews from '@/components/main/RealReviews';
 import PointsTab from '@/components/main/DetailPointTab';
 import MobileShortsSwiper from '@/components/main/MobileShortsSwiper';
