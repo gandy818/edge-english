@@ -1,10 +1,11 @@
+'use client';
+
 import TutorGallery from '@/components/tutros/TutorGallery';
 import { TutorType } from '@/types/TutorType';
 import Link from 'next/link';
 import rawTutorList from '@/data/tutors.json';
-import Image from 'next/image';
 
-export default async function TutorPage() {
+export default function TutorPage() {
   const tutorList: TutorType[] = rawTutorList;
 
   return (
@@ -30,7 +31,7 @@ export default async function TutorPage() {
               target="_blank"
               className="mb-15 mt-10 flex flex-row justify-center rounded-lg bg-[#FFEB3B] px-[40px] py-[16px]"
             >
-              <Image
+              <img
                 src="/icons/floating/kakao-btn.svg"
                 alt="kakao channel button"
                 className="h-6 w-6"

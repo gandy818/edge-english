@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import TextDivider from './TextDivider';
-import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -8,7 +7,7 @@ export default function Footer() {
       <div className="w-full max-w-[1200px]">
         {/* 로고 */}
         {/* <Link href="/" className="inline-block">
-          <Image src="/images/logo.svg" alt="logo" width={80} height={24} />
+          <img src="/images/logo.svg" alt="logo" width={80} height={24} />
         </Link> */}
 
         <p className="text-edge-gray">탠저린 영어</p>
@@ -85,10 +84,10 @@ export default function Footer() {
         {/* sns */}
         <div className="mt-8 flex gap-3">
           <Link href="https://pf.kakao.com/_blxgib" target="_blank">
-            <Image src="/icons/footer/kakao.svg" alt="kakao" width={40} height={40} />
+            <img src="/icons/footer/kakao.svg" alt="kakao" width={40} height={40} />
           </Link>
           <Link href="https://www.instagram.com/tangerine_english_" target="_blank">
-            <Image
+            <img
               src="/icons/footer/instagram.svg"
               alt="instagram"
               width={40}
@@ -96,7 +95,7 @@ export default function Footer() {
             />
           </Link>
           <Link href="/">
-            <Image src="/icons/footer/youtube.svg" alt="youtube" width={40} height={40} />
+            <img src="/icons/footer/youtube.svg" alt="youtube" width={40} height={40} />
           </Link>
         </div>
       </div>

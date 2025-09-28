@@ -63,7 +63,7 @@ export default function FaqPage() {
         {/* drawer 위로 올라오지 않게 하기 위해 relatvie와 z-index 추가 */}
 
         {/* ------ */}
-        {filteredFaqList.map((faq, index) => {
+        {filteredFaqList.map((faq) => {
           return (
             <div
               className={`collapse collapse-arrow rounded-none border-b`}

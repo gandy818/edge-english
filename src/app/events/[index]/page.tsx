@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import rawEventList from '@/data/events.json';
-import Image from 'next/image';
 
 export default function EventDetailPage() {
   const param = useParams();
@@ -47,7 +46,7 @@ export default function EventDetailPage() {
 
       {event?.img && (
         <div className="relative mb-32 aspect-[3240/4500] w-full max-w-[500px] max-md:mb-16">
-          <Image src={event.img} alt="event image" fill />
+          <img src={event.img} alt="event image" />
         </div>
       )}
 
