@@ -466,9 +466,8 @@ export default function Home() {
             <div className="flex gap-2">
               <div className="chat chat-end flex-1">
                 <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-xl font-semibold text-[#333] shadow-lg max-md:text-sm">
-                  수업에서 배운 내용을 놓치지 않도록, 모든 수업 후 복습 노트를 제공합니다.{' '}
-                  <br /> 중요한 표현을 다시 확인하고, 배운 영어를 확실히 내 것으로 만들 수
-                  있어요!
+                  원하는 경우 수업을 녹화해 두고 언제든 다시 보며 복습할 수 있어요.{' '}
+                  <br /> 놓친 부분도 확인하고 중요한 표현을 확실히 내 것으로 만들 수 있습니다.
                 </div>
               </div>
               <img

@@ -68,20 +68,20 @@ const EDGE_DETAILS = [
   },
   {
     index: 4,
-    subTitle: '개별 수업 노트',
-    title: '수업 노트 개별 제공',
+    subTitle: '수업 녹화 가능',
+    title: '언제든 다시 볼 수 있는 수업',
     contents: (
       <>
         <p className="text-2xl font-medium max-md:text-base">
-          튜터가 매 수업 후 정리해주는 노트로{' '}
+          엣지영어의 모든 수업은 학생이 직접 녹화할 수 있어요.{' '}
           <span className="md:hidden">
             <br />
           </span>
-          복습은 물론,{' '}
+          복습을 통해,{' '}
           <span className="max-md:hidden">
             <br />
           </span>
-          놓친 부분도 다시 확인할 수 있어요.
+          배운 내용을 더 오래 기억할 수 있어요.
         </p>
       </>
     ),
