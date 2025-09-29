@@ -35,20 +35,32 @@ export default function EventDetailPage() {
       </div>
 
       {/* 본문 */}
-      {event && (
-        <div className="border-t border-[#A4A4A4] py-16 font-pretendard max-md:py-8">
-          <div
-            className="prose max-w-none"
-            dangerouslySetInnerHTML={{ __html: event.content }}
-          />
-        </div>
-      )}
+      <div className="mb-32">
+        {event && (
+          <div className="border-t border-[#A4A4A4] py-16 font-pretendard max-md:py-8">
+            <div
+              className="prose max-w-none"
+              dangerouslySetInnerHTML={{ __html: event.content }}
+            />
+          </div>
+        )}
 
-      {event?.img && (
-        <div className="relative mb-32 aspect-[3240/4500] w-full max-w-[500px] max-md:mb-16">
-          <img src={event.img} alt="event image" />
-        </div>
-      )}
+        {event?.img && (
+          <div className="relative aspect-[3240/4500] w-full max-w-[500px] max-md:mb-16">
+            <img src={event.img} alt="event image" />
+          </div>
+        )}
+
+        {/* 두번째 단락이 있는 경우*/}
+        {event?.content2 && (
+          <div className="border-[#A4A4A4] pt-16 font-pretendard max-md:py-8">
+            <div
+              className="prose max-w-none"
+              dangerouslySetInnerHTML={{ __html: event.content2 }}
+            />
+          </div>
+        )}
+      </div>
 
       {/* 이전글, 다음글 */}
       <div className="flex flex-col border-b border-t">
