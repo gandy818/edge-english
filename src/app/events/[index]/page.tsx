@@ -35,7 +35,7 @@ export default function EventDetailPage() {
       </div>
 
       {/* 본문 */}
-      <div className="mb-4 md:mb-32">
+      <div className="mb-16 md:mb-32">
         {event && (
           <div className="border-t border-[#A4A4A4] py-16 font-pretendard max-md:py-8">
             <div
@@ -59,7 +59,7 @@ export default function EventDetailPage() {
 
         {/* 두번째 단락이 있는 경우*/}
         {event?.content2 && (
-          <div className="border-[#A4A4A4] pt-16 font-pretendard max-md:py-8">
+          <div className="border-[#A4A4A4] pt-16 font-pretendard max-md:pt-8">
             <div
               className="prose max-w-none"
               dangerouslySetInnerHTML={{ __html: event.content2 }}
