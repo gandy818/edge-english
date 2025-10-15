@@ -46,8 +46,18 @@ export default function EventDetailPage() {
         )}
 
         {event?.img && (
-          <div className="relative aspect-[3240/4500] w-full max-w-[500px] max-md:mb-16">
+          <div
+            className={`relative aspect-[3240/4500] w-full max-w-[500px] ${
+              event?.img2 ? '' : 'max-md:mb-16'
+            }`}
+          >
             <img src={event.img} alt="event image" />
+          </div>
+        )}
+
+        {event?.img2 && (
+          <div className="relative mt-4 aspect-[3240/4500] w-full max-w-[500px] max-md:mb-16">
+            <img src={event.img2} alt="event image" />
           </div>
         )}
 

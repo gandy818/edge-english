@@ -8,5 +8,6 @@ export interface PostType {
   content: string;
   isPinned?: boolean;
   img?: string;
+  img2?: string;
   content2?: string;
 }
