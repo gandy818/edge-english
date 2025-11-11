@@ -247,10 +247,10 @@ export default function Home() {
               </span>
               <div>
                 <p className="text-xl font-bold max-lg:tracking-[-0.8px] max-md:text-base">
-                  수강 신청서 제출
+                  수강 신청 및 결제
                 </p>
                 <p className="h-11 text-sm text-edge-gray max-md:text-xs">
-                  (신청 먼저, 결제는 나중에 할 수 있어요)
+
                 </p>
               </div>
             </div>
@@ -273,9 +273,9 @@ export default function Home() {
                 STEP 02
               </span>
               <div>
-                <p className="text-xl font-bold max-md:text-base">수강 안내</p>
+                <p className="text-xl font-bold max-md:text-base">튜터 매칭 및<br />수강 안내</p>
                 <p className="h-11 text-sm text-edge-gray max-md:text-xs">
-                  (강사&교재 매칭)
+                  (최대 3일 소요)
                 </p>
               </div>
             </div>
@@ -298,7 +298,7 @@ export default function Home() {
                 STEP 03
               </span>
               <div>
-                <p className="text-xl font-bold max-md:text-base">결제</p>
+                <p className="text-xl font-bold max-md:text-base">수업 시작🎉</p>
                 <p className="h-11 text-sm text-edge-gray max-md:text-xs"></p>
               </div>
             </div>
