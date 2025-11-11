@@ -249,9 +249,7 @@ export default function Home() {
                 <p className="text-xl font-bold max-lg:tracking-[-0.8px] max-md:text-base">
                   수강 신청 및 결제
                 </p>
-                <p className="h-11 text-sm text-edge-gray max-md:text-xs">
-
-                </p>
+                <p className="h-11 text-sm text-edge-gray max-md:text-xs"></p>
               </div>
             </div>
           </div>
@@ -273,7 +271,10 @@ export default function Home() {
                 STEP 02
               </span>
               <div>
-                <p className="text-xl font-bold max-md:text-base">튜터 매칭 및<br />수강 안내</p>
+                <p className="text-xl font-bold max-md:text-base">
+                  튜터 매칭 및<br />
+                  수강 안내
+                </p>
                 <p className="h-11 text-sm text-edge-gray max-md:text-xs">
                   (최대 3일 소요)
                 </p>
@@ -305,17 +306,17 @@ export default function Home() {
           </div>
 
           {/* arrow */}
-          <div className="px-6 max-lg:px-1 max-md:hidden">
+          {/* <div className="px-6 max-lg:px-1 max-md:hidden">
             <img
               src={'/icons/main/yellow-right-arrow.svg'}
               width={24}
               height={24}
               alt="yellow-right-arrow.svg"
             />
-          </div>
+          </div> */}
 
           {/* step 04 */}
-          <div className="w-fit rounded-3xl border border-dashed border-edge-yellow p-1">
+          {/* <div className="w-fit rounded-3xl border border-dashed border-edge-yellow p-1">
             <div className="flex aspect-square h-48 flex-col items-center justify-center gap-4 rounded-3xl bg-[#FFD4011A] p-6 max-lg:h-40 max-lg:p-2 max-md:h-33 max-md:p-4">
               <span className="badge border-none bg-[#AA96FF] p-2 font-montserrat text-xs font-medium text-white">
                 STEP 04
@@ -325,7 +326,7 @@ export default function Home() {
                 <p className="h-11 text-sm text-edge-gray max-md:text-xs"></p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -466,8 +467,8 @@ export default function Home() {
             <div className="flex gap-2">
               <div className="chat chat-end flex-1">
                 <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-xl font-semibold text-[#333] shadow-lg max-md:text-sm">
-                  원하는 경우 수업을 녹화해 두고 언제든 다시 보며 복습할 수 있어요.{' '}
-                  <br /> 놓친 부분도 확인하고 중요한 표현을 확실히 내 것으로 만들 수 있습니다.
+                  원하는 경우 수업을 녹화해 두고 언제든 다시 보며 복습할 수 있어요. <br />{' '}
+                  놓친 부분도 확인하고 중요한 표현을 확실히 내 것으로 만들 수 있습니다.
                 </div>
               </div>
               <img
