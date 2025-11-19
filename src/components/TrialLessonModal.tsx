@@ -35,7 +35,7 @@ export default function TrialLessonModal() {
           💡&quot;체험이 아닌, 진짜 수업으로 시작하세요&quot;💡
         </p>
         <Link
-          href="https://forms.gle/rkvoS9ut3a5eSe659"
+          href="https://forms.gle/arWZ6uzK3BFgaxM39"
           target="_blank"
           className="btn mt-12 w-full rounded-lg border-none bg-edge-gray py-6 text-sm font-semibold text-white"
         >

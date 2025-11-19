@@ -94,7 +94,7 @@ export default function Header() {
             </div>
 
             <Link
-              href="https://forms.gle/rkvoS9ut3a5eSe659"
+              href="https://forms.gle/arWZ6uzK3BFgaxM39"
               target="_blank"
               className="btn rounded-lg border-none bg-edge-yellow text-sm font-semibold text-[#333]"
             >
@@ -216,7 +216,7 @@ export default function Header() {
 
               <li className="flex flex-row gap-2 py-8">
                 <Link
-                  href="https://forms.gle/rkvoS9ut3a5eSe659"
+                  href="https://forms.gle/arWZ6uzK3BFgaxM39"
                   target="_blank"
                   className="btn flex-1 rounded-lg border-none bg-edge-yellow text-sm font-semibold text-[#333]"
                 >

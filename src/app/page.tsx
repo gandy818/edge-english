@@ -653,7 +653,7 @@ export default function Home() {
             />
 
             <Link
-              href="https://forms.gle/rkvoS9ut3a5eSe659"
+              href="https://forms.gle/arWZ6uzK3BFgaxM39"
               target="_blank"
               className="btn mx-auto mt-12 h-14 w-50 rounded-lg border-none bg-[#4A4A4A] px-14 py-5 font-bold text-white"
             >
