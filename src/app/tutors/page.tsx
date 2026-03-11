@@ -15,7 +15,7 @@ export default function TutorPage() {
         <>
           <div className="flex flex-wrap justify-center text-4xl font-bold leading-[150%] max-md:flex-col max-md:text-[32px]">
             <p className="self-center md:pr-4">TESOL/TEFL을 보유한</p>
-            <p className="self-center text-edge-purple md:pr-4">100% 미국·캐나다</p>
+            <p className="self-center text-edge-purple md:pr-4">100% 미국·캐나다·호주</p>
             <p className="self-center">원어민 강사진</p>
           </div>
           <div className="mt-6 flex justify-center">

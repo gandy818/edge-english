@@ -400,8 +400,8 @@ export default function Home() {
             <div className="flex gap-2">
               <div className="chat chat-end flex-1">
                 <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-xl font-semibold text-[#333] shadow-lg max-md:text-sm">
-                  엣지영어 강사는 100% 미국·캐나다 출신 원어민으로, <br /> 어느 튜터를
-                  만나도 북미식 발음을 배울 수 있어요.
+                  엣지영어 강사는 100% 미국·캐나다·호주 출신 원어민으로, <br /> 어느 튜터를
+                  만나도 깨끗한 원어민 발음을 배울 수 있어요.
                 </div>
               </div>
               <img
