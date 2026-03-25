@@ -18,7 +18,7 @@
     "tags": ["미국식발음티칭", "TESOL보유", "심리학전공", "아시아거주", "편안한분위기"],
     "img": "/images/tutor/data/kai_main.jpeg",
     "countryImg": "/icons/tutor/usa.svg",
-    "popupImg": "/images/tutor/data/kai_popup.jpeg",
+    "popupImg": "/images/tutor/data/kai_popup.jpg",
     "introduce1": "Kai 강사님은 자연스러운 미국식 영어표현을 잘 알려주시고, 재밌게 수업을 진행해주셔서 배정 문의가 정말 많은 강사님이세요. 현재 대만에 거주 중이셔서 아시아 문화에 익숙하시고, 또 중국어를 배우고 계셔서 외국어를 배울 때 어떤 부분에서 학생들이 어려움을 느끼는지도 잘 캐치 한다는 큰 장점이 있어요:)",
     "introduce2": "Hello, my name is Malakai. I'm currently living in Taiwan, but I am from Pennsylvania, United States, which is on the east coast of the US. I've been tutoring English for roughly 5 years now. And one of my favorite things about tutoring English is to be able to meet people from different cultures and customs and to be able to talk to them and stuff like that. And in my free time, I enjoy traveling. My favorite country I've been to would probably be Greece. The UK would be a close second. My other favorite things to do are watching movies. My favorite movie being Wall-E and also listening to music. I usually listen to rock, maybe some pop and also some hip-hop. But yeah, thank you for taking the time to watch this and I hope to see you soon.",
     "hobbys": "",
@@ -52,16 +52,16 @@
     "videoUrl": "https://www.youtube.com/embed/6lugXjk9HDo"
   },
   {
-    "name": "Caroline",
-    "desc": "심리학 전공의 미국 국제학교 초등교사 출신 튜터",
-    "tags": ["심리학전공", "미국교사자격증", "국제학교초등교사"],
-    "img": "/images/tutor/data/caroline_main.jpg",
+    "name": "Leslie(레슬리)",
+    "desc": "국제학 전공의 홍콩 국제학교 현직 교사 출신 튜터",
+    "tags": ["국제학전공", "TESOL보유", "국제학교교사"],
+    "img": "/images/tutor/data/leslie_main_2.jpeg",
     "countryImg": "/icons/tutor/usa.svg",
-    "popupImg": "/images/tutor/data/caroline_popup.jpg",
-    "introduce1": "엣지 운영진이 소개하는 튜터 : 심리학 전공자답게 학습자의 감정과 성향을 섬세하게 이해하며 수업을 진행하시는 튜터입니다. 국제학교 초등교사 경력도 있어 초급자에게도 적합해요.",
+    "popupImg": "/images/tutor/data/leslie_popup_2.jpg",
+    "introduce1": "Leslie 강사님은 미국 캘리포니아에서 태어나고 자란 미국인 강사님으로, 현재 홍콩 국제학교에서 영어를 가르치고 계세요. 부모님이 멕시코 분들이셔서 어릴 때부터 영어를 도와드리며 자연스럽게 설명하는 감각을 키워오셨고, 상대방이 어디에서 막히는지도 잘 캐치해주시는 강사님이에요. 국제학 전공에 중국어 부전공까지 하신 만큼 다양한 문화에 대한 이해도가 높으시답니다! 한국에서 영어강사로 근무한 경험도 있어, 학생들이 헷갈려하는 부분을 정확하게 짚어주시는 설명력이 뛰어나신 강사님입니다.",
     "introduce2": "Hi everyone! I'm Caroline, an English teacher from the US with over 8 years of experience. My lessons are calm, clear, and friendly. I focus on conversation, pronunciation, grammar, and cultural tips.",
     "hobbys": "",
-    "career": "9년 교육 경력, 국제학교 초등교사",
+    "career": "국제학전공, 홍콩국제학교 교사, 바이링구얼",
     "videoUrl": "https://www.youtube.com/embed/ZDfGbeXia1w"
   }
 ]
