@@ -44,7 +44,7 @@ export default function Home() {
           <div className="mx-auto mt-2 flex w-fit justify-center gap-4 max-md:mt-0 max-md:block">
             <div className="flex gap-4 max-md:items-end max-md:gap-1">
               <h1 className="content-center text-4xl font-bold max-lg:text-4xl max-md:text-[28px]">
-                1:1 미국 · 캐나다{' '}
+                1:1 미국 · 캐나다 · 호주{' '}
               </h1>
               <div className="aspect-[109/57] w-[109px] max-lg:w-[70px]">
                 <img
@@ -608,10 +608,10 @@ export default function Home() {
                 포인트3
               </span>
               <h4 className="pt-4 text-3xl font-bold leading-[120%] text-[#140F33] max-lg:text-4xl max-md:text-2xl">
-                전원 미국·캐나다 원어민 강사진
+                전원 미국·캐나다·호주 원어민 강사진
               </h4>
               <p className="mt-8 text-lg leading-[140%] text-edge-gray max-lg:text-xl max-md:mt-6 max-md:text-base">
-                영어에는 다양한 억양이 있지만, 한국 학습자에게 가장 익숙한 북미식 발음을
+                영어에는 다양한 억양이 있지만, 한국 학습자에게 가장 익숙한 북미·호주 발음을
                 사용하는 튜터만으로 구성되어있어요.
               </p>
             </div>
