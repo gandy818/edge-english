@@ -16,12 +16,14 @@ export default function FloatingMenu() {
   return (
     <div>
       {pathName === '/' && (
-        <Link
-          href="/events"
-          className="fixed bottom-4 left-1/2 z-[1] -translate-x-1/2 whitespace-nowrap rounded-full bg-edge-yellow px-10 py-4 font-semibold shadow-md"
+        <a
+          href="https://forms.gle/cj9Ws5z3JoTwBT1U9"
+            target="_blank"
+            rel="noopener noreferrer"
+          className="fixed bottom-4 left-1/2 z-[1] -translate-x-1/2 whitespace-nowrap rounded-full bg-edge-yellow px-6 py-3 font-semibold"
         >
-          할인 수강권 확인하기
-        </Link>
+          수강 신청하기
+        </a>
       )}
       <div className="fixed bottom-[4.5rem] right-4.5 z-[19] flex flex-col gap-2 xs:bottom-10 xs:right-10">
         {/* 카카오 버튼 */}
