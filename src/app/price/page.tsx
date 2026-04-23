@@ -6,12 +6,23 @@ export default function PricePage() {
     <div className="bg-[#F3F6F8] py-[120px] max-md:py-[60px]">
       <div className="mx-auto flex max-w-[1200px] flex-col gap-10">
         {/* 타이틀 */}
-        <div className="text-center">
-          <p className="font-montserrat text-xl font-semibold text-[#AA96FF] max-md:text-base">
-            EDGE ENGLISH
+        <div className="text-center px-4">
+           <div className="mx-auto max-w-[820px]">
+          <p className="text-[17px] leading-[1.9] font-medium text-[#AA96FF] max-md:text-[15px] max-md:leading-[1.8]">
+        사실 저희가 특별한 시스템이 있는 건 아니에요. 대신 강사만큼은 정말 신경 써서 뽑고 있습니다.
+        <br />
+        10년차 영어 강사인 운영진이 직접 보고, 괜찮다고 느껴지는 분들만 함께하고 있고
+        <br />
+         미국·캐나다·호주 원어민 강사로만 채용하고 있습니다.  
           </p>
-          <h1 className="mt-4 text-4xl font-bold leading-tight max-md:text-2xl">
-            엣지있는 <br /> <span className="text-[#5542A5]">원어민 1:1 화상영어 </span>
+          <p className="mt-6 text-[17px] leading-[1.9] font-medium text-[#AA96FF] max-md:text-[15px] max-md:leading-[1.8]">
+         수업도 편하게 말만 하는 게 아니라, 바로바로 교정해드리고 
+         <br />
+         그 내용도 노트로 남겨드리고 있어요.
+         <br />저희가 큰 규모의 업체는 아니지만, 그만큼 한 분 한 분 오래 함께하고 싶은 마음으로 운영하고 있습니다.    
+          </p></div>
+          <h1 className="mt-10 text-4xl font-bold leading-tight max-md:mt-7 max-md:text-2xl">
+            프리미엄 <br /> <span className="text-[#5542A5]">원어민 1:1 화상영어 </span>
             수업료
           </h1>
         </div>
@@ -40,7 +51,7 @@ export default function PricePage() {
                 <p className="flex items-center gap-1 text-xl max-md:text-sm">
                   월
                   <span className="font-montserrat text-2xl font-extrabold max-md:text-lg">
-                    134,000
+                    178,000
                   </span>
                   원
                 </p>
@@ -60,7 +71,7 @@ export default function PricePage() {
                 <p className="flex items-center gap-1 text-xl max-md:text-sm">
                   월
                   <span className="font-montserrat text-2xl font-extrabold max-md:text-lg">
-                    189,000
+                    249,000
                   </span>
                   원
                 </p>
@@ -80,7 +91,7 @@ export default function PricePage() {
                 <p className="flex items-center gap-1 text-xl max-md:text-sm">
                   월
                   <span className="font-montserrat text-2xl font-extrabold max-md:text-lg">
-                    310,000
+                    370,000
                   </span>
                   원
                 </p>
@@ -139,7 +150,7 @@ export default function PricePage() {
                 <p className="flex items-center gap-1 text-xl max-md:text-sm">
                   월
                   <span className="font-montserrat text-2xl font-extrabold max-md:text-lg">
-                    237,000
+                    290,000
                   </span>
                   원
                 </p>
@@ -159,7 +170,7 @@ export default function PricePage() {
                 <p className="flex items-center gap-1 text-xl max-md:text-sm">
                   월
                   <span className="font-montserrat text-2xl font-extrabold max-md:text-lg">
-                    346,000
+                    420,000
                   </span>
                   원
                 </p>
@@ -179,7 +190,7 @@ export default function PricePage() {
                 <p className="flex items-center gap-1 text-xl max-md:text-sm">
                   월
                   <span className="font-montserrat text-2xl font-extrabold max-md:text-lg">
-                    560,000
+                    695,000
                   </span>
                   원
                 </p>
@@ -217,7 +228,7 @@ export default function PricePage() {
                 <p className="flex items-center gap-1 text-xl max-md:text-sm">
                   월
                   <span className="font-montserrat text-2xl font-extrabold max-md:text-lg">
-                    165,000
+                    195,000
                   </span>
                   원
                 </p>
@@ -237,7 +248,7 @@ export default function PricePage() {
                 <p className="flex items-center gap-1 text-xl max-md:text-sm">
                   월
                   <span className="font-montserrat text-2xl font-extrabold max-md:text-lg">
-                    299,000
+                    355,000
                   </span>
                   원
                 </p>
@@ -257,7 +268,7 @@ export default function PricePage() {
                 <p className="flex items-center gap-1 text-xl max-md:text-sm">
                   월
                   <span className="font-montserrat text-2xl font-extrabold max-md:text-lg">
-                    420,000
+                    520,000
                   </span>
                   원
                 </p>
