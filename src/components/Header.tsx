@@ -104,7 +104,7 @@ export default function Header() {
               className="btn rounded-lg border-none bg-edge-gray text-sm font-semibold text-white"
               onClick={() => openModal()}
             >
-              체험수업
+              왜 체험수업이 없나요?
             </button>
           </div>
         </div>

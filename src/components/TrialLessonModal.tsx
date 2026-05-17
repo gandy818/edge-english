@@ -15,22 +15,14 @@ export default function TrialLessonModal() {
         <p className="mt-2 text-sm font-bold">
           ✔처음 수업부터 실제 수업 그대로,
           <br />
-          ✔첫 만남의 선생님이 계속 함께할 선생님입니다.
+          ✔실제 수업을 진행할 선생님과 바로 시작합니다.
         </p>
         <p className="mt-6 text-sm font-bold">
-          그래서 따로 체험 수업은 없지만,
+          학생마다 원하는 수업 분위기나 방향이 다르다니보니,
           <br />
-          처음 수업이 마음에 들지 않으셨다면
-          <br />
-          👉첫 수업료만 제외하고 아무 조건 없이 환불해 드립니다. 편하게 시작해보세요!
+          첫 수업 전 간단한 설문을 통해 미리 선생님과 내용을 공유하고 있어요.
         </p>
-        <p className="mt-2 text-lg font-semibold">
-          20분 수업 9,900원
-          <br />
-          40분 수업 14,900원
-          <br />
-          50분 수업 17,900원
-        </p>
+       
         <p className="mt-6 text-center text-sm font-bold">
           💡&quot;체험이 아닌, 진짜 수업으로 시작하세요&quot;💡
         </p>
