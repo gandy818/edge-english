@@ -63,5 +63,18 @@
     "hobbys": "",
     "career": "국제학전공, 홍콩국제학교 교사, 바이링구얼",
     "videoUrl": "https://www.youtube.com/embed/BTPp6TF60G0"
+  },
+  {
+    "name": "Olivia(올리비아)",
+    "desc": "심리학을 전공한 미국 하와이 출신 현직 국제학교 교사",
+    "tags": ["심리학전공", "국제학교교사", "미국하와이대학"],
+    "img": "/images/tutor/data/olivia_main.png",
+    "countryImg": "/icons/tutor/usa.svg",
+    "popupImg": "/images/tutor/data/olivia_popup.jpeg",
+    "introduce1": "올리비아 강사님 미국 하와이 출신의 미국인 강사님으로, 국제학교, 영어유치원, 공립학교, 영어학원 등 다양한 교육 환경에서 경험을 쌓으셨어요. 미국 하와이 대학교(University of Hawaii)에서 심리학을 전공하신 강사님이라 학생들의 개개인의 성향에 맞춰 수업을 진행해주시고, 편하고 따뜻한 분위기로 영어에 대한 자신감을 키워주시는 강사님입니다.",
+    "introduce2": "",
+    "hobbys": "",
+    "career": "심리학전공, 오키나와국제학교 교사 출신, 영어유치원 교사",
+    "videoUrl": "https://www.youtube.com/embed/qMZ2jP3PR58"
   }
 ]
