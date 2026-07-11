@@ -152,7 +152,7 @@ export default function TutorPage() {
             </div>
             <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-xl font-medium">
               <img src="/icons/tutor/check.svg" className="mr-[16px]" alt="check" />
-              TESOL/TEFL 국제 영어교육 자격증 보유
+              TESOL/TEFL/CELTA(국제 영어교육 자격증) 또는 교육 관련 학위 보유
             </div>{' '}
             <div className="flex flex-grow items-center rounded-lg border bg-white px-10 py-8 text-xl font-medium">
               <img src="/icons/tutor/check.svg" className="mr-[16px]" alt="check" />
@@ -186,7 +186,7 @@ export default function TutorPage() {
             </div>
             <div className="flex flex-grow items-center rounded-lg border bg-white px-4 py-6 text-lg font-medium">
               <img src="/icons/tutor/check.svg" className="mr-2 h-6 w-6" alt="check" />
-              TESOL/TEFL 국제 영어교육 자격증 보유
+              TESOL/TEFL/CELTA 국제 영어교육 자격증 또는 교육 관련 학위 보유
             </div>{' '}
             <div className="flex flex-grow items-center rounded-lg border bg-white px-4 py-6 text-lg font-medium">
               <img src="/icons/tutor/check.svg" className="mr-2 h-6 w-6" alt="check" />

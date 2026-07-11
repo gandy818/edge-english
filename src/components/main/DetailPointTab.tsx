@@ -8,11 +8,11 @@ const EDGE_DETAILS = [
     subTitle: '국제영어교사 자격',
     title: (
       <>
-        100% TESOL/TEFL
+        100% TESOL/TEFL/CELTA 또는 교육 관련 학위
         <span className="md:hidden">
           <br />
         </span>{' '}
-        보유 강사진
+        보유
       </>
     ),
     contents: (
@@ -20,12 +20,12 @@ const EDGE_DETAILS = [
         <p className="text-xl max-md:text-base">
           단순히 영어를 잘하는 원어민이 아닙니다. 영어를{' '}
           <span className="font-semibold">
-            ‘잘 가르칠 수 있는’ 국제 자격(TESOL/TEFL)을 갖춘 강사만 선발
+            ‘잘 가르칠 수 있는’ 국제 자격(TESOL/TEFL/CELTA)을 갖추거나 교육 관련 학위(학사,석사,박사)를 보유한 강사를 선발
           </span>
           해요.
         </p>
         <p className="mt-4 text-[#8E8E8E] max-md:mt-2 max-md:text-xs">
-          * TESOL/TEFL이란? <br /> 영어가 모국어가 아닌 사람들에게 영어를 가르치는
+          * TESOL/TEFL/CELTA란? <br /> 영어가 모국어가 아닌 사람들에게 영어를 가르치는
           국제영어교사 자격증
         </p>
       </>

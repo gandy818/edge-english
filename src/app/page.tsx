@@ -433,7 +433,7 @@ export default function Home() {
             <div className="flex gap-2">
               <div className="chat chat-end flex-1">
                 <div className="chat-bubble rounded-3xl bg-edge-yellow px-7 py-4.5 text-xl font-semibold text-[#333] shadow-lg max-md:text-sm">
-                  엣지영어의 모든 강사는 TESOL/TEFL(국제 영어 교육 자격증)을 기본으로
+                  엣지영어의 모든 강사는 TESOL/TEFL/CELTA(국제 영어 교육 자격증) 또는 교육 관련 학위를
                   보유하고 있으며, <br /> 철저한 5단계 검증 절차를 모두 통과한 선생님만
                   채용합니다.
                 </div>
